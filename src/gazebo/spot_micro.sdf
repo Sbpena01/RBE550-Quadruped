@@ -1,0 +1,1074 @@
+<?xml version="1.0" ?>
+<sdf version="1.10">
+    <world name="car_world">
+        <physics name="1ms" type="ignored">
+            <max_step_size>0.001</max_step_size>
+            <real_time_factor>1.0</real_time_factor>
+        </physics>
+        <plugin
+            filename="gz-sim-physics-system"
+            name="gz::sim::systems::Physics">
+        </plugin>
+        <plugin
+            filename="gz-sim-user-commands-system"
+            name="gz::sim::systems::UserCommands">
+        </plugin>
+        <plugin
+            filename="gz-sim-scene-broadcaster-system"
+            name="gz::sim::systems::SceneBroadcaster">
+        </plugin>
+
+        <light type="directional" name="sun">
+            <cast_shadows>true</cast_shadows>
+            <pose>0 0 10 0 0 0</pose>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.2 0.2 0.2 1</specular>
+            <attenuation>
+                <range>1000</range>
+                <constant>0.9</constant>
+                <linear>0.01</linear>
+                <quadratic>0.001</quadratic>
+            </attenuation>
+            <direction>-0.5 0.1 -0.9</direction>
+        </light>
+
+        <model name="ground_plane">
+            <static>true</static>
+            <link name="link">
+                <collision name="collision">
+                <geometry>
+                    <plane>
+                    <normal>0 0 1</normal>
+                    </plane>
+                </geometry>
+                </collision>
+                <visual name="visual">
+                <geometry>
+                    <plane>
+                    <normal>0 0 1</normal>
+                    <size>100 100</size>
+                    </plane>
+                </geometry>
+                <material>
+                    <ambient>0.8 0.8 0.8 1</ambient>
+                    <diffuse>0.8 0.8 0.8 1</diffuse>
+                    <specular>0.8 0.8 0.8 1</specular>
+                </material>
+                </visual>
+            </link>
+        </model>
+        
+        <model name='spot' canonical_link='base_link'>
+            <pose relative_to='world'>0 0 0.5 0 0 0</pose>
+
+            <link name="base_link">
+                <pose>-0.045 -0.060 -0.015 0 0 0</pose>
+                <inertial>
+                    <mass>2.8</mass>
+                    <inertia>
+                        <ixx>0.1</ixx>
+                        <ixy>0</ixy>
+                        <ixz>0</ixz>
+                        <iyy>0.1</iyy>
+                        <iyz>0</iyz>
+                        <izz>0.1</izz>
+                    </inertia>
+                </inertial>
+                <visual name='main_body'>
+                    <pose>-0.045 -0.060 -0.015 0 0 0</pose>
+                    <material>
+                        <ambient>0 0 0 1</ambient>
+                        <diffuse>0 0 0 1</diffuse>
+                        <specular>0 0 0 1</specular>
+                    </material>
+                    <geometry>
+                        <mesh>
+                            <uri>/home/sbpena01/RBE550/src/meshes/mainbody.stl</uri>
+                            <scale>0.001 0.001 0.001</scale>
+                        </mesh>
+                    </geometry>
+                </visual>
+                <visual name='base_link_hitbox'>
+                    <material>
+                        <ambient>0 0 0 0.5</ambient> 
+                        <diffuse>0 0 0 0.5</diffuse>
+                        <specular>0 0 0 0.5</specular>
+                    </material>
+                    <geometry>
+                        <box>
+                            <size>0.14 0.11 0.07 0 0 0</size>
+                        </box>
+                    </geometry>
+                </visual>
+                <collision name='main_body'>
+                    <geometry>
+                        <box>
+                            <size>0.14 0.11 0.07 0 0 0</size>
+                        </box>
+                    </geometry>
+                </collision>
+            </link>
+
+            <!-- Front Left Leg -->
+            <link name='front_left_shoulder_link'>
+                <visual name='front_left_shoulder'>
+                    <pose>-0.135 -0.02 -0.01 0 0 0</pose>
+                    <material>
+                        <ambient>1 0 0 1</ambient> 
+                        <diffuse>1 0 0 1</diffuse>
+                        <specular>1 0 0 1</specular>
+                    </material>
+                    <geometry>
+                        <mesh>
+                            <uri>/home/sbpena01/RBE550/src/meshes/lshoulder.stl</uri>
+                            <scale>0.001 0.001 0.001</scale>
+                        </mesh>
+                    </geometry>
+                </visual>
+                <visual name='front_left_shoulder_hitbox'>
+                    <material>
+                        <ambient>0 0 0 0.5</ambient> 
+                        <diffuse>0 0 0 0.5</diffuse>
+                        <specular>0 0 0 0.5</specular>
+                    </material>
+                    <geometry>
+                        <box>
+                            <size>0.044 0.038 0.07</size>
+                        </box>
+                    </geometry>
+                </visual>
+                <collision name='front_left_shoulder'>
+                    <geometry>
+                        <box>
+                            <size>0.044 0.038 0.07</size>
+                        </box>
+                    </geometry>
+                </collision>
+                <pose relative_to='front_left_shoulder'>0 0 0 0 0 0</pose>
+                <inertial>
+                    <mass>0.1</mass>
+                    <inertia>
+                        <ixx>0.1</ixx>
+                        <ixy>0</ixy>
+                        <ixz>0</ixz>
+                        <iyy>0.1</iyy>
+                        <iyz>0</iyz>
+                        <izz>0.1</izz>
+                    </inertia>
+                </inertial>
+            </link>
+
+            <link name='front_left_leg_link'>
+                <visual name='front_left_leg'>
+                    <pose>-0.125 0.04 0.03 0 0 0</pose>
+                    <material>
+                        <ambient>0 0 0 1</ambient> 
+                        <diffuse>0 0 0 1</diffuse>
+                        <specular>0 0 0 1</specular>
+                    </material>
+                    <geometry>
+                        <mesh>
+                            <uri>/home/sbpena01/RBE550/src/meshes/larm.stl</uri>
+                            <scale>0.001 0.001 0.001</scale>
+                        </mesh>
+                    </geometry>
+                </visual>
+                <visual name='front_left_leg_hitbox'>
+                    <material>
+                        <ambient>0 0 0 0.5</ambient> 
+                        <diffuse>0 0 0 0.5</diffuse>
+                        <specular>0 0 0 0.5</specular>
+                    </material>
+                    <geometry>
+                        <box>
+                            <size>0.028 0.036 0.12</size>
+                        </box>
+                    </geometry>
+                </visual>
+                <collision name='front_left_leg'>
+                    <geometry>
+                        <box>
+                            <size>0.028 0.036 0.12</size>
+                        </box>
+                    </geometry>
+                </collision>
+                <pose relative_to='front_left_leg'>0 0 -0.05 0 0 0</pose>
+                <inertial>
+                    <mass>0.15</mass>
+                    <inertia>
+                        <ixx>0.1</ixx>
+                        <ixy>0</ixy>
+                        <ixz>0</ixz>
+                        <iyy>0.1</iyy>
+                        <iyz>0</iyz>
+                        <izz>0.1</izz>
+                    </inertia>
+                </inertial>
+
+                <visual name='debug'>
+                    <geometry>
+                        <sphere>
+                            <radius>0.005</radius>
+                        </sphere>
+                    </geometry>
+                    <pose>-0.01 0 -0.072 0 0 0</pose>
+                </visual>
+            </link>
+
+            <link name='front_left_foot_link'>
+                <visual name='front_left_foot'>
+                    <pose>-0.120 0.04 0.15 0 0 0</pose>
+                    <material>
+                        <ambient>1 1 0 1</ambient> 
+                        <diffuse>1 1 0 1</diffuse>
+                        <specular>1 1 0 1</specular>
+                    </material>
+                    <geometry>
+                        <mesh>
+                            <uri>/home/sbpena01/RBE550/src/meshes/lfoot.stl</uri>
+                            <scale>0.001 0.001 0.001</scale>
+                        </mesh>
+                    </geometry>
+                </visual>
+                <visual name='front_left_foot_hitbox'>
+                    <material>
+                        <ambient>0 0 0 0.5</ambient> 
+                        <diffuse>0 0 0 0.5</diffuse>
+                        <specular>0 0 0 0.5</specular>
+                    </material>
+                    <geometry>
+                        <box>
+                            <size>0.026 0.020 0.115</size>
+                        </box>
+                    </geometry>
+                </visual>
+                <collision name='front_left_foot'>
+                    <geometry>
+                        <box>
+                            <size>0.026 0.020 0.115</size>
+                        </box>
+                    </geometry>
+                </collision>
+                <pose relative_to='front_left_foot'>0.0 0.0 -0.050 0 0 0</pose>
+                <inertial>
+                    <mass>0.1</mass>
+                    <inertia>
+                        <ixx>0.1</ixx>
+                        <ixy>0</ixy>
+                        <ixz>0</ixz>
+                        <iyy>0.1</iyy>
+                        <iyz>0</iyz>
+                        <izz>0.1</izz>
+                    </inertia>
+                </inertial>
+            </link>
+
+            <link name='front_left_toe_link'>
+                <visual name='front_left_foot'>
+                    <pose>0 -0.01 0 0 -0.40010 0</pose>
+                    <material>
+                        <ambient>1 1 0 1</ambient> 
+                        <diffuse>1 1 0 1</diffuse>
+                        <specular>1 1 0 1</specular>
+                    </material>
+                    <geometry>
+                        <mesh>
+                            <uri>/home/sbpena01/RBE550/src/meshes/foot.stl</uri>
+                            <scale>0.001 0.001 0.001</scale>
+                        </mesh>
+                    </geometry>
+                </visual>
+                <visual name='front_left_toe_hitbox'>
+                    <material>
+                        <ambient>0 0 0 0.5</ambient> 
+                        <diffuse>0 0 0 0.5</diffuse>
+                        <specular>0 0 0 0.5</specular>
+                    </material>
+                    <geometry>
+                        <sphere>
+                            <radius>0.02</radius>
+                        </sphere>
+                    </geometry>
+                </visual>
+                <collision name='front_left_toe'>
+                    <geometry>
+                        <sphere>
+                            <radius>0.02</radius>
+                        </sphere>
+                    </geometry>
+                </collision>
+                <pose relative_to='front_left_toe'>0 0 0 0 0 0</pose>
+                <inertial>
+                    <mass>0.1</mass>
+                    <inertia>
+                        <ixx>0.1</ixx>
+                        <ixy>0</ixy>
+                        <ixz>0</ixz>
+                        <iyy>0.1</iyy>
+                        <iyz>0</iyz>
+                        <izz>0.1</izz>
+                    </inertia>
+                </inertial>
+            </link>
+
+            <joint name="front_left_shoulder" type="revolute">
+                <pose relative_to='base_link'>-0.093 -0.036 0 0 0 0</pose>
+                <parent>base_link</parent>
+                <child>front_left_shoulder_link</child>
+                <axis>
+                    <xyz expressed_in='base_link'>1 0 0</xyz>
+                    <limit>
+                        <lower>-0.548</lower>
+                        <upper>0.548</upper>
+                    </limit>
+                </axis>
+            </joint>
+            <joint name="front_left_leg" type="revolute">
+                <pose relative_to='front_left_shoulder_link'>0 -0.052 0 0 0 0</pose>
+                <parent>front_left_shoulder_link</parent>
+                <child>front_left_leg_link</child>
+                <axis>
+                    <xyz expressed_in='front_left_shoulder_link'>0 1 0</xyz>
+                    <limit>
+                        <lower>-2.666</lower>
+                        <upper>1.548</upper>
+                    </limit>
+                </axis>
+            </joint>
+            <joint name="front_left_foot" type="revolute">
+                <pose relative_to='front_left_leg_link'>-0.005 0 -0.072 0 0 0</pose>
+                <parent>front_left_leg_link</parent>
+                <child>front_left_foot_link</child>
+                <axis>
+                    <xyz expressed_in='base_link'>0 1 0</xyz>
+                    <limit>
+                        <lower>-0.1</lower>
+                        <upper>2.59</upper>
+                    </limit>
+                </axis>
+            </joint>
+            <joint name='front_left_toe' type='fixed'>
+                <parent>front_left_foot_link</parent>
+                <child>front_left_toe_link</child>
+                <pose relative_to='front_left_foot_link'>0 0 -0.069 0 0 0</pose>
+            </joint>
+
+            <!-- FRONT RIGHT LEG -->
+
+            <link name='front_right_shoulder_link'>
+                <visual name='front_right_shoulder'>
+                    <pose>-0.135 -0.09 -0.01 0 0 0</pose>
+                    <material>
+                        <ambient>1 0 0 1</ambient> 
+                        <diffuse>1 0 0 1</diffuse>
+                        <specular>1 0 0 1</specular>
+                    </material>
+                    <geometry>
+                        <mesh>
+                            <uri>/home/sbpena01/RBE550/src/meshes/rshoulder.stl</uri>
+                            <scale>0.001 0.001 0.001</scale>
+                        </mesh>
+                    </geometry>
+                </visual>
+                <visual name='front_right_shoulder_hitbox'>
+                    <material>
+                        <ambient>0 0 0 0.5</ambient> 
+                        <diffuse>0 0 0 0.5</diffuse>
+                        <specular>0 0 0 0.5</specular>
+                    </material>
+                    <geometry>
+                        <box>
+                            <size>0.044 0.038 0.07</size>
+                        </box>
+                    </geometry>
+                </visual>
+                <collision name='front_right_shoulder'>
+                    <geometry>
+                        <box>
+                            <size>0.044 0.038 0.07</size>
+                        </box>
+                    </geometry>
+                </collision>
+                <pose relative_to='front_right_shoulder'>0 0 0 0 0 0</pose>
+                <inertial>
+                    <mass>0.1</mass>
+                    <inertia>
+                        <ixx>0.1</ixx>
+                        <ixy>0</ixy>
+                        <ixz>0</ixz>
+                        <iyy>0.1</iyy>
+                        <iyz>0</iyz>
+                        <izz>0.1</izz>
+                    </inertia>
+                </inertial>
+            </link>
+
+            <link name='front_right_leg_link'>
+                <visual name='front_right_leg'>
+                    <pose>-0.125 -0.15 0.03 0 0 0</pose>
+                    <material>
+                        <ambient>0 0 0 1</ambient> 
+                        <diffuse>0 0 0 1</diffuse>
+                        <specular>0 0 0 1</specular>
+                    </material>
+                    <geometry>
+                        <mesh>
+                            <uri>/home/sbpena01/RBE550/src/meshes/rarm.stl</uri>
+                            <scale>0.001 0.001 0.001</scale>
+                        </mesh>
+                    </geometry>
+                </visual>
+                <visual name='front_right_leg_hitbox'>
+                    <material>
+                        <ambient>0 0 0 0.5</ambient> 
+                        <diffuse>0 0 0 0.5</diffuse>
+                        <specular>0 0 0 0.5</specular>
+                    </material>
+                    <geometry>
+                        <box>
+                            <size>0.028 0.036 0.12</size>
+                        </box>
+                    </geometry>
+                </visual>
+                <collision name='front_right_leg'>
+                    <geometry>
+                        <box>
+                            <size>0.028 0.036 0.12</size>
+                        </box>
+                    </geometry>
+                </collision>
+                <pose relative_to='front_right_leg'>0 0 -0.05 0 0 0</pose>
+                <inertial>
+                    <mass>0.15</mass>
+                    <inertia>
+                        <ixx>0.1</ixx>
+                        <ixy>0</ixy>
+                        <ixz>0</ixz>
+                        <iyy>0.1</iyy>
+                        <iyz>0</iyz>
+                        <izz>0.1</izz>
+                    </inertia>
+                </inertial>
+            </link>
+
+            <link name='front_right_foot_link'>
+                <visual name='front_right_foot'>
+                    <pose>-0.120 -0.15 0.15 0 0 0</pose>
+                    <material>
+                        <ambient>1 1 0 1</ambient> 
+                        <diffuse>1 1 0 1</diffuse>
+                        <specular>1 1 0 1</specular>
+                    </material>
+                    <geometry>
+                        <mesh>
+                            <uri>/home/sbpena01/RBE550/src/meshes/rfoot.stl</uri>
+                            <scale>0.001 0.001 0.001</scale>
+                        </mesh>
+                    </geometry>
+                </visual>
+                <visual name='front_right_foot_hitbox'>
+                    <material>
+                        <ambient>0 0 0 0.5</ambient> 
+                        <diffuse>0 0 0 0.5</diffuse>
+                        <specular>0 0 0 0.5</specular>
+                    </material>
+                    <geometry>
+                        <box>
+                            <size>0.026 0.020 0.115</size>
+                        </box>
+                    </geometry>
+                </visual>
+                <collision name='front_right_foot'>
+                    <geometry>
+                        <box>
+                            <size>0.026 0.020 0.115</size>
+                        </box>
+                    </geometry>
+                </collision>
+                <pose relative_to='front_right_foot'>0.0 0.0 -0.050 0 0 0</pose>
+                <inertial>
+                    <mass>0.1</mass>
+                    <inertia>
+                        <ixx>0.1</ixx>
+                        <ixy>0</ixy>
+                        <ixz>0</ixz>
+                        <iyy>0.1</iyy>
+                        <iyz>0</iyz>
+                        <izz>0.1</izz>
+                    </inertia>
+                </inertial>
+            </link>
+
+            <link name='front_right_toe_link'>
+                <visual name='front_right_foot'>
+                    <pose>0 -0.01 0 0 -0.40010 0</pose>
+                    <material>
+                        <ambient>1 1 0 1</ambient> 
+                        <diffuse>1 1 0 1</diffuse>
+                        <specular>1 1 0 1</specular>
+                    </material>
+                    <geometry>
+                        <mesh>
+                            <uri>/home/sbpena01/RBE550/src/meshes/foot.stl</uri>
+                            <scale>0.001 0.001 0.001</scale>
+                        </mesh>
+                    </geometry>
+                </visual>
+                <visual name='front_right_toe_hitbox'>
+                    <material>
+                        <ambient>0 0 0 0.5</ambient> 
+                        <diffuse>0 0 0 0.5</diffuse>
+                        <specular>0 0 0 0.5</specular>
+                    </material>
+                    <geometry>
+                        <sphere>
+                            <radius>0.02</radius>
+                        </sphere>
+                    </geometry>
+                </visual>
+                <collision name='front_right_toe'>
+                    <geometry>
+                        <sphere>
+                            <radius>0.02</radius>
+                        </sphere>
+                    </geometry>
+                </collision>
+                <pose relative_to='front_right_toe'>0 0 0 0 0 0</pose>
+                <inertial>
+                    <mass>0.1</mass>
+                    <inertia>
+                        <ixx>0.1</ixx>
+                        <ixy>0</ixy>
+                        <ixz>0</ixz>
+                        <iyy>0.1</iyy>
+                        <iyz>0</iyz>
+                        <izz>0.1</izz>
+                    </inertia>
+                </inertial>
+            </link>
+
+            <joint name="front_right_shoulder" type="revolute">
+                <pose relative_to='base_link'>-0.093 0.036 0 0 0 0</pose>
+                <parent>base_link</parent>
+                <child>front_right_shoulder_link</child>
+                <axis>
+                    <xyz expressed_in='base_link'>1 0 0</xyz>
+                    <limit>
+                        <lower>-0.548</lower>
+                        <upper>0.548</upper>
+                    </limit>
+                </axis>
+            </joint>
+            <joint name="front_right_leg" type="revolute">
+                <pose relative_to='front_right_shoulder_link'>0 0.052 0 0 0 0</pose>
+                <parent>front_right_shoulder_link</parent>
+                <child>front_right_leg_link</child>
+                <axis>
+                    <xyz expressed_in='front_right_shoulder_link'>0 1 0</xyz>
+                    <limit>
+                        <lower>-2.666</lower>
+                        <upper>1.548</upper>
+                    </limit>
+                </axis>
+            </joint>
+            <joint name="front_right_foot" type="revolute">
+                <pose relative_to='front_right_leg_link'>-0.005 0 -0.072 0 0 0</pose>
+                <parent>front_right_leg_link</parent>
+                <child>front_right_foot_link</child>
+                <axis>
+                    <xyz expressed_in='base_link'>0 1 0</xyz>
+                    <limit>
+                        <lower>-0.1</lower>
+                        <upper>2.59</upper>
+                    </limit>
+                </axis>
+            </joint>
+            <joint name='front_right_toe' type='fixed'>
+                <parent>front_right_foot_link</parent>
+                <child>front_right_toe_link</child>
+                <pose relative_to='front_right_foot_link'>0 0 -0.069 0 0 0</pose>
+            </joint>
+
+            <!-- REAR LEFT LEG -->
+
+            <link name='rear_left_shoulder_link'>
+                <visual name='rear_left_shoulder'>
+                    <pose>-0.135 -0.02 -0.01 0 0 0</pose>
+                    <material>
+                        <ambient>1 0 0 1</ambient> 
+                        <diffuse>1 0 0 1</diffuse>
+                        <specular>1 0 0 1</specular>
+                    </material>
+                    <geometry>
+                        <mesh>
+                            <uri>/home/sbpena01/RBE550/src/meshes/lshoulder.stl</uri>
+                            <scale>0.001 0.001 0.001</scale>
+                        </mesh>
+                    </geometry>
+                </visual>
+                <visual name='rear_left_shoulder_hitbox'>
+                    <material>
+                        <ambient>0 0 0 0.5</ambient> 
+                        <diffuse>0 0 0 0.5</diffuse>
+                        <specular>0 0 0 0.5</specular>
+                    </material>
+                    <geometry>
+                        <box>
+                            <size>0.044 0.038 0.07</size>
+                        </box>
+                    </geometry>
+                </visual>
+                <collision name='rear_left_shoulder'>
+                    <geometry>
+                        <box>
+                            <size>0.044 0.038 0.07</size>
+                        </box>
+                    </geometry>
+                </collision>
+                <pose relative_to='rear_left_shoulder'>0 0 0 0 0 0</pose>
+                <inertial>
+                    <mass>0.1</mass>
+                    <inertia>
+                        <ixx>0.1</ixx>
+                        <ixy>0</ixy>
+                        <ixz>0</ixz>
+                        <iyy>0.1</iyy>
+                        <iyz>0</iyz>
+                        <izz>0.1</izz>
+                    </inertia>
+                </inertial>
+            </link>
+
+            <link name='rear_left_leg_link'>
+                <visual name='rear_left_leg'>
+                    <pose>-0.125 0.04 0.03 0 0 0</pose>
+                    <material>
+                        <ambient>0 0 0 1</ambient> 
+                        <diffuse>0 0 0 1</diffuse>
+                        <specular>0 0 0 1</specular>
+                    </material>
+                    <geometry>
+                        <mesh>
+                            <uri>/home/sbpena01/RBE550/src/meshes/larm.stl</uri>
+                            <scale>0.001 0.001 0.001</scale>
+                        </mesh>
+                    </geometry>
+                </visual>
+                <visual name='rear_left_leg_hitbox'>
+                    <material>
+                        <ambient>0 0 0 0.5</ambient> 
+                        <diffuse>0 0 0 0.5</diffuse>
+                        <specular>0 0 0 0.5</specular>
+                    </material>
+                    <geometry>
+                        <box>
+                            <size>0.028 0.036 0.12</size>
+                        </box>
+                    </geometry>
+                </visual>
+                <collision name='rear_left_leg'>
+                    <geometry>
+                        <box>
+                            <size>0.028 0.036 0.12</size>
+                        </box>
+                    </geometry>
+                </collision>
+                <pose relative_to='rear_left_leg'>0 0 -0.05 0 0 0</pose>
+                <inertial>
+                    <mass>0.15</mass>
+                    <inertia>
+                        <ixx>0.1</ixx>
+                        <ixy>0</ixy>
+                        <ixz>0</ixz>
+                        <iyy>0.1</iyy>
+                        <iyz>0</iyz>
+                        <izz>0.1</izz>
+                    </inertia>
+                </inertial>
+
+                <visual name='debug'>
+                    <geometry>
+                        <sphere>
+                            <radius>0.005</radius>
+                        </sphere>
+                    </geometry>
+                    <pose>-0.01 0 -0.072 0 0 0</pose>
+                </visual>
+            </link>
+
+            <link name='rear_left_foot_link'>
+                <visual name='rear_left_foot'>
+                    <pose>-0.120 0.04 0.15 0 0 0</pose>
+                    <material>
+                        <ambient>1 1 0 1</ambient> 
+                        <diffuse>1 1 0 1</diffuse>
+                        <specular>1 1 0 1</specular>
+                    </material>
+                    <geometry>
+                        <mesh>
+                            <uri>/home/sbpena01/RBE550/src/meshes/lfoot.stl</uri>
+                            <scale>0.001 0.001 0.001</scale>
+                        </mesh>
+                    </geometry>
+                </visual>
+                <visual name='rear_left_foot_hitbox'>
+                    <material>
+                        <ambient>0 0 0 0.5</ambient> 
+                        <diffuse>0 0 0 0.5</diffuse>
+                        <specular>0 0 0 0.5</specular>
+                    </material>
+                    <geometry>
+                        <box>
+                            <size>0.026 0.020 0.115</size>
+                        </box>
+                    </geometry>
+                </visual>
+                <collision name='rear_left_foot'>
+                    <geometry>
+                        <box>
+                            <size>0.026 0.020 0.115</size>
+                        </box>
+                    </geometry>
+                </collision>
+                <pose relative_to='rear_left_foot'>0.0 0.0 -0.050 0 0 0</pose>
+                <inertial>
+                    <mass>0.1</mass>
+                    <inertia>
+                        <ixx>0.1</ixx>
+                        <ixy>0</ixy>
+                        <ixz>0</ixz>
+                        <iyy>0.1</iyy>
+                        <iyz>0</iyz>
+                        <izz>0.1</izz>
+                    </inertia>
+                </inertial>
+            </link>
+
+            <link name='rear_left_toe_link'>
+                <visual name='rear_left_foot'>
+                    <pose>0 -0.01 0 0 -0.40010 0</pose>
+                    <material>
+                        <ambient>1 1 0 1</ambient> 
+                        <diffuse>1 1 0 1</diffuse>
+                        <specular>1 1 0 1</specular>
+                    </material>
+                    <geometry>
+                        <mesh>
+                            <uri>/home/sbpena01/RBE550/src/meshes/foot.stl</uri>
+                            <scale>0.001 0.001 0.001</scale>
+                        </mesh>
+                    </geometry>
+                </visual>
+                <visual name='rear_left_toe_hitbox'>
+                    <material>
+                        <ambient>0 0 0 0.5</ambient> 
+                        <diffuse>0 0 0 0.5</diffuse>
+                        <specular>0 0 0 0.5</specular>
+                    </material>
+                    <geometry>
+                        <sphere>
+                            <radius>0.02</radius>
+                        </sphere>
+                    </geometry>
+                </visual>
+                <collision name='rear_left_toe'>
+                    <geometry>
+                        <sphere>
+                            <radius>0.02</radius>
+                        </sphere>
+                    </geometry>
+                </collision>
+                <pose relative_to='rear_left_toe'>0 0 0 0 0 0</pose>
+                <inertial>
+                    <mass>0.1</mass>
+                    <inertia>
+                        <ixx>0.1</ixx>
+                        <ixy>0</ixy>
+                        <ixz>0</ixz>
+                        <iyy>0.1</iyy>
+                        <iyz>0</iyz>
+                        <izz>0.1</izz>
+                    </inertia>
+                </inertial>
+            </link>
+
+            <joint name="rear_left_shoulder" type="revolute">
+                <pose relative_to='base_link'>0.093 -0.036 0 0 0 0</pose>
+                <parent>base_link</parent>
+                <child>rear_left_shoulder_link</child>
+                <axis>
+                    <xyz expressed_in='base_link'>1 0 0</xyz>
+                    <limit>
+                        <lower>-0.548</lower>
+                        <upper>0.548</upper>
+                    </limit>
+                </axis>
+            </joint>
+            <joint name="rear_left_leg" type="revolute">
+                <pose relative_to='rear_left_shoulder_link'>0 -0.052 0 0 0 0</pose>
+                <parent>rear_left_shoulder_link</parent>
+                <child>rear_left_leg_link</child>
+                <axis>
+                    <xyz expressed_in='rear_left_shoulder_link'>0 1 0</xyz>
+                    <limit>
+                        <lower>-2.666</lower>
+                        <upper>1.548</upper>
+                    </limit>
+                </axis>
+            </joint>
+            <joint name="rear_left_foot" type="revolute">
+                <pose relative_to='rear_left_leg_link'>-0.005 0 -0.072 0 0 0</pose>
+                <parent>rear_left_leg_link</parent>
+                <child>rear_left_foot_link</child>
+                <axis>
+                    <xyz expressed_in='base_link'>0 1 0</xyz>
+                    <limit>
+                        <lower>-0.1</lower>
+                        <upper>2.59</upper>
+                    </limit>
+                </axis>
+            </joint>
+            <joint name='rear_left_toe' type='fixed'>
+                <parent>rear_left_foot_link</parent>
+                <child>rear_left_toe_link</child>
+                <pose relative_to='rear_left_foot_link'>0 0 -0.069 0 0 0</pose>
+            </joint>
+
+            <!-- REAR RIGHT LEG -->
+
+            <link name='rear_right_shoulder_link'>
+                <visual name='rear_right_shoulder'>
+                    <pose>-0.135 -0.09 -0.01 0 0 0</pose>
+                    <material>
+                        <ambient>1 0 0 1</ambient> 
+                        <diffuse>1 0 0 1</diffuse>
+                        <specular>1 0 0 1</specular>
+                    </material>
+                    <geometry>
+                        <mesh>
+                            <uri>/home/sbpena01/RBE550/src/meshes/rshoulder.stl</uri>
+                            <scale>0.001 0.001 0.001</scale>
+                        </mesh>
+                    </geometry>
+                </visual>
+                <visual name='rear_right_shoulder_hitbox'>
+                    <material>
+                        <ambient>0 0 0 0.5</ambient> 
+                        <diffuse>0 0 0 0.5</diffuse>
+                        <specular>0 0 0 0.5</specular>
+                    </material>
+                    <geometry>
+                        <box>
+                            <size>0.044 0.038 0.07</size>
+                        </box>
+                    </geometry>
+                </visual>
+                <collision name='rear_right_shoulder'>
+                    <geometry>
+                        <box>
+                            <size>0.044 0.038 0.07</size>
+                        </box>
+                    </geometry>
+                </collision>
+                <pose relative_to='rear_right_shoulder'>0 0 0 0 0 0</pose>
+                <inertial>
+                    <mass>0.1</mass>
+                    <inertia>
+                        <ixx>0.1</ixx>
+                        <ixy>0</ixy>
+                        <ixz>0</ixz>
+                        <iyy>0.1</iyy>
+                        <iyz>0</iyz>
+                        <izz>0.1</izz>
+                    </inertia>
+                </inertial>
+            </link>
+
+            <link name='rear_right_leg_link'>
+                <visual name='rear_right_leg'>
+                    <pose>-0.125 -0.15 0.03 0 0 0</pose>
+                    <material>
+                        <ambient>0 0 0 1</ambient> 
+                        <diffuse>0 0 0 1</diffuse>
+                        <specular>0 0 0 1</specular>
+                    </material>
+                    <geometry>
+                        <mesh>
+                            <uri>/home/sbpena01/RBE550/src/meshes/rarm.stl</uri>
+                            <scale>0.001 0.001 0.001</scale>
+                        </mesh>
+                    </geometry>
+                </visual>
+                <visual name='rear_right_leg_hitbox'>
+                    <material>
+                        <ambient>0 0 0 0.5</ambient> 
+                        <diffuse>0 0 0 0.5</diffuse>
+                        <specular>0 0 0 0.5</specular>
+                    </material>
+                    <geometry>
+                        <box>
+                            <size>0.028 0.036 0.12</size>
+                        </box>
+                    </geometry>
+                </visual>
+                <collision name='rear_right_leg'>
+                    <geometry>
+                        <box>
+                            <size>0.028 0.036 0.12</size>
+                        </box>
+                    </geometry>
+                </collision>
+                <pose relative_to='rear_right_leg'>0 0 -0.05 0 0 0</pose>
+                <inertial>
+                    <mass>0.15</mass>
+                    <inertia>
+                        <ixx>0.1</ixx>
+                        <ixy>0</ixy>
+                        <ixz>0</ixz>
+                        <iyy>0.1</iyy>
+                        <iyz>0</iyz>
+                        <izz>0.1</izz>
+                    </inertia>
+                </inertial>
+            </link>
+
+            <link name='rear_right_foot_link'>
+                <visual name='rear_right_foot'>
+                    <pose>-0.120 -0.15 0.15 0 0 0</pose>
+                    <material>
+                        <ambient>1 1 0 1</ambient> 
+                        <diffuse>1 1 0 1</diffuse>
+                        <specular>1 1 0 1</specular>
+                    </material>
+                    <geometry>
+                        <mesh>
+                            <uri>/home/sbpena01/RBE550/src/meshes/rfoot.stl</uri>
+                            <scale>0.001 0.001 0.001</scale>
+                        </mesh>
+                    </geometry>
+                </visual>
+                <visual name='rear_right_foot_hitbox'>
+                    <material>
+                        <ambient>0 0 0 0.5</ambient> 
+                        <diffuse>0 0 0 0.5</diffuse>
+                        <specular>0 0 0 0.5</specular>
+                    </material>
+                    <geometry>
+                        <box>
+                            <size>0.026 0.020 0.115</size>
+                        </box>
+                    </geometry>
+                </visual>
+                <collision name='rear_right_foot'>
+                    <geometry>
+                        <box>
+                            <size>0.026 0.020 0.115</size>
+                        </box>
+                    </geometry>
+                </collision>
+                <pose relative_to='rear_right_foot'>0.0 0.0 -0.050 0 0 0</pose>
+                <inertial>
+                    <mass>0.1</mass>
+                    <inertia>
+                        <ixx>0.1</ixx>
+                        <ixy>0</ixy>
+                        <ixz>0</ixz>
+                        <iyy>0.1</iyy>
+                        <iyz>0</iyz>
+                        <izz>0.1</izz>
+                    </inertia>
+                </inertial>
+            </link>
+
+            <link name='rear_right_toe_link'>
+                <visual name='rear_right_foot'>
+                    <pose>0 -0.01 0 0 -0.40010 0</pose>
+                    <material>
+                        <ambient>1 1 0 1</ambient> 
+                        <diffuse>1 1 0 1</diffuse>
+                        <specular>1 1 0 1</specular>
+                    </material>
+                    <geometry>
+                        <mesh>
+                            <uri>/home/sbpena01/RBE550/src/meshes/foot.stl</uri>
+                            <scale>0.001 0.001 0.001</scale>
+                        </mesh>
+                    </geometry>
+                </visual>
+                <visual name='rear_right_toe_hitbox'>
+                    <material>
+                        <ambient>0 0 0 0.5</ambient> 
+                        <diffuse>0 0 0 0.5</diffuse>
+                        <specular>0 0 0 0.5</specular>
+                    </material>
+                    <geometry>
+                        <sphere>
+                            <radius>0.02</radius>
+                        </sphere>
+                    </geometry>
+                </visual>
+                <collision name='rear_right_toe'>
+                    <geometry>
+                        <sphere>
+                            <radius>0.02</radius>
+                        </sphere>
+                    </geometry>
+                </collision>
+                <pose relative_to='rear_right_toe'>0 0 0 0 0 0</pose>
+                <inertial>
+                    <mass>0.1</mass>
+                    <inertia>
+                        <ixx>0.1</ixx>
+                        <ixy>0</ixy>
+                        <ixz>0</ixz>
+                        <iyy>0.1</iyy>
+                        <iyz>0</iyz>
+                        <izz>0.1</izz>
+                    </inertia>
+                </inertial>
+            </link>
+
+            <joint name="rear_right_shoulder" type="revolute">
+                <pose relative_to='base_link'>0.093 0.036 0 0 0 0</pose>
+                <parent>base_link</parent>
+                <child>rear_right_shoulder_link</child>
+                <axis>
+                    <xyz expressed_in='base_link'>1 0 0</xyz>
+                    <limit>
+                        <lower>-0.548</lower>
+                        <upper>0.548</upper>
+                    </limit>
+                </axis>
+            </joint>
+            <joint name="rear_right_leg" type="revolute">
+                <pose relative_to='rear_right_shoulder_link'>0 0.052 0 0 0 0</pose>
+                <parent>rear_right_shoulder_link</parent>
+                <child>rear_right_leg_link</child>
+                <axis>
+                    <xyz expressed_in='rear_right_shoulder_link'>0 1 0</xyz>
+                    <limit>
+                        <lower>-2.666</lower>
+                        <upper>1.548</upper>
+                    </limit>
+                </axis>
+            </joint>
+            <joint name="rear_right_foot" type="revolute">
+                <pose relative_to='rear_right_leg_link'>-0.005 0 -0.072 0 0 0</pose>
+                <parent>rear_right_leg_link</parent>
+                <child>rear_right_foot_link</child>
+                <axis>
+                    <xyz expressed_in='base_link'>0 1 0</xyz>
+                    <limit>
+                        <lower>-0.1</lower>
+                        <upper>2.59</upper>
+                    </limit>
+                </axis>
+            </joint>
+            <joint name='rear_right_toe' type='fixed'>
+                <parent>rear_right_foot_link</parent>
+                <child>rear_right_toe_link</child>
+                <pose relative_to='rear_right_foot_link'>0 0 -0.069 0 0 0</pose>
+            </joint>
+        </model>
+    </world>
+</sdf>
