@@ -1,0 +1,16 @@
+/home/sbpena01/GitHub/RBE550-Quadruped/src/install/controls/lib/controls/talker
+/home/sbpena01/GitHub/RBE550-Quadruped/src/install/controls/share/ament_index/resource_index/package_run_dependencies/controls
+/home/sbpena01/GitHub/RBE550-Quadruped/src/install/controls/share/ament_index/resource_index/parent_prefix_path/controls
+/home/sbpena01/GitHub/RBE550-Quadruped/src/install/controls/share/controls/environment/ament_prefix_path.sh
+/home/sbpena01/GitHub/RBE550-Quadruped/src/install/controls/share/controls/environment/ament_prefix_path.dsv
+/home/sbpena01/GitHub/RBE550-Quadruped/src/install/controls/share/controls/environment/path.sh
+/home/sbpena01/GitHub/RBE550-Quadruped/src/install/controls/share/controls/environment/path.dsv
+/home/sbpena01/GitHub/RBE550-Quadruped/src/install/controls/share/controls/local_setup.bash
+/home/sbpena01/GitHub/RBE550-Quadruped/src/install/controls/share/controls/local_setup.sh
+/home/sbpena01/GitHub/RBE550-Quadruped/src/install/controls/share/controls/local_setup.zsh
+/home/sbpena01/GitHub/RBE550-Quadruped/src/install/controls/share/controls/local_setup.dsv
+/home/sbpena01/GitHub/RBE550-Quadruped/src/install/controls/share/controls/package.dsv
+/home/sbpena01/GitHub/RBE550-Quadruped/src/install/controls/share/ament_index/resource_index/packages/controls
+/home/sbpena01/GitHub/RBE550-Quadruped/src/install/controls/share/controls/cmake/controlsConfig.cmake
+/home/sbpena01/GitHub/RBE550-Quadruped/src/install/controls/share/controls/cmake/controlsConfig-version.cmake
+/home/sbpena01/GitHub/RBE550-Quadruped/src/install/controls/share/controls/package.xml

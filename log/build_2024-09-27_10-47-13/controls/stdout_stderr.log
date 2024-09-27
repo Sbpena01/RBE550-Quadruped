@@ -1,0 +1,26 @@
+running egg_info
+writing ../../build/controls/controls.egg-info/PKG-INFO
+writing dependency_links to ../../build/controls/controls.egg-info/dependency_links.txt
+writing entry points to ../../build/controls/controls.egg-info/entry_points.txt
+writing requirements to ../../build/controls/controls.egg-info/requires.txt
+writing top-level names to ../../build/controls/controls.egg-info/top_level.txt
+reading manifest file '../../build/controls/controls.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/controls/controls.egg-info/SOURCES.txt'
+running build
+running build_py
+copying controls/LegPositionControl.py -> /home/sbpena01/GitHub/RBE550-Quadruped/build/controls/build/lib/controls
+copying controls/__init__.py -> /home/sbpena01/GitHub/RBE550-Quadruped/build/controls/build/lib/controls
+running install
+running install_lib
+copying /home/sbpena01/GitHub/RBE550-Quadruped/build/controls/build/lib/controls/LegPositionControl.py -> /home/sbpena01/GitHub/RBE550-Quadruped/install/controls/lib/python3.12/site-packages/controls
+byte-compiling /home/sbpena01/GitHub/RBE550-Quadruped/install/controls/lib/python3.12/site-packages/controls/LegPositionControl.py to LegPositionControl.cpython-312.pyc
+running install_data
+copying resource/controls -> /home/sbpena01/GitHub/RBE550-Quadruped/install/controls/share/ament_index/resource_index/packages
+copying package.xml -> /home/sbpena01/GitHub/RBE550-Quadruped/install/controls/share/controls
+running install_egg_info
+removing '/home/sbpena01/GitHub/RBE550-Quadruped/install/controls/lib/python3.12/site-packages/controls-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../../build/controls/controls.egg-info to /home/sbpena01/GitHub/RBE550-Quadruped/install/controls/lib/python3.12/site-packages/controls-0.0.0-py3.12.egg-info
+running install_scripts
+Installing LegPositionControl script to /home/sbpena01/GitHub/RBE550-Quadruped/install/controls/lib/controls
+writing list of installed files to '/home/sbpena01/GitHub/RBE550-Quadruped/build/controls/install.log'

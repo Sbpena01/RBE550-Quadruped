@@ -1,0 +1,49 @@
+[0.020s] Invoking command in '/home/sbpena01/GitHub/RBE550-Quadruped/build/controls': CMAKE_PREFIX_PATH=/home/sbpena01/GitHub/RBE550-Quadruped/src/install/controls:/home/sbpena01/GitHub/RBE550-Quadruped/install/controls:/home/sbpena01/GitHub/RBE550-Quadruped/src/install/control:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy:/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/sbpena01/GitHub/RBE550-Quadruped/build/controls -- -j12 -l12
+[0.046s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.264s] -- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.290s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.298s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.319s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.334s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.393s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.395s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.465s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.542s] -- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.565s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.689s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.689s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/sbpena01/GitHub/RBE550-Quadruped/src/controls/include>
+[0.689s] -- Configured cppcheck exclude dirs and/or files: 
+[0.690s] -- Added test 'lint_cmake' to check CMake code style
+[0.691s] -- Added test 'uncrustify' to check C / C++ code style
+[0.691s] -- Configured uncrustify additional arguments: 
+[0.691s] -- Added test 'xmllint' to check XML markup files
+[0.693s] -- Configuring done (0.7s)
+[0.717s] -- Generating done (0.0s)
+[0.721s] -- Build files have been written to: /home/sbpena01/GitHub/RBE550-Quadruped/build/controls
+[0.768s] [ 16%] [32mBuilding CXX object CMakeFiles/ros_test.dir/src/ros_test.cpp.o[0m
+[0.779s] [ 83%] Built target listener
+[0.779s] [ 83%] Built target talker
+[0.804s] [100%] [32m[1mLinking CXX executable ros_test[0m
+[0.856s] [100%] Built target ros_test
+[0.868s] Invoked command in '/home/sbpena01/GitHub/RBE550-Quadruped/build/controls' returned '0': CMAKE_PREFIX_PATH=/home/sbpena01/GitHub/RBE550-Quadruped/src/install/controls:/home/sbpena01/GitHub/RBE550-Quadruped/install/controls:/home/sbpena01/GitHub/RBE550-Quadruped/src/install/control:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy:/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/sbpena01/GitHub/RBE550-Quadruped/build/controls -- -j12 -l12
+[0.918s] Invoking command in '/home/sbpena01/GitHub/RBE550-Quadruped/build/controls': CMAKE_PREFIX_PATH=/home/sbpena01/GitHub/RBE550-Quadruped/src/install/controls:/home/sbpena01/GitHub/RBE550-Quadruped/install/controls:/home/sbpena01/GitHub/RBE550-Quadruped/src/install/control:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy:/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/sbpena01/GitHub/RBE550-Quadruped/build/controls
+[0.927s] -- Install configuration: ""
+[0.927s] -- Installing: /home/sbpena01/GitHub/RBE550-Quadruped/install/controls/lib/controls/ros_test
+[0.928s] -- Up-to-date: /home/sbpena01/GitHub/RBE550-Quadruped/install/controls/lib/controls/talker
+[0.928s] -- Up-to-date: /home/sbpena01/GitHub/RBE550-Quadruped/install/controls/lib/controls/listener
+[0.928s] -- Up-to-date: /home/sbpena01/GitHub/RBE550-Quadruped/install/controls/share/ament_index/resource_index/package_run_dependencies/controls
+[0.929s] -- Installing: /home/sbpena01/GitHub/RBE550-Quadruped/install/controls/share/ament_index/resource_index/parent_prefix_path/controls
+[0.929s] -- Up-to-date: /home/sbpena01/GitHub/RBE550-Quadruped/install/controls/share/controls/environment/ament_prefix_path.sh
+[0.929s] -- Up-to-date: /home/sbpena01/GitHub/RBE550-Quadruped/install/controls/share/controls/environment/ament_prefix_path.dsv
+[0.929s] -- Up-to-date: /home/sbpena01/GitHub/RBE550-Quadruped/install/controls/share/controls/environment/path.sh
+[0.929s] -- Up-to-date: /home/sbpena01/GitHub/RBE550-Quadruped/install/controls/share/controls/environment/path.dsv
+[0.930s] -- Up-to-date: /home/sbpena01/GitHub/RBE550-Quadruped/install/controls/share/controls/local_setup.bash
+[0.930s] -- Up-to-date: /home/sbpena01/GitHub/RBE550-Quadruped/install/controls/share/controls/local_setup.sh
+[0.930s] -- Up-to-date: /home/sbpena01/GitHub/RBE550-Quadruped/install/controls/share/controls/local_setup.zsh
+[0.930s] -- Up-to-date: /home/sbpena01/GitHub/RBE550-Quadruped/install/controls/share/controls/local_setup.dsv
+[0.930s] -- Installing: /home/sbpena01/GitHub/RBE550-Quadruped/install/controls/share/controls/package.dsv
+[0.931s] -- Up-to-date: /home/sbpena01/GitHub/RBE550-Quadruped/install/controls/share/ament_index/resource_index/packages/controls
+[0.931s] -- Up-to-date: /home/sbpena01/GitHub/RBE550-Quadruped/install/controls/share/controls/cmake/controlsConfig.cmake
+[0.931s] -- Up-to-date: /home/sbpena01/GitHub/RBE550-Quadruped/install/controls/share/controls/cmake/controlsConfig-version.cmake
+[0.931s] -- Up-to-date: /home/sbpena01/GitHub/RBE550-Quadruped/install/controls/share/controls/package.xml
+[0.935s] Invoked command in '/home/sbpena01/GitHub/RBE550-Quadruped/build/controls' returned '0': CMAKE_PREFIX_PATH=/home/sbpena01/GitHub/RBE550-Quadruped/src/install/controls:/home/sbpena01/GitHub/RBE550-Quadruped/install/controls:/home/sbpena01/GitHub/RBE550-Quadruped/src/install/control:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy:/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/sbpena01/GitHub/RBE550-Quadruped/build/controls

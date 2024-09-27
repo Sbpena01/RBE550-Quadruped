@@ -1,0 +1,28 @@
+[1.421s] Invoking command in '/home/sbpena01/GitHub/RBE550-Quadruped/src/controls': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sbpena01/GitHub/RBE550-Quadruped/build/controls/prefix_override:/home/sbpena01/.local/share/pipx/venvs/colcon-common-extensions/lib/python3.12/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/sbpena01/GitHub/RBE550-Quadruped/install/controls/lib/python3.12/site-packages:${PYTHONPATH} /home/sbpena01/.local/share/pipx/venvs/colcon-common-extensions/bin/python -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/controls build --build-base /home/sbpena01/GitHub/RBE550-Quadruped/build/controls/build install --record /home/sbpena01/GitHub/RBE550-Quadruped/build/controls/install.log --single-version-externally-managed install_data
+[1.857s] running egg_info
+[1.889s] writing ../../build/controls/controls.egg-info/PKG-INFO
+[1.890s] writing dependency_links to ../../build/controls/controls.egg-info/dependency_links.txt
+[1.890s] writing entry points to ../../build/controls/controls.egg-info/entry_points.txt
+[1.891s] writing requirements to ../../build/controls/controls.egg-info/requires.txt
+[1.891s] writing top-level names to ../../build/controls/controls.egg-info/top_level.txt
+[1.951s] reading manifest file '../../build/controls/controls.egg-info/SOURCES.txt'
+[1.952s] adding license file 'LICENSE'
+[1.953s] writing manifest file '../../build/controls/controls.egg-info/SOURCES.txt'
+[1.953s] running build
+[1.953s] running build_py
+[1.954s] copying controls/LegPositionControl.py -> /home/sbpena01/GitHub/RBE550-Quadruped/build/controls/build/lib/controls
+[1.954s] copying controls/__init__.py -> /home/sbpena01/GitHub/RBE550-Quadruped/build/controls/build/lib/controls
+[1.954s] running install
+[1.968s] running install_lib
+[1.993s] copying /home/sbpena01/GitHub/RBE550-Quadruped/build/controls/build/lib/controls/LegPositionControl.py -> /home/sbpena01/GitHub/RBE550-Quadruped/install/controls/lib/python3.12/site-packages/controls
+[1.994s] byte-compiling /home/sbpena01/GitHub/RBE550-Quadruped/install/controls/lib/python3.12/site-packages/controls/LegPositionControl.py to LegPositionControl.cpython-312.pyc
+[1.995s] running install_data
+[1.995s] copying resource/controls -> /home/sbpena01/GitHub/RBE550-Quadruped/install/controls/share/ament_index/resource_index/packages
+[1.996s] copying package.xml -> /home/sbpena01/GitHub/RBE550-Quadruped/install/controls/share/controls
+[1.996s] running install_egg_info
+[2.030s] removing '/home/sbpena01/GitHub/RBE550-Quadruped/install/controls/lib/python3.12/site-packages/controls-0.0.0-py3.12.egg-info' (and everything under it)
+[2.031s] Copying ../../build/controls/controls.egg-info to /home/sbpena01/GitHub/RBE550-Quadruped/install/controls/lib/python3.12/site-packages/controls-0.0.0-py3.12.egg-info
+[2.034s] running install_scripts
+[2.191s] Installing LegPositionControl script to /home/sbpena01/GitHub/RBE550-Quadruped/install/controls/lib/controls
+[2.192s] writing list of installed files to '/home/sbpena01/GitHub/RBE550-Quadruped/build/controls/install.log'
+[2.237s] Invoked command in '/home/sbpena01/GitHub/RBE550-Quadruped/src/controls' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sbpena01/GitHub/RBE550-Quadruped/build/controls/prefix_override:/home/sbpena01/.local/share/pipx/venvs/colcon-common-extensions/lib/python3.12/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/sbpena01/GitHub/RBE550-Quadruped/install/controls/lib/python3.12/site-packages:${PYTHONPATH} /home/sbpena01/.local/share/pipx/venvs/colcon-common-extensions/bin/python -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/controls build --build-base /home/sbpena01/GitHub/RBE550-Quadruped/build/controls/build install --record /home/sbpena01/GitHub/RBE550-Quadruped/build/controls/install.log --single-version-externally-managed install_data

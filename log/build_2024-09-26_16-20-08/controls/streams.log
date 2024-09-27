@@ -1,0 +1,23 @@
+[0.019s] Invoking command in '/home/sbpena01/GitHub/RBE550-Quadruped/build/controls': CMAKE_PREFIX_PATH=/home/sbpena01/GitHub/RBE550-Quadruped/src/install/controls:/home/sbpena01/GitHub/RBE550-Quadruped/install/controls:/home/sbpena01/GitHub/RBE550-Quadruped/src/install/control:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy:/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/sbpena01/GitHub/RBE550-Quadruped/build/controls -- -j12 -l12
+[0.057s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.270s] -- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.296s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.307s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.331s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.344s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.413s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.416s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.502s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.578s] -- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.680s] [31mCMake Error at /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:53 (message):
+[0.680s]   ament_package_xml() package name 'controls' in '/package.xml' does not
+[0.680s]   match current PROJECT_NAME 'cpp_pubsub'.  You must call project() with the
+[0.680s]   same package name before.
+[0.680s] Call Stack (most recent call first):
+[0.680s]   /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package.cmake:63 (ament_package_xml)
+[0.680s]   CMakeLists.txt:24 (ament_package)
+[0.681s] 
+[0.681s] [0m
+[0.681s] -- Configuring incomplete, errors occurred!
+[0.688s] gmake: *** [Makefile:349: cmake_check_build_system] Error 1
+[0.690s] Invoked command in '/home/sbpena01/GitHub/RBE550-Quadruped/build/controls' returned '2': CMAKE_PREFIX_PATH=/home/sbpena01/GitHub/RBE550-Quadruped/src/install/controls:/home/sbpena01/GitHub/RBE550-Quadruped/install/controls:/home/sbpena01/GitHub/RBE550-Quadruped/src/install/control:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy:/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/sbpena01/GitHub/RBE550-Quadruped/build/controls -- -j12 -l12

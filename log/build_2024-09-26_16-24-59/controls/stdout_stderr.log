@@ -1,0 +1,33 @@
+-- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+-- Configuring done (0.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/sbpena01/GitHub/RBE550-Quadruped/build/controls
+[100%] Built target talk
+[100%] Built target listener
+-- Install configuration: ""
+-- Up-to-date: /home/sbpena01/GitHub/RBE550-Quadruped/install/controls/lib/controls/talk
+-- Up-to-date: /home/sbpena01/GitHub/RBE550-Quadruped/install/controls/lib/controls/listener
+-- Up-to-date: /home/sbpena01/GitHub/RBE550-Quadruped/install/controls/share/ament_index/resource_index/package_run_dependencies/controls
+-- Up-to-date: /home/sbpena01/GitHub/RBE550-Quadruped/install/controls/share/ament_index/resource_index/parent_prefix_path/controls
+-- Up-to-date: /home/sbpena01/GitHub/RBE550-Quadruped/install/controls/share/controls/environment/ament_prefix_path.sh
+-- Up-to-date: /home/sbpena01/GitHub/RBE550-Quadruped/install/controls/share/controls/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/sbpena01/GitHub/RBE550-Quadruped/install/controls/share/controls/environment/path.sh
+-- Up-to-date: /home/sbpena01/GitHub/RBE550-Quadruped/install/controls/share/controls/environment/path.dsv
+-- Up-to-date: /home/sbpena01/GitHub/RBE550-Quadruped/install/controls/share/controls/local_setup.bash
+-- Up-to-date: /home/sbpena01/GitHub/RBE550-Quadruped/install/controls/share/controls/local_setup.sh
+-- Up-to-date: /home/sbpena01/GitHub/RBE550-Quadruped/install/controls/share/controls/local_setup.zsh
+-- Up-to-date: /home/sbpena01/GitHub/RBE550-Quadruped/install/controls/share/controls/local_setup.dsv
+-- Installing: /home/sbpena01/GitHub/RBE550-Quadruped/install/controls/share/controls/package.dsv
+-- Up-to-date: /home/sbpena01/GitHub/RBE550-Quadruped/install/controls/share/ament_index/resource_index/packages/controls
+-- Up-to-date: /home/sbpena01/GitHub/RBE550-Quadruped/install/controls/share/controls/cmake/controlsConfig.cmake
+-- Up-to-date: /home/sbpena01/GitHub/RBE550-Quadruped/install/controls/share/controls/cmake/controlsConfig-version.cmake
+-- Up-to-date: /home/sbpena01/GitHub/RBE550-Quadruped/install/controls/share/controls/package.xml

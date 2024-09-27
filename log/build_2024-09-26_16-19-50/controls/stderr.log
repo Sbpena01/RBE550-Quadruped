@@ -1,0 +1,5 @@
+[31mCMake Error at CMakeLists.txt:4:
+  Parse error.  Expected "(", got identifier with text "to".
+
+[0m
+gmake: *** [Makefile:349: cmake_check_build_system] Error 1
