@@ -1,0 +1,32 @@
+[1.018s] Invoking command in '/home/sbpena01/GitHub/RBE550-Quadruped/src/leg_controls': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sbpena01/GitHub/RBE550-Quadruped/build/leg_controls/prefix_override:/home/sbpena01/.local/share/pipx/venvs/colcon-common-extensions/lib/python3.12/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/sbpena01/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages:${PYTHONPATH} /home/sbpena01/.local/share/pipx/venvs/colcon-common-extensions/bin/python -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/leg_controls build --build-base /home/sbpena01/GitHub/RBE550-Quadruped/build/leg_controls/build install --record /home/sbpena01/GitHub/RBE550-Quadruped/build/leg_controls/install.log --single-version-externally-managed install_data
+[1.293s] running egg_info
+[1.317s] writing ../../build/leg_controls/leg_controls.egg-info/PKG-INFO
+[1.317s] writing dependency_links to ../../build/leg_controls/leg_controls.egg-info/dependency_links.txt
+[1.318s] writing entry points to ../../build/leg_controls/leg_controls.egg-info/entry_points.txt
+[1.318s] writing requirements to ../../build/leg_controls/leg_controls.egg-info/requires.txt
+[1.318s] writing top-level names to ../../build/leg_controls/leg_controls.egg-info/top_level.txt
+[1.354s] reading manifest file '../../build/leg_controls/leg_controls.egg-info/SOURCES.txt'
+[1.354s] adding license file 'LICENSE'
+[1.355s] writing manifest file '../../build/leg_controls/leg_controls.egg-info/SOURCES.txt'
+[1.356s] running build
+[1.356s] running build_py
+[1.356s] copying leg_controls/FrontRightLeg.py -> /home/sbpena01/GitHub/RBE550-Quadruped/build/leg_controls/build/lib/leg_controls
+[1.356s] copying leg_controls/FrontLeftLeg.py -> /home/sbpena01/GitHub/RBE550-Quadruped/build/leg_controls/build/lib/leg_controls
+[1.356s] copying leg_controls/RearRightLeg.py -> /home/sbpena01/GitHub/RBE550-Quadruped/build/leg_controls/build/lib/leg_controls
+[1.356s] copying leg_controls/RearLeftLeg.py -> /home/sbpena01/GitHub/RBE550-Quadruped/build/leg_controls/build/lib/leg_controls
+[1.357s] copying leg_controls/__init__.py -> /home/sbpena01/GitHub/RBE550-Quadruped/build/leg_controls/build/lib/leg_controls
+[1.357s] running install
+[1.363s] running install_lib
+[1.381s] running install_data
+[1.381s] copying resource/leg_controls -> /home/sbpena01/GitHub/RBE550-Quadruped/install/leg_controls/share/ament_index/resource_index/packages
+[1.382s] copying package.xml -> /home/sbpena01/GitHub/RBE550-Quadruped/install/leg_controls/share/leg_controls
+[1.382s] running install_egg_info
+[1.416s] removing '/home/sbpena01/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls-0.0.0-py3.12.egg-info' (and everything under it)
+[1.416s] Copying ../../build/leg_controls/leg_controls.egg-info to /home/sbpena01/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls-0.0.0-py3.12.egg-info
+[1.417s] running install_scripts
+[1.515s] Installing FrontLeftLeg script to /home/sbpena01/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[1.516s] Installing FrontRightLeg script to /home/sbpena01/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[1.516s] Installing RearLeftLeg script to /home/sbpena01/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[1.516s] Installing RearRightLeg script to /home/sbpena01/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[1.517s] writing list of installed files to '/home/sbpena01/GitHub/RBE550-Quadruped/build/leg_controls/install.log'
+[1.551s] Invoked command in '/home/sbpena01/GitHub/RBE550-Quadruped/src/leg_controls' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sbpena01/GitHub/RBE550-Quadruped/build/leg_controls/prefix_override:/home/sbpena01/.local/share/pipx/venvs/colcon-common-extensions/lib/python3.12/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/sbpena01/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages:${PYTHONPATH} /home/sbpena01/.local/share/pipx/venvs/colcon-common-extensions/bin/python -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/leg_controls build --build-base /home/sbpena01/GitHub/RBE550-Quadruped/build/leg_controls/build install --record /home/sbpena01/GitHub/RBE550-Quadruped/build/leg_controls/install.log --single-version-externally-managed install_data

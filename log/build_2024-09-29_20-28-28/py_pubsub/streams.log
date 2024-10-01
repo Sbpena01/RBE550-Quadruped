@@ -1,0 +1,47 @@
+[1.029s] Invoking command in '/home/sbpena01/GitHub/RBE550-Quadruped/build/py_pubsub': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sbpena01/GitHub/RBE550-Quadruped/build/py_pubsub/prefix_override:/home/sbpena01/.local/share/pipx/venvs/colcon-common-extensions/lib/python3.12/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/sbpena01/GitHub/RBE550-Quadruped/install/py_pubsub/lib/python3.12/site-packages:${PYTHONPATH} /home/sbpena01/.local/share/pipx/venvs/colcon-common-extensions/bin/python -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/sbpena01/GitHub/RBE550-Quadruped/build/py_pubsub/build
+[1.319s] running develop
+[1.319s] /home/sbpena01/.local/share/pipx/venvs/colcon-common-extensions/lib/python3.12/site-packages/setuptools/command/develop.py:41: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[1.319s] !!
+[1.319s] 
+[1.319s]         ********************************************************************************
+[1.319s]         Please avoid running ``setup.py`` and ``easy_install``.
+[1.319s]         Instead, use pypa/build, pypa/installer or other
+[1.319s]         standards-based tools.
+[1.319s] 
+[1.319s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[1.319s]         ********************************************************************************
+[1.319s] 
+[1.319s] !!
+[1.319s]   easy_install.initialize_options(self)
+[1.493s] Removing /home/sbpena01/GitHub/RBE550-Quadruped/install/py_pubsub/lib/python3.12/site-packages/py-pubsub.egg-link (link to .)
+[1.520s] Invoked command in '/home/sbpena01/GitHub/RBE550-Quadruped/build/py_pubsub' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sbpena01/GitHub/RBE550-Quadruped/build/py_pubsub/prefix_override:/home/sbpena01/.local/share/pipx/venvs/colcon-common-extensions/lib/python3.12/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/sbpena01/GitHub/RBE550-Quadruped/install/py_pubsub/lib/python3.12/site-packages:${PYTHONPATH} /home/sbpena01/.local/share/pipx/venvs/colcon-common-extensions/bin/python -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/sbpena01/GitHub/RBE550-Quadruped/build/py_pubsub/build
+[1.521s] Invoking command in '/home/sbpena01/GitHub/RBE550-Quadruped/src/py_pubsub': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sbpena01/GitHub/RBE550-Quadruped/build/py_pubsub/prefix_override:/home/sbpena01/.local/share/pipx/venvs/colcon-common-extensions/lib/python3.12/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/sbpena01/GitHub/RBE550-Quadruped/install/py_pubsub/lib/python3.12/site-packages:${PYTHONPATH} /home/sbpena01/.local/share/pipx/venvs/colcon-common-extensions/bin/python -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/py_pubsub build --build-base /home/sbpena01/GitHub/RBE550-Quadruped/build/py_pubsub/build install --record /home/sbpena01/GitHub/RBE550-Quadruped/build/py_pubsub/install.log --single-version-externally-managed install_data --force
+[1.788s] running egg_info
+[1.809s] writing ../../build/py_pubsub/py_pubsub.egg-info/PKG-INFO
+[1.809s] writing dependency_links to ../../build/py_pubsub/py_pubsub.egg-info/dependency_links.txt
+[1.810s] writing entry points to ../../build/py_pubsub/py_pubsub.egg-info/entry_points.txt
+[1.810s] writing requirements to ../../build/py_pubsub/py_pubsub.egg-info/requires.txt
+[1.810s] writing top-level names to ../../build/py_pubsub/py_pubsub.egg-info/top_level.txt
+[1.844s] reading manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[1.844s] adding license file 'LICENSE'
+[1.845s] writing manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[1.845s] running build
+[1.845s] running build_py
+[1.846s] copying py_pubsub/publisher_member_function.py -> /home/sbpena01/GitHub/RBE550-Quadruped/build/py_pubsub/build/lib/py_pubsub
+[1.846s] copying py_pubsub/__init__.py -> /home/sbpena01/GitHub/RBE550-Quadruped/build/py_pubsub/build/lib/py_pubsub
+[1.846s] running install
+[1.852s] running install_lib
+[1.869s] creating /home/sbpena01/GitHub/RBE550-Quadruped/install/py_pubsub/lib/python3.12/site-packages/py_pubsub
+[1.869s] copying /home/sbpena01/GitHub/RBE550-Quadruped/build/py_pubsub/build/lib/py_pubsub/publisher_member_function.py -> /home/sbpena01/GitHub/RBE550-Quadruped/install/py_pubsub/lib/python3.12/site-packages/py_pubsub
+[1.869s] copying /home/sbpena01/GitHub/RBE550-Quadruped/build/py_pubsub/build/lib/py_pubsub/__init__.py -> /home/sbpena01/GitHub/RBE550-Quadruped/install/py_pubsub/lib/python3.12/site-packages/py_pubsub
+[1.870s] byte-compiling /home/sbpena01/GitHub/RBE550-Quadruped/install/py_pubsub/lib/python3.12/site-packages/py_pubsub/publisher_member_function.py to publisher_member_function.cpython-312.pyc
+[1.870s] byte-compiling /home/sbpena01/GitHub/RBE550-Quadruped/install/py_pubsub/lib/python3.12/site-packages/py_pubsub/__init__.py to __init__.cpython-312.pyc
+[1.871s] running install_data
+[1.871s] copying resource/py_pubsub -> /home/sbpena01/GitHub/RBE550-Quadruped/install/py_pubsub/share/ament_index/resource_index/packages
+[1.871s] copying package.xml -> /home/sbpena01/GitHub/RBE550-Quadruped/install/py_pubsub/share/py_pubsub
+[1.872s] running install_egg_info
+[1.889s] Copying ../../build/py_pubsub/py_pubsub.egg-info to /home/sbpena01/GitHub/RBE550-Quadruped/install/py_pubsub/lib/python3.12/site-packages/py_pubsub-0.0.0-py3.12.egg-info
+[1.893s] running install_scripts
+[1.985s] Installing talker script to /home/sbpena01/GitHub/RBE550-Quadruped/install/py_pubsub/lib/py_pubsub
+[1.985s] writing list of installed files to '/home/sbpena01/GitHub/RBE550-Quadruped/build/py_pubsub/install.log'
+[2.023s] Invoked command in '/home/sbpena01/GitHub/RBE550-Quadruped/src/py_pubsub' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sbpena01/GitHub/RBE550-Quadruped/build/py_pubsub/prefix_override:/home/sbpena01/.local/share/pipx/venvs/colcon-common-extensions/lib/python3.12/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/sbpena01/GitHub/RBE550-Quadruped/install/py_pubsub/lib/python3.12/site-packages:${PYTHONPATH} /home/sbpena01/.local/share/pipx/venvs/colcon-common-extensions/bin/python -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/py_pubsub build --build-base /home/sbpena01/GitHub/RBE550-Quadruped/build/py_pubsub/build install --record /home/sbpena01/GitHub/RBE550-Quadruped/build/py_pubsub/install.log --single-version-externally-managed install_data --force

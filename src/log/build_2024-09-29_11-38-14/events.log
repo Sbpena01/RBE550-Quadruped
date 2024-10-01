@@ -1,0 +1,622 @@
+[0.000000] (-) TimerEvent: {}
+[0.000507] (cpp_pubsub) JobQueued: {'identifier': 'cpp_pubsub', 'dependencies': OrderedDict()}
+[0.000544] (leg_controls) JobQueued: {'identifier': 'leg_controls', 'dependencies': OrderedDict()}
+[0.000701] (py_pubsub) JobQueued: {'identifier': 'py_pubsub', 'dependencies': OrderedDict()}
+[0.000722] (cpp_pubsub) JobStarted: {'identifier': 'cpp_pubsub'}
+[0.012407] (leg_controls) JobStarted: {'identifier': 'leg_controls'}
+[0.100246] (-) TimerEvent: {}
+[0.200838] (-) TimerEvent: {}
+[0.302220] (py_pubsub) JobStarted: {'identifier': 'py_pubsub'}
+[0.302636] (-) TimerEvent: {}
+[0.325354] (cpp_pubsub) JobProgress: {'identifier': 'cpp_pubsub', 'progress': 'cmake'}
+[0.390171] (cpp_pubsub) Command: {'cmd': ['/usr/bin/cmake', '/home/sbpena01/GitHub/RBE550-Quadruped/src/cpp_pubsub', '-DCMAKE_INSTALL_PREFIX=/home/sbpena01/GitHub/RBE550-Quadruped/src/install/cpp_pubsub'], 'cwd': '/home/sbpena01/GitHub/RBE550-Quadruped/src/build/cpp_pubsub', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'sbpena01', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/lib', 'HOME': '/home/sbpena01', 'OLDPWD': '/home/sbpena01/GitHub/RBE550-Quadruped', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1414', 'SYSTEMD_EXEC_PID': '2218', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3615', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'sbpena01', 'JOURNAL_STREAM': '8:8817', '_': '/home/sbpena01/.local/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/lib/pkgconfig', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'sbpena01', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/sbpena01/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ScottsLaptop:@/tmp/.ICE-unix/1810,unix/ScottsLaptop:/tmp/.ICE-unix/1810', 'INVOCATION_ID': 'd27275a51fe944baa376d984d891972b', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.9GONU2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:aae0c883-0871-4290-b414-7043eca55fdf', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/sbpena01/GitHub/RBE550-Quadruped/src/build/cpp_pubsub', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages:/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/lib/python3/dist-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy:/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel'}), 'shell': False}
+[0.402721] (-) TimerEvent: {}
+[0.503043] (-) TimerEvent: {}
+[0.603306] (-) TimerEvent: {}
+[0.707440] (-) TimerEvent: {}
+[0.810393] (-) TimerEvent: {}
+[0.910586] (-) TimerEvent: {}
+[1.010914] (-) TimerEvent: {}
+[1.111121] (-) TimerEvent: {}
+[1.211417] (-) TimerEvent: {}
+[1.311724] (-) TimerEvent: {}
+[1.411965] (-) TimerEvent: {}
+[1.454630] (py_pubsub) Command: {'cmd': ['/home/sbpena01/.local/share/pipx/venvs/colcon-common-extensions/bin/python', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../build/py_pubsub', 'build', '--build-base', '/home/sbpena01/GitHub/RBE550-Quadruped/src/build/py_pubsub/build', 'install', '--record', '/home/sbpena01/GitHub/RBE550-Quadruped/src/build/py_pubsub/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/sbpena01/GitHub/RBE550-Quadruped/src/py_pubsub', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'sbpena01', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/lib', 'HOME': '/home/sbpena01', 'OLDPWD': '/home/sbpena01/GitHub/RBE550-Quadruped', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1414', 'SYSTEMD_EXEC_PID': '2218', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3615', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'sbpena01', 'JOURNAL_STREAM': '8:8817', '_': '/home/sbpena01/.local/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/lib/pkgconfig', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'sbpena01', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/sbpena01/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ScottsLaptop:@/tmp/.ICE-unix/1810,unix/ScottsLaptop:/tmp/.ICE-unix/1810', 'INVOCATION_ID': 'd27275a51fe944baa376d984d891972b', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.9GONU2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:aae0c883-0871-4290-b414-7043eca55fdf', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/sbpena01/GitHub/RBE550-Quadruped/src/build/py_pubsub', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/sbpena01/GitHub/RBE550-Quadruped/src/build/py_pubsub/prefix_override:/home/sbpena01/.local/share/pipx/venvs/colcon-common-extensions/lib/python3.12/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/sbpena01/GitHub/RBE550-Quadruped/src/install/py_pubsub/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/lib/python3/dist-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel'}, 'shell': False}
+[1.512074] (-) TimerEvent: {}
+[1.541442] (leg_controls) Command: {'cmd': ['/home/sbpena01/.local/share/pipx/venvs/colcon-common-extensions/bin/python', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../build/leg_controls', 'build', '--build-base', '/home/sbpena01/GitHub/RBE550-Quadruped/src/build/leg_controls/build', 'install', '--record', '/home/sbpena01/GitHub/RBE550-Quadruped/src/build/leg_controls/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/sbpena01/GitHub/RBE550-Quadruped/src/leg_controls', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'sbpena01', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/lib', 'HOME': '/home/sbpena01', 'OLDPWD': '/home/sbpena01/GitHub/RBE550-Quadruped', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1414', 'SYSTEMD_EXEC_PID': '2218', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3615', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'sbpena01', 'JOURNAL_STREAM': '8:8817', '_': '/home/sbpena01/.local/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/lib/pkgconfig', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'sbpena01', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/sbpena01/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ScottsLaptop:@/tmp/.ICE-unix/1810,unix/ScottsLaptop:/tmp/.ICE-unix/1810', 'INVOCATION_ID': 'd27275a51fe944baa376d984d891972b', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.9GONU2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:aae0c883-0871-4290-b414-7043eca55fdf', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/sbpena01/GitHub/RBE550-Quadruped/src/build/leg_controls', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/sbpena01/GitHub/RBE550-Quadruped/src/build/leg_controls/prefix_override:/home/sbpena01/.local/share/pipx/venvs/colcon-common-extensions/lib/python3.12/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/sbpena01/GitHub/RBE550-Quadruped/src/install/leg_controls/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/lib/python3/dist-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel'}, 'shell': False}
+[1.612164] (-) TimerEvent: {}
+[1.712486] (-) TimerEvent: {}
+[1.812765] (-) TimerEvent: {}
+[1.844702] (py_pubsub) StdoutLine: {'line': b'running egg_info\n'}
+[1.845064] (py_pubsub) StdoutLine: {'line': b'creating ../build/py_pubsub/py_pubsub.egg-info\n'}
+[1.880428] (py_pubsub) StdoutLine: {'line': b'writing ../build/py_pubsub/py_pubsub.egg-info/PKG-INFO\n'}
+[1.880733] (py_pubsub) StdoutLine: {'line': b'writing dependency_links to ../build/py_pubsub/py_pubsub.egg-info/dependency_links.txt\n'}
+[1.880955] (py_pubsub) StdoutLine: {'line': b'writing entry points to ../build/py_pubsub/py_pubsub.egg-info/entry_points.txt\n'}
+[1.881162] (py_pubsub) StdoutLine: {'line': b'writing requirements to ../build/py_pubsub/py_pubsub.egg-info/requires.txt\n'}
+[1.881379] (py_pubsub) StdoutLine: {'line': b'writing top-level names to ../build/py_pubsub/py_pubsub.egg-info/top_level.txt\n'}
+[1.881594] (py_pubsub) StdoutLine: {'line': b"writing manifest file '../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'\n"}
+[1.912861] (-) TimerEvent: {}
+[1.940456] (py_pubsub) StdoutLine: {'line': b"reading manifest file '../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'\n"}
+[1.940798] (py_pubsub) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[1.941675] (py_pubsub) StdoutLine: {'line': b"writing manifest file '../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'\n"}
+[1.941875] (py_pubsub) StdoutLine: {'line': b'running build\n'}
+[1.942012] (py_pubsub) StdoutLine: {'line': b'running build_py\n'}
+[1.942150] (py_pubsub) StdoutLine: {'line': b'creating /home/sbpena01/GitHub/RBE550-Quadruped/src/build/py_pubsub/build/lib/py_pubsub\n'}
+[1.973000] (leg_controls) StdoutLine: {'line': b'running egg_info\n'}
+[1.973574] (leg_controls) StdoutLine: {'line': b'creating ../build/leg_controls/leg_controls.egg-info\n'}
+[2.013121] (-) TimerEvent: {}
+[2.025572] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/publisher_member_function.py -> /home/sbpena01/GitHub/RBE550-Quadruped/src/build/py_pubsub/build/lib/py_pubsub\n'}
+[2.026473] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/__init__.py -> /home/sbpena01/GitHub/RBE550-Quadruped/src/build/py_pubsub/build/lib/py_pubsub\n'}
+[2.027769] (py_pubsub) StdoutLine: {'line': b'running install\n'}
+[2.064291] (py_pubsub) StdoutLine: {'line': b'running install_lib\n'}
+[2.114567] (-) TimerEvent: {}
+[2.118450] (leg_controls) StdoutLine: {'line': b'writing ../build/leg_controls/leg_controls.egg-info/PKG-INFO\n'}
+[2.119803] (leg_controls) StdoutLine: {'line': b'writing dependency_links to ../build/leg_controls/leg_controls.egg-info/dependency_links.txt\n'}
+[2.120580] (leg_controls) StdoutLine: {'line': b'writing entry points to ../build/leg_controls/leg_controls.egg-info/entry_points.txt\n'}
+[2.121146] (leg_controls) StdoutLine: {'line': b'writing requirements to ../build/leg_controls/leg_controls.egg-info/requires.txt\n'}
+[2.121676] (leg_controls) StdoutLine: {'line': b'writing top-level names to ../build/leg_controls/leg_controls.egg-info/top_level.txt\n'}
+[2.122070] (leg_controls) StdoutLine: {'line': b"writing manifest file '../build/leg_controls/leg_controls.egg-info/SOURCES.txt'\n"}
+[2.138895] (py_pubsub) StdoutLine: {'line': b'creating /home/sbpena01/GitHub/RBE550-Quadruped/src/install/py_pubsub/lib/python3.12/site-packages/py_pubsub\n'}
+[2.139226] (py_pubsub) StdoutLine: {'line': b'copying /home/sbpena01/GitHub/RBE550-Quadruped/src/build/py_pubsub/build/lib/py_pubsub/publisher_member_function.py -> /home/sbpena01/GitHub/RBE550-Quadruped/src/install/py_pubsub/lib/python3.12/site-packages/py_pubsub\n'}
+[2.139449] (py_pubsub) StdoutLine: {'line': b'copying /home/sbpena01/GitHub/RBE550-Quadruped/src/build/py_pubsub/build/lib/py_pubsub/__init__.py -> /home/sbpena01/GitHub/RBE550-Quadruped/src/install/py_pubsub/lib/python3.12/site-packages/py_pubsub\n'}
+[2.139678] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/sbpena01/GitHub/RBE550-Quadruped/src/install/py_pubsub/lib/python3.12/site-packages/py_pubsub/publisher_member_function.py to publisher_member_function.cpython-312.pyc\n'}
+[2.139899] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/sbpena01/GitHub/RBE550-Quadruped/src/install/py_pubsub/lib/python3.12/site-packages/py_pubsub/__init__.py to __init__.cpython-312.pyc\n'}
+[2.140096] (py_pubsub) StdoutLine: {'line': b'running install_data\n'}
+[2.140308] (py_pubsub) StdoutLine: {'line': b'creating /home/sbpena01/GitHub/RBE550-Quadruped/src/install/py_pubsub/share/ament_index/resource_index/packages\n'}
+[2.172917] (leg_controls) StdoutLine: {'line': b"reading manifest file '../build/leg_controls/leg_controls.egg-info/SOURCES.txt'\n"}
+[2.173155] (leg_controls) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[2.173766] (leg_controls) StdoutLine: {'line': b"writing manifest file '../build/leg_controls/leg_controls.egg-info/SOURCES.txt'\n"}
+[2.173943] (leg_controls) StdoutLine: {'line': b'running build\n'}
+[2.174121] (leg_controls) StdoutLine: {'line': b'running build_py\n'}
+[2.174193] (leg_controls) StdoutLine: {'line': b'creating /home/sbpena01/GitHub/RBE550-Quadruped/src/build/leg_controls/build/lib/leg_controls\n'}
+[2.210818] (py_pubsub) StdoutLine: {'line': b'copying resource/py_pubsub -> /home/sbpena01/GitHub/RBE550-Quadruped/src/install/py_pubsub/share/ament_index/resource_index/packages\n'}
+[2.211900] (leg_controls) StdoutLine: {'line': b'copying leg_controls/FrontRightLeg.py -> /home/sbpena01/GitHub/RBE550-Quadruped/src/build/leg_controls/build/lib/leg_controls\n'}
+[2.212707] (py_pubsub) StdoutLine: {'line': b'copying package.xml -> /home/sbpena01/GitHub/RBE550-Quadruped/src/install/py_pubsub/share/py_pubsub\n'}
+[2.213641] (py_pubsub) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.214220] (leg_controls) StdoutLine: {'line': b'copying leg_controls/FrontLeftLeg.py -> /home/sbpena01/GitHub/RBE550-Quadruped/src/build/leg_controls/build/lib/leg_controls\n'}
+[2.214816] (-) TimerEvent: {}
+[2.215341] (leg_controls) StdoutLine: {'line': b'copying leg_controls/RearRightLeg.py -> /home/sbpena01/GitHub/RBE550-Quadruped/src/build/leg_controls/build/lib/leg_controls\n'}
+[2.216086] (leg_controls) StdoutLine: {'line': b'copying leg_controls/RearLeftLeg.py -> /home/sbpena01/GitHub/RBE550-Quadruped/src/build/leg_controls/build/lib/leg_controls\n'}
+[2.216657] (leg_controls) StdoutLine: {'line': b'copying leg_controls/__init__.py -> /home/sbpena01/GitHub/RBE550-Quadruped/src/build/leg_controls/build/lib/leg_controls\n'}
+[2.217202] (leg_controls) StdoutLine: {'line': b'running install\n'}
+[2.252606] (leg_controls) StdoutLine: {'line': b'running install_lib\n'}
+[2.289624] (py_pubsub) StdoutLine: {'line': b'Copying ../build/py_pubsub/py_pubsub.egg-info to /home/sbpena01/GitHub/RBE550-Quadruped/src/install/py_pubsub/lib/python3.12/site-packages/py_pubsub-0.0.0-py3.12.egg-info\n'}
+[2.292242] (py_pubsub) StdoutLine: {'line': b'running install_scripts\n'}
+[2.302288] (leg_controls) StdoutLine: {'line': b'creating /home/sbpena01/GitHub/RBE550-Quadruped/src/install/leg_controls/lib/python3.12/site-packages/leg_controls\n'}
+[2.302543] (leg_controls) StdoutLine: {'line': b'copying /home/sbpena01/GitHub/RBE550-Quadruped/src/build/leg_controls/build/lib/leg_controls/FrontRightLeg.py -> /home/sbpena01/GitHub/RBE550-Quadruped/src/install/leg_controls/lib/python3.12/site-packages/leg_controls\n'}
+[2.302673] (leg_controls) StdoutLine: {'line': b'copying /home/sbpena01/GitHub/RBE550-Quadruped/src/build/leg_controls/build/lib/leg_controls/FrontLeftLeg.py -> /home/sbpena01/GitHub/RBE550-Quadruped/src/install/leg_controls/lib/python3.12/site-packages/leg_controls\n'}
+[2.302841] (leg_controls) StdoutLine: {'line': b'copying /home/sbpena01/GitHub/RBE550-Quadruped/src/build/leg_controls/build/lib/leg_controls/RearRightLeg.py -> /home/sbpena01/GitHub/RBE550-Quadruped/src/install/leg_controls/lib/python3.12/site-packages/leg_controls\n'}
+[2.302958] (leg_controls) StdoutLine: {'line': b'copying /home/sbpena01/GitHub/RBE550-Quadruped/src/build/leg_controls/build/lib/leg_controls/RearLeftLeg.py -> /home/sbpena01/GitHub/RBE550-Quadruped/src/install/leg_controls/lib/python3.12/site-packages/leg_controls\n'}
+[2.303126] (leg_controls) StdoutLine: {'line': b'copying /home/sbpena01/GitHub/RBE550-Quadruped/src/build/leg_controls/build/lib/leg_controls/__init__.py -> /home/sbpena01/GitHub/RBE550-Quadruped/src/install/leg_controls/lib/python3.12/site-packages/leg_controls\n'}
+[2.303501] (leg_controls) StdoutLine: {'line': b'byte-compiling /home/sbpena01/GitHub/RBE550-Quadruped/src/install/leg_controls/lib/python3.12/site-packages/leg_controls/FrontRightLeg.py to FrontRightLeg.cpython-312.pyc\n'}
+[2.304122] (leg_controls) StdoutLine: {'line': b'byte-compiling /home/sbpena01/GitHub/RBE550-Quadruped/src/install/leg_controls/lib/python3.12/site-packages/leg_controls/FrontLeftLeg.py to FrontLeftLeg.cpython-312.pyc\n'}
+[2.304801] (leg_controls) StdoutLine: {'line': b'byte-compiling /home/sbpena01/GitHub/RBE550-Quadruped/src/install/leg_controls/lib/python3.12/site-packages/leg_controls/RearRightLeg.py to RearRightLeg.cpython-312.pyc\n'}
+[2.305262] (leg_controls) StdoutLine: {'line': b'byte-compiling /home/sbpena01/GitHub/RBE550-Quadruped/src/install/leg_controls/lib/python3.12/site-packages/leg_controls/RearLeftLeg.py to RearLeftLeg.cpython-312.pyc\n'}
+[2.305800] (leg_controls) StdoutLine: {'line': b'byte-compiling /home/sbpena01/GitHub/RBE550-Quadruped/src/install/leg_controls/lib/python3.12/site-packages/leg_controls/__init__.py to __init__.cpython-312.pyc\n'}
+[2.305952] (leg_controls) StdoutLine: {'line': b'running install_data\n'}
+[2.306261] (leg_controls) StdoutLine: {'line': b'creating /home/sbpena01/GitHub/RBE550-Quadruped/src/install/leg_controls/share/ament_index/resource_index/packages\n'}
+[2.306559] (leg_controls) StdoutLine: {'line': b'copying resource/leg_controls -> /home/sbpena01/GitHub/RBE550-Quadruped/src/install/leg_controls/share/ament_index/resource_index/packages\n'}
+[2.306857] (leg_controls) StdoutLine: {'line': b'copying package.xml -> /home/sbpena01/GitHub/RBE550-Quadruped/src/install/leg_controls/share/leg_controls\n'}
+[2.306988] (leg_controls) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.314913] (-) TimerEvent: {}
+[2.332842] (leg_controls) StdoutLine: {'line': b'Copying ../build/leg_controls/leg_controls.egg-info to /home/sbpena01/GitHub/RBE550-Quadruped/src/install/leg_controls/lib/python3.12/site-packages/leg_controls-0.0.0-py3.12.egg-info\n'}
+[2.333639] (leg_controls) StdoutLine: {'line': b'running install_scripts\n'}
+[2.398376] (py_pubsub) StdoutLine: {'line': b'Installing talker script to /home/sbpena01/GitHub/RBE550-Quadruped/src/install/py_pubsub/lib/py_pubsub\n'}
+[2.398717] (py_pubsub) StdoutLine: {'line': b"writing list of installed files to '/home/sbpena01/GitHub/RBE550-Quadruped/src/build/py_pubsub/install.log'\n"}
+[2.415059] (-) TimerEvent: {}
+[2.428449] (py_pubsub) CommandEnded: {'returncode': 0}
+[2.433524] (leg_controls) StdoutLine: {'line': b'Installing FrontLeftLeg script to /home/sbpena01/GitHub/RBE550-Quadruped/src/install/leg_controls/lib/leg_controls\n'}
+[2.433796] (leg_controls) StdoutLine: {'line': b'Installing FrontRightLeg script to /home/sbpena01/GitHub/RBE550-Quadruped/src/install/leg_controls/lib/leg_controls\n'}
+[2.434191] (leg_controls) StdoutLine: {'line': b'Installing RearLeftLeg script to /home/sbpena01/GitHub/RBE550-Quadruped/src/install/leg_controls/lib/leg_controls\n'}
+[2.434323] (leg_controls) StdoutLine: {'line': b'Installing RearRightLeg script to /home/sbpena01/GitHub/RBE550-Quadruped/src/install/leg_controls/lib/leg_controls\n'}
+[2.442425] (leg_controls) StdoutLine: {'line': b"writing list of installed files to '/home/sbpena01/GitHub/RBE550-Quadruped/src/build/leg_controls/install.log'\n"}
+[2.444220] (py_pubsub) JobEnded: {'identifier': 'py_pubsub', 'rc': 0}
+[2.467211] (leg_controls) CommandEnded: {'returncode': 0}
+[2.471660] (leg_controls) JobEnded: {'identifier': 'leg_controls', 'rc': 0}
+[2.515250] (-) TimerEvent: {}
+[2.615813] (-) TimerEvent: {}
+[2.716254] (-) TimerEvent: {}
+[2.816889] (-) TimerEvent: {}
+[2.917483] (-) TimerEvent: {}
+[3.018153] (-) TimerEvent: {}
+[3.118723] (-) TimerEvent: {}
+[3.219296] (-) TimerEvent: {}
+[3.322480] (-) TimerEvent: {}
+[3.423161] (-) TimerEvent: {}
+[3.444777] (cpp_pubsub) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.2.0\n'}
+[3.523394] (-) TimerEvent: {}
+[3.623873] (-) TimerEvent: {}
+[3.724181] (-) TimerEvent: {}
+[3.824810] (-) TimerEvent: {}
+[3.925212] (-) TimerEvent: {}
+[4.025747] (-) TimerEvent: {}
+[4.126133] (-) TimerEvent: {}
+[4.226617] (-) TimerEvent: {}
+[4.327252] (-) TimerEvent: {}
+[4.427817] (-) TimerEvent: {}
+[4.528293] (-) TimerEvent: {}
+[4.628914] (-) TimerEvent: {}
+[4.729558] (-) TimerEvent: {}
+[4.830137] (-) TimerEvent: {}
+[4.930793] (-) TimerEvent: {}
+[5.031383] (-) TimerEvent: {}
+[5.131856] (-) TimerEvent: {}
+[5.232231] (-) TimerEvent: {}
+[5.332826] (-) TimerEvent: {}
+[5.433388] (-) TimerEvent: {}
+[5.511060] (cpp_pubsub) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.2.0\n'}
+[5.533425] (-) TimerEvent: {}
+[5.633763] (-) TimerEvent: {}
+[5.732096] (cpp_pubsub) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[5.733866] (-) TimerEvent: {}
+[5.834166] (-) TimerEvent: {}
+[5.934881] (-) TimerEvent: {}
+[6.035388] (-) TimerEvent: {}
+[6.135690] (-) TimerEvent: {}
+[6.236216] (-) TimerEvent: {}
+[6.248512] (cpp_pubsub) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[6.259815] (cpp_pubsub) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[6.261474] (cpp_pubsub) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[6.262334] (cpp_pubsub) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[6.278187] (cpp_pubsub) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[6.336343] (-) TimerEvent: {}
+[6.436597] (-) TimerEvent: {}
+[6.483906] (cpp_pubsub) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[6.495806] (cpp_pubsub) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[6.496180] (cpp_pubsub) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[6.496941] (cpp_pubsub) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[6.536789] (-) TimerEvent: {}
+[6.637303] (-) TimerEvent: {}
+[6.737719] (-) TimerEvent: {}
+[6.838083] (-) TimerEvent: {}
+[6.938618] (-) TimerEvent: {}
+[7.039185] (-) TimerEvent: {}
+[7.139666] (-) TimerEvent: {}
+[7.240006] (-) TimerEvent: {}
+[7.340484] (-) TimerEvent: {}
+[7.441072] (-) TimerEvent: {}
+[7.541585] (-) TimerEvent: {}
+[7.642010] (-) TimerEvent: {}
+[7.742625] (-) TimerEvent: {}
+[7.843199] (-) TimerEvent: {}
+[7.943511] (-) TimerEvent: {}
+[7.945412] (cpp_pubsub) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[8.043671] (-) TimerEvent: {}
+[8.144150] (-) TimerEvent: {}
+[8.244469] (-) TimerEvent: {}
+[8.345027] (-) TimerEvent: {}
+[8.433522] (cpp_pubsub) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[8.445133] (-) TimerEvent: {}
+[8.545341] (-) TimerEvent: {}
+[8.645618] (-) TimerEvent: {}
+[8.746189] (-) TimerEvent: {}
+[8.846775] (-) TimerEvent: {}
+[8.947346] (-) TimerEvent: {}
+[9.048045] (-) TimerEvent: {}
+[9.148425] (-) TimerEvent: {}
+[9.249041] (-) TimerEvent: {}
+[9.349413] (-) TimerEvent: {}
+[9.454860] (-) TimerEvent: {}
+[9.557391] (-) TimerEvent: {}
+[9.615510] (cpp_pubsub) StdoutLine: {'line': b'-- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[9.657457] (-) TimerEvent: {}
+[9.757799] (-) TimerEvent: {}
+[9.858345] (-) TimerEvent: {}
+[9.958975] (-) TimerEvent: {}
+[10.059328] (-) TimerEvent: {}
+[10.159962] (-) TimerEvent: {}
+[10.260482] (-) TimerEvent: {}
+[10.361016] (-) TimerEvent: {}
+[10.465638] (-) TimerEvent: {}
+[10.548097] (cpp_pubsub) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[10.565739] (-) TimerEvent: {}
+[10.665946] (-) TimerEvent: {}
+[10.766223] (-) TimerEvent: {}
+[10.858228] (cpp_pubsub) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[10.866322] (-) TimerEvent: {}
+[10.966683] (-) TimerEvent: {}
+[11.068526] (-) TimerEvent: {}
+[11.140108] (cpp_pubsub) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[11.168659] (-) TimerEvent: {}
+[11.269057] (-) TimerEvent: {}
+[11.327285] (cpp_pubsub) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[11.369303] (-) TimerEvent: {}
+[11.469985] (-) TimerEvent: {}
+[11.570408] (-) TimerEvent: {}
+[11.670833] (-) TimerEvent: {}
+[11.771224] (-) TimerEvent: {}
+[11.871508] (-) TimerEvent: {}
+[11.971931] (-) TimerEvent: {}
+[12.072202] (-) TimerEvent: {}
+[12.172615] (-) TimerEvent: {}
+[12.273184] (-) TimerEvent: {}
+[12.373849] (-) TimerEvent: {}
+[12.474375] (-) TimerEvent: {}
+[12.519749] (cpp_pubsub) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[12.574483] (-) TimerEvent: {}
+[12.612289] (cpp_pubsub) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[12.674569] (-) TimerEvent: {}
+[12.774920] (-) TimerEvent: {}
+[12.875375] (-) TimerEvent: {}
+[12.975796] (-) TimerEvent: {}
+[13.076176] (-) TimerEvent: {}
+[13.177096] (-) TimerEvent: {}
+[13.280303] (-) TimerEvent: {}
+[13.380718] (-) TimerEvent: {}
+[13.481093] (-) TimerEvent: {}
+[13.581569] (-) TimerEvent: {}
+[13.681882] (-) TimerEvent: {}
+[13.782560] (-) TimerEvent: {}
+[13.883139] (-) TimerEvent: {}
+[13.983662] (-) TimerEvent: {}
+[14.083961] (-) TimerEvent: {}
+[14.119129] (cpp_pubsub) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[14.184161] (-) TimerEvent: {}
+[14.284549] (-) TimerEvent: {}
+[14.384939] (-) TimerEvent: {}
+[14.485197] (-) TimerEvent: {}
+[14.585680] (-) TimerEvent: {}
+[14.665194] (cpp_pubsub) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[14.686782] (-) TimerEvent: {}
+[14.694648] (cpp_pubsub) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[14.856780] (-) TimerEvent: {}
+[14.957193] (-) TimerEvent: {}
+[15.057558] (-) TimerEvent: {}
+[15.158041] (-) TimerEvent: {}
+[15.258423] (-) TimerEvent: {}
+[15.358810] (-) TimerEvent: {}
+[15.459406] (-) TimerEvent: {}
+[15.559892] (-) TimerEvent: {}
+[15.660425] (-) TimerEvent: {}
+[15.761068] (-) TimerEvent: {}
+[15.861769] (-) TimerEvent: {}
+[15.962714] (-) TimerEvent: {}
+[16.063740] (-) TimerEvent: {}
+[16.165074] (-) TimerEvent: {}
+[16.266545] (-) TimerEvent: {}
+[16.367908] (-) TimerEvent: {}
+[16.469349] (-) TimerEvent: {}
+[16.569848] (-) TimerEvent: {}
+[16.772880] (-) TimerEvent: {}
+[16.873471] (-) TimerEvent: {}
+[16.974084] (-) TimerEvent: {}
+[17.075323] (-) TimerEvent: {}
+[17.176046] (-) TimerEvent: {}
+[17.276845] (-) TimerEvent: {}
+[17.377673] (-) TimerEvent: {}
+[17.478297] (-) TimerEvent: {}
+[17.578827] (-) TimerEvent: {}
+[17.679196] (-) TimerEvent: {}
+[17.779612] (-) TimerEvent: {}
+[17.932459] (-) TimerEvent: {}
+[18.032925] (-) TimerEvent: {}
+[18.133205] (-) TimerEvent: {}
+[18.236622] (-) TimerEvent: {}
+[18.337232] (-) TimerEvent: {}
+[18.437738] (-) TimerEvent: {}
+[18.539649] (-) TimerEvent: {}
+[18.640304] (-) TimerEvent: {}
+[18.740712] (-) TimerEvent: {}
+[18.841320] (-) TimerEvent: {}
+[18.998742] (-) TimerEvent: {}
+[19.099484] (-) TimerEvent: {}
+[19.200142] (-) TimerEvent: {}
+[19.300807] (-) TimerEvent: {}
+[19.401409] (-) TimerEvent: {}
+[19.501877] (-) TimerEvent: {}
+[20.557260] (-) TimerEvent: {}
+[20.657872] (-) TimerEvent: {}
+[20.758472] (-) TimerEvent: {}
+[20.858874] (-) TimerEvent: {}
+[21.062989] (-) TimerEvent: {}
+[21.163685] (-) TimerEvent: {}
+[21.264234] (-) TimerEvent: {}
+[21.364732] (-) TimerEvent: {}
+[21.465304] (-) TimerEvent: {}
+[21.565867] (-) TimerEvent: {}
+[21.641306] (cpp_pubsub) StdoutLine: {'line': b'-- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[21.666062] (-) TimerEvent: {}
+[21.766848] (-) TimerEvent: {}
+[21.809603] (cpp_pubsub) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[21.867145] (-) TimerEvent: {}
+[21.967801] (-) TimerEvent: {}
+[22.068078] (-) TimerEvent: {}
+[22.168623] (-) TimerEvent: {}
+[22.269142] (-) TimerEvent: {}
+[22.369404] (-) TimerEvent: {}
+[22.469691] (-) TimerEvent: {}
+[22.570282] (-) TimerEvent: {}
+[22.670856] (-) TimerEvent: {}
+[22.771320] (-) TimerEvent: {}
+[22.871865] (-) TimerEvent: {}
+[22.972639] (-) TimerEvent: {}
+[23.073270] (-) TimerEvent: {}
+[23.173824] (-) TimerEvent: {}
+[23.274067] (-) TimerEvent: {}
+[23.374530] (-) TimerEvent: {}
+[23.474872] (-) TimerEvent: {}
+[23.575542] (-) TimerEvent: {}
+[23.676170] (-) TimerEvent: {}
+[23.776629] (-) TimerEvent: {}
+[23.877409] (-) TimerEvent: {}
+[23.978007] (-) TimerEvent: {}
+[24.078418] (-) TimerEvent: {}
+[24.179031] (-) TimerEvent: {}
+[24.279307] (-) TimerEvent: {}
+[24.379648] (-) TimerEvent: {}
+[24.480149] (-) TimerEvent: {}
+[24.580563] (-) TimerEvent: {}
+[24.680887] (-) TimerEvent: {}
+[24.781411] (-) TimerEvent: {}
+[24.881881] (-) TimerEvent: {}
+[24.982510] (-) TimerEvent: {}
+[25.083307] (-) TimerEvent: {}
+[25.184043] (-) TimerEvent: {}
+[25.284696] (-) TimerEvent: {}
+[25.385471] (-) TimerEvent: {}
+[25.486101] (-) TimerEvent: {}
+[25.586600] (-) TimerEvent: {}
+[25.687097] (-) TimerEvent: {}
+[25.787486] (-) TimerEvent: {}
+[25.888137] (-) TimerEvent: {}
+[26.013506] (-) TimerEvent: {}
+[26.114289] (-) TimerEvent: {}
+[26.214836] (-) TimerEvent: {}
+[26.315445] (-) TimerEvent: {}
+[26.416008] (-) TimerEvent: {}
+[26.516683] (-) TimerEvent: {}
+[26.618509] (-) TimerEvent: {}
+[26.719461] (-) TimerEvent: {}
+[26.819739] (-) TimerEvent: {}
+[26.919976] (-) TimerEvent: {}
+[27.020408] (-) TimerEvent: {}
+[27.120703] (-) TimerEvent: {}
+[27.155396] (cpp_pubsub) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[27.159446] (cpp_pubsub) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[27.160210] (cpp_pubsub) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[27.168957] (cpp_pubsub) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[27.174753] (cpp_pubsub) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[27.175001] (cpp_pubsub) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[27.178044] (cpp_pubsub) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[27.220841] (-) TimerEvent: {}
+[27.321328] (-) TimerEvent: {}
+[27.422046] (-) TimerEvent: {}
+[27.522769] (-) TimerEvent: {}
+[27.580718] (cpp_pubsub) StdoutLine: {'line': b'-- Configuring done (27.2s)\n'}
+[27.623011] (-) TimerEvent: {}
+[27.721528] (cpp_pubsub) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[27.723132] (-) TimerEvent: {}
+[27.725180] (cpp_pubsub) StdoutLine: {'line': b'-- Build files have been written to: /home/sbpena01/GitHub/RBE550-Quadruped/src/build/cpp_pubsub\n'}
+[27.740678] (cpp_pubsub) CommandEnded: {'returncode': 0}
+[27.741417] (cpp_pubsub) JobProgress: {'identifier': 'cpp_pubsub', 'progress': 'build'}
+[27.742353] (cpp_pubsub) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sbpena01/GitHub/RBE550-Quadruped/src/build/cpp_pubsub', '--', '-j12', '-l12'], 'cwd': '/home/sbpena01/GitHub/RBE550-Quadruped/src/build/cpp_pubsub', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'sbpena01', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/lib', 'HOME': '/home/sbpena01', 'OLDPWD': '/home/sbpena01/GitHub/RBE550-Quadruped', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1414', 'SYSTEMD_EXEC_PID': '2218', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3615', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'sbpena01', 'JOURNAL_STREAM': '8:8817', '_': '/home/sbpena01/.local/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/lib/pkgconfig', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'sbpena01', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/sbpena01/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ScottsLaptop:@/tmp/.ICE-unix/1810,unix/ScottsLaptop:/tmp/.ICE-unix/1810', 'INVOCATION_ID': 'd27275a51fe944baa376d984d891972b', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.9GONU2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:aae0c883-0871-4290-b414-7043eca55fdf', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/sbpena01/GitHub/RBE550-Quadruped/src/build/cpp_pubsub', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages:/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/lib/python3/dist-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy:/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel'}), 'shell': False}
+[27.795941] (cpp_pubsub) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/listen.dir/src/subscriber_lambda_function.cpp.o\x1b[0m\n'}
+[27.796097] (cpp_pubsub) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/talk.dir/src/publisher_lambda_function.cpp.o\x1b[0m\n'}
+[27.826507] (-) TimerEvent: {}
+[27.927332] (-) TimerEvent: {}
+[28.027790] (-) TimerEvent: {}
+[28.128449] (-) TimerEvent: {}
+[28.228982] (-) TimerEvent: {}
+[28.329580] (-) TimerEvent: {}
+[28.429941] (-) TimerEvent: {}
+[28.530755] (-) TimerEvent: {}
+[28.631350] (-) TimerEvent: {}
+[28.732019] (-) TimerEvent: {}
+[28.832600] (-) TimerEvent: {}
+[28.933411] (-) TimerEvent: {}
+[29.034059] (-) TimerEvent: {}
+[29.134450] (-) TimerEvent: {}
+[29.235165] (-) TimerEvent: {}
+[29.335948] (-) TimerEvent: {}
+[29.436466] (-) TimerEvent: {}
+[29.536986] (-) TimerEvent: {}
+[29.637273] (-) TimerEvent: {}
+[29.737603] (-) TimerEvent: {}
+[29.838167] (-) TimerEvent: {}
+[29.938551] (-) TimerEvent: {}
+[30.039066] (-) TimerEvent: {}
+[30.139788] (-) TimerEvent: {}
+[30.240417] (-) TimerEvent: {}
+[30.341028] (-) TimerEvent: {}
+[30.441773] (-) TimerEvent: {}
+[30.542482] (-) TimerEvent: {}
+[30.643139] (-) TimerEvent: {}
+[30.743771] (-) TimerEvent: {}
+[30.844225] (-) TimerEvent: {}
+[30.944947] (-) TimerEvent: {}
+[31.045537] (-) TimerEvent: {}
+[31.595190] (-) TimerEvent: {}
+[31.695942] (-) TimerEvent: {}
+[31.796597] (-) TimerEvent: {}
+[31.897288] (-) TimerEvent: {}
+[31.997996] (-) TimerEvent: {}
+[32.098693] (-) TimerEvent: {}
+[32.199359] (-) TimerEvent: {}
+[32.300079] (-) TimerEvent: {}
+[32.400792] (-) TimerEvent: {}
+[32.501392] (-) TimerEvent: {}
+[32.602057] (-) TimerEvent: {}
+[32.702633] (-) TimerEvent: {}
+[32.803026] (-) TimerEvent: {}
+[32.903597] (-) TimerEvent: {}
+[33.004055] (-) TimerEvent: {}
+[33.104467] (-) TimerEvent: {}
+[33.205048] (-) TimerEvent: {}
+[33.305573] (-) TimerEvent: {}
+[33.406126] (-) TimerEvent: {}
+[33.506618] (-) TimerEvent: {}
+[33.607261] (-) TimerEvent: {}
+[33.707888] (-) TimerEvent: {}
+[33.808558] (-) TimerEvent: {}
+[33.909204] (-) TimerEvent: {}
+[34.009769] (-) TimerEvent: {}
+[34.110255] (-) TimerEvent: {}
+[34.211001] (-) TimerEvent: {}
+[34.311708] (-) TimerEvent: {}
+[34.412405] (-) TimerEvent: {}
+[34.512836] (-) TimerEvent: {}
+[34.613475] (-) TimerEvent: {}
+[34.713997] (-) TimerEvent: {}
+[34.814636] (-) TimerEvent: {}
+[34.914945] (-) TimerEvent: {}
+[35.015443] (-) TimerEvent: {}
+[35.115972] (-) TimerEvent: {}
+[35.216424] (-) TimerEvent: {}
+[35.317133] (-) TimerEvent: {}
+[35.417750] (-) TimerEvent: {}
+[35.518123] (-) TimerEvent: {}
+[35.618429] (-) TimerEvent: {}
+[35.718876] (-) TimerEvent: {}
+[35.819294] (-) TimerEvent: {}
+[35.919725] (-) TimerEvent: {}
+[36.020203] (-) TimerEvent: {}
+[36.120638] (-) TimerEvent: {}
+[36.221312] (-) TimerEvent: {}
+[36.321937] (-) TimerEvent: {}
+[36.422407] (-) TimerEvent: {}
+[36.522781] (-) TimerEvent: {}
+[36.623232] (-) TimerEvent: {}
+[36.723903] (-) TimerEvent: {}
+[36.824359] (-) TimerEvent: {}
+[36.925030] (-) TimerEvent: {}
+[37.025504] (-) TimerEvent: {}
+[37.126161] (-) TimerEvent: {}
+[37.226780] (-) TimerEvent: {}
+[37.327231] (-) TimerEvent: {}
+[37.427909] (-) TimerEvent: {}
+[37.528557] (-) TimerEvent: {}
+[37.629112] (-) TimerEvent: {}
+[37.729625] (-) TimerEvent: {}
+[37.830281] (-) TimerEvent: {}
+[37.930669] (-) TimerEvent: {}
+[38.031182] (-) TimerEvent: {}
+[38.131486] (-) TimerEvent: {}
+[38.231847] (-) TimerEvent: {}
+[38.332239] (-) TimerEvent: {}
+[38.432740] (-) TimerEvent: {}
+[38.533114] (-) TimerEvent: {}
+[38.633373] (-) TimerEvent: {}
+[38.733611] (-) TimerEvent: {}
+[38.833911] (-) TimerEvent: {}
+[38.934179] (-) TimerEvent: {}
+[39.034459] (-) TimerEvent: {}
+[39.134735] (-) TimerEvent: {}
+[39.235063] (-) TimerEvent: {}
+[39.335321] (-) TimerEvent: {}
+[39.435573] (-) TimerEvent: {}
+[39.535845] (-) TimerEvent: {}
+[39.636161] (-) TimerEvent: {}
+[39.736441] (-) TimerEvent: {}
+[39.836736] (-) TimerEvent: {}
+[39.937003] (-) TimerEvent: {}
+[40.037295] (-) TimerEvent: {}
+[40.137544] (-) TimerEvent: {}
+[40.237842] (-) TimerEvent: {}
+[40.338111] (-) TimerEvent: {}
+[40.438425] (-) TimerEvent: {}
+[40.538762] (-) TimerEvent: {}
+[40.639055] (-) TimerEvent: {}
+[40.739334] (-) TimerEvent: {}
+[40.839626] (-) TimerEvent: {}
+[40.939896] (-) TimerEvent: {}
+[41.040195] (-) TimerEvent: {}
+[41.140465] (-) TimerEvent: {}
+[41.240739] (-) TimerEvent: {}
+[41.341006] (-) TimerEvent: {}
+[41.441259] (-) TimerEvent: {}
+[41.541539] (-) TimerEvent: {}
+[41.641844] (-) TimerEvent: {}
+[41.742131] (-) TimerEvent: {}
+[41.842383] (-) TimerEvent: {}
+[41.942667] (-) TimerEvent: {}
+[42.042999] (-) TimerEvent: {}
+[42.143320] (-) TimerEvent: {}
+[42.243569] (-) TimerEvent: {}
+[42.343846] (-) TimerEvent: {}
+[42.444098] (-) TimerEvent: {}
+[42.544359] (-) TimerEvent: {}
+[42.644635] (-) TimerEvent: {}
+[42.744889] (-) TimerEvent: {}
+[42.845183] (-) TimerEvent: {}
+[42.945460] (-) TimerEvent: {}
+[43.045729] (-) TimerEvent: {}
+[43.145990] (-) TimerEvent: {}
+[43.246280] (-) TimerEvent: {}
+[43.346573] (-) TimerEvent: {}
+[43.446875] (-) TimerEvent: {}
+[43.547128] (-) TimerEvent: {}
+[43.647389] (-) TimerEvent: {}
+[43.747659] (-) TimerEvent: {}
+[43.847965] (-) TimerEvent: {}
+[43.948219] (-) TimerEvent: {}
+[44.048472] (-) TimerEvent: {}
+[44.106369] (cpp_pubsub) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable talk\x1b[0m\n'}
+[44.148564] (-) TimerEvent: {}
+[44.248805] (-) TimerEvent: {}
+[44.349054] (-) TimerEvent: {}
+[44.449342] (-) TimerEvent: {}
+[44.549609] (-) TimerEvent: {}
+[44.649897] (-) TimerEvent: {}
+[44.750150] (-) TimerEvent: {}
+[44.850433] (-) TimerEvent: {}
+[44.950679] (-) TimerEvent: {}
+[45.050966] (-) TimerEvent: {}
+[45.151208] (-) TimerEvent: {}
+[45.254440] (-) TimerEvent: {}
+[45.354744] (-) TimerEvent: {}
+[45.455046] (-) TimerEvent: {}
+[45.555288] (-) TimerEvent: {}
+[45.655560] (-) TimerEvent: {}
+[45.755848] (-) TimerEvent: {}
+[45.770794] (cpp_pubsub) StdoutLine: {'line': b'[ 75%] Built target talk\n'}
+[45.855993] (-) TimerEvent: {}
+[45.956244] (-) TimerEvent: {}
+[46.056548] (-) TimerEvent: {}
+[46.156808] (-) TimerEvent: {}
+[46.257103] (-) TimerEvent: {}
+[46.357369] (-) TimerEvent: {}
+[46.457628] (-) TimerEvent: {}
+[46.557842] (-) TimerEvent: {}
+[46.658134] (-) TimerEvent: {}
+[46.758341] (-) TimerEvent: {}
+[46.858573] (-) TimerEvent: {}
+[46.958796] (-) TimerEvent: {}
+[47.059031] (-) TimerEvent: {}
+[47.159348] (-) TimerEvent: {}
+[47.259806] (-) TimerEvent: {}
+[47.360053] (-) TimerEvent: {}
+[47.460326] (-) TimerEvent: {}
+[47.560584] (-) TimerEvent: {}
+[47.660439] (cpp_pubsub) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable listen\x1b[0m\n'}
+[47.660600] (-) TimerEvent: {}
+[47.760800] (-) TimerEvent: {}
+[47.861192] (-) TimerEvent: {}
+[47.952837] (cpp_pubsub) StdoutLine: {'line': b'[100%] Built target listen\n'}
+[47.961283] (-) TimerEvent: {}
+[47.965665] (cpp_pubsub) CommandEnded: {'returncode': 0}
+[48.007837] (cpp_pubsub) JobProgress: {'identifier': 'cpp_pubsub', 'progress': 'install'}
+[48.019975] (cpp_pubsub) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/sbpena01/GitHub/RBE550-Quadruped/src/build/cpp_pubsub'], 'cwd': '/home/sbpena01/GitHub/RBE550-Quadruped/src/build/cpp_pubsub', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'sbpena01', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/lib', 'HOME': '/home/sbpena01', 'OLDPWD': '/home/sbpena01/GitHub/RBE550-Quadruped', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1414', 'SYSTEMD_EXEC_PID': '2218', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3615', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'sbpena01', 'JOURNAL_STREAM': '8:8817', '_': '/home/sbpena01/.local/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/lib/pkgconfig', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'sbpena01', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/sbpena01/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ScottsLaptop:@/tmp/.ICE-unix/1810,unix/ScottsLaptop:/tmp/.ICE-unix/1810', 'INVOCATION_ID': 'd27275a51fe944baa376d984d891972b', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.9GONU2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:aae0c883-0871-4290-b414-7043eca55fdf', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/sbpena01/GitHub/RBE550-Quadruped/src/build/cpp_pubsub', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages:/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/lib/python3/dist-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy:/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel'}), 'shell': False}
+[48.030538] (cpp_pubsub) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[48.030810] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/sbpena01/GitHub/RBE550-Quadruped/src/install/cpp_pubsub/lib/cpp_pubsub/talk\n'}
+[48.032278] (cpp_pubsub) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/sbpena01/GitHub/RBE550-Quadruped/src/install/cpp_pubsub/lib/cpp_pubsub/talk" to ""\n'}
+[48.032467] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/sbpena01/GitHub/RBE550-Quadruped/src/install/cpp_pubsub/lib/cpp_pubsub/listen\n'}
+[48.036279] (cpp_pubsub) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/sbpena01/GitHub/RBE550-Quadruped/src/install/cpp_pubsub/lib/cpp_pubsub/listen" to ""\n'}
+[48.036542] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/sbpena01/GitHub/RBE550-Quadruped/src/install/cpp_pubsub/share/ament_index/resource_index/package_run_dependencies/cpp_pubsub\n'}
+[48.036671] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/sbpena01/GitHub/RBE550-Quadruped/src/install/cpp_pubsub/share/ament_index/resource_index/parent_prefix_path/cpp_pubsub\n'}
+[48.036861] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/sbpena01/GitHub/RBE550-Quadruped/src/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.sh\n'}
+[48.037009] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/sbpena01/GitHub/RBE550-Quadruped/src/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.dsv\n'}
+[48.037165] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/sbpena01/GitHub/RBE550-Quadruped/src/install/cpp_pubsub/share/cpp_pubsub/environment/path.sh\n'}
+[48.037334] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/sbpena01/GitHub/RBE550-Quadruped/src/install/cpp_pubsub/share/cpp_pubsub/environment/path.dsv\n'}
+[48.037468] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/sbpena01/GitHub/RBE550-Quadruped/src/install/cpp_pubsub/share/cpp_pubsub/local_setup.bash\n'}
+[48.037621] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/sbpena01/GitHub/RBE550-Quadruped/src/install/cpp_pubsub/share/cpp_pubsub/local_setup.sh\n'}
+[48.037768] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/sbpena01/GitHub/RBE550-Quadruped/src/install/cpp_pubsub/share/cpp_pubsub/local_setup.zsh\n'}
+[48.037924] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/sbpena01/GitHub/RBE550-Quadruped/src/install/cpp_pubsub/share/cpp_pubsub/local_setup.dsv\n'}
+[48.038069] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/sbpena01/GitHub/RBE550-Quadruped/src/install/cpp_pubsub/share/cpp_pubsub/package.dsv\n'}
+[48.038311] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/sbpena01/GitHub/RBE550-Quadruped/src/install/cpp_pubsub/share/ament_index/resource_index/packages/cpp_pubsub\n'}
+[48.038507] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/sbpena01/GitHub/RBE550-Quadruped/src/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig.cmake\n'}
+[48.038670] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/sbpena01/GitHub/RBE550-Quadruped/src/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig-version.cmake\n'}
+[48.038772] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/sbpena01/GitHub/RBE550-Quadruped/src/install/cpp_pubsub/share/cpp_pubsub/package.xml\n'}
+[48.041223] (cpp_pubsub) CommandEnded: {'returncode': 0}
+[48.061397] (-) TimerEvent: {}
+[48.092253] (cpp_pubsub) JobEnded: {'identifier': 'cpp_pubsub', 'rc': 0}
+[48.093583] (-) EventReactorShutdown: {}

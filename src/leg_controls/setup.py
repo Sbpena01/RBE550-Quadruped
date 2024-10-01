@@ -1,4 +1,8 @@
 from setuptools import find_packages, setup
+import os
+from glob import glob
+from setuptools import setup
+from setuptools import find_packages
 
 package_name = 'leg_controls'
 
@@ -10,6 +14,8 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+        (os.path.join('share', package_name, 'launch'), glob(os.path.join('launch', '*launch.[pxy][yma]*'))),
+        (os.path.join('share', package_name), glob('gazebo/*')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -20,7 +26,11 @@ setup(
     # tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'LegPositionControl = leg_controls.LegPositionControl:main'
+            'FrontLeftLeg = leg_controls.FrontLeftLeg:main',
+            'FrontRightLeg = leg_controls.FrontRightLeg:main',
+            'RearLeftLeg = leg_controls.RearLeftLeg:main',
+            'RearRightLeg = leg_controls.RearRightLeg:main',
+            # 'state_publisher = leg_controls.state_publisher:main'
         ],
     },
 )
