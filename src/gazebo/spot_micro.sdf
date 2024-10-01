@@ -83,7 +83,7 @@
                     </material>
                     <geometry>
                         <mesh>
-                            <uri>/home/sbpena01/RBE550/src/meshes/mainbody.stl</uri>
+                            <uri>../meshes/mainbody.stl</uri>
                             <scale>0.001 0.001 0.001</scale>
                         </mesh>
                     </geometry>
@@ -120,7 +120,7 @@
                     </material>
                     <geometry>
                         <mesh>
-                            <uri>/home/sbpena01/RBE550/src/meshes/lshoulder.stl</uri>
+                            <uri>../meshes/lshoulder.stl</uri>
                             <scale>0.001 0.001 0.001</scale>
                         </mesh>
                     </geometry>
@@ -168,7 +168,7 @@
                     </material>
                     <geometry>
                         <mesh>
-                            <uri>/home/sbpena01/RBE550/src/meshes/larm.stl</uri>
+                            <uri>../meshes/larm.stl</uri>
                             <scale>0.001 0.001 0.001</scale>
                         </mesh>
                     </geometry>
@@ -225,7 +225,7 @@
                     </material>
                     <geometry>
                         <mesh>
-                            <uri>/home/sbpena01/RBE550/src/meshes/lfoot.stl</uri>
+                            <uri>../meshes/lfoot.stl</uri>
                             <scale>0.001 0.001 0.001</scale>
                         </mesh>
                     </geometry>
@@ -273,7 +273,7 @@
                     </material>
                     <geometry>
                         <mesh>
-                            <uri>/home/sbpena01/RBE550/src/meshes/foot.stl</uri>
+                            <uri>../meshes/foot.stl</uri>
                             <scale>0.001 0.001 0.001</scale>
                         </mesh>
                     </geometry>
@@ -365,7 +365,7 @@
                     </material>
                     <geometry>
                         <mesh>
-                            <uri>/home/sbpena01/RBE550/src/meshes/rshoulder.stl</uri>
+                            <uri>../meshes/rshoulder.stl</uri>
                             <scale>0.001 0.001 0.001</scale>
                         </mesh>
                     </geometry>
@@ -413,7 +413,7 @@
                     </material>
                     <geometry>
                         <mesh>
-                            <uri>/home/sbpena01/RBE550/src/meshes/rarm.stl</uri>
+                            <uri>../meshes/rarm.stl</uri>
                             <scale>0.001 0.001 0.001</scale>
                         </mesh>
                     </geometry>
@@ -461,7 +461,7 @@
                     </material>
                     <geometry>
                         <mesh>
-                            <uri>/home/sbpena01/RBE550/src/meshes/rfoot.stl</uri>
+                            <uri>../meshes/rfoot.stl</uri>
                             <scale>0.001 0.001 0.001</scale>
                         </mesh>
                     </geometry>
@@ -509,7 +509,7 @@
                     </material>
                     <geometry>
                         <mesh>
-                            <uri>/home/sbpena01/RBE550/src/meshes/foot.stl</uri>
+                            <uri>../meshes/foot.stl</uri>
                             <scale>0.001 0.001 0.001</scale>
                         </mesh>
                     </geometry>
@@ -601,7 +601,7 @@
                     </material>
                     <geometry>
                         <mesh>
-                            <uri>/home/sbpena01/RBE550/src/meshes/lshoulder.stl</uri>
+                            <uri>../meshes/lshoulder.stl</uri>
                             <scale>0.001 0.001 0.001</scale>
                         </mesh>
                     </geometry>
@@ -649,7 +649,7 @@
                     </material>
                     <geometry>
                         <mesh>
-                            <uri>/home/sbpena01/RBE550/src/meshes/larm.stl</uri>
+                            <uri>../meshes/larm.stl</uri>
                             <scale>0.001 0.001 0.001</scale>
                         </mesh>
                     </geometry>
@@ -706,7 +706,7 @@
                     </material>
                     <geometry>
                         <mesh>
-                            <uri>/home/sbpena01/RBE550/src/meshes/lfoot.stl</uri>
+                            <uri>../meshes/lfoot.stl</uri>
                             <scale>0.001 0.001 0.001</scale>
                         </mesh>
                     </geometry>
@@ -754,7 +754,7 @@
                     </material>
                     <geometry>
                         <mesh>
-                            <uri>/home/sbpena01/RBE550/src/meshes/foot.stl</uri>
+                            <uri>../meshes/foot.stl</uri>
                             <scale>0.001 0.001 0.001</scale>
                         </mesh>
                     </geometry>
@@ -846,7 +846,7 @@
                     </material>
                     <geometry>
                         <mesh>
-                            <uri>/home/sbpena01/RBE550/src/meshes/rshoulder.stl</uri>
+                            <uri>../meshes/rshoulder.stl</uri>
                             <scale>0.001 0.001 0.001</scale>
                         </mesh>
                     </geometry>
@@ -894,7 +894,7 @@
                     </material>
                     <geometry>
                         <mesh>
-                            <uri>/home/sbpena01/RBE550/src/meshes/rarm.stl</uri>
+                            <uri>../meshes/rarm.stl</uri>
                             <scale>0.001 0.001 0.001</scale>
                         </mesh>
                     </geometry>
@@ -942,7 +942,7 @@
                     </material>
                     <geometry>
                         <mesh>
-                            <uri>/home/sbpena01/RBE550/src/meshes/rfoot.stl</uri>
+                            <uri>../meshes/rfoot.stl</uri>
                             <scale>0.001 0.001 0.001</scale>
                         </mesh>
                     </geometry>
@@ -990,7 +990,7 @@
                     </material>
                     <geometry>
                         <mesh>
-                            <uri>/home/sbpena01/RBE550/src/meshes/foot.stl</uri>
+                            <uri>../meshes/foot.stl</uri>
                             <scale>0.001 0.001 0.001</scale>
                         </mesh>
                     </geometry>

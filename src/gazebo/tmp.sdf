@@ -4,7 +4,7 @@
       <visual name='base_visual'>
         <geometry>
           <mesh>
-            <uri>/home/sbpena01/RBE550/src/meshes/mainbody.stl</uri>
+            <uri>../meshes/mainbody.stl</uri>
             <scale>0.001 0.001 0.001</scale>
           </mesh>
         </geometry>
@@ -35,7 +35,7 @@
       <visual name='front_left_shoulder_visual'>
         <geometry>
           <mesh>
-            <uri>/home/sbpena01/RBE550/src/meshes/lshoulder.stl</uri>
+            <uri>../meshes/lshoulder.stl</uri>
             <scale>0.001 0.001 0.001</scale>
           </mesh>
         </geometry>
@@ -66,7 +66,7 @@
       <visual name='front_left_leg_cover_visual'>
         <geometry>
           <mesh>
-            <uri>/home/sbpena01/RBE550/src/meshes/larm_cover.stl</uri>
+            <uri>../meshes/larm_cover.stl</uri>
             <scale>0.001 0.001 0.001</scale>
           </mesh>
         </geometry>
@@ -78,7 +78,7 @@
       <visual name='front_left_leg_visual'>
         <geometry>
           <mesh>
-            <uri>/home/sbpena01/RBE550/src/meshes/larm.stl</uri>
+            <uri>../meshes/larm.stl</uri>
             <scale>0.001 0.001 0.001</scale>
           </mesh>
         </geometry>
@@ -109,7 +109,7 @@
       <visual name='front_left_foot_visual'>
         <geometry>
           <mesh>
-            <uri>/home/sbpena01/RBE550/src/meshes/lfoot.stl</uri>
+            <uri>../meshes/lfoot.stl</uri>
             <scale>0.001 0.001 0.001</scale>
           </mesh>
         </geometry>
@@ -140,7 +140,7 @@
       <visual name='front_left_toe_visual'>
         <geometry>
           <mesh>
-            <uri>/home/sbpena01/RBE550/src/meshes/foot.stl</uri>
+            <uri>../meshes/foot.stl</uri>
             <scale>0.001 0.001 0.001</scale>
           </mesh>
         </geometry>
