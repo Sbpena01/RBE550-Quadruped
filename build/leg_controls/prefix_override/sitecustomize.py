@@ -1,4 +1,4 @@
 import sys
-if sys.prefix == '/home/sbpena01/.local/share/pipx/venvs/colcon-common-extensions':
+if sys.prefix == '/usr':
     sys.real_prefix = sys.prefix
-    sys.prefix = sys.exec_prefix = '/home/sbpena01/GitHub/RBE550-Quadruped/install/leg_controls'
+    sys.prefix = sys.exec_prefix = '/home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls'

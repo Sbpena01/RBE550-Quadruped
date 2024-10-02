@@ -9,13 +9,7 @@ setup.py
 ../../build/leg_controls/leg_controls.egg-info/requires.txt
 ../../build/leg_controls/leg_controls.egg-info/top_level.txt
 ../../build/leg_controls/leg_controls.egg-info/zip-safe
-gazebo/bridge.yaml
-gazebo/building_robot.sdf
-gazebo/spot_micro.sdf
-gazebo/spot_micro_single_model.sdf
-gazebo/tmp.sdf
-launch/launch.py
-launch/rviz_launch.py
+launch/leg_control_launch.py
 leg_controls/FrontLeftLeg.py
 leg_controls/FrontRightLeg.py
 leg_controls/RearLeftLeg.py

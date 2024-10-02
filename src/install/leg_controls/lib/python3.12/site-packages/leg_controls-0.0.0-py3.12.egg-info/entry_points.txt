@@ -1,5 +1,0 @@
-[console_scripts]
-FrontLeftLeg = leg_controls.FrontLeftLeg:main
-FrontRightLeg = leg_controls.FrontRightLeg:main
-RearLeftLeg = leg_controls.RearLeftLeg:main
-RearRightLeg = leg_controls.RearRightLeg:main

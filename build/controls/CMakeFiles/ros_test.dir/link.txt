@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/ros_test.dir/src/ros_test.cpp.o -o ros_test 

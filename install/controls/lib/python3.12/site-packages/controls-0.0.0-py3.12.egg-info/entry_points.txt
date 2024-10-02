@@ -1,2 +1,0 @@
-[console_scripts]
-LegPositionControl = leg_controls.LegPositionControl:main

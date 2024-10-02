@@ -1,4 +1,4 @@
-#!/home/sbpena01/.local/share/pipx/venvs/colcon-common-extensions/bin/python
+#!/usr/bin/python3
 # EASY-INSTALL-ENTRY-SCRIPT: 'leg-controls==0.0.0','console_scripts','FrontRightLeg'
 import re
 import sys
