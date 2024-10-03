@@ -1,15 +1,18 @@
+#/usr/bin/env python3
 import rclpy
 from rclpy.node import Node
 
 from std_msgs.msg import Float64MultiArray
+from geometry_msgs.msg import Pose
 
 import time
 import numpy as np
 
-# CONSTANTS
-FRONT_LEFT_SHOULDER_INIT = 1.0
-FRONT_LEFT_LEG_INIT = 1.0
-FRONT_LEFT_FOOT_INIT = 1.0
+### CONSTANTS
+# Starting joint angles (rad) for when the leg is initialized
+FRONT_LEFT_SHOULDER_INIT = 0.0
+FRONT_LEFT_LEG_INIT = 0.0
+FRONT_LEFT_FOOT_INIT = 0.0
 
 # Leg Lengths
 l1=25
@@ -20,11 +23,8 @@ l4=80
 class FrontLeftLeg(Node):
     def __init__(self):
         super().__init__('front_left_leg')
-        # self.shoulder_publisher_ = self.create_publisher(Float64, 'front_left_shoulder_position', 10)
-        # self.leg_publisher_ = self.create_publisher(Float64, 'front_left_leg_position', 10)
-        # self.foot_publisher_ = self.create_publisher(Float64, 'front_left_foot_position', 10)
-        # self.joint_state_publisher = self.create_publisher(JointState, 'joint_state', 10)
         self.joint_publisher = self.create_publisher(Float64MultiArray, '/front_left_leg_controller/commands', 10)
+        self.pose_subscriber = self.create_subscription(Pose, '/front_left_ee_pose', self.legIK, 10)
         self.shoulder_angle = FRONT_LEFT_SHOULDER_INIT
         self.leg_angle = FRONT_LEFT_LEG_INIT
         self.foot_angle = FRONT_LEFT_FOOT_INIT
@@ -36,48 +36,47 @@ class FrontLeftLeg(Node):
             self.foot_angle
         ]
         angle_array = Float64MultiArray(data=angles)
-        print(angle_array)
         self.joint_publisher.publish(angle_array)
     
-    # def legIK(self, msg: Pose):
-    #     position = msg.position  # Point msg with X, Y, and Z float64s
-    #     x = position.x
-    #     y = position.y
-    #     z = position.z
-    #     orientation = msg.orientation  # Quaternion msg w/ X, Y, Z, and omega float64s
+    def legIK(self, msg: Pose):
+        position = msg.position  # Point msg with X, Y, and Z float64s
+        x = position.x
+        y = position.y
+        z = position.z
+        orientation = msg.orientation  # Quaternion msg w/ X, Y, Z, and omega float64s
         
-    #     # Calculations below are from SpotMicroAI, not calculated by us.
-    #     # See: https://spotmicroai.readthedocs.io/en/latest/kinematic/
+        # Calculations below are from SpotMicroAI, not calculated by us.
+        # See: https://spotmicroai.readthedocs.io/en/latest/kinematic/
 
-    #     F=np.sqrt(x**2+y**2-l1**2)
-    #     G=F-l2  
-    #     H=np.sqrt(G**2+z**2)
+        F=np.sqrt(x**2+y**2-l1**2)
+        G=F-l2  
+        H=np.sqrt(G**2+z**2)
 
-    #     self.shoulder_angle=-np.atan2(y,x)-np.atan2(F,-l1)
+        self.shoulder_angle=-np.arctan2(y,x)-np.arctan2(F,-l1)
 
-    #     D=(H**2-l3**2-l4**2)/(2*l3*l4)
-    #     self.foot_angle=np.acos(D) 
+        D=(H**2-l3**2-l4**2)/(2*l3*l4)
+        self.foot_angle=np.arccos(D) 
 
-    #     self.leg_angle=np.atan2(z,G)-np.atan2(l4*np.sin(self.foot_angle),l3+l4*np.cos(self.foot_angle))
+        self.leg_angle=np.arctan2(z,G)-np.arctan2(l4*np.sin(self.foot_angle),l3+l4*np.cos(self.foot_angle))
         
-    #     print(self.shoulder_angle, self.leg_angle, self.foot_angle)
-    #     # Publish the leg angles to Gazebo and PID controller
-    #     # self.publish()
-        
+        # print(self.shoulder_angle, self.leg_angle, self.foot_angle)
+        # Publish the leg angles to Gazebo and PID controller
+        self.publish()
+    
         
         
 def main(args=None):
     rclpy.init(args=args)
     front_left_leg = FrontLeftLeg()
-    # pose = Pose()
-    # pose.position.x = -55
-    # pose.position.y = -100
-    # pose.position.z = 20
-    # front_left_leg.legIK(pose)
-    while True:
-        front_left_leg.publish()
-        # print('Publishing: ', front_left_leg.shoulder_angle, front_left_leg.leg_angle, front_left_leg.foot_angle)
-        time.sleep(0.05)  # 20 Hz
+    # This is the initial pose the robot goes to
+    pose = Pose()
+    pose.position.x = 0
+    pose.position.y = -100
+    pose.position.z = 0
+    front_left_leg.legIK(pose)
+    front_left_leg.publish()
+    rclpy.spin(front_left_leg)
+
 
 
 if __name__ == '__main__':

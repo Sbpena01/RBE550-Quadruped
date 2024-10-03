@@ -87,6 +87,17 @@ def generate_launch_description():
                    '-allow_renaming', 'false'],
     )
 
+    # yaml_file = os.path.join(robot_description_path,
+    #                           'config',
+    #                           'robot_sim.yaml')
+
+    # controller_manager = Node(
+    #     package="controller_manager",
+    #     executable="ros2_control_node",
+    #     parameters=[params, yaml_file],
+    #     output="screen"
+    # )
+
     # ROS2 controllers are activated
     load_joint_state_controller = ExecuteProcess(
         cmd=['ros2', 'control', 'load_controller', '--set-state', 'active',
@@ -94,15 +105,27 @@ def generate_launch_description():
         output='screen'
     )
 
-    load_forward_velocity_controller = ExecuteProcess(
+    load_front_left_leg_controller = ExecuteProcess(
         cmd=['ros2', 'control', 'load_controller', '--set-state', 'active',
-             'forward_velocity_controller'],
+             'front_left_leg_controller'],
         output='screen'
     )
 
-    load_forward_position_controller = ExecuteProcess(
+    load_rear_right_leg_controller = ExecuteProcess(
         cmd=['ros2', 'control', 'load_controller', '--set-state', 'active',
-             'front_left_leg_controller'],
+             'rear_right_leg_controller'],
+        output='screen'
+    )
+
+    load_rear_left_leg_controller = ExecuteProcess(
+        cmd=['ros2', 'control', 'load_controller', '--set-state', 'active',
+             'rear_left_leg_controller'],
+        output='screen'
+    )
+
+    load_front_right_leg_controller = ExecuteProcess(
+        cmd=['ros2', 'control', 'load_controller', '--set-state', 'active',
+             'front_right_leg_controller'],
         output='screen'
     )
 
@@ -136,8 +159,10 @@ def generate_launch_description():
         RegisterEventHandler(
             event_handler=OnProcessExit(
                target_action=load_joint_state_controller,
-               on_exit=[load_forward_velocity_controller,
-                        load_forward_position_controller],
+               on_exit=[load_front_left_leg_controller,
+                        load_front_right_leg_controller,
+                        load_rear_left_leg_controller,
+                        load_rear_right_leg_controller],
             )
         ),
         gazebo_resource_path,
@@ -145,5 +170,6 @@ def generate_launch_description():
         gazebo,
         node_robot_state_publisher,
         gz_spawn_entity,
+        # controller_manager,
         rviz,
     ])

@@ -14,7 +14,7 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
-        (os.path.join('lib', package_name, 'leg_controls'), glob(os.path.join('leg_controls', '*'))),
+        (os.path.join('lib', package_name), glob(os.path.join('leg_controls', '*'))),
         (os.path.join('share', package_name, 'launch'), glob(os.path.join('launch', '*'))),
         (os.path.join('share', package_name), glob('gazebo/*')),
     ],
@@ -31,7 +31,8 @@ setup(
             'FrontRightLeg = leg_controls.FrontRightLeg:main',
             'RearLeftLeg = leg_controls.RearLeftLeg:main',
             'RearRightLeg = leg_controls.RearRightLeg:main',
-            # 'state_publisher = leg_controls.state_publisher:main'
+            'test = leg_controls.test_movement:main',
+            'gait = leg_controls.GaitGenerator:main'
         ],
     },
 )

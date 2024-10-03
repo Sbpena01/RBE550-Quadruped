@@ -1,26 +1,21 @@
 controller_manager:
   ros__parameters:
-    update_rate: 1000  # Hz
-
-    # forward_velocity_controller:
-    #   type: forward_command_controller/ForwardCommandController
+    update_rate: 20  # Hz
 
     front_left_leg_controller:
       type: forward_command_controller/ForwardCommandController
 
+    front_right_leg_controller:
+      type: forward_command_controller/ForwardCommandController
+
+    rear_left_leg_controller:
+      type: forward_command_controller/ForwardCommandController
+
+    rear_right_leg_controller:
+      type: forward_command_controller/ForwardCommandController
+      
     joint_state_broadcaster:
       type: joint_state_broadcaster/JointStateBroadcaster
-
-# forward_velocity_controller:
-#   ros__parameters:
-#     joints:
-#       - 
-#     interface_name: velocity
-#     command_interfaces:
-#       - velocity
-#     state_interfaces:
-#       - position
-#       - velocity
 
 front_left_leg_controller:
   ros__parameters:
@@ -28,6 +23,50 @@ front_left_leg_controller:
       - front_left_shoulder
       - front_left_leg
       - front_left_foot
+    interface_name: position
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+    reference_and_state_interfaces: ["position"]
+    gains:
+      front_left_shoulder: {p: 1.0, i: 2.0, d: 10.0, i_clamp_max: 5.0, i_clamp_min: -5.0}
+      front_left_leg: {p: 1.0, i: 2.0, d: 10.0, i_clamp_max: 5.0, i_clamp_min: -5.0}
+      front_left_foot: {p: 100.0, i: 2.0, d: 10.0, i_clamp_max: 5.0, i_clamp_min: -5.0}
+
+front_right_leg_controller:
+  ros__parameters:
+    joints:
+      - front_right_shoulder
+      - front_right_leg
+      - front_right_foot
+    interface_name: position
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+
+rear_right_leg_controller:
+  ros__parameters:
+    joints:
+      - rear_right_shoulder
+      - rear_right_leg
+      - rear_right_foot
+    interface_name: position
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+
+rear_left_leg_controller:
+  ros__parameters:
+    joints:
+      - rear_left_shoulder
+      - rear_left_leg
+      - rear_left_foot
     interface_name: position
     command_interfaces:
       - position

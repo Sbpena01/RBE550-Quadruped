@@ -72,8 +72,8 @@
       <child link="${pos}_shoulder_link"/>
       <axis xyz="1 0 0"/>
       <origin rpy="0 0 0" xyz="${shiftx} ${shifty} 0"/>
-      <limit effort="1000.0" lower="-2.548" upper="2.548" velocity="10.7"/>
-      <dynamics damping="0.0" friction="0.5"/>
+      <limit effort="10.0" lower="-2.548" upper="2.548" velocity="10.7"/>
+      <dynamics damping="1.0" friction="0.5"/>
     </joint>
   </xacro:macro>
 
@@ -140,8 +140,8 @@
       <child link="${pos}_leg_link"/>
       <axis xyz="0 1 0"/>
       <origin rpy="0 0 0" xyz="0 ${shift} 0"/>
-      <limit effort="1000.0" lower="-2.666" upper="1.548" velocity="10.5"/>
-      <dynamics damping="0.0" friction="0.0"/>
+      <limit effort="10.0" lower="-2.666" upper="1.548" velocity="10.5"/>
+      <dynamics damping="1.0" friction="0.0"/>
     </joint>
 
     <joint name="${pos}_leg_cover_joint" type="fixed">
@@ -189,8 +189,8 @@
       <child link="${pos}_foot_link"/>
       <axis xyz="0 1 0"/>
       <origin rpy="0 0 0" xyz="-0.01 0 -${leg_length}"/>
-      <limit effort="1000.0" lower="-0.1" upper="2.59" velocity="10.5"/>
-      <dynamics damping="0.0" friction="0.5"/>
+      <limit effort="10.0" lower="-0.1" upper="2.59" velocity="10.5"/>
+      <dynamics damping="1.0" friction="0.5"/>
     </joint>
   </xacro:macro>
 
@@ -259,7 +259,7 @@
     </collision>
     <inertial>
       <mass value="2.80"/>
-      <inertia ixx="0.05" ixy="0" ixz="0" iyy="0.05" iyz="0" izz="0.05" />
+      <inertia ixx="0.1" ixy="0" ixz="0" iyy="0.1" iyz="0" izz="0.1" />
     </inertial>
   </link>
 

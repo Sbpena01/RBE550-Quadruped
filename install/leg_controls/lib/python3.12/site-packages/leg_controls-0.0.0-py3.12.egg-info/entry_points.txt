@@ -3,3 +3,5 @@ FrontLeftLeg = leg_controls.FrontLeftLeg:main
 FrontRightLeg = leg_controls.FrontRightLeg:main
 RearLeftLeg = leg_controls.RearLeftLeg:main
 RearRightLeg = leg_controls.RearRightLeg:main
+gait = leg_controls.GaitGenerator:main
+test = leg_controls.test_movement:main
