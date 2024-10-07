@@ -1,5 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.000112] (-) JobUnselected: {'identifier': 'controls'}
-[0.000149] (-) JobUnselected: {'identifier': 'cpp_pubsub'}
-[0.000423] (-) JobUnselected: {'identifier': 'py_pubsub'}
-[0.000710] (-) EventReactorShutdown: {}

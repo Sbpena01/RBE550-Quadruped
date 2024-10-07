@@ -1,4 +1,4 @@
-#!/home/sbpena01/.local/share/pipx/venvs/colcon-common-extensions/bin/python
+#!/usr/bin/python3
 # EASY-INSTALL-ENTRY-SCRIPT: 'py-pubsub==0.0.0','console_scripts','talker'
 import re
 import sys

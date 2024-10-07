@@ -9,8 +9,14 @@ setup.py
 ../../build/leg_controls/leg_controls.egg-info/requires.txt
 ../../build/leg_controls/leg_controls.egg-info/top_level.txt
 ../../build/leg_controls/leg_controls.egg-info/zip-safe
-leg_controls/LegPositionControl.py
+launch/leg_control_launch.py
+leg_controls/FrontLeftLeg.py
+leg_controls/FrontRightLeg.py
+leg_controls/GaitGenerator.py
+leg_controls/RearLeftLeg.py
+leg_controls/RearRightLeg.py
 leg_controls/__init__.py
+leg_controls/test_movement.py
 resource/leg_controls
 test/test_copyright.py
 test/test_flake8.py

@@ -1,0 +1,103 @@
+LICENSE
+package.xml
+setup.cfg
+setup.py
+../../build/robot_description/robot_description.egg-info/PKG-INFO
+../../build/robot_description/robot_description.egg-info/SOURCES.txt
+../../build/robot_description/robot_description.egg-info/dependency_links.txt
+../../build/robot_description/robot_description.egg-info/requires.txt
+../../build/robot_description/robot_description.egg-info/top_level.txt
+../../build/robot_description/robot_description.egg-info/zip-safe
+config/robot_config.rviz
+config/robot_sim.yaml
+gazebo/materials.xacro
+gazebo/robot.gazebo.xacro
+meshes/B_cover.stl
+meshes/F_cover.stl
+meshes/F_cover_orig.stl
+meshes/F_shoulder.stl
+meshes/LICENSE.txt
+meshes/L_arm.stl
+meshes/L_arm_cover.stl
+meshes/L_arm_joint.stl
+meshes/L_side_plate.stl
+meshes/L_ultra_sonic.stl
+meshes/L_wrist.stl
+meshes/README.txt
+meshes/R_arm.stl
+meshes/R_arm_cover.stl
+meshes/R_arm_joint.stl
+meshes/R_cover.stl
+meshes/R_shoulder.stl
+meshes/R_side_plate.stl
+meshes/R_ultra_sonic.stl
+meshes/R_wrist.stl
+meshes/SpotMicroAI_AdditionalParts.FCStd
+meshes/SpotMicroAI_Bottom.FCStd
+meshes/SpotMicroAI_Bottom.FCStd1
+meshes/SpotMicroAI_JetsonParts.FCStd
+meshes/SpotMicroAI_JetsonParts.FCStd1
+meshes/SpotMicroAI_Rear.FCStd
+meshes/SpotMicroAI_Top.FCStd
+meshes/SpotMicroAI_Top.FCStd1
+meshes/T_cover.stl
+meshes/back copy.dae
+meshes/back.dae
+meshes/backpart.stl
+meshes/batteryholder.stl
+meshes/batteryholder2.stl
+meshes/bottom.stl
+meshes/foot.stl
+meshes/front copy.dae
+meshes/front.dae
+meshes/frontpart copy.stl
+meshes/frontpart.stl
+meshes/jetsonPlate copy.stl
+meshes/jetsonPlate.stl
+meshes/jetson_sidepart copy.stl
+meshes/jetson_sidepart.stl
+meshes/label.stl
+meshes/larm copy.stl
+meshes/larm.stl
+meshes/larm_cover copy.stl
+meshes/larm_cover.stl
+meshes/ledholder.stl
+meshes/lfoot copy.stl
+meshes/lfoot.stl
+meshes/lshoulder copy.stl
+meshes/lshoulder.stl
+meshes/mainbody copy.dae
+meshes/mainbody copy.stl
+meshes/mainbody.dae
+meshes/mainbody.stl
+meshes/non-mega_B_cover.stl
+meshes/non-mega_L_side_plate.stl
+meshes/non-mega_T_cover.stl
+meshes/plate.stl
+meshes/rarm copy.stl
+meshes/rarm.stl
+meshes/rarm_cover copy.stl
+meshes/rarm_cover.stl
+meshes/rear.stl
+meshes/rear2.stl
+meshes/rearmain copy.stl
+meshes/rearmain.stl
+meshes/rfoot copy.stl
+meshes/rfoot.stl
+meshes/rplidar_main.STL
+meshes/rshoulder copy.stl
+meshes/rshoulder.stl
+meshes/screwguard.stl
+meshes/spotmicroai copy.blend
+meshes/spotmicroai.blend
+meshes/testmount.stl
+meshes/top.stl
+resource/robot_description
+robot_description/__init__.py
+robots/spotmicro.xacro
+robots/spotmicro_copy.xacro
+robots/spotmicro_generated.urdf
+ros2_control/robot.ros2_control.xacro
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

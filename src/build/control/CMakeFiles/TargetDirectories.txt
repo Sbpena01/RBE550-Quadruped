@@ -1,9 +1,0 @@
-/home/sbpena01/GitHub/RBE550-Quadruped/src/build/control/CMakeFiles/uninstall.dir
-/home/sbpena01/GitHub/RBE550-Quadruped/src/build/control/CMakeFiles/control_uninstall.dir
-/home/sbpena01/GitHub/RBE550-Quadruped/src/build/control/CMakeFiles/test.dir
-/home/sbpena01/GitHub/RBE550-Quadruped/src/build/control/CMakeFiles/edit_cache.dir
-/home/sbpena01/GitHub/RBE550-Quadruped/src/build/control/CMakeFiles/rebuild_cache.dir
-/home/sbpena01/GitHub/RBE550-Quadruped/src/build/control/CMakeFiles/list_install_components.dir
-/home/sbpena01/GitHub/RBE550-Quadruped/src/build/control/CMakeFiles/install.dir
-/home/sbpena01/GitHub/RBE550-Quadruped/src/build/control/CMakeFiles/install/local.dir
-/home/sbpena01/GitHub/RBE550-Quadruped/src/build/control/CMakeFiles/install/strip.dir

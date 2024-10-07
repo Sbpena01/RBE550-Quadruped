@@ -1,0 +1,31 @@
+[1.341s] Invoking command in '/home/scott-pena/GitHub/RBE550-Quadruped/src/leg_controls': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/scott-pena/GitHub/RBE550-Quadruped/build/leg_controls/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/leg_controls build --build-base /home/scott-pena/GitHub/RBE550-Quadruped/build/leg_controls/build install --record /home/scott-pena/GitHub/RBE550-Quadruped/build/leg_controls/install.log --single-version-externally-managed install_data
+[1.591s] running egg_info
+[1.611s] writing ../../build/leg_controls/leg_controls.egg-info/PKG-INFO
+[1.611s] writing dependency_links to ../../build/leg_controls/leg_controls.egg-info/dependency_links.txt
+[1.611s] writing entry points to ../../build/leg_controls/leg_controls.egg-info/entry_points.txt
+[1.612s] writing requirements to ../../build/leg_controls/leg_controls.egg-info/requires.txt
+[1.612s] writing top-level names to ../../build/leg_controls/leg_controls.egg-info/top_level.txt
+[1.652s] reading manifest file '../../build/leg_controls/leg_controls.egg-info/SOURCES.txt'
+[1.652s] adding license file 'LICENSE'
+[1.652s] writing manifest file '../../build/leg_controls/leg_controls.egg-info/SOURCES.txt'
+[1.653s] running build
+[1.653s] running build_py
+[1.653s] copying leg_controls/GaitGenerator.py -> /home/scott-pena/GitHub/RBE550-Quadruped/build/leg_controls/build/lib/leg_controls
+[1.653s] running install
+[1.659s] running install_lib
+[1.679s] copying /home/scott-pena/GitHub/RBE550-Quadruped/build/leg_controls/build/lib/leg_controls/GaitGenerator.py -> /home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls
+[1.679s] byte-compiling /home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls/GaitGenerator.py to GaitGenerator.cpython-312.pyc
+[1.680s] running install_data
+[1.680s] copying leg_controls/GaitGenerator.py -> /home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[1.680s] running install_egg_info
+[1.701s] removing '/home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls-0.0.0-py3.12.egg-info' (and everything under it)
+[1.701s] Copying ../../build/leg_controls/leg_controls.egg-info to /home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls-0.0.0-py3.12.egg-info
+[1.702s] running install_scripts
+[1.831s] Installing FrontLeftLeg script to /home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[1.831s] Installing FrontRightLeg script to /home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[1.831s] Installing RearLeftLeg script to /home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[1.832s] Installing RearRightLeg script to /home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[1.832s] Installing gait script to /home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[1.832s] Installing test script to /home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[1.832s] writing list of installed files to '/home/scott-pena/GitHub/RBE550-Quadruped/build/leg_controls/install.log'
+[1.856s] Invoked command in '/home/scott-pena/GitHub/RBE550-Quadruped/src/leg_controls' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/scott-pena/GitHub/RBE550-Quadruped/build/leg_controls/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/leg_controls build --build-base /home/scott-pena/GitHub/RBE550-Quadruped/build/leg_controls/build install --record /home/scott-pena/GitHub/RBE550-Quadruped/build/leg_controls/install.log --single-version-externally-managed install_data
