@@ -9,9 +9,9 @@ import time
 import numpy as np
 
 # CONSTANTS
-FRONT_RIGHT_SHOULDER_INIT = 0.0
-FRONT_RIGHT_LEG_INIT = 0.0
-FRONT_RIGHT_FOOT_INIT = 0.0
+INIT_X = -30.0
+INIT_Y = -120.0
+INIT_Z = 0.0
 
 # Leg Lengths
 l1=25
@@ -24,9 +24,12 @@ class FrontRightLeg(Node):
         super().__init__('front_left_leg')
         self.joint_publisher = self.create_publisher(Float64MultiArray, '/front_right_leg_controller/commands', 10)
         self.pose_subscriber = self.create_subscription(Pose, '/front_right_ee_pose', self.legIK, 10)
-        self.shoulder_angle = FRONT_RIGHT_SHOULDER_INIT
-        self.leg_angle = FRONT_RIGHT_LEG_INIT
-        self.foot_angle = FRONT_RIGHT_FOOT_INIT
+        initial_pose = Pose()
+        initial_pose.position.x = INIT_X
+        initial_pose.position.y = INIT_Y
+        initial_pose.position.z = INIT_Z
+        self.legIK(initial_pose)
+        self.timer = self.create_timer(0.1, self.publish)
     
     def publish(self) -> None:
         angles = [
@@ -65,13 +68,6 @@ class FrontRightLeg(Node):
 def main(args=None):
     rclpy.init(args=args)
     front_right_leg = FrontRightLeg()
-    # This is the initial pose the robot goes to
-    pose = Pose()
-    pose.position.x = 0
-    pose.position.y = -100
-    pose.position.z = 0
-    front_right_leg.legIK(pose)
-    front_right_leg.publish()
     rclpy.spin(front_right_leg)
 
 

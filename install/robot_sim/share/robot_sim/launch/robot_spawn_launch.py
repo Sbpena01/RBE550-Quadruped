@@ -56,7 +56,7 @@ def generate_launch_description():
     # Read robot xacro file, defining robot state publisher and spawning robot
     xacro_file = os.path.join(robot_description_path,
                               'robots',
-                              'spotmicro.xacro')
+                              'spotmicro_copy.xacro')
 
     doc = xacro.process_file(xacro_file, mappings={'use_sim' : 'true'})
 

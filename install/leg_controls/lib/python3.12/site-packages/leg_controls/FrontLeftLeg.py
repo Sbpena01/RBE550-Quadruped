@@ -1,18 +1,20 @@
 #/usr/bin/env python3
 import rclpy
-from rclpy.node import Node
+import rclpy.logging
+import threading
 
+from rclpy.node import Node
 from std_msgs.msg import Float64MultiArray
 from geometry_msgs.msg import Pose
 
-import time
 import numpy as np
+from GaitGenerator import WalkingGait
 
 ### CONSTANTS
 # Starting joint angles (rad) for when the leg is initialized
-FRONT_LEFT_SHOULDER_INIT = 0.0
-FRONT_LEFT_LEG_INIT = 0.0
-FRONT_LEFT_FOOT_INIT = 0.0
+INIT_X = -30.0
+INIT_Y = -120.0
+INIT_Z = 0.0
 
 # Leg Lengths
 l1=25
@@ -25,9 +27,18 @@ class FrontLeftLeg(Node):
         super().__init__('front_left_leg')
         self.joint_publisher = self.create_publisher(Float64MultiArray, '/front_left_leg_controller/commands', 10)
         self.pose_subscriber = self.create_subscription(Pose, '/front_left_ee_pose', self.legIK, 10)
-        self.shoulder_angle = FRONT_LEFT_SHOULDER_INIT
-        self.leg_angle = FRONT_LEFT_LEG_INIT
-        self.foot_angle = FRONT_LEFT_FOOT_INIT
+
+        self.shoulder_angle = 0.0
+        self.leg_angle = 0.0
+        self.foot_angle = 0.0
+        initial_pose = Pose()
+        initial_pose.position.x = INIT_X
+        initial_pose.position.y = INIT_Y
+        initial_pose.position.z = INIT_Z
+        self.legIK(initial_pose)
+
+        self.timer = self.create_timer(0.1, self.publish)
+        
     
     def publish(self) -> None:
         angles = [
@@ -43,38 +54,37 @@ class FrontLeftLeg(Node):
         x = position.x
         y = position.y
         z = position.z
+        
         orientation = msg.orientation  # Quaternion msg w/ X, Y, Z, and omega float64s
         
         # Calculations below are from SpotMicroAI, not calculated by us.
         # See: https://spotmicroai.readthedocs.io/en/latest/kinematic/
 
-        F=np.sqrt(x**2+y**2-l1**2)
-        G=F-l2  
-        H=np.sqrt(G**2+z**2)
+        try:
+            F=np.sqrt(x**2+y**2-l1**2)
+            G=F-l2  
+            H=np.sqrt(G**2+z**2)
 
-        self.shoulder_angle=-np.arctan2(y,x)-np.arctan2(F,-l1)
+            self.shoulder_angle=-np.arctan2(y,x)-np.arctan2(F,-l1)
 
-        D=(H**2-l3**2-l4**2)/(2*l3*l4)
-        self.foot_angle=np.arccos(D) 
+            self.get_logger().info('%f, %f, %f' % (self.shoulder_angle, self.foot_angle, self.leg_angle))
 
-        self.leg_angle=np.arctan2(z,G)-np.arctan2(l4*np.sin(self.foot_angle),l3+l4*np.cos(self.foot_angle))
-        
-        # print(self.shoulder_angle, self.leg_angle, self.foot_angle)
-        # Publish the leg angles to Gazebo and PID controller
-        self.publish()
+            D=(H**2-l3**2-l4**2)/(2*l3*l4)
+            if D < -1 or D > 1:
+                print(f"Invalid value for arccos: {D}. Returning early.")
+                return  # Early return if D is out of bounds
+            
+            self.foot_angle=np.arccos(D) 
+            self.leg_angle=np.arctan2(z,G)-np.arctan2(l4*np.sin(self.foot_angle),l3+l4*np.cos(self.foot_angle))
+        except Exception as e:
+            print("Out of Bounds: ", e)
+            return
     
         
         
 def main(args=None):
     rclpy.init(args=args)
-    front_left_leg = FrontLeftLeg()
-    # This is the initial pose the robot goes to
-    pose = Pose()
-    pose.position.x = 0
-    pose.position.y = -100
-    pose.position.z = 0
-    front_left_leg.legIK(pose)
-    front_left_leg.publish()
+    front_left_leg = FrontLeftLeg() 
     rclpy.spin(front_left_leg)
 
 
