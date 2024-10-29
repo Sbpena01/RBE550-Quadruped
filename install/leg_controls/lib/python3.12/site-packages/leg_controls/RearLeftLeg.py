@@ -54,7 +54,7 @@ class RearLeftLeg(Node):
         G=F-l2  
         H=np.sqrt(G**2+z**2)
 
-        self.shoulder_angle=-np.arctan2(y,x)-np.arctan2(F,-l1)
+        self.shoulder_angle=np.arctan2(y,x)+np.arctan2(F,-l1)
 
         D=(H**2-l3**2-l4**2)/(2*l3*l4)
         self.foot_angle=np.arccos(D) 

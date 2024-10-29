@@ -10,6 +10,7 @@ from geometry_msgs.msg import Pose
 import numpy as np
 from GaitGenerator import WalkingGait
 
+
 ### CONSTANTS
 # Starting joint angles (rad) for when the leg is initialized
 INIT_X = -30.0
@@ -37,7 +38,7 @@ class FrontLeftLeg(Node):
         initial_pose.position.z = INIT_Z
         self.legIK(initial_pose)
 
-        self.timer = self.create_timer(0.1, self.publish)
+        self.timer = self.create_timer(0.05, self.publish)
         
     
     def publish(self) -> None:
@@ -65,9 +66,7 @@ class FrontLeftLeg(Node):
             G=F-l2  
             H=np.sqrt(G**2+z**2)
 
-            self.shoulder_angle=-np.arctan2(y,x)-np.arctan2(F,-l1)
-
-            self.get_logger().info('%f, %f, %f' % (self.shoulder_angle, self.foot_angle, self.leg_angle))
+            self.shoulder_angle=np.arctan2(y,x)+np.arctan2(F,-l1)
 
             D=(H**2-l3**2-l4**2)/(2*l3*l4)
             if D < -1 or D > 1:
@@ -79,10 +78,11 @@ class FrontLeftLeg(Node):
         except Exception as e:
             print("Out of Bounds: ", e)
             return
-    
+
         
         
 def main(args=None):
+    print("hey")
     rclpy.init(args=args)
     front_left_leg = FrontLeftLeg() 
     rclpy.spin(front_left_leg)
@@ -91,3 +91,8 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
+    rclpy.init(args=None)
+
+    front_left_leg = FrontLeftLeg() 
+    test_msg = Pose
+    test_msg.position.x = 1

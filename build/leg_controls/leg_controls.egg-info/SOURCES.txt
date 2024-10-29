@@ -16,6 +16,7 @@ leg_controls/GaitGenerator.py
 leg_controls/RearLeftLeg.py
 leg_controls/RearRightLeg.py
 leg_controls/__init__.py
+leg_controls/test_IK_TF_Comparison.py
 leg_controls/test_movement.py
 resource/leg_controls
 test/test_copyright.py
