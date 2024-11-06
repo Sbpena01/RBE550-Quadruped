@@ -1,6 +1,6 @@
 controller_manager:
   ros__parameters:
-    update_rate: 20  # Hz
+    update_rate: 100  # Hz
 
     front_left_leg_controller:
       type: forward_command_controller/ForwardCommandController
@@ -31,9 +31,9 @@ front_left_leg_controller:
       - velocity
     reference_and_state_interfaces: ["position"]
     gains:
-      front_left_shoulder: {p: 1.0, i: 2.0, d: 10.0, i_clamp_max: 5.0, i_clamp_min: -5.0}
-      front_left_leg: {p: 1.0, i: 2.0, d: 10.0, i_clamp_max: 5.0, i_clamp_min: -5.0}
-      front_left_foot: {p: 100.0, i: 2.0, d: 10.0, i_clamp_max: 5.0, i_clamp_min: -5.0}
+      front_left_shoulder: {p: 100.0, i: 2.0, d: 5.0, i_clamp_max: 5.0, i_clamp_min: -5.0}
+      front_left_leg: {p: 100.0, i: 2.0, d: 5.0, i_clamp_max: 5.0, i_clamp_min: -5.0}
+      front_left_foot: {p: 100.0, i: 2.0, d: 5.0, i_clamp_max: 5.0, i_clamp_min: -5.0}
 
 front_right_leg_controller:
   ros__parameters:
@@ -47,6 +47,11 @@ front_right_leg_controller:
     state_interfaces:
       - position
       - velocity
+    gains:
+      front_right_shoulder: {p: 100.0, i: 2.0, d: 5.0, i_clamp_max: 5.0, i_clamp_min: -5.0}
+      front_right_leg: {p: 100.0, i: 2.0, d: 5.0, i_clamp_max: 5.0, i_clamp_min: -5.0}
+      front_right_foot: {p: 100.0, i: 2.0, d: 5.0, i_clamp_max: 5.0, i_clamp_min: -5.0}
+    
 
 rear_right_leg_controller:
   ros__parameters:
@@ -60,6 +65,10 @@ rear_right_leg_controller:
     state_interfaces:
       - position
       - velocity
+    gains:
+      rear_right_shoulder: {p: 100.0, i: 2.0, d: 5.0, i_clamp_max: 5.0, i_clamp_min: -5.0}
+      rear_right_leg: {p: 100.0, i: 2.0, d: 5.0, i_clamp_max: 5.0, i_clamp_min: -5.0}
+      rear_right_foot: {p: 100.0, i: 2.0, d: 5.0, i_clamp_max: 5.0, i_clamp_min: -5.0}
 
 rear_left_leg_controller:
   ros__parameters:
@@ -73,3 +82,7 @@ rear_left_leg_controller:
     state_interfaces:
       - position
       - velocity
+    gains:
+      rear_left_shoulder: {p: 100.0, i: 2.0, d: 5.0, i_clamp_max: 5.0, i_clamp_min: -5.0}
+      rear_left_leg: {p: 100.0, i: 2.0, d: 5.0, i_clamp_max: 5.0, i_clamp_min: -5.0}
+      rear_left_foot: {p: 100.0, i: 2.0, d: 5.0, i_clamp_max: 5.0, i_clamp_min: -5.0}

@@ -33,7 +33,8 @@ setup(
             'RearRightLeg = leg_controls.RearRightLeg:main',
             'test_movement = leg_controls.test_movement:main',
             'test_ik = leg_controls.test_IK_TF_Comparison:main',
-            'gait = leg_controls.GaitGenerator:main'
+            'gait = leg_controls.GaitGenerator:main',
+            'leg_init = leg_controls.init_legs:main'
         ],
     },
 )

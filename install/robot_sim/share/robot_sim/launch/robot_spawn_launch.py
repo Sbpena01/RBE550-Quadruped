@@ -130,12 +130,12 @@ def generate_launch_description():
     )
 
     # Bridge node is defined. We have no lidar so this is commented to be a reference.
-    # bridge = Node(
-    #     package='ros_gz_bridge',
-    #     executable='parameter_bridge',
-    #     arguments=['/scan@sensor_msgs/msg/LaserScan@gz.msgs.LaserScan'],  # Specifies ROS topic name, ros message type, and gz message type
-    #     output='screen'
-    # )
+    bridge = Node(
+        package='ros_gz_bridge',
+        executable='parameter_bridge',
+        arguments=['/imu_data@sensor_msgs/msg/Imu@gz.msgs.IMU'],  # ros_topic@ros2_msg_type@gazebo_msg_type
+        output='screen'
+    )
 
     # Define node to start rviz2
     rviz_config_file = os.path.join(robot_description_path, 'config', 'robot_config.rviz')
@@ -170,6 +170,7 @@ def generate_launch_description():
         gazebo,
         node_robot_state_publisher,
         gz_spawn_entity,
+        bridge,
         # controller_manager,
         rviz,
     ])

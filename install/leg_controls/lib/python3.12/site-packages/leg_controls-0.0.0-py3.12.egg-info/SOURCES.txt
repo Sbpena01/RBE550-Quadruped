@@ -13,9 +13,12 @@ launch/leg_control_launch.py
 leg_controls/FrontLeftLeg.py
 leg_controls/FrontRightLeg.py
 leg_controls/GaitGenerator.py
+leg_controls/Leg.py
 leg_controls/RearLeftLeg.py
 leg_controls/RearRightLeg.py
+leg_controls/RearRightLeg_DEPRICATED.py
 leg_controls/__init__.py
+leg_controls/init_legs.py
 leg_controls/test_IK_TF_Comparison.py
 leg_controls/test_movement.py
 resource/leg_controls

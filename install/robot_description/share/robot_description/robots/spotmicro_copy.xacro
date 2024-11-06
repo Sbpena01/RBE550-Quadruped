@@ -72,7 +72,7 @@
       <child link="${pos}_shoulder_link"/>
       <axis xyz="1 0 0"/>
       <origin rpy="0 0 0" xyz="${shiftx} ${shifty} 0"/>
-      <limit effort="1000.0" lower="-0.548" upper="0.548" velocity="0.7"/>
+      <limit effort="1000.0" lower="-0.548" upper="0.548" velocity="100"/>
       <dynamics damping="0.0" friction="0.5"/>
     </joint>
   </xacro:macro>
@@ -134,7 +134,7 @@
       <child link="${pos}_leg_link"/>
       <axis xyz="0 1 0"/>
       <origin rpy="0 0 0" xyz="0 ${shift} 0"/>
-      <limit effort="1000.0" lower="-2.666" upper="1.548" velocity="0.5"/>
+      <limit effort="1000.0" lower="-2.666" upper="1.548" velocity="100"/>
       <dynamics damping="0.0" friction="0.0"/>
     </joint>
 
@@ -183,7 +183,7 @@
       <child link="${pos}_foot_link"/>
       <axis xyz="0 1 0"/>
       <origin rpy="0 0 0" xyz="-0.01 0 -${leg_length}"/>
-      <limit effort="1000.0" lower="-0.1" upper="2.59" velocity="0.5"/>
+      <limit effort="1000.0" lower="-0.1" upper="2.59" velocity="100"/>
       <dynamics damping="0.0" friction="0.5"/>
     </joint>
   </xacro:macro>
@@ -310,6 +310,38 @@
     <child link="front_link"/>
   </joint>
 
+  <link name="imu_link">
+    <inertial>
+      <mass value="0.01"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+    </inertial>
+  </link>
+  
+  <joint name="imu_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="imu_link"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+   </joint>
+
+  <gazebo reference="imu_link">
+    <gravity>true</gravity>
+    <sensor name='imu_sensor' type='imu'>
+        <always_on>1</always_on>
+        <update_rate>1000</update_rate>
+        <visualize>1</visualize>
+        <topic>imu_data</topic>
+        <plugin name='imu_plugin' filename='libgazebo_ros_imu_sensor.so'>
+            <topicName>imu_data</topicName>
+            <bodyName>imu_sensor_link</bodyName>
+            <updateRateHZ>10.0</updateRateHZ>
+            <gaussianNoise>0.0</gaussianNoise>
+            <xyzOffset>0 0 0</xyzOffset>
+            <rpyOffset>0 0 0</rpyOffset>
+        </plugin>
+        <pose>0 0 0 0 0 0</pose>
+    </sensor>
+  </gazebo>
   <!-- create Legs -->
 
   <xacro:gen_full_leg_joint pos="front_left" shiftx="-${shiftx}" shifty="-${shifty}" shift="-${shift}" left="true"/>
