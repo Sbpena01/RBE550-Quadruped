@@ -2,12 +2,13 @@
 import rclpy
 from rclpy.node import Node
 from Leg import Leg
-from geometry_msgs.msg import Pose
+from custom_interface.msg import LegState
 
 class FrontRightLeg(Leg):
     def __init__(self):
         super().__init__('front_right_leg', is_left=False)
-        self.pose_subscriber = self.create_subscription(Pose, '/front_right_ee_pose', self.moveTo, 10)
+        self.pose_subscriber = self.create_subscription(LegState, '/front_right_ee_pose', self.moveThroughTrajectory, 1)
+        # self.timer = self.create_timer(0.1, self.move)
 
 def main(args=None):
     rclpy.init(args=args)

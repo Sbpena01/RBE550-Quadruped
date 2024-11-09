@@ -24,7 +24,7 @@ def generate_launch_description():
             description='Use simulation (Gazebo) clock if true'),
         front_left_leg,
         front_right_leg,
-        rear_left_leg,
         rear_right_leg,
+        rear_left_leg,
         init_legs
     ])

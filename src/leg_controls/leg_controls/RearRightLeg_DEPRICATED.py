@@ -60,10 +60,6 @@ class RearRightLeg(Node):
         self.foot_angle=np.arccos(D) 
 
         self.leg_angle=np.arctan2(z,G)-np.arctan2(l4*np.sin(self.foot_angle),l3+l4*np.cos(self.foot_angle))
-        
-        # print(self.shoulder_angle, self.leg_angle, self.foot_angle)
-        # Publish the leg angles to Gazebo and PID controller
-        self.publish()
 
 def main(args=None):
     rclpy.init(args=args)
