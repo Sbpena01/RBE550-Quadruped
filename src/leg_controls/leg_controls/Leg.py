@@ -53,9 +53,9 @@ class Leg(Node):
             time.sleep(0.05)
 
     def move(self):
-        if not self.is_swing:
-            self.current_pose.position.x += self.x_offset
-            self.current_pose.position.z += self.z_offset
+        # if not self.is_swing:
+        #     self.current_pose.position.x += self.x_offset
+        #     self.current_pose.position.z += self.z_offset
         self.shoulder, self.leg, self.foot = self.IK(self.current_pose)
         self.publish()
 
@@ -109,7 +109,8 @@ class Leg(Node):
         start = np.array([self.current_pose.position.x, self.current_pose.position.y, self.current_pose.position.z])
         end = np.array([pose.position.x, pose.position.y, pose.position.z])
         idx = 0
-        length = 10
+        time = 4
+        length = int(10 * time)
         if self.is_swing:
             P1 = np.array([start[0], start[1]+height, start[2]])
             P2 = np.array([end[0], end[1]+height, end[2]])

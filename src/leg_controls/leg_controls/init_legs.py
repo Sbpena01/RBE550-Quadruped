@@ -6,13 +6,13 @@ import time
 class LegInit(Node):
     left_pose = LegState()
     left_pose.is_swing = False
-    left_pose.pose.position.x = -30.0
+    left_pose.pose.position.x = -40.0
     left_pose.pose.position.y = -130.0
-    left_pose.pose.position.z = -10.0
+    left_pose.pose.position.z = -0.0
 
     right_pose = LegState()
     right_pose.is_swing = False
-    right_pose.pose.position.x = -20.0
+    right_pose.pose.position.x = -40.0
     right_pose.pose.position.y = -130.0
     right_pose.pose.position.z = -10.0
 
