@@ -7,6 +7,9 @@
   <maintainer email="sbpena01@gmail.com">sbpena01</maintainer>
   <license>Apache-2.0</license>
 
+  <depend>python3-ikpy-pip</depend>
+  <depend>python3-urdfpy-pip</depend>
+
   <exec_depend>rclpy</exec_depend>
   <exec_depend>std_msgs</exec_depend>
   <exec_depend>custom_interface</exec_depend>

@@ -1,0 +1,24 @@
+[0.018s] Invoking command in '/home/scott-pena/GitHub/RBE550-Quadruped/build/custom_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/scott-pena/GitHub/RBE550-Quadruped/build/custom_interface -- -j24 -l24
+[0.251s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.252s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.252s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.252s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.252s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.252s] -- Found rosidl_adapter: 4.6.4 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.253s] -- Configuring incomplete, errors occurred!
+[0.253s] [33mCMake Warning (dev) at CMakeLists.txt:16:
+[0.253s]   Syntax Warning in cmake code at column 20
+[0.253s] 
+[0.253s]   Argument not separated from preceding token by whitespace.
+[0.253s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.253s] [0m
+[0.253s] [31mCMake Error at /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:95 (message):
+[0.253s]   rosidl_generate_interfaces() the passed file ',' doesn't exist relative to
+[0.253s]   the CMAKE_CURRENT_SOURCE_DIR
+[0.253s]   '/home/scott-pena/GitHub/RBE550-Quadruped/src/custom_interface'
+[0.253s] Call Stack (most recent call first):
+[0.253s]   CMakeLists.txt:15 (rosidl_generate_interfaces)
+[0.253s] 
+[0.254s] [0m
+[0.254s] gmake: *** [Makefile:815: cmake_check_build_system] Error 1
+[0.482s] Invoked command in '/home/scott-pena/GitHub/RBE550-Quadruped/build/custom_interface' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/scott-pena/GitHub/RBE550-Quadruped/build/custom_interface -- -j24 -l24

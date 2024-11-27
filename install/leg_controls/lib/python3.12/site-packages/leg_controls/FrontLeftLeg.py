@@ -2,12 +2,14 @@
 import rclpy
 from rclpy.node import Node
 from Leg import Leg
-from geometry_msgs.msg import Pose
+from custom_interface.msg import LegState
+from ikpy import chain
+from ikpy.link import OriginLink, URDFLink
 
 class FrontLeftLeg(Leg):
     def __init__(self):
-        super().__init__('front_left_leg', is_left=True)
-        self.pose_subscriber = self.create_subscription(Pose, '/front_left_ee_pose', self.moveTo, 10)
+        super().__init__('front_left', is_left=True)
+        self.pose_subscriber = self.create_subscription(LegState, '/front_left_ee_pose', self.moveThroughTrajectory, 1)
 
 def main(args=None):
     rclpy.init(args=args)

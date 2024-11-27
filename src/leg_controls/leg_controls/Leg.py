@@ -1,5 +1,7 @@
 import rclpy
 from rclpy.node import Node
+# from rclpy import time
+import time
 
 from std_msgs.msg import Float64MultiArray
 from geometry_msgs.msg import Pose
@@ -7,20 +9,29 @@ from custom_interface.msg import ImuData, LegState
 
 import numpy as np
 import threading
-import time
+from tf2_ros import TransformException
+from tf2_ros.buffer import Buffer
+from tf2_ros.transform_listener import TransformListener
+from tf2_ros.static_transform_broadcaster import StaticTransformBroadcaster
+
+from geometry_msgs.msg import TransformStamped, PoseStamped, Point
 
 class Leg(Node):
     def __init__(self, node_name: str, is_left = True):
         super().__init__(node_name)
         self.name = node_name
-        self.joint_publisher = self.create_publisher(Float64MultiArray, '/'+node_name+'_controller/commands', 10)
+        self.joint_publisher = self.create_publisher(Float64MultiArray, '/'+node_name+'_leg_controller/commands', 10)
         self.pose_subscriber = None
         self.imu_subscriber = self.create_subscription(ImuData, '/get_imu_data', self.updateOffsets, 1)
+        self.tf_buffer = Buffer()
+        self.tf_listener = TransformListener(self.tf_buffer, self)
+        self.timer = self.create_timer(0.25, self.publish)
 
-        self.l1=25
-        self.l2=20
-        self.l3=80
-        self.l4=80
+        self.l0 = 0.0  # Base to shoulder
+        self.l1 = 0.052  # shoulder to leg
+        self.l2 = -0.12  # leg to foot
+        self.l3 = -0.115 # foot to toe
+
         self.shoulder = 0.0
         self.leg = 0.0
         self.foot = 0.0
@@ -34,28 +45,26 @@ class Leg(Node):
         self.is_left = is_left  # Used in inverse kinematics
         self.is_swing = False  # Is the leg swinging or in its stance state (touching the ground)
         self.current_pose = None
-    
+
     def moveThroughTrajectory(self, state:LegState):
-        if self.current_pose is None:
+        if not state.is_swing:
             self.current_pose = state.pose
             self.move()
             return
-        self.is_swing = state.is_swing
-        # self.get_logger().info(f"{self.is_swing}, {state.is_swing}")
-        traj = self.generateTrajectory(state.pose)
-        for col in traj.T:
-            traj_pose = Pose()
-            traj_pose.position.x = col[0]
-            traj_pose.position.y = col[1]
-            traj_pose.position.z = col[2]
-            self.current_pose = traj_pose
-            self.move()
-            time.sleep(0.05)
+        elif state.is_swing:
+            self.is_swing = state.is_swing
+            traj = self.generateTrajectory(state.pose)
+            for col in traj.T:
+                traj_pose = Pose()
+                traj_pose.position.x = col[0]
+                traj_pose.position.y = col[1]
+                traj_pose.position.z = col[2]
+                self.current_pose = traj_pose
+                self.get_logger().info(f"{self.current_pose.position.x, self.current_pose.position.y, self.current_pose.position.z}")
+                self.move()
+                time.sleep(0.01)
 
     def move(self):
-        # if not self.is_swing:
-        #     self.current_pose.position.x += self.x_offset
-        #     self.current_pose.position.z += self.z_offset
         self.shoulder, self.leg, self.foot = self.IK(self.current_pose)
         self.publish()
 
@@ -67,30 +76,51 @@ class Leg(Node):
         ]
         self.joint_publisher.publish(Float64MultiArray(data=data))
 
+    def transformFromBaseLink(self, x, y, z):
+        # These are values taken directly from URDF
+        shiftx = 0.093
+        shifty = 0.036
+        match self.name:
+            case 'front_left':
+                x += -shiftx
+                y += shifty
+            case 'front_right':
+                x += -shiftx
+                y += -shifty
+            case 'rear_left':
+                x += shiftx
+                y += shifty
+            case 'rear_right':
+                x += shiftx
+                y += -shifty
+        return x, y, z
+
     def IK(self, pose: Pose):
-        position = pose.position  # Point msg with X, Y, and Z float64s
-        x = position.x
-        y = position.y
-        z = position.z
-        
-        # Calculations below are from SpotMicroAI, not calculated by us.
-        # See: https://spotmicroai.readthedocs.io/en/latest/kinematic/
+        x = pose.position.x
+        y = pose.position.y
+        z = pose.position.z
+        x, y, z = self.transformFromBaseLink(x, y, z)
 
-        F=np.sqrt(x**2+y**2-self.l1**2)
-        G=F-self.l2  
-        H=np.sqrt(G**2+z**2)
-        
-        if self.is_left:
-            shoulder_angle=np.arctan2(y,x)+np.arctan2(F,-self.l1)
-        else:
-            shoulder_angle=-np.arctan2(y,x)-np.arctan2(F,-self.l1)
+        # Shoulder Angle Calculation
+        C = np.sqrt(z**2 + y**2)
+        D = np.sqrt(C**2 - self.l1**2)
+        alpha = np.arctan2(np.abs(y),np.abs(z))
+        beta = np.arctan2(D, self.l1)
+        shoulder = (alpha + beta) - (np.pi/2)
 
-        D=(H**2-self.l3**2-self.l4**2)/(2*self.l3*self.l4)
-        foot_angle=np.arccos(D) 
+        # Leg Angle Calculation
+        G = np.sqrt(D**2 + x**2)
+        leg_prime = np.arccos((G**2 - self.l2**2 - self.l3**2)/(-2*self.l2*self.l3))
+        foot = np.pi - leg_prime
 
-        leg_angle=np.arctan2(z,G)-np.arctan2(self.l4*np.sin(foot_angle),self.l3+self.l4*np.cos(foot_angle))
-        
-        return (shoulder_angle, leg_angle, foot_angle)
+        # Foot Angle Calculation
+        alpha = np.arctan2(x, D)
+        beta = np.arcsin((self.l3*np.sin(leg_prime))/G)
+        leg = alpha + beta
+        # if self.is_left:
+        #     return (-shoulder, leg, foot)
+        # else:
+        return (shoulder, leg, foot)
 
     def updateOffsets(self, imu_data: ImuData):
         k_x = 2.0
@@ -105,15 +135,15 @@ class Leg(Node):
             self.x_offset += k_x * imu_data.roll
             self.z_offset -= k_z * imu_data.pitch
     
-    def generateTrajectory(self, pose: Pose, height: float = 50):
+    def generateTrajectory(self, pose: Pose, height: float = 0.02):
         start = np.array([self.current_pose.position.x, self.current_pose.position.y, self.current_pose.position.z])
         end = np.array([pose.position.x, pose.position.y, pose.position.z])
         idx = 0
         time = 4
         length = int(10 * time)
         if self.is_swing:
-            P1 = np.array([start[0], start[1]+height, start[2]])
-            P2 = np.array([end[0], end[1]+height, end[2]])
+            P1 = np.array([start[0], start[1], start[2]+height])
+            P2 = np.array([end[0], end[1], end[2]+height])
             steps = np.linspace(0, 1, length)
             B = np.zeros((3, length))
             for step in steps:
@@ -127,3 +157,15 @@ class Leg(Node):
                 idx += 1
         return B
     
+    def getTransform(self, target:str, source:str) -> TransformStamped:
+        try:
+            transform = self.tf_buffer.lookup_transform(
+                target,
+                source,
+                time.Time())
+            # print("Found transform!")
+            return transform
+        except TransformException as ex:
+            self.get_logger().info(
+                f'Could not transform {target} to {source}: {ex}')
+            return TransformStamped()

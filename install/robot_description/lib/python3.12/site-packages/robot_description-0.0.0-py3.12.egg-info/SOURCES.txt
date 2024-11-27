@@ -94,6 +94,7 @@ meshes/testmount.stl
 meshes/top.stl
 resource/robot_description
 robot_description/__init__.py
+robots/spotmicro.urdf
 robots/spotmicro.xacro
 robots/spotmicro_copy.xacro
 robots/spotmicro_generated.urdf

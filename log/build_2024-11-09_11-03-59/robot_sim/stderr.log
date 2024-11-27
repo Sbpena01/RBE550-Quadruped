@@ -1,0 +1,36 @@
+Traceback (most recent call last):
+  File "/home/scott-pena/GitHub/RBE550-Quadruped/src/robot_sim/setup.py", line 7, in <module>
+    setup(
+  File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 107, in setup
+    return distutils.core.setup(**attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/setuptools/_distutils/core.py", line 172, in setup
+    ok = dist.parse_command_line()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/setuptools/_distutils/dist.py", line 475, in parse_command_line
+    args = self._parse_command_opts(parser, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/setuptools/dist.py", line 1133, in _parse_command_opts
+    nargs = _Distribution._parse_command_opts(self, parser, args)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/setuptools/_distutils/dist.py", line 534, in _parse_command_opts
+    cmd_class = self.get_command_class(command)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/setuptools/dist.py", line 978, in get_command_class
+    eps = metadata.entry_points(group='distutils.commands', name=command)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 913, in entry_points
+    return EntryPoints(eps).select(**params)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 910, in <genexpr>
+    eps = itertools.chain.from_iterable(
+                                       ^
+  File "/usr/lib/python3.12/importlib/metadata/_itertools.py", line 16, in unique_everseen
+    k = key(element)
+        ^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 832, in _normalized_name
+    stem = os.path.basename(str(self._path))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen posixpath>", line 172, in basename
+  File "<frozen posixpath>", line 41, in _get_sep
+KeyboardInterrupt

@@ -1,0 +1,25 @@
+[1.410s] Invoking command in '/home/scott-pena/GitHub/RBE550-Quadruped/src/quadruped': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/scott-pena/GitHub/RBE550-Quadruped/build/quadruped/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/quadruped build --build-base /home/scott-pena/GitHub/RBE550-Quadruped/build/quadruped/build install --record /home/scott-pena/GitHub/RBE550-Quadruped/build/quadruped/install.log --single-version-externally-managed install_data
+[1.781s] running egg_info
+[1.811s] writing ../../build/quadruped/quadruped.egg-info/PKG-INFO
+[1.811s] writing dependency_links to ../../build/quadruped/quadruped.egg-info/dependency_links.txt
+[1.811s] writing entry points to ../../build/quadruped/quadruped.egg-info/entry_points.txt
+[1.811s] writing requirements to ../../build/quadruped/quadruped.egg-info/requires.txt
+[1.812s] writing top-level names to ../../build/quadruped/quadruped.egg-info/top_level.txt
+[1.874s] reading manifest file '../../build/quadruped/quadruped.egg-info/SOURCES.txt'
+[1.875s] adding license file 'LICENSE'
+[1.875s] writing manifest file '../../build/quadruped/quadruped.egg-info/SOURCES.txt'
+[1.889s] running build
+[1.889s] running build_py
+[1.889s] copying quadruped/Quadruped.py -> /home/scott-pena/GitHub/RBE550-Quadruped/build/quadruped/build/lib/quadruped
+[1.890s] running install
+[1.890s] running install_lib
+[1.915s] copying /home/scott-pena/GitHub/RBE550-Quadruped/build/quadruped/build/lib/quadruped/Quadruped.py -> /home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/lib/python3.12/site-packages/quadruped
+[1.915s] byte-compiling /home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/lib/python3.12/site-packages/quadruped/Quadruped.py to Quadruped.cpython-312.pyc
+[1.917s] running install_data
+[1.917s] running install_egg_info
+[1.949s] removing '/home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/lib/python3.12/site-packages/quadruped-0.0.0-py3.12.egg-info' (and everything under it)
+[1.949s] Copying ../../build/quadruped/quadruped.egg-info to /home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/lib/python3.12/site-packages/quadruped-0.0.0-py3.12.egg-info
+[1.950s] running install_scripts
+[2.145s] Installing quadruped script to /home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/lib/quadruped
+[2.145s] writing list of installed files to '/home/scott-pena/GitHub/RBE550-Quadruped/build/quadruped/install.log'
+[2.177s] Invoked command in '/home/scott-pena/GitHub/RBE550-Quadruped/src/quadruped' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/scott-pena/GitHub/RBE550-Quadruped/build/quadruped/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/quadruped build --build-base /home/scott-pena/GitHub/RBE550-Quadruped/build/quadruped/build install --record /home/scott-pena/GitHub/RBE550-Quadruped/build/quadruped/install.log --single-version-externally-managed install_data

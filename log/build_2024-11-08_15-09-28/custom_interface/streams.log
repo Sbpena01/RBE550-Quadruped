@@ -1,0 +1,40 @@
+[0.016s] Invoking command in '/home/scott-pena/GitHub/RBE550-Quadruped/build/custom_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/scott-pena/GitHub/RBE550-Quadruped/build/custom_interface -- -j24 -l24
+[0.245s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.245s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.245s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.245s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.245s] -- Found rosidl_adapter: 4.6.4 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.413s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[0.501s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.613s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.614s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[0.847s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[0.856s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.866s] -- Added test 'lint_cmake' to check CMake code style
+[0.868s] -- Added test 'xmllint' to check XML markup files
+[0.870s] -- Configuring done (0.8s)
+[0.908s] -- Generating done (0.0s)
+[0.913s] -- Build files have been written to: /home/scott-pena/GitHub/RBE550-Quadruped/build/custom_interface
+[0.956s] [  2%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[0.967s] [  2%] Built target ament_cmake_python_copy_custom_interface
+[1.233s] running egg_info
+[1.264s] writing custom_interface.egg-info/PKG-INFO
+[1.264s] writing dependency_links to custom_interface.egg-info/dependency_links.txt
+[1.264s] writing top-level names to custom_interface.egg-info/top_level.txt
+[1.356s] reading manifest file 'custom_interface.egg-info/SOURCES.txt'
+[1.356s] writing manifest file 'custom_interface.egg-info/SOURCES.txt'
+[1.384s] [  2%] Built target ament_cmake_python_build_custom_interface_egg
+[22.155s] Traceback (most recent call last):
+[22.155s]   File "/opt/ros/jazzy/lib/rosidl_generator_type_description/rosidl_generator_type_description", line 50, in <module>
+[22.156s]     sys.exit(main())
+[22.156s]              ^^^^^^
+[22.156s]   File "/opt/ros/jazzy/lib/rosidl_generator_type_description/rosidl_generator_type_description", line 46, in main
+[22.156s]     generate_type_hash(args.generator_arguments_file)
+[22.156s]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_generator_type_description/__init__.py", line 160, in generate_type_hash
+[22.156s]     pkg_dir = include_map[pkg]
+[22.156s]               ~~~~~~~~~~~^^^^^
+[22.156s] KeyError: 'geometry_msgs'
+[22.195s] gmake[2]: *** [CMakeFiles/custom_interface__rosidl_generator_type_description.dir/build.make:77: rosidl_generator_type_description/custom_interface/msg/ImuData.json] Error 1
+[22.195s] gmake[1]: *** [CMakeFiles/Makefile2:215: CMakeFiles/custom_interface__rosidl_generator_type_description.dir/all] Error 2
+[22.195s] gmake: *** [Makefile:146: all] Error 2
+[22.198s] Invoked command in '/home/scott-pena/GitHub/RBE550-Quadruped/build/custom_interface' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/scott-pena/GitHub/RBE550-Quadruped/build/custom_interface -- -j24 -l24

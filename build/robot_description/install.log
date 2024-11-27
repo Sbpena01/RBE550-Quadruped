@@ -86,6 +86,7 @@
 /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes/T_cover.stl
 /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/gazebo/materials.xacro
 /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/gazebo/robot.gazebo.xacro
+/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/robots/spotmicro.urdf
 /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/robots/spotmicro_generated.urdf
 /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/robots/spotmicro_copy.xacro
 /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/robots/spotmicro.xacro

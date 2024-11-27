@@ -1,0 +1,22 @@
+[0.733s] Invoking command in '/home/scott-pena/GitHub/RBE550-Quadruped/src/sensors': AMENT_PREFIX_PATH=/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface CMAKE_PREFIX_PATH=/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib PYTHONPATH=/home/scott-pena/GitHub/RBE550-Quadruped/build/sensors/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/scott-pena/GitHub/RBE550-Quadruped/install/sensors/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/sensors build --build-base /home/scott-pena/GitHub/RBE550-Quadruped/build/sensors/build install --record /home/scott-pena/GitHub/RBE550-Quadruped/build/sensors/install.log --single-version-externally-managed install_data
+[0.925s] running egg_info
+[0.939s] writing ../../build/sensors/sensors.egg-info/PKG-INFO
+[0.939s] writing dependency_links to ../../build/sensors/sensors.egg-info/dependency_links.txt
+[0.939s] writing entry points to ../../build/sensors/sensors.egg-info/entry_points.txt
+[0.939s] writing requirements to ../../build/sensors/sensors.egg-info/requires.txt
+[0.940s] writing top-level names to ../../build/sensors/sensors.egg-info/top_level.txt
+[0.969s] reading manifest file '../../build/sensors/sensors.egg-info/SOURCES.txt'
+[0.969s] adding license file 'LICENSE'
+[0.969s] writing manifest file '../../build/sensors/sensors.egg-info/SOURCES.txt'
+[0.969s] running build
+[0.969s] running build_py
+[0.970s] running install
+[0.974s] running install_lib
+[0.989s] running install_data
+[0.989s] running install_egg_info
+[1.004s] removing '/home/scott-pena/GitHub/RBE550-Quadruped/install/sensors/lib/python3.12/site-packages/sensors-0.0.0-py3.12.egg-info' (and everything under it)
+[1.005s] Copying ../../build/sensors/sensors.egg-info to /home/scott-pena/GitHub/RBE550-Quadruped/install/sensors/lib/python3.12/site-packages/sensors-0.0.0-py3.12.egg-info
+[1.005s] running install_scripts
+[1.105s] Installing imu script to /home/scott-pena/GitHub/RBE550-Quadruped/install/sensors/lib/sensors
+[1.105s] writing list of installed files to '/home/scott-pena/GitHub/RBE550-Quadruped/build/sensors/install.log'
+[1.123s] Invoked command in '/home/scott-pena/GitHub/RBE550-Quadruped/src/sensors' returned '0': AMENT_PREFIX_PATH=/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface CMAKE_PREFIX_PATH=/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib PYTHONPATH=/home/scott-pena/GitHub/RBE550-Quadruped/build/sensors/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/scott-pena/GitHub/RBE550-Quadruped/install/sensors/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/sensors build --build-base /home/scott-pena/GitHub/RBE550-Quadruped/build/sensors/build install --record /home/scott-pena/GitHub/RBE550-Quadruped/build/sensors/install.log --single-version-externally-managed install_data

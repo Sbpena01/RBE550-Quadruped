@@ -1,0 +1,226 @@
+[1.055s] Invoking command in '/home/scott-pena/GitHub/RBE550-Quadruped/build/custom_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/scott-pena/GitHub/RBE550-Quadruped/build/custom_interface -- -j24 -l24
+[2.934s] [  2%] Built target custom_interface__rosidl_generator_type_description
+[2.934s] [  4%] Built target custom_interface__cpp
+[2.934s] [ 22%] Built target custom_interface__rosidl_generator_c
+[2.934s] [ 22%] Built target ament_cmake_python_copy_custom_interface
+[2.936s] [ 31%] Built target custom_interface__rosidl_typesupport_cpp
+[2.940s] [ 40%] Built target custom_interface__rosidl_typesupport_fastrtps_cpp
+[2.996s] [ 54%] Built target custom_interface__rosidl_typesupport_c
+[2.996s] [ 59%] Built target custom_interface__rosidl_typesupport_introspection_cpp
+[2.999s] [ 68%] Built target custom_interface__rosidl_typesupport_introspection_c
+[3.002s] [ 77%] Built target custom_interface__rosidl_typesupport_fastrtps_c
+[3.021s] [ 77%] Built target custom_interface
+[3.039s] [ 79%] Built target custom_interface__py
+[3.061s] [ 86%] Built target custom_interface__rosidl_generator_py
+[3.082s] [ 90%] Built target custom_interface_s__rosidl_typesupport_introspection_c
+[3.083s] [ 95%] Built target custom_interface_s__rosidl_typesupport_c
+[3.099s] [100%] Built target custom_interface_s__rosidl_typesupport_fastrtps_c
+[3.205s] running egg_info
+[3.231s] writing custom_interface.egg-info/PKG-INFO
+[3.232s] writing dependency_links to custom_interface.egg-info/dependency_links.txt
+[3.232s] writing top-level names to custom_interface.egg-info/top_level.txt
+[3.298s] reading manifest file 'custom_interface.egg-info/SOURCES.txt'
+[3.299s] writing manifest file 'custom_interface.egg-info/SOURCES.txt'
+[3.321s] [100%] Built target ament_cmake_python_build_custom_interface_egg
+[3.332s] Invoked command in '/home/scott-pena/GitHub/RBE550-Quadruped/build/custom_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/scott-pena/GitHub/RBE550-Quadruped/build/custom_interface -- -j24 -l24
+[3.412s] Invoking command in '/home/scott-pena/GitHub/RBE550-Quadruped/build/custom_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/scott-pena/GitHub/RBE550-Quadruped/build/custom_interface
+[3.421s] -- Install configuration: ""
+[3.431s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/ament_index/resource_index/rosidl_interfaces/custom_interface
+[3.431s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/msg/ImuData.json
+[3.431s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/msg/LegState.json
+[3.431s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface
+[3.431s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg
+[3.431s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/leg_state.h
+[3.431s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/leg_pose.h
+[3.431s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/imu_data.h
+[3.431s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/rosidl_generator_c__visibility_control.h
+[3.431s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail
+[3.432s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/leg_pose__description.c
+[3.432s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/leg_state__type_support.h
+[3.432s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/imu_data__functions.c
+[3.432s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/leg_pose__type_support.h
+[3.432s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/imu_data__functions.h
+[3.432s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/leg_state__type_support.c
+[3.432s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/imu_data__struct.h
+[3.432s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/leg_pose__struct.h
+[3.432s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/leg_pose__functions.c
+[3.432s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/leg_pose__functions.h
+[3.432s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/leg_state__description.c
+[3.432s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/leg_pose__type_support.c
+[3.432s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/leg_state__functions.c
+[3.432s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/imu_data__description.c
+[3.432s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/imu_data__type_support.h
+[3.432s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/leg_state__struct.h
+[3.432s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/leg_state__functions.h
+[3.432s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/imu_data__type_support.c
+[3.433s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/srv
+[3.433s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/srv/imu_data.h
+[3.433s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/srv/detail
+[3.433s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/srv/detail/imu_data__functions.c
+[3.433s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/srv/detail/imu_data__functions.h
+[3.433s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/srv/detail/imu_data__struct.h
+[3.433s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/srv/detail/imu_data__description.c
+[3.433s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/srv/detail/imu_data__type_support.h
+[3.433s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/srv/detail/imu_data__type_support.c
+[3.433s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/environment/library_path.sh
+[3.433s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/environment/library_path.dsv
+[3.440s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/libcustom_interface__rosidl_generator_c.so
+[3.440s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface
+[3.440s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg
+[3.440s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[3.440s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail
+[3.440s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/leg_pose__rosidl_typesupport_fastrtps_c.h
+[3.440s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/imu_data__rosidl_typesupport_fastrtps_c.h
+[3.440s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/leg_state__rosidl_typesupport_fastrtps_c.h
+[3.440s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/srv
+[3.441s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/srv/detail
+[3.441s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/srv/detail/imu_data__rosidl_typesupport_fastrtps_c.h
+[3.442s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_fastrtps_c.so
+[3.442s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface
+[3.442s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg
+[3.442s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[3.442s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail
+[3.442s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/leg_pose__rosidl_typesupport_introspection_c.h
+[3.442s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/leg_state__rosidl_typesupport_introspection_c.h
+[3.442s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/leg_state__type_support.c
+[3.442s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/imu_data__rosidl_typesupport_introspection_c.h
+[3.442s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/leg_pose__type_support.c
+[3.442s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/imu_data__type_support.c
+[3.442s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/srv
+[3.442s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/srv/detail
+[3.443s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/srv/detail/imu_data__rosidl_typesupport_introspection_c.h
+[3.443s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/srv/detail/imu_data__type_support.c
+[3.443s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_introspection_c.so
+[3.443s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_c.so
+[3.443s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface
+[3.444s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg
+[3.444s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/rosidl_generator_cpp__visibility_control.hpp
+[3.444s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/imu_data.hpp
+[3.444s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/leg_state.hpp
+[3.444s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/leg_pose.hpp
+[3.444s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail
+[3.444s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/leg_state__type_support.hpp
+[3.444s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/imu_data__struct.hpp
+[3.444s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/imu_data__builder.hpp
+[3.444s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/leg_pose__struct.hpp
+[3.444s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/leg_state__builder.hpp
+[3.444s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/leg_state__struct.hpp
+[3.444s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/leg_pose__builder.hpp
+[3.444s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/leg_state__traits.hpp
+[3.444s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/leg_pose__traits.hpp
+[3.445s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/imu_data__traits.hpp
+[3.445s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/imu_data__type_support.hpp
+[3.445s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/leg_pose__type_support.hpp
+[3.445s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/srv
+[3.445s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/srv/imu_data.hpp
+[3.445s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/srv/detail
+[3.445s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/srv/detail/imu_data__struct.hpp
+[3.445s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/srv/detail/imu_data__builder.hpp
+[3.445s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/srv/detail/imu_data__traits.hpp
+[3.445s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/srv/detail/imu_data__type_support.hpp
+[3.445s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface
+[3.445s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg
+[3.445s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.445s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail
+[3.445s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/imu_data__rosidl_typesupport_fastrtps_cpp.hpp
+[3.445s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/dds_fastrtps
+[3.445s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/leg_pose__rosidl_typesupport_fastrtps_cpp.hpp
+[3.445s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/leg_state__rosidl_typesupport_fastrtps_cpp.hpp
+[3.446s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/srv
+[3.446s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/srv/detail
+[3.446s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/srv/detail/imu_data__rosidl_typesupport_fastrtps_cpp.hpp
+[3.446s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/srv/detail/dds_fastrtps
+[3.456s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_fastrtps_cpp.so
+[3.456s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface
+[3.456s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg
+[3.456s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail
+[3.457s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/leg_state__type_support.cpp
+[3.457s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/imu_data__rosidl_typesupport_introspection_cpp.hpp
+[3.457s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/leg_pose__type_support.cpp
+[3.457s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/leg_state__rosidl_typesupport_introspection_cpp.hpp
+[3.457s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/imu_data__type_support.cpp
+[3.457s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/leg_pose__rosidl_typesupport_introspection_cpp.hpp
+[3.457s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/srv
+[3.457s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/srv/detail
+[3.457s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/srv/detail/imu_data__rosidl_typesupport_introspection_cpp.hpp
+[3.457s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/srv/detail/imu_data__type_support.cpp
+[3.458s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_introspection_cpp.so
+[3.458s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_cpp.so
+[3.458s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/environment/pythonpath.sh
+[3.458s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/environment/pythonpath.dsv
+[3.459s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface-0.0.0-py3.12.egg-info
+[3.459s] -- Installing: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface-0.0.0-py3.12.egg-info/PKG-INFO
+[3.459s] -- Installing: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface-0.0.0-py3.12.egg-info/SOURCES.txt
+[3.459s] -- Installing: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface-0.0.0-py3.12.egg-info/dependency_links.txt
+[3.459s] -- Installing: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface-0.0.0-py3.12.egg-info/top_level.txt
+[3.459s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface
+[3.459s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface/msg
+[3.459s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface/msg/_leg_state_s.c
+[3.459s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface/msg/_imu_data_s.c
+[3.459s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface/msg/_leg_pose.py
+[3.459s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface/msg/_leg_state.py
+[3.459s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface/msg/__init__.py
+[3.460s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface/msg/_leg_pose_s.c
+[3.460s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface/msg/_imu_data.py
+[3.460s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface/__init__.py
+[3.460s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface/srv
+[3.460s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface/srv/_imu_data_s.c
+[3.460s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface/srv/__init__.py
+[3.460s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface/srv/_imu_data.py
+[3.460s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface/custom_interface_s__rosidl_typesupport_introspection_c.so
+[3.460s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface/custom_interface_s__rosidl_typesupport_c.so
+[3.460s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface/custom_interface_s__rosidl_typesupport_fastrtps_c.so
+[3.460s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface/_custom_interface_s.ep.rosidl_typesupport_c.c
+[3.460s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface/_custom_interface_s.ep.rosidl_typesupport_fastrtps_c.c
+[3.460s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface/_custom_interface_s.ep.rosidl_typesupport_introspection_c.c
+[3.534s] Listing '/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface'...
+[3.534s] Listing '/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface/msg'...
+[3.534s] Listing '/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface/srv'...
+[3.539s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface/custom_interface_s__rosidl_typesupport_fastrtps_c.so
+[3.540s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface/custom_interface_s__rosidl_typesupport_introspection_c.so
+[3.541s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface/custom_interface_s__rosidl_typesupport_c.so
+[3.542s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/libcustom_interface__rosidl_generator_py.so
+[3.542s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/msg/ImuData.idl
+[3.542s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/msg/LegState.idl
+[3.542s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/msg/ImuData.msg
+[3.542s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/msg/LegState.msg
+[3.543s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/ament_index/resource_index/package_run_dependencies/custom_interface
+[3.543s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/ament_index/resource_index/parent_prefix_path/custom_interface
+[3.543s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/environment/ament_prefix_path.sh
+[3.543s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/environment/ament_prefix_path.dsv
+[3.543s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/environment/path.sh
+[3.543s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/environment/path.dsv
+[3.543s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/local_setup.bash
+[3.543s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/local_setup.sh
+[3.543s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/local_setup.zsh
+[3.543s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/local_setup.dsv
+[3.543s] -- Installing: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/package.dsv
+[3.544s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/ament_index/resource_index/packages/custom_interface
+[3.544s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/export_custom_interface__rosidl_generator_cExport.cmake
+[3.544s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/export_custom_interface__rosidl_generator_cExport-noconfig.cmake
+[3.545s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/export_custom_interface__rosidl_typesupport_fastrtps_cExport.cmake
+[3.545s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/export_custom_interface__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[3.545s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_typesupport_introspection_cExport.cmake
+[3.545s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[3.546s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_typesupport_cExport.cmake
+[3.546s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_typesupport_cExport-noconfig.cmake
+[3.546s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/export_custom_interface__rosidl_generator_cppExport.cmake
+[3.547s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/export_custom_interface__rosidl_typesupport_fastrtps_cppExport.cmake
+[3.547s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/export_custom_interface__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[3.548s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_typesupport_introspection_cppExport.cmake
+[3.548s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[3.549s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_typesupport_cppExport.cmake
+[3.549s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_typesupport_cppExport-noconfig.cmake
+[3.557s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/export_custom_interface__rosidl_generator_pyExport.cmake
+[3.557s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/export_custom_interface__rosidl_generator_pyExport-noconfig.cmake
+[3.557s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/rosidl_cmake-extras.cmake
+[3.557s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.557s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.557s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/ament_cmake_export_libraries-extras.cmake
+[3.557s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/ament_cmake_export_targets-extras.cmake
+[3.557s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[3.557s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[3.557s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/custom_interfaceConfig.cmake
+[3.557s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/custom_interfaceConfig-version.cmake
+[3.557s] -- Up-to-date: /home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/package.xml
+[3.559s] Invoked command in '/home/scott-pena/GitHub/RBE550-Quadruped/build/custom_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/scott-pena/GitHub/RBE550-Quadruped/build/custom_interface

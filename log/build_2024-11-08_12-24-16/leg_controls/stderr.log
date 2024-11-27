@@ -1,0 +1,5 @@
+  File "/home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls/Leg.py", line 104
+    self.waiting_event.clear() = True
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot assign to function call here. Maybe you meant '==' instead of '='?
+

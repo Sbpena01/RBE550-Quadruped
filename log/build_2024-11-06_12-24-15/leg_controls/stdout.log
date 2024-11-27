@@ -1,0 +1,52 @@
+running egg_info
+writing ../../build/leg_controls/leg_controls.egg-info/PKG-INFO
+writing dependency_links to ../../build/leg_controls/leg_controls.egg-info/dependency_links.txt
+writing entry points to ../../build/leg_controls/leg_controls.egg-info/entry_points.txt
+writing requirements to ../../build/leg_controls/leg_controls.egg-info/requires.txt
+writing top-level names to ../../build/leg_controls/leg_controls.egg-info/top_level.txt
+reading manifest file '../../build/leg_controls/leg_controls.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/leg_controls/leg_controls.egg-info/SOURCES.txt'
+running build
+running build_py
+copying leg_controls/Leg.py -> /home/scott-pena/GitHub/RBE550-Quadruped/build/leg_controls/build/lib/leg_controls
+copying leg_controls/FrontLeftLeg.py -> /home/scott-pena/GitHub/RBE550-Quadruped/build/leg_controls/build/lib/leg_controls
+copying leg_controls/FrontRightLeg.py -> /home/scott-pena/GitHub/RBE550-Quadruped/build/leg_controls/build/lib/leg_controls
+copying leg_controls/RearLeftLeg.py -> /home/scott-pena/GitHub/RBE550-Quadruped/build/leg_controls/build/lib/leg_controls
+copying leg_controls/RearRightLeg.py -> /home/scott-pena/GitHub/RBE550-Quadruped/build/leg_controls/build/lib/leg_controls
+copying leg_controls/init_legs.py -> /home/scott-pena/GitHub/RBE550-Quadruped/build/leg_controls/build/lib/leg_controls
+running install
+running install_lib
+copying /home/scott-pena/GitHub/RBE550-Quadruped/build/leg_controls/build/lib/leg_controls/Leg.py -> /home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls
+copying /home/scott-pena/GitHub/RBE550-Quadruped/build/leg_controls/build/lib/leg_controls/FrontLeftLeg.py -> /home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls
+copying /home/scott-pena/GitHub/RBE550-Quadruped/build/leg_controls/build/lib/leg_controls/FrontRightLeg.py -> /home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls
+copying /home/scott-pena/GitHub/RBE550-Quadruped/build/leg_controls/build/lib/leg_controls/RearLeftLeg.py -> /home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls
+copying /home/scott-pena/GitHub/RBE550-Quadruped/build/leg_controls/build/lib/leg_controls/RearRightLeg.py -> /home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls
+copying /home/scott-pena/GitHub/RBE550-Quadruped/build/leg_controls/build/lib/leg_controls/init_legs.py -> /home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls
+byte-compiling /home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls/Leg.py to Leg.cpython-312.pyc
+byte-compiling /home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls/FrontLeftLeg.py to FrontLeftLeg.cpython-312.pyc
+byte-compiling /home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls/FrontRightLeg.py to FrontRightLeg.cpython-312.pyc
+byte-compiling /home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls/RearLeftLeg.py to RearLeftLeg.cpython-312.pyc
+byte-compiling /home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls/RearRightLeg.py to RearRightLeg.cpython-312.pyc
+byte-compiling /home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls/init_legs.py to init_legs.cpython-312.pyc
+running install_data
+copying package.xml -> /home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/share/leg_controls
+copying leg_controls/Leg.py -> /home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+copying leg_controls/FrontLeftLeg.py -> /home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+copying leg_controls/FrontRightLeg.py -> /home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+copying leg_controls/RearLeftLeg.py -> /home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+copying leg_controls/RearRightLeg.py -> /home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+copying leg_controls/init_legs.py -> /home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+running install_egg_info
+removing '/home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../../build/leg_controls/leg_controls.egg-info to /home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls-0.0.0-py3.12.egg-info
+running install_scripts
+Installing FrontLeftLeg script to /home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+Installing FrontRightLeg script to /home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+Installing RearLeftLeg script to /home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+Installing RearRightLeg script to /home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+Installing gait script to /home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+Installing leg_init script to /home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+Installing test_ik script to /home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+Installing test_movement script to /home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+writing list of installed files to '/home/scott-pena/GitHub/RBE550-Quadruped/build/leg_controls/install.log'

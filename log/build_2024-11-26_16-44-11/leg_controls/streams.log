@@ -1,0 +1,29 @@
+[1.273s] Invoking command in '/home/scott-pena/GitHub/RBE550-Quadruped/src/leg_controls': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/scott-pena/GitHub/RBE550-Quadruped/build/leg_controls/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/sensors/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/py_pubsub/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/leg_controls build --build-base /home/scott-pena/GitHub/RBE550-Quadruped/build/leg_controls/build install --record /home/scott-pena/GitHub/RBE550-Quadruped/build/leg_controls/install.log --single-version-externally-managed install_data
+[1.640s] running egg_info
+[1.671s] writing ../../build/leg_controls/leg_controls.egg-info/PKG-INFO
+[1.671s] writing dependency_links to ../../build/leg_controls/leg_controls.egg-info/dependency_links.txt
+[1.672s] writing entry points to ../../build/leg_controls/leg_controls.egg-info/entry_points.txt
+[1.672s] writing requirements to ../../build/leg_controls/leg_controls.egg-info/requires.txt
+[1.672s] writing top-level names to ../../build/leg_controls/leg_controls.egg-info/top_level.txt
+[1.736s] reading manifest file '../../build/leg_controls/leg_controls.egg-info/SOURCES.txt'
+[1.736s] adding license file 'LICENSE'
+[1.737s] writing manifest file '../../build/leg_controls/leg_controls.egg-info/SOURCES.txt'
+[1.737s] running build
+[1.737s] running build_py
+[1.738s] running install
+[1.744s] running install_lib
+[1.776s] running install_data
+[1.776s] running install_egg_info
+[1.810s] removing '/home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls-0.0.0-py3.12.egg-info' (and everything under it)
+[1.810s] Copying ../../build/leg_controls/leg_controls.egg-info to /home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls-0.0.0-py3.12.egg-info
+[1.811s] running install_scripts
+[2.012s] Installing FrontLeftLeg script to /home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[2.012s] Installing FrontRightLeg script to /home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[2.012s] Installing RearLeftLeg script to /home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[2.012s] Installing RearRightLeg script to /home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[2.012s] Installing gait script to /home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[2.013s] Installing leg_init script to /home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[2.013s] Installing test_ik script to /home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[2.013s] Installing test_movement script to /home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[2.013s] writing list of installed files to '/home/scott-pena/GitHub/RBE550-Quadruped/build/leg_controls/install.log'
+[2.041s] Invoked command in '/home/scott-pena/GitHub/RBE550-Quadruped/src/leg_controls' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/scott-pena/GitHub/RBE550-Quadruped/build/leg_controls/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/sensors/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/py_pubsub/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/leg_controls build --build-base /home/scott-pena/GitHub/RBE550-Quadruped/build/leg_controls/build install --record /home/scott-pena/GitHub/RBE550-Quadruped/build/leg_controls/install.log --single-version-externally-managed install_data

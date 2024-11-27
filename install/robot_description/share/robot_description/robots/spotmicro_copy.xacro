@@ -6,6 +6,8 @@
   <xacro:property name="body_length" value="0.140" />
   <xacro:property name="body_width" value="0.110" />
   <xacro:property name="body_height" value="0.070" />
+  <xacro:property name="base_mesh_path" value="file://$(find champ_description)/meshes/base_simple.stl" />
+  <xacro:property name="base_mass" value="20.0" />
 
   <xacro:property name="lidar_length" value="0.0985" />
   <xacro:property name="lidar_width" value="0.0577" />
@@ -72,7 +74,7 @@
       <child link="${pos}_shoulder_link"/>
       <axis xyz="1 0 0"/>
       <origin rpy="0 0 0" xyz="${shiftx} ${shifty} 0"/>
-      <limit effort="1000.0" lower="-0.548" upper="0.548" velocity="100"/>
+      <limit effort="50.0" lower="-0.548" upper="0.548" velocity="100"/>
       <dynamics damping="0.0" friction="0.5"/>
     </joint>
   </xacro:macro>
@@ -134,7 +136,7 @@
       <child link="${pos}_leg_link"/>
       <axis xyz="0 1 0"/>
       <origin rpy="0 0 0" xyz="0 ${shift} 0"/>
-      <limit effort="1000.0" lower="-2.666" upper="1.548" velocity="100"/>
+      <limit effort="50.0" lower="-2.666" upper="1.548" velocity="100"/>
       <dynamics damping="0.0" friction="0.0"/>
     </joint>
 
@@ -182,8 +184,8 @@
       <parent link="${pos}_leg_link"/>
       <child link="${pos}_foot_link"/>
       <axis xyz="0 1 0"/>
-      <origin rpy="0 0 0" xyz="-0.01 0 -${leg_length}"/>
-      <limit effort="1000.0" lower="-0.1" upper="2.59" velocity="100"/>
+      <origin rpy="0 0 0" xyz="0.0 0 -${leg_length}"/>
+      <limit effort="50.0" lower="-0.1" upper="2.59" velocity="100"/>
       <dynamics damping="0.0" friction="0.5"/>
     </joint>
   </xacro:macro>
@@ -252,8 +254,10 @@
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
     <inertial>
-      <mass value="2.80"/>
-      <inertia ixx="0.05" ixy="0" ixz="0" iyy="0.05" iyz="0" izz="0.05" />
+      <mass value="${base_mass}" />
+      <inertia ixx="${(1/12) * base_mass * (body_width * body_width + body_height * body_height)}" ixy="0.0" ixz="0.0"
+                iyy="${(1/12) * base_mass * (body_length * body_length + body_height * body_height)}" iyz="0.0"
+                izz="${(1/12) * base_mass * (body_length * body_length + body_width * body_width)}" />
     </inertial>
   </link>
 
