@@ -1,0 +1,37 @@
+[2.506s] Invoking command in '/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/src/quadruped': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/quadruped/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/quadruped/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/quadruped build --build-base /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/quadruped/build install --record /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/quadruped/install.log --single-version-externally-managed install_data
+[2.933s] running egg_info
+[2.934s] creating ../../build/quadruped/quadruped.egg-info
+[2.965s] writing ../../build/quadruped/quadruped.egg-info/PKG-INFO
+[2.965s] writing dependency_links to ../../build/quadruped/quadruped.egg-info/dependency_links.txt
+[2.966s] writing entry points to ../../build/quadruped/quadruped.egg-info/entry_points.txt
+[2.966s] writing requirements to ../../build/quadruped/quadruped.egg-info/requires.txt
+[2.966s] writing top-level names to ../../build/quadruped/quadruped.egg-info/top_level.txt
+[2.966s] writing manifest file '../../build/quadruped/quadruped.egg-info/SOURCES.txt'
+[3.030s] reading manifest file '../../build/quadruped/quadruped.egg-info/SOURCES.txt'
+[3.031s] adding license file 'LICENSE'
+[3.032s] writing manifest file '../../build/quadruped/quadruped.egg-info/SOURCES.txt'
+[3.032s] running build
+[3.032s] running build_py
+[3.032s] creating /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/quadruped/build
+[3.033s] creating /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/quadruped/build/lib
+[3.033s] creating /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/quadruped/build/lib/quadruped
+[3.033s] copying quadruped/__init__.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/quadruped/build/lib/quadruped
+[3.033s] copying quadruped/Quadruped.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/quadruped/build/lib/quadruped
+[3.034s] running install
+[3.043s] running install_lib
+[3.077s] creating /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/quadruped/lib/python3.12/site-packages/quadruped
+[3.077s] copying /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/quadruped/build/lib/quadruped/__init__.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/quadruped/lib/python3.12/site-packages/quadruped
+[3.077s] copying /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/quadruped/build/lib/quadruped/Quadruped.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/quadruped/lib/python3.12/site-packages/quadruped
+[3.078s] byte-compiling /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/quadruped/lib/python3.12/site-packages/quadruped/__init__.py to __init__.cpython-312.pyc
+[3.079s] byte-compiling /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/quadruped/lib/python3.12/site-packages/quadruped/Quadruped.py to Quadruped.cpython-312.pyc
+[3.080s] running install_data
+[3.081s] creating /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/quadruped/share/ament_index
+[3.081s] creating /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/quadruped/share/ament_index/resource_index
+[3.081s] creating /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/quadruped/share/ament_index/resource_index/packages
+[3.081s] copying resource/quadruped -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/quadruped/share/ament_index/resource_index/packages
+[3.081s] copying package.xml -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/quadruped/share/quadruped
+[3.081s] running install_egg_info
+[3.116s] Copying ../../build/quadruped/quadruped.egg-info to /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/quadruped/lib/python3.12/site-packages/quadruped-0.0.0-py3.12.egg-info
+[3.117s] running install_scripts
+[3.334s] Installing quadruped script to /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/quadruped/lib/quadruped
+[3.335s] writing list of installed files to '/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/quadruped/install.log'

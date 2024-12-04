@@ -1,0 +1,27 @@
+[1.785s] Invoking command in '/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/src/leg_controls': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/leg_controls/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/leg_controls build --build-base /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/leg_controls/build install --record /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/leg_controls/install.log --single-version-externally-managed install_data
+[2.187s] running egg_info
+[2.215s] writing ../../build/leg_controls/leg_controls.egg-info/PKG-INFO
+[2.215s] writing dependency_links to ../../build/leg_controls/leg_controls.egg-info/dependency_links.txt
+[2.216s] writing entry points to ../../build/leg_controls/leg_controls.egg-info/entry_points.txt
+[2.216s] writing requirements to ../../build/leg_controls/leg_controls.egg-info/requires.txt
+[2.216s] writing top-level names to ../../build/leg_controls/leg_controls.egg-info/top_level.txt
+[2.273s] reading manifest file '../../build/leg_controls/leg_controls.egg-info/SOURCES.txt'
+[2.273s] adding license file 'LICENSE'
+[2.274s] writing manifest file '../../build/leg_controls/leg_controls.egg-info/SOURCES.txt'
+[2.274s] running build
+[2.274s] running build_py
+[2.275s] running install
+[2.285s] running install_lib
+[2.314s] running install_data
+[2.315s] running install_egg_info
+[2.345s] removing '/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls-0.0.0-py3.12.egg-info' (and everything under it)
+[2.345s] Copying ../../build/leg_controls/leg_controls.egg-info to /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls-0.0.0-py3.12.egg-info
+[2.346s] running install_scripts
+[2.540s] Installing FrontLeftLeg script to /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[2.540s] Installing FrontRightLeg script to /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[2.540s] Installing RearLeftLeg script to /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[2.540s] Installing RearRightLeg script to /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[2.540s] Installing gait script to /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[2.541s] Installing test script to /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[2.541s] writing list of installed files to '/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/leg_controls/install.log'
+[2.595s] Invoked command in '/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/src/leg_controls' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/leg_controls/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/leg_controls build --build-base /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/leg_controls/build install --record /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/leg_controls/install.log --single-version-externally-managed install_data

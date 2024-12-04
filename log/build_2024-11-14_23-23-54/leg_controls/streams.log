@@ -1,0 +1,45 @@
+[1.637s] Invoking command in '/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/src/leg_controls': AMENT_PREFIX_PATH=/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/lib:${LD_LIBRARY_PATH} PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/leg_controls/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/leg_controls build --build-base /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/leg_controls/build install --record /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/leg_controls/install.log --single-version-externally-managed install_data
+[2.056s] running egg_info
+[2.084s] writing ../../build/leg_controls/leg_controls.egg-info/PKG-INFO
+[2.085s] writing dependency_links to ../../build/leg_controls/leg_controls.egg-info/dependency_links.txt
+[2.085s] writing entry points to ../../build/leg_controls/leg_controls.egg-info/entry_points.txt
+[2.085s] writing requirements to ../../build/leg_controls/leg_controls.egg-info/requires.txt
+[2.085s] writing top-level names to ../../build/leg_controls/leg_controls.egg-info/top_level.txt
+[2.144s] reading manifest file '../../build/leg_controls/leg_controls.egg-info/SOURCES.txt'
+[2.144s] adding license file 'LICENSE'
+[2.145s] writing manifest file '../../build/leg_controls/leg_controls.egg-info/SOURCES.txt'
+[2.146s] running build
+[2.146s] running build_py
+[2.146s] copying leg_controls/Leg.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/leg_controls/build/lib/leg_controls
+[2.146s] copying leg_controls/RearRightLeg_DEPRICATED.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/leg_controls/build/lib/leg_controls
+[2.146s] copying leg_controls/GaitGenerator.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/leg_controls/build/lib/leg_controls
+[2.147s] copying leg_controls/init_legs.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/leg_controls/build/lib/leg_controls
+[2.147s] running install
+[2.157s] running install_lib
+[2.186s] copying /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/leg_controls/build/lib/leg_controls/Leg.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls
+[2.186s] copying /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/leg_controls/build/lib/leg_controls/RearRightLeg_DEPRICATED.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls
+[2.186s] copying /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/leg_controls/build/lib/leg_controls/GaitGenerator.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls
+[2.187s] copying /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/leg_controls/build/lib/leg_controls/init_legs.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls
+[2.187s] byte-compiling /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls/Leg.py to Leg.cpython-312.pyc
+[2.189s] byte-compiling /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls/RearRightLeg_DEPRICATED.py to RearRightLeg_DEPRICATED.cpython-312.pyc
+[2.190s] byte-compiling /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls/GaitGenerator.py to GaitGenerator.cpython-312.pyc
+[2.192s] byte-compiling /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls/init_legs.py to init_legs.cpython-312.pyc
+[2.193s] running install_data
+[2.193s] copying leg_controls/Leg.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[2.193s] copying leg_controls/RearRightLeg_DEPRICATED.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[2.193s] copying leg_controls/GaitGenerator.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[2.194s] copying leg_controls/init_legs.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[2.194s] running install_egg_info
+[2.222s] removing '/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls-0.0.0-py3.12.egg-info' (and everything under it)
+[2.222s] Copying ../../build/leg_controls/leg_controls.egg-info to /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls-0.0.0-py3.12.egg-info
+[2.224s] running install_scripts
+[2.397s] Installing FrontLeftLeg script to /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[2.397s] Installing FrontRightLeg script to /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[2.397s] Installing RearLeftLeg script to /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[2.397s] Installing RearRightLeg script to /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[2.398s] Installing gait script to /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[2.398s] Installing leg_init script to /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[2.398s] Installing test_ik script to /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[2.398s] Installing test_movement script to /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[2.398s] writing list of installed files to '/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/leg_controls/install.log'
+[2.435s] Invoked command in '/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/src/leg_controls' returned '0': AMENT_PREFIX_PATH=/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/lib:${LD_LIBRARY_PATH} PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/leg_controls/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/leg_controls build --build-base /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/leg_controls/build install --record /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/leg_controls/install.log --single-version-externally-managed install_data

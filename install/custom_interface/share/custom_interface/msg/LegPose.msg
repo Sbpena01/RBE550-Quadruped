@@ -1,2 +1,0 @@
-bool is_swing
-geometry_msgs/Pose leg_pose

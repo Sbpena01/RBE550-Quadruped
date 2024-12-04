@@ -97,6 +97,7 @@ robot_description/__init__.py
 robots/spotmicro.urdf
 robots/spotmicro.xacro
 robots/spotmicro_copy.xacro
+robots/spotmicro_copy_copy.xacro
 robots/spotmicro_generated.urdf
 ros2_control/robot.ros2_control.xacro
 test/test_copyright.py

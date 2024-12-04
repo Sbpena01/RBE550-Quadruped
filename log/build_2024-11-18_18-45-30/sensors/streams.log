@@ -1,0 +1,31 @@
+[1.433s] Invoking command in '/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/src/sensors': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/sensors/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/sensors/lib/python3.12/site-packages:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/sensors/lib/python3.12/site-packages:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_sim/lib/python3.12/site-packages:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/lib/python3.12/site-packages:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/py_pubsub/lib/python3.12/site-packages:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/sensors build --build-base /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/sensors/build install --record /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/sensors/install.log --single-version-externally-managed install_data
+[1.794s] running egg_info
+[1.817s] writing ../../build/sensors/sensors.egg-info/PKG-INFO
+[1.819s] writing dependency_links to ../../build/sensors/sensors.egg-info/dependency_links.txt
+[1.819s] writing entry points to ../../build/sensors/sensors.egg-info/entry_points.txt
+[1.819s] writing requirements to ../../build/sensors/sensors.egg-info/requires.txt
+[1.819s] writing top-level names to ../../build/sensors/sensors.egg-info/top_level.txt
+[1.866s] reading manifest file '../../build/sensors/sensors.egg-info/SOURCES.txt'
+[1.868s] adding license file 'LICENSE'
+[1.869s] writing manifest file '../../build/sensors/sensors.egg-info/SOURCES.txt'
+[1.869s] running build
+[1.869s] running build_py
+[1.870s] running install
+[1.878s] running install_lib
+[1.902s] creating /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/sensors/lib/python3.12/site-packages/sensors
+[1.902s] copying /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/sensors/build/lib/sensors/__init__.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/sensors/lib/python3.12/site-packages/sensors
+[1.902s] copying /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/sensors/build/lib/sensors/IMU.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/sensors/lib/python3.12/site-packages/sensors
+[1.903s] byte-compiling /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/sensors/lib/python3.12/site-packages/sensors/__init__.py to __init__.cpython-312.pyc
+[1.903s] byte-compiling /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/sensors/lib/python3.12/site-packages/sensors/IMU.py to IMU.cpython-312.pyc
+[1.905s] running install_data
+[1.905s] creating /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/sensors/share/ament_index
+[1.905s] creating /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/sensors/share/ament_index/resource_index
+[1.905s] creating /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/sensors/share/ament_index/resource_index/packages
+[1.905s] copying resource/sensors -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/sensors/share/ament_index/resource_index/packages
+[1.905s] copying package.xml -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/sensors/share/sensors
+[1.905s] running install_egg_info
+[1.931s] Copying ../../build/sensors/sensors.egg-info to /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/sensors/lib/python3.12/site-packages/sensors-0.0.0-py3.12.egg-info
+[1.932s] running install_scripts
+[2.091s] Installing imu script to /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/sensors/lib/sensors
+[2.091s] writing list of installed files to '/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/sensors/install.log'
+[2.129s] Invoked command in '/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/src/sensors' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/sensors/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/sensors/lib/python3.12/site-packages:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/sensors/lib/python3.12/site-packages:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_sim/lib/python3.12/site-packages:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/lib/python3.12/site-packages:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/py_pubsub/lib/python3.12/site-packages:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/sensors build --build-base /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/sensors/build install --record /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/sensors/install.log --single-version-externally-managed install_data

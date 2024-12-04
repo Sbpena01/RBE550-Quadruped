@@ -1,0 +1,121 @@
+[1.901s] Invoking command in '/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/src/robot_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/robot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_description build --build-base /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/robot_description/build install --record /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/robot_description/install.log --single-version-externally-managed install_data
+[2.303s] running egg_info
+[2.332s] writing ../../build/robot_description/robot_description.egg-info/PKG-INFO
+[2.334s] writing dependency_links to ../../build/robot_description/robot_description.egg-info/dependency_links.txt
+[2.335s] writing requirements to ../../build/robot_description/robot_description.egg-info/requires.txt
+[2.335s] writing top-level names to ../../build/robot_description/robot_description.egg-info/top_level.txt
+[2.399s] reading manifest file '../../build/robot_description/robot_description.egg-info/SOURCES.txt'
+[2.401s] adding license file 'LICENSE'
+[2.403s] writing manifest file '../../build/robot_description/robot_description.egg-info/SOURCES.txt'
+[2.403s] running build
+[2.403s] running build_py
+[2.404s] running install
+[2.415s] running install_lib
+[2.444s] creating /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/lib/python3.12/site-packages/robot_description
+[2.444s] copying /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/robot_description/build/lib/robot_description/__init__.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/lib/python3.12/site-packages/robot_description
+[2.445s] byte-compiling /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/lib/python3.12/site-packages/robot_description/__init__.py to __init__.cpython-312.pyc
+[2.446s] running install_data
+[2.446s] creating /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/ament_index
+[2.446s] creating /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/ament_index/resource_index
+[2.446s] creating /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/ament_index/resource_index/packages
+[2.446s] copying resource/robot_description -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/ament_index/resource_index/packages
+[2.447s] copying package.xml -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description
+[2.447s] creating /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/config
+[2.447s] copying config/robot_sim.yaml -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/config
+[2.447s] copying config/robot_config.rviz -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/config
+[2.447s] creating /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.448s] copying meshes/jetson_sidepart.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.448s] copying meshes/backpart.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.450s] copying meshes/R_ultra_sonic.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.451s] copying meshes/larm_cover copy.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.453s] copying meshes/jetson_sidepart copy.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.453s] copying meshes/L_ultra_sonic.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.454s] copying meshes/batteryholder.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.455s] copying meshes/rshoulder copy.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.457s] copying meshes/testmount.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.457s] copying meshes/label.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.457s] copying meshes/SpotMicroAI_Bottom.FCStd -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.458s] copying meshes/back.dae -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.461s] copying meshes/R_cover.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.462s] copying meshes/jetsonPlate.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.463s] copying meshes/B_cover.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.464s] copying meshes/larm copy.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.465s] copying meshes/lshoulder.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.468s] copying meshes/rplidar_main.STL -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.471s] copying meshes/mainbody.dae -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.472s] copying meshes/mainbody copy.dae -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.474s] copying meshes/non-mega_T_cover.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.475s] copying meshes/non-mega_L_side_plate.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.476s] copying meshes/frontpart copy.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.478s] copying meshes/F_shoulder.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.479s] copying meshes/F_cover_orig.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.482s] copying meshes/rarm.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.484s] copying meshes/rearmain.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.485s] copying meshes/batteryholder2.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.486s] copying meshes/R_arm_cover.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.488s] copying meshes/R_arm.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.490s] copying meshes/L_arm_joint.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.492s] copying meshes/SpotMicroAI_JetsonParts.FCStd -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.494s] copying meshes/F_cover.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.497s] copying meshes/non-mega_B_cover.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.498s] copying meshes/lshoulder copy.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.499s] copying meshes/L_side_plate.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.500s] copying meshes/larm.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.502s] copying meshes/R_shoulder.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.503s] copying meshes/larm_cover.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.504s] copying meshes/rear.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.505s] copying meshes/mainbody copy.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.508s] copying meshes/L_arm_cover.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.509s] copying meshes/rear2.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.509s] copying meshes/SpotMicroAI_JetsonParts.FCStd1 -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.511s] copying meshes/rfoot.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.512s] copying meshes/R_side_plate.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.512s] copying meshes/SpotMicroAI_Top.FCStd -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.513s] copying meshes/front.dae -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.517s] copying meshes/rearmain copy.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.518s] copying meshes/back copy.dae -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.520s] copying meshes/top.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.521s] copying meshes/rarm_cover copy.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.522s] copying meshes/plate.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.523s] copying meshes/jetsonPlate copy.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.524s] copying meshes/screwguard.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.524s] copying meshes/LICENSE.txt -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.525s] copying meshes/rarm copy.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.527s] copying meshes/ledholder.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.527s] copying meshes/front copy.dae -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.531s] copying meshes/foot.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.533s] copying meshes/rshoulder.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.534s] copying meshes/SpotMicroAI_AdditionalParts.FCStd -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.537s] copying meshes/SpotMicroAI_Bottom.FCStd1 -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.538s] copying meshes/SpotMicroAI_Top.FCStd1 -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.539s] copying meshes/rarm_cover.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.540s] copying meshes/mainbody.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.543s] copying meshes/SpotMicroAI_Rear.FCStd -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.544s] copying meshes/T_cover.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.544s] copying meshes/lfoot.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.545s] copying meshes/lfoot copy.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.546s] copying meshes/R_arm_joint.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.547s] copying meshes/frontpart.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.550s] copying meshes/rfoot copy.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.551s] copying meshes/spotmicroai.blend -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.584s] copying meshes/L_arm.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.585s] copying meshes/R_wrist.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.586s] copying meshes/README.txt -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.587s] copying meshes/bottom.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.587s] copying meshes/spotmicroai copy.blend -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.621s] copying meshes/L_wrist.stl -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[2.622s] creating /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/gazebo
+[2.622s] copying gazebo/robot.gazebo.xacro -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/gazebo
+[2.622s] copying gazebo/materials.xacro -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/gazebo
+[2.623s] creating /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/robots
+[2.623s] copying robots/spotmicro_copy.xacro -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/robots
+[2.623s] copying robots/spotmicro_copy_copy.xacro -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/robots
+[2.623s] copying robots/spotmicro_generated.urdf -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/robots
+[2.623s] copying robots/spotmicro.xacro -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/robots
+[2.624s] creating /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/ros2_control
+[2.624s] copying ros2_control/robot.ros2_control.xacro -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/ros2_control
+[2.624s] running install_egg_info
+[2.656s] Copying ../../build/robot_description/robot_description.egg-info to /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/lib/python3.12/site-packages/robot_description-0.0.0-py3.12.egg-info
+[2.657s] running install_scripts
+[2.855s] writing list of installed files to '/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/robot_description/install.log'
+[2.894s] Invoked command in '/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/src/robot_description' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/robot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_description build --build-base /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/robot_description/build install --record /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/robot_description/install.log --single-version-externally-managed install_data

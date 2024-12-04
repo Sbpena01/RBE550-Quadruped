@@ -35,7 +35,7 @@ def generate_launch_description():
 
     # Launch arguement is declared. Used when we want to launch gz with another world file.
     arguments = LaunchDescription([
-                DeclareLaunchArgument('world', default_value='robot_world',
+                DeclareLaunchArgument('world', default_value='model',
                           description='Gz sim World'),
            ]
     )
