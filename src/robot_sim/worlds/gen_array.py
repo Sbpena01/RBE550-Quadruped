@@ -1,7 +1,9 @@
 import numpy as np
-from random import randrange, seed
+from random import randrange
+from PIL import Image
 
-def genGrid(rows, cols, tarCov, maxFailCount):
+
+def genGrid(rows, cols, tarCov, maxFailCount=1000):
     grid = np.zeros([rows, cols])
     curCov = 0
     count = 0
@@ -42,3 +44,11 @@ def placeShape(grid, shape, pos):
             grid[pos[0]:pos[0]+shapeRows,pos[1]:pos[1]+shapeCols] = newSpace
         return True, grid
     return False, grid
+
+def genHeightmap(filePath, grid):
+    newImage = Image.fromarray(grid)
+
+    if newImage.mode != 'RGB':
+        newImage = newImage.convert('RGB')
+
+    newImage.save(filePath)
