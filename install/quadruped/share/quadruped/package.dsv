@@ -1,6 +1,0 @@
-source;share/quadruped/hook/pythonpath.ps1
-source;share/quadruped/hook/pythonpath.dsv
-source;share/quadruped/hook/pythonpath.sh
-source;share/quadruped/hook/ament_prefix_path.ps1
-source;share/quadruped/hook/ament_prefix_path.dsv
-source;share/quadruped/hook/ament_prefix_path.sh

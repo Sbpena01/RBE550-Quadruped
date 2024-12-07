@@ -3,7 +3,10 @@
 .pydevproject
 cmake_install.cmake
 build/
+install/
+log/
 bin/
 lib/
 msg_gen/
 srv_gen/
+*.pyc  # Ignore all Python bytecode files
