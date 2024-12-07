@@ -5,10 +5,10 @@ filePathHM = "Heightmap.png"
 filePathRRT = "rrt_graph.json"
 filePathPlt = "RRT_Graph.png"
 
-rows = 100
-cols = 100
+rows = 256
+cols = 256
 tarCov = 0.1
-maxDist = 20
+maxDist = 100
 numSamples = 100
 showFig = True
 

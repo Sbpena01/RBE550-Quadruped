@@ -259,6 +259,9 @@
                 iyy="${(1/12) * base_mass * (body_length * body_length + body_height * body_height)}" iyz="0.0"
                 izz="${(1/12) * base_mass * (body_length * body_length + body_width * body_width)}" />
     </inertial>
+    <gazebo>
+      <static>true</static>
+    </gazebo>
   </link>
 
   <link name="rear_link">

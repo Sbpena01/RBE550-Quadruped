@@ -1,28 +1,29 @@
 import rclpy
 from rclpy.node import Node
-# from rclpy import time
-import time
+from rclpy import time
 
+import rclpy.time
 from std_msgs.msg import Float64MultiArray
-from geometry_msgs.msg import Pose
-from custom_interface.msg import ImuData, LegState
+from geometry_msgs.msg import TransformStamped, Pose, PoseStamped
+from custom_interface.msg import LegState
+from nav_msgs.msg import Path
 
 import numpy as np
-import threading
+import time as t
+
 from tf2_ros import TransformException
 from tf2_ros.buffer import Buffer
 from tf2_ros.transform_listener import TransformListener
-from tf2_ros.static_transform_broadcaster import StaticTransformBroadcaster
 
-from geometry_msgs.msg import TransformStamped, PoseStamped, Point
 
 class Leg(Node):
     def __init__(self, node_name: str, is_left = True):
         super().__init__(node_name)
         self.name = node_name
         self.joint_publisher = self.create_publisher(Float64MultiArray, '/'+node_name+'_leg_controller/commands', 10)
+        self.path_publisher = self.create_publisher(Path, '/swing_trajectory', 10)
         self.pose_subscriber = None
-        self.imu_subscriber = self.create_subscription(ImuData, '/get_imu_data', self.updateOffsets, 1)
+        
         self.tf_buffer = Buffer()
         self.tf_listener = TransformListener(self.tf_buffer, self)
         self.timer = self.create_timer(0.25, self.publish)
@@ -36,17 +37,13 @@ class Leg(Node):
         self.leg = 0.0
         self.foot = 0.0
 
-        # Data used for stability control
-        self.waiting_event = threading.Event()
-        self.imu_data = None
-        self.x_offset = 0.0
-        self.z_offset = 0.0
-
         self.is_left = is_left  # Used in inverse kinematics
         self.is_swing = False  # Is the leg swinging or in its stance state (touching the ground)
         self.current_pose = None
 
-    def moveThroughTrajectory(self, state:LegState):
+    def moveThroughTrajectory(self, state:LegState, visualize=True):
+        if self.name == 'rear_left':
+            self.get_logger().info(f"State: {state.pose.position.x}")
         if not state.is_swing:
             self.current_pose = state.pose
             self.move()
@@ -54,17 +51,29 @@ class Leg(Node):
         elif state.is_swing:
             self.is_swing = state.is_swing
             traj = self.generateTrajectory(state.pose)
+            path: list[PoseStamped] = []
             for col in traj.T:
-                traj_pose = Pose()
-                traj_pose.position.x = col[0]
-                traj_pose.position.y = col[1]
-                traj_pose.position.z = col[2]
-                self.current_pose = traj_pose
-                self.get_logger().info(f"{self.current_pose.position.x, self.current_pose.position.y, self.current_pose.position.z}")
+                traj_pose = PoseStamped()
+                traj_pose.header.frame_id = 'base_link'
+                traj_pose.header.stamp = time.Time().to_msg()
+                traj_pose.pose.position.x = col[0]
+                traj_pose.pose.position.y = col[1]
+                traj_pose.pose.position.z = col[2]
+                path.append(traj_pose)
+            if visualize:
+                rviz_path = Path()
+                rviz_path.header.frame_id = 'base_link'
+                rviz_path.header.stamp = rclpy.time.Time().to_msg()
+                rviz_path.poses = path
+                self.path_publisher.publish(rviz_path)
+            for node in path:
+                self.current_pose = node.pose
                 self.move()
-                time.sleep(0.01)
+                t.sleep(0.01)
 
     def move(self):
+        if self.name == 'rear_left':
+            self.get_logger().info(f"MOVE: {self.current_pose.position.x}")
         self.shoulder, self.leg, self.foot = self.IK(self.current_pose)
         self.publish()
 
@@ -82,16 +91,16 @@ class Leg(Node):
         shifty = 0.036
         match self.name:
             case 'front_left':
-                x += -shiftx
+                x += shiftx
                 y += shifty
             case 'front_right':
-                x += -shiftx
+                x += shiftx
                 y += -shifty
             case 'rear_left':
-                x += shiftx
+                x += -shiftx
                 y += shifty
             case 'rear_right':
-                x += shiftx
+                x += -shiftx
                 y += -shifty
         return x, y, z
 
@@ -114,7 +123,7 @@ class Leg(Node):
         foot = np.pi - leg_prime
 
         # Foot Angle Calculation
-        alpha = np.arctan2(x, D)
+        alpha = np.arctan2(-x, D)
         beta = np.arcsin((self.l3*np.sin(leg_prime))/G)
         leg = alpha + beta
         # if self.is_left:
@@ -122,19 +131,6 @@ class Leg(Node):
         # else:
         return (shoulder, leg, foot)
 
-    def updateOffsets(self, imu_data: ImuData):
-        k_x = 2.0
-        k_z = 2.0
-
-        # The axes for the left and right legs are not the same and the offsets
-        # must be consistent with each leg's frame
-        if self.is_left:
-            self.x_offset -= k_x * imu_data.roll
-            self.z_offset -= k_z * imu_data.pitch
-        else:
-            self.x_offset += k_x * imu_data.roll
-            self.z_offset -= k_z * imu_data.pitch
-    
     def generateTrajectory(self, pose: Pose, height: float = 0.02):
         start = np.array([self.current_pose.position.x, self.current_pose.position.y, self.current_pose.position.z])
         end = np.array([pose.position.x, pose.position.y, pose.position.z])
