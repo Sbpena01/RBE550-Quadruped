@@ -11,9 +11,7 @@
       <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
         <render_engine>ogre2</render_engine>
       </plugin>
-      <plugin filename="gz-sim-imu-system"
-              name="gz::sim::systems::Imu">
-      </plugin>
+      <plugin filename="gz-sim-imu-system" name="gz::sim::systems::Imu"></plugin>
     </gazebo>
 
     <!-- We don't have a sensor yet so leaving this commented -->

@@ -21,6 +21,7 @@ class Leg(Node):
         super().__init__(node_name)
         self.name = node_name
         self.joint_publisher = self.create_publisher(Float64MultiArray, '/'+node_name+'_leg_controller/commands', 10)
+        self.swing_publisher = self.create_publisher(LegState, '/'+node_name+'_leg_state', 10)
         self.path_publisher = self.create_publisher(Path, '/swing_trajectory', 10)
         self.pose_subscriber = None
         
@@ -40,40 +41,49 @@ class Leg(Node):
         self.is_left = is_left  # Used in inverse kinematics
         self.is_swing = False  # Is the leg swinging or in its stance state (touching the ground)
         self.current_pose = None
+        self.initCurrentPose()
+
+    def initCurrentPose(self):
+        transform = self.getTransform(self.name+"_toe_link")
+        while transform.transform.translation.x != 0.0:
+            transform = self.getTransform(self.name+"_toe_link")
+        self.get_logger().info(f"{self.name} Position Initialized")
+        leg_pose = Pose()
+        leg_pose.position.x = transform.transform.translation.x
+        leg_pose.position.y = transform.transform.translation.y
+        leg_pose.position.z = transform.transform.translation.z
+        self.current_pose = Pose()
 
     def moveThroughTrajectory(self, state:LegState, visualize=True):
-        if self.name == 'rear_left':
-            self.get_logger().info(f"State: {state.pose.position.x}")
-        if not state.is_swing:
-            self.current_pose = state.pose
+        # if not state.is_swing:
+        #     self.current_pose = state.pose
+        #     self.move()
+        #     return
+        # elif state.is_swing:
+        self.is_swing = state.is_swing
+        traj = self.generateTrajectory(state.pose)
+        path: list[PoseStamped] = []
+        for col in traj.T:
+            traj_pose = PoseStamped()
+            traj_pose.header.frame_id = 'base_link'
+            traj_pose.header.stamp = time.Time().to_msg()
+            traj_pose.pose.position.x = col[0]
+            traj_pose.pose.position.y = col[1]
+            traj_pose.pose.position.z = col[2]
+            path.append(traj_pose)
+        if visualize:
+            rviz_path = Path()
+            rviz_path.header.frame_id = 'base_link'
+            rviz_path.header.stamp = rclpy.time.Time().to_msg()
+            rviz_path.poses = path
+            self.path_publisher.publish(rviz_path)
+        for node in path:
+            self.current_pose = node.pose
             self.move()
-            return
-        elif state.is_swing:
-            self.is_swing = state.is_swing
-            traj = self.generateTrajectory(state.pose)
-            path: list[PoseStamped] = []
-            for col in traj.T:
-                traj_pose = PoseStamped()
-                traj_pose.header.frame_id = 'base_link'
-                traj_pose.header.stamp = time.Time().to_msg()
-                traj_pose.pose.position.x = col[0]
-                traj_pose.pose.position.y = col[1]
-                traj_pose.pose.position.z = col[2]
-                path.append(traj_pose)
-            if visualize:
-                rviz_path = Path()
-                rviz_path.header.frame_id = 'base_link'
-                rviz_path.header.stamp = rclpy.time.Time().to_msg()
-                rviz_path.poses = path
-                self.path_publisher.publish(rviz_path)
-            for node in path:
-                self.current_pose = node.pose
-                self.move()
-                t.sleep(0.01)
+            t.sleep(0.01)
+        self.is_swing = False  # Trajectory is over
 
     def move(self):
-        if self.name == 'rear_left':
-            self.get_logger().info(f"MOVE: {self.current_pose.position.x}")
         self.shoulder, self.leg, self.foot = self.IK(self.current_pose)
         self.publish()
 
@@ -84,6 +94,16 @@ class Leg(Node):
             self.foot
         ]
         self.joint_publisher.publish(Float64MultiArray(data=data))
+        state_data = LegState()
+        state_data.is_swing = self.is_swing
+        state_data.name = self.name
+        transform = self.getTransform(self.name+"_toe_link")
+        leg_pose = Pose()
+        leg_pose.position.x = transform.transform.translation.x
+        leg_pose.position.y = transform.transform.translation.y
+        leg_pose.position.z = transform.transform.translation.z
+        state_data.pose = leg_pose
+        self.swing_publisher.publish(state_data)
 
     def transformFromBaseLink(self, x, y, z):
         # These are values taken directly from URDF
@@ -153,15 +173,15 @@ class Leg(Node):
                 idx += 1
         return B
     
-    def getTransform(self, target:str, source:str) -> TransformStamped:
+    def getTransform(self, source: str) -> TransformStamped:
+        target = 'base_link'
         try:
             transform = self.tf_buffer.lookup_transform(
                 target,
                 source,
                 time.Time())
-            # print("Found transform!")
             return transform
         except TransformException as ex:
-            self.get_logger().info(
-                f'Could not transform {target} to {source}: {ex}')
+            # self.get_logger().info(
+            #     f'Could not transform {target} to {source}: {ex}')
             return TransformStamped()

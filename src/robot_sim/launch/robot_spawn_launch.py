@@ -129,8 +129,7 @@ def generate_launch_description():
         output='screen'
     )
 
-    # Bridge node is defined. We have no lidar so this is commented to be a reference.
-    bridge = Node(
+    imu_bridge = Node(
         package='ros_gz_bridge',
         executable='parameter_bridge',
         arguments=['/imu_data@sensor_msgs/msg/Imu@gz.msgs.IMU'],  # ros_topic@ros2_msg_type@gazebo_msg_type
@@ -170,7 +169,6 @@ def generate_launch_description():
         gazebo,
         node_robot_state_publisher,
         gz_spawn_entity,
-        bridge,
-        # controller_manager,
+        imu_bridge,
         rviz,
     ])

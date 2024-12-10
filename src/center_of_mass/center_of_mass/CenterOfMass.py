@@ -99,13 +99,11 @@ class CenterOfMass(Node):
 
     def getTransform(self, source:str) -> TransformStamped:
         target = 'base_link'
-        print(time.Time())
         try:
             transform = self.tf_buffer.lookup_transform(
                 target,
                 source,
                 time.Time())
-            print("Found transform!")
             return transform
         except TransformException as ex:
             self.get_logger().info(

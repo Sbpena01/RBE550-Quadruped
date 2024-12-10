@@ -7,7 +7,7 @@ from sensor_msgs.msg import Imu
 from geometry_msgs.msg import Quaternion
 from custom_interface.msg import ImuData  # Highlighted as a warning, but ROS2 takes care of it.
 
-class IMU(Node):
+class ContactSensor(Node):
     def __init__(self, node_name: str):
         super().__init__(node_name)
         self.publisher = self.create_publisher(ImuData, '/get_imu_data', 1)
@@ -21,29 +21,8 @@ class IMU(Node):
         quat = imu_data.orientation
         self.roll, self.pitch, self.yaw = self.quatToEuler(quat)
 
-    def quatToEuler(self, quat:Quaternion):
-        x = quat.x
-        y = quat.y
-        z = quat.z
-        w = quat.w
-
-        # Compute roll (rotation around x-axis)
-        sinr_cosp = 2.0 * (w * x + y * z)
-        cosr_cosp = 1.0 - 2.0 * (x * x + y * y)
-        roll = np.arctan2(sinr_cosp, cosr_cosp)
-
-        # Compute pitch (rotation around y-axis)
-        sinp = 2.0 * (w * y - z * x)
-        pitch = np.arcsin(np.clip(sinp, -1.0, 1.0))  # Clamp to avoid numerical issues
-
-        # Compute yaw (rotation around z-axis)
-        siny_cosp = 2.0 * (w * z + x * y)
-        cosy_cosp = 1.0 - 2.0 * (y * y + z * z)
-        yaw = np.arctan2(siny_cosp, cosy_cosp)
-
-        return roll, pitch, yaw
-
     def publish(self):
+        self.get_logger().info(f"Publishing: {self.roll}, {self.pitch}, {self.yaw}")
         msg = ImuData()
         msg.roll = self.roll
         msg.pitch = self.pitch
@@ -52,7 +31,7 @@ class IMU(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    node = IMU('imu')
+    node = ContactSensor('contact_sensor')
     try:
         rclpy.spin(node)
     except KeyboardInterrupt:
