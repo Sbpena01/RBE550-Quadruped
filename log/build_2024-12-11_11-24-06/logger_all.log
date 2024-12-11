@@ -1,0 +1,521 @@
+[0.095s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.095s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=24, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x70aa608cac60>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x70aa609f4e90>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x70aa609f4e90>>, mixin_verb=('build',))
+[0.124s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.124s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.124s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.124s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.124s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.124s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.124s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/scott-pena/GitHub/RBE550-Quadruped'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(matlab) by extensions ['ignore', 'ignore_ament_install']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(matlab) by extension 'ignore'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(matlab) by extension 'ignore_ament_install'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(matlab) by extensions ['colcon_pkg']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(matlab) by extension 'colcon_pkg'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(matlab) by extensions ['colcon_meta']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(matlab) by extension 'colcon_meta'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(matlab) by extensions ['ros']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(matlab) by extension 'ros'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(matlab) by extensions ['cmake', 'python']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(matlab) by extension 'cmake'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(matlab) by extension 'python'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(matlab) by extensions ['python_setup_py']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(matlab) by extension 'python_setup_py'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/center_of_mass) by extensions ['ignore', 'ignore_ament_install']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/center_of_mass) by extension 'ignore'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/center_of_mass) by extension 'ignore_ament_install'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/center_of_mass) by extensions ['colcon_pkg']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/center_of_mass) by extension 'colcon_pkg'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/center_of_mass) by extensions ['colcon_meta']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/center_of_mass) by extension 'colcon_meta'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/center_of_mass) by extensions ['ros']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/center_of_mass) by extension 'ros'
+[0.147s] DEBUG:colcon.colcon_core.package_identification:Package 'src/center_of_mass' with type 'ros.ament_python' and name 'center_of_mass'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interface) by extension 'ignore'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interface) by extension 'ignore_ament_install'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interface) by extensions ['colcon_pkg']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interface) by extension 'colcon_pkg'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interface) by extensions ['colcon_meta']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interface) by extension 'colcon_meta'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interface) by extensions ['ros']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interface) by extension 'ros'
+[0.148s] DEBUG:colcon.colcon_core.package_identification:Package 'src/custom_interface' with type 'ros.ament_cmake' and name 'custom_interface'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/leg_controls) by extensions ['ignore', 'ignore_ament_install']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/leg_controls) by extension 'ignore'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/leg_controls) by extension 'ignore_ament_install'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/leg_controls) by extensions ['colcon_pkg']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/leg_controls) by extension 'colcon_pkg'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/leg_controls) by extensions ['colcon_meta']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/leg_controls) by extension 'colcon_meta'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/leg_controls) by extensions ['ros']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/leg_controls) by extension 'ros'
+[0.148s] DEBUG:colcon.colcon_core.package_identification:Package 'src/leg_controls' with type 'ros.ament_python' and name 'leg_controls'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion_planner) by extensions ['ignore', 'ignore_ament_install']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion_planner) by extension 'ignore'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion_planner) by extension 'ignore_ament_install'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion_planner) by extensions ['colcon_pkg']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion_planner) by extension 'colcon_pkg'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion_planner) by extensions ['colcon_meta']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion_planner) by extension 'colcon_meta'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion_planner) by extensions ['ros']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion_planner) by extension 'ros'
+[0.149s] DEBUG:colcon.colcon_core.package_identification:Package 'src/motion_planner' with type 'ros.ament_python' and name 'motion_planner'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/quadruped) by extensions ['ignore', 'ignore_ament_install']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/quadruped) by extension 'ignore'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/quadruped) by extension 'ignore_ament_install'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/quadruped) by extensions ['colcon_pkg']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/quadruped) by extension 'colcon_pkg'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/quadruped) by extensions ['colcon_meta']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/quadruped) by extension 'colcon_meta'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/quadruped) by extensions ['ros']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/quadruped) by extension 'ros'
+[0.150s] DEBUG:colcon.colcon_core.package_identification:Package 'src/quadruped' with type 'ros.ament_python' and name 'quadruped'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extensions ['ignore', 'ignore_ament_install']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'ignore'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'ignore_ament_install'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extensions ['colcon_pkg']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'colcon_pkg'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extensions ['colcon_meta']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'colcon_meta'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extensions ['ros']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'ros'
+[0.151s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_description' with type 'ros.ament_python' and name 'robot_description'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_sim) by extensions ['ignore', 'ignore_ament_install']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_sim) by extension 'ignore'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_sim) by extension 'ignore_ament_install'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_sim) by extensions ['colcon_pkg']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_sim) by extension 'colcon_pkg'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_sim) by extensions ['colcon_meta']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_sim) by extension 'colcon_meta'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_sim) by extensions ['ros']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_sim) by extension 'ros'
+[0.151s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_sim' with type 'ros.ament_python' and name 'robot_sim'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensors) by extensions ['ignore', 'ignore_ament_install']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensors) by extension 'ignore'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensors) by extension 'ignore_ament_install'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensors) by extensions ['colcon_pkg']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensors) by extension 'colcon_pkg'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensors) by extensions ['colcon_meta']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensors) by extension 'colcon_meta'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensors) by extensions ['ros']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensors) by extension 'ros'
+[0.152s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sensors' with type 'ros.ament_python' and name 'sensors'
+[0.152s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.152s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.152s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.152s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.152s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.167s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.167s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.168s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 8 installed packages in /home/scott-pena/GitHub/RBE550-Quadruped/install
+[0.170s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 470 installed packages in /opt/ros/jazzy
+[0.171s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.221s] Level 5:colcon.colcon_core.verb:set package 'center_of_mass' build argument 'cmake_args' from command line to 'None'
+[0.221s] Level 5:colcon.colcon_core.verb:set package 'center_of_mass' build argument 'cmake_target' from command line to 'None'
+[0.221s] Level 5:colcon.colcon_core.verb:set package 'center_of_mass' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.221s] Level 5:colcon.colcon_core.verb:set package 'center_of_mass' build argument 'cmake_clean_cache' from command line to 'False'
+[0.221s] Level 5:colcon.colcon_core.verb:set package 'center_of_mass' build argument 'cmake_clean_first' from command line to 'False'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'center_of_mass' build argument 'cmake_force_configure' from command line to 'False'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'center_of_mass' build argument 'ament_cmake_args' from command line to 'None'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'center_of_mass' build argument 'catkin_cmake_args' from command line to 'None'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'center_of_mass' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.222s] DEBUG:colcon.colcon_core.verb:Building package 'center_of_mass' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/scott-pena/GitHub/RBE550-Quadruped/build/center_of_mass', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass', 'merge_install': False, 'path': '/home/scott-pena/GitHub/RBE550-Quadruped/src/center_of_mass', 'symlink_install': False, 'test_result_base': None}
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'custom_interface' build argument 'cmake_args' from command line to 'None'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'custom_interface' build argument 'cmake_target' from command line to 'None'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'custom_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'custom_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'custom_interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'custom_interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'custom_interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'custom_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'custom_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.222s] DEBUG:colcon.colcon_core.verb:Building package 'custom_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/scott-pena/GitHub/RBE550-Quadruped/build/custom_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface', 'merge_install': False, 'path': '/home/scott-pena/GitHub/RBE550-Quadruped/src/custom_interface', 'symlink_install': False, 'test_result_base': None}
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'motion_planner' build argument 'cmake_args' from command line to 'None'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'motion_planner' build argument 'cmake_target' from command line to 'None'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'motion_planner' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'motion_planner' build argument 'cmake_clean_cache' from command line to 'False'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'motion_planner' build argument 'cmake_clean_first' from command line to 'False'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'motion_planner' build argument 'cmake_force_configure' from command line to 'False'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'motion_planner' build argument 'ament_cmake_args' from command line to 'None'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'motion_planner' build argument 'catkin_cmake_args' from command line to 'None'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'motion_planner' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.222s] DEBUG:colcon.colcon_core.verb:Building package 'motion_planner' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/scott-pena/GitHub/RBE550-Quadruped/build/motion_planner', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner', 'merge_install': False, 'path': '/home/scott-pena/GitHub/RBE550-Quadruped/src/motion_planner', 'symlink_install': False, 'test_result_base': None}
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'quadruped' build argument 'cmake_args' from command line to 'None'
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'quadruped' build argument 'cmake_target' from command line to 'None'
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'quadruped' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'quadruped' build argument 'cmake_clean_cache' from command line to 'False'
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'quadruped' build argument 'cmake_clean_first' from command line to 'False'
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'quadruped' build argument 'cmake_force_configure' from command line to 'False'
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'quadruped' build argument 'ament_cmake_args' from command line to 'None'
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'quadruped' build argument 'catkin_cmake_args' from command line to 'None'
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'quadruped' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.223s] DEBUG:colcon.colcon_core.verb:Building package 'quadruped' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/scott-pena/GitHub/RBE550-Quadruped/build/quadruped', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped', 'merge_install': False, 'path': '/home/scott-pena/GitHub/RBE550-Quadruped/src/quadruped', 'symlink_install': False, 'test_result_base': None}
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_args' from command line to 'None'
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_target' from command line to 'None'
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.223s] DEBUG:colcon.colcon_core.verb:Building package 'robot_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/scott-pena/GitHub/RBE550-Quadruped/build/robot_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description', 'merge_install': False, 'path': '/home/scott-pena/GitHub/RBE550-Quadruped/src/robot_description', 'symlink_install': False, 'test_result_base': None}
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'robot_sim' build argument 'cmake_args' from command line to 'None'
+[0.224s] Level 5:colcon.colcon_core.verb:set package 'robot_sim' build argument 'cmake_target' from command line to 'None'
+[0.224s] Level 5:colcon.colcon_core.verb:set package 'robot_sim' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.224s] Level 5:colcon.colcon_core.verb:set package 'robot_sim' build argument 'cmake_clean_cache' from command line to 'False'
+[0.224s] Level 5:colcon.colcon_core.verb:set package 'robot_sim' build argument 'cmake_clean_first' from command line to 'False'
+[0.224s] Level 5:colcon.colcon_core.verb:set package 'robot_sim' build argument 'cmake_force_configure' from command line to 'False'
+[0.224s] Level 5:colcon.colcon_core.verb:set package 'robot_sim' build argument 'ament_cmake_args' from command line to 'None'
+[0.224s] Level 5:colcon.colcon_core.verb:set package 'robot_sim' build argument 'catkin_cmake_args' from command line to 'None'
+[0.224s] Level 5:colcon.colcon_core.verb:set package 'robot_sim' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.224s] DEBUG:colcon.colcon_core.verb:Building package 'robot_sim' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/scott-pena/GitHub/RBE550-Quadruped/build/robot_sim', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim', 'merge_install': False, 'path': '/home/scott-pena/GitHub/RBE550-Quadruped/src/robot_sim', 'symlink_install': False, 'test_result_base': None}
+[0.224s] Level 5:colcon.colcon_core.verb:set package 'leg_controls' build argument 'cmake_args' from command line to 'None'
+[0.224s] Level 5:colcon.colcon_core.verb:set package 'leg_controls' build argument 'cmake_target' from command line to 'None'
+[0.224s] Level 5:colcon.colcon_core.verb:set package 'leg_controls' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.224s] Level 5:colcon.colcon_core.verb:set package 'leg_controls' build argument 'cmake_clean_cache' from command line to 'False'
+[0.224s] Level 5:colcon.colcon_core.verb:set package 'leg_controls' build argument 'cmake_clean_first' from command line to 'False'
+[0.224s] Level 5:colcon.colcon_core.verb:set package 'leg_controls' build argument 'cmake_force_configure' from command line to 'False'
+[0.224s] Level 5:colcon.colcon_core.verb:set package 'leg_controls' build argument 'ament_cmake_args' from command line to 'None'
+[0.224s] Level 5:colcon.colcon_core.verb:set package 'leg_controls' build argument 'catkin_cmake_args' from command line to 'None'
+[0.224s] Level 5:colcon.colcon_core.verb:set package 'leg_controls' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.224s] DEBUG:colcon.colcon_core.verb:Building package 'leg_controls' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/scott-pena/GitHub/RBE550-Quadruped/build/leg_controls', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls', 'merge_install': False, 'path': '/home/scott-pena/GitHub/RBE550-Quadruped/src/leg_controls', 'symlink_install': False, 'test_result_base': None}
+[0.224s] Level 5:colcon.colcon_core.verb:set package 'sensors' build argument 'cmake_args' from command line to 'None'
+[0.224s] Level 5:colcon.colcon_core.verb:set package 'sensors' build argument 'cmake_target' from command line to 'None'
+[0.224s] Level 5:colcon.colcon_core.verb:set package 'sensors' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.224s] Level 5:colcon.colcon_core.verb:set package 'sensors' build argument 'cmake_clean_cache' from command line to 'False'
+[0.224s] Level 5:colcon.colcon_core.verb:set package 'sensors' build argument 'cmake_clean_first' from command line to 'False'
+[0.224s] Level 5:colcon.colcon_core.verb:set package 'sensors' build argument 'cmake_force_configure' from command line to 'False'
+[0.224s] Level 5:colcon.colcon_core.verb:set package 'sensors' build argument 'ament_cmake_args' from command line to 'None'
+[0.224s] Level 5:colcon.colcon_core.verb:set package 'sensors' build argument 'catkin_cmake_args' from command line to 'None'
+[0.224s] Level 5:colcon.colcon_core.verb:set package 'sensors' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.224s] DEBUG:colcon.colcon_core.verb:Building package 'sensors' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/scott-pena/GitHub/RBE550-Quadruped/build/sensors', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/scott-pena/GitHub/RBE550-Quadruped/install/sensors', 'merge_install': False, 'path': '/home/scott-pena/GitHub/RBE550-Quadruped/src/sensors', 'symlink_install': False, 'test_result_base': None}
+[0.224s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.225s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.225s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/scott-pena/GitHub/RBE550-Quadruped/src/custom_interface' with build type 'ament_cmake'
+[0.225s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/scott-pena/GitHub/RBE550-Quadruped/src/custom_interface'
+[0.227s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.227s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.227s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.231s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/scott-pena/GitHub/RBE550-Quadruped/src/center_of_mass' with build type 'ament_python'
+[0.231s] Level 1:colcon.colcon_core.shell:create_environment_hook('center_of_mass', 'ament_prefix_path')
+[0.231s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/share/center_of_mass/hook/ament_prefix_path.ps1'
+[0.232s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/share/center_of_mass/hook/ament_prefix_path.dsv'
+[0.232s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/share/center_of_mass/hook/ament_prefix_path.sh'
+[0.232s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.232s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.236s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/scott-pena/GitHub/RBE550-Quadruped/src/motion_planner' with build type 'ament_python'
+[0.245s] Level 1:colcon.colcon_core.shell:create_environment_hook('motion_planner', 'ament_prefix_path')
+[0.245s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/share/motion_planner/hook/ament_prefix_path.ps1'
+[0.246s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/share/motion_planner/hook/ament_prefix_path.dsv'
+[0.246s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/share/motion_planner/hook/ament_prefix_path.sh'
+[0.247s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.247s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.250s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/scott-pena/GitHub/RBE550-Quadruped/src/quadruped' with build type 'ament_python'
+[0.250s] Level 1:colcon.colcon_core.shell:create_environment_hook('quadruped', 'ament_prefix_path')
+[0.250s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/share/quadruped/hook/ament_prefix_path.ps1'
+[0.251s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/share/quadruped/hook/ament_prefix_path.dsv'
+[0.251s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/share/quadruped/hook/ament_prefix_path.sh'
+[0.251s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.251s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.255s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/scott-pena/GitHub/RBE550-Quadruped/src/robot_description' with build type 'ament_python'
+[0.255s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_description', 'ament_prefix_path')
+[0.255s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/hook/ament_prefix_path.ps1'
+[0.264s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/hook/ament_prefix_path.dsv'
+[0.264s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/hook/ament_prefix_path.sh'
+[0.264s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.264s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.268s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/scott-pena/GitHub/RBE550-Quadruped/src/robot_sim' with build type 'ament_python'
+[0.268s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_sim', 'ament_prefix_path')
+[0.268s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/share/robot_sim/hook/ament_prefix_path.ps1'
+[0.268s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/share/robot_sim/hook/ament_prefix_path.dsv'
+[0.269s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/share/robot_sim/hook/ament_prefix_path.sh'
+[0.269s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.269s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.276s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/scott-pena/GitHub/RBE550-Quadruped/build/custom_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/scott-pena/GitHub/RBE550-Quadruped/install/sensors:/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim:/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description:/home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped:/home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner:/home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls:/home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/scott-pena/GitHub/RBE550-Quadruped/build/custom_interface -- -j24 -l24
+[0.510s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/scott-pena/GitHub/RBE550-Quadruped/src/center_of_mass'
+[0.510s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.510s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.736s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/scott-pena/GitHub/RBE550-Quadruped/src/motion_planner'
+[0.736s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.736s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.965s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/scott-pena/GitHub/RBE550-Quadruped/src/quadruped'
+[0.965s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.965s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.195s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/scott-pena/GitHub/RBE550-Quadruped/src/robot_description'
+[1.195s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.195s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.417s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/scott-pena/GitHub/RBE550-Quadruped/src/robot_sim'
+[1.417s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.417s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.423s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/scott-pena/GitHub/RBE550-Quadruped/build/custom_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/scott-pena/GitHub/RBE550-Quadruped/install/sensors:/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim:/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description:/home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped:/home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner:/home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls:/home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/scott-pena/GitHub/RBE550-Quadruped/build/custom_interface -- -j24 -l24
+[1.530s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/scott-pena/GitHub/RBE550-Quadruped/build/custom_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/scott-pena/GitHub/RBE550-Quadruped/install/sensors:/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim:/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description:/home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped:/home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner:/home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls:/home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/scott-pena/GitHub/RBE550-Quadruped/build/custom_interface
+[1.592s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_interface)
+[1.592s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/scott-pena/GitHub/RBE550-Quadruped/build/custom_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/scott-pena/GitHub/RBE550-Quadruped/install/sensors:/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim:/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description:/home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped:/home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner:/home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls:/home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/scott-pena/GitHub/RBE550-Quadruped/build/custom_interface
+[1.595s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface' for CMake module files
+[1.595s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface' for CMake config files
+[1.596s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interface', 'cmake_prefix_path')
+[1.596s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/hook/cmake_prefix_path.ps1'
+[1.596s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/hook/cmake_prefix_path.dsv'
+[1.596s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/hook/cmake_prefix_path.sh'
+[1.597s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib'
+[1.597s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interface', 'ld_library_path_lib')
+[1.597s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/hook/ld_library_path_lib.ps1'
+[1.598s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/hook/ld_library_path_lib.dsv'
+[1.598s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/hook/ld_library_path_lib.sh'
+[1.598s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/bin'
+[1.598s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/pkgconfig/custom_interface.pc'
+[1.598s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages'
+[1.599s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interface', 'pythonpath')
+[1.599s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/hook/pythonpath.ps1'
+[1.599s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/hook/pythonpath.dsv'
+[1.599s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/hook/pythonpath.sh'
+[1.600s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/bin'
+[1.600s] INFO:colcon.colcon_core.shell:Creating package script '/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/package.ps1'
+[1.601s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/package.dsv'
+[1.601s] INFO:colcon.colcon_core.shell:Creating package script '/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/package.sh'
+[1.602s] INFO:colcon.colcon_core.shell:Creating package script '/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/package.bash'
+[1.602s] INFO:colcon.colcon_core.shell:Creating package script '/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/package.zsh'
+[1.603s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/colcon-core/packages/custom_interface)
+[1.697s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_interface)
+[1.697s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface' for CMake module files
+[1.698s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface' for CMake config files
+[1.698s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interface', 'cmake_prefix_path')
+[1.698s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/hook/cmake_prefix_path.ps1'
+[1.698s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/hook/cmake_prefix_path.dsv'
+[1.699s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/hook/cmake_prefix_path.sh'
+[1.699s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib'
+[1.699s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interface', 'ld_library_path_lib')
+[1.699s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/hook/ld_library_path_lib.ps1'
+[1.700s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/hook/ld_library_path_lib.dsv'
+[1.700s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/hook/ld_library_path_lib.sh'
+[1.700s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/bin'
+[1.700s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/pkgconfig/custom_interface.pc'
+[1.701s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages'
+[1.701s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interface', 'pythonpath')
+[1.701s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/hook/pythonpath.ps1'
+[1.701s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/hook/pythonpath.dsv'
+[1.702s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/hook/pythonpath.sh'
+[1.702s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/bin'
+[1.703s] INFO:colcon.colcon_core.shell:Creating package script '/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/package.ps1'
+[1.703s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/package.dsv'
+[1.703s] INFO:colcon.colcon_core.shell:Creating package script '/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/package.sh'
+[1.704s] INFO:colcon.colcon_core.shell:Creating package script '/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/package.bash'
+[1.704s] INFO:colcon.colcon_core.shell:Creating package script '/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/package.zsh'
+[1.704s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/share/colcon-core/packages/custom_interface)
+[1.705s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/scott-pena/GitHub/RBE550-Quadruped/src/leg_controls' with build type 'ament_python'
+[1.705s] Level 1:colcon.colcon_core.shell:create_environment_hook('leg_controls', 'ament_prefix_path')
+[1.705s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/share/leg_controls/hook/ament_prefix_path.ps1'
+[1.706s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/share/leg_controls/hook/ament_prefix_path.dsv'
+[1.706s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/share/leg_controls/hook/ament_prefix_path.sh'
+[1.707s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.707s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.711s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/scott-pena/GitHub/RBE550-Quadruped/src/sensors' with build type 'ament_python'
+[1.711s] Level 1:colcon.colcon_core.shell:create_environment_hook('sensors', 'ament_prefix_path')
+[1.711s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/scott-pena/GitHub/RBE550-Quadruped/install/sensors/share/sensors/hook/ament_prefix_path.ps1'
+[1.712s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/scott-pena/GitHub/RBE550-Quadruped/install/sensors/share/sensors/hook/ament_prefix_path.dsv'
+[1.712s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/scott-pena/GitHub/RBE550-Quadruped/install/sensors/share/sensors/hook/ament_prefix_path.sh'
+[1.713s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.713s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.966s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/scott-pena/GitHub/RBE550-Quadruped/src/leg_controls'
+[1.966s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.966s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.215s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/scott-pena/GitHub/RBE550-Quadruped/src/sensors'
+[2.216s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.216s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.226s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/scott-pena/GitHub/RBE550-Quadruped/src/center_of_mass': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/scott-pena/GitHub/RBE550-Quadruped/build/center_of_mass/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/center_of_mass build --build-base /home/scott-pena/GitHub/RBE550-Quadruped/build/center_of_mass/build install --record /home/scott-pena/GitHub/RBE550-Quadruped/build/center_of_mass/install.log --single-version-externally-managed install_data
+[2.227s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/scott-pena/GitHub/RBE550-Quadruped/src/robot_sim': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/scott-pena/GitHub/RBE550-Quadruped/build/robot_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_sim build --build-base /home/scott-pena/GitHub/RBE550-Quadruped/build/robot_sim/build install --record /home/scott-pena/GitHub/RBE550-Quadruped/build/robot_sim/install.log --single-version-externally-managed install_data
+[2.229s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/scott-pena/GitHub/RBE550-Quadruped/src/robot_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/scott-pena/GitHub/RBE550-Quadruped/build/robot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_description build --build-base /home/scott-pena/GitHub/RBE550-Quadruped/build/robot_description/build install --record /home/scott-pena/GitHub/RBE550-Quadruped/build/robot_description/install.log --single-version-externally-managed install_data
+[2.236s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/scott-pena/GitHub/RBE550-Quadruped/src/quadruped': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/scott-pena/GitHub/RBE550-Quadruped/build/quadruped/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/quadruped build --build-base /home/scott-pena/GitHub/RBE550-Quadruped/build/quadruped/build install --record /home/scott-pena/GitHub/RBE550-Quadruped/build/quadruped/install.log --single-version-externally-managed install_data
+[2.238s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/scott-pena/GitHub/RBE550-Quadruped/src/motion_planner': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/scott-pena/GitHub/RBE550-Quadruped/build/motion_planner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/motion_planner build --build-base /home/scott-pena/GitHub/RBE550-Quadruped/build/motion_planner/build install --record /home/scott-pena/GitHub/RBE550-Quadruped/build/motion_planner/install.log --single-version-externally-managed install_data
+[2.994s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description' for CMake module files
+[2.995s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description' for CMake config files
+[2.996s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/scott-pena/GitHub/RBE550-Quadruped/src/robot_description' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/scott-pena/GitHub/RBE550-Quadruped/build/robot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_description build --build-base /home/scott-pena/GitHub/RBE550-Quadruped/build/robot_description/build install --record /home/scott-pena/GitHub/RBE550-Quadruped/build/robot_description/install.log --single-version-externally-managed install_data
+[2.997s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/lib'
+[2.997s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/bin'
+[2.997s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/lib/pkgconfig/robot_description.pc'
+[2.997s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/lib/python3.12/site-packages'
+[2.997s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_description', 'pythonpath')
+[2.997s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/hook/pythonpath.ps1'
+[2.998s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/hook/pythonpath.dsv'
+[2.998s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/hook/pythonpath.sh'
+[2.999s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/bin'
+[2.999s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_description)
+[2.999s] INFO:colcon.colcon_core.shell:Creating package script '/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/package.ps1'
+[3.000s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/package.dsv'
+[3.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/package.sh'
+[3.001s] INFO:colcon.colcon_core.shell:Creating package script '/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/package.bash'
+[3.001s] INFO:colcon.colcon_core.shell:Creating package script '/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/package.zsh'
+[3.001s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/colcon-core/packages/robot_description)
+[3.018s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped' for CMake module files
+[3.019s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/scott-pena/GitHub/RBE550-Quadruped/src/quadruped' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/scott-pena/GitHub/RBE550-Quadruped/build/quadruped/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/quadruped build --build-base /home/scott-pena/GitHub/RBE550-Quadruped/build/quadruped/build install --record /home/scott-pena/GitHub/RBE550-Quadruped/build/quadruped/install.log --single-version-externally-managed install_data
+[3.019s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped' for CMake config files
+[3.020s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/lib'
+[3.020s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/bin'
+[3.020s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/lib/pkgconfig/quadruped.pc'
+[3.020s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/lib/python3.12/site-packages'
+[3.020s] Level 1:colcon.colcon_core.shell:create_environment_hook('quadruped', 'pythonpath')
+[3.020s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/share/quadruped/hook/pythonpath.ps1'
+[3.021s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/share/quadruped/hook/pythonpath.dsv'
+[3.021s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/share/quadruped/hook/pythonpath.sh'
+[3.022s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/bin'
+[3.022s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(quadruped)
+[3.022s] INFO:colcon.colcon_core.shell:Creating package script '/home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/share/quadruped/package.ps1'
+[3.022s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/share/quadruped/package.dsv'
+[3.023s] INFO:colcon.colcon_core.shell:Creating package script '/home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/share/quadruped/package.sh'
+[3.023s] INFO:colcon.colcon_core.shell:Creating package script '/home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/share/quadruped/package.bash'
+[3.023s] INFO:colcon.colcon_core.shell:Creating package script '/home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/share/quadruped/package.zsh'
+[3.024s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/share/colcon-core/packages/quadruped)
+[3.025s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass' for CMake module files
+[3.026s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/scott-pena/GitHub/RBE550-Quadruped/src/center_of_mass' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/scott-pena/GitHub/RBE550-Quadruped/build/center_of_mass/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/center_of_mass build --build-base /home/scott-pena/GitHub/RBE550-Quadruped/build/center_of_mass/build install --record /home/scott-pena/GitHub/RBE550-Quadruped/build/center_of_mass/install.log --single-version-externally-managed install_data
+[3.026s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass' for CMake config files
+[3.027s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/lib'
+[3.027s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/bin'
+[3.027s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/lib/pkgconfig/center_of_mass.pc'
+[3.027s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/lib/python3.12/site-packages'
+[3.027s] Level 1:colcon.colcon_core.shell:create_environment_hook('center_of_mass', 'pythonpath')
+[3.027s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/share/center_of_mass/hook/pythonpath.ps1'
+[3.028s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/share/center_of_mass/hook/pythonpath.dsv'
+[3.028s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/share/center_of_mass/hook/pythonpath.sh'
+[3.028s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/bin'
+[3.028s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(center_of_mass)
+[3.029s] INFO:colcon.colcon_core.shell:Creating package script '/home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/share/center_of_mass/package.ps1'
+[3.029s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/share/center_of_mass/package.dsv'
+[3.029s] INFO:colcon.colcon_core.shell:Creating package script '/home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/share/center_of_mass/package.sh'
+[3.030s] INFO:colcon.colcon_core.shell:Creating package script '/home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/share/center_of_mass/package.bash'
+[3.030s] INFO:colcon.colcon_core.shell:Creating package script '/home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/share/center_of_mass/package.zsh'
+[3.030s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/share/colcon-core/packages/center_of_mass)
+[3.032s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner' for CMake module files
+[3.032s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/scott-pena/GitHub/RBE550-Quadruped/src/motion_planner' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/scott-pena/GitHub/RBE550-Quadruped/build/motion_planner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/motion_planner build --build-base /home/scott-pena/GitHub/RBE550-Quadruped/build/motion_planner/build install --record /home/scott-pena/GitHub/RBE550-Quadruped/build/motion_planner/install.log --single-version-externally-managed install_data
+[3.033s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner' for CMake config files
+[3.033s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/lib'
+[3.034s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/bin'
+[3.034s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/lib/pkgconfig/motion_planner.pc'
+[3.034s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/lib/python3.12/site-packages'
+[3.034s] Level 1:colcon.colcon_core.shell:create_environment_hook('motion_planner', 'pythonpath')
+[3.034s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/share/motion_planner/hook/pythonpath.ps1'
+[3.034s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/share/motion_planner/hook/pythonpath.dsv'
+[3.035s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/share/motion_planner/hook/pythonpath.sh'
+[3.035s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/bin'
+[3.035s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(motion_planner)
+[3.035s] INFO:colcon.colcon_core.shell:Creating package script '/home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/share/motion_planner/package.ps1'
+[3.036s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/share/motion_planner/package.dsv'
+[3.036s] INFO:colcon.colcon_core.shell:Creating package script '/home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/share/motion_planner/package.sh'
+[3.036s] INFO:colcon.colcon_core.shell:Creating package script '/home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/share/motion_planner/package.bash'
+[3.037s] INFO:colcon.colcon_core.shell:Creating package script '/home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/share/motion_planner/package.zsh'
+[3.037s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/share/colcon-core/packages/motion_planner)
+[3.038s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim' for CMake module files
+[3.038s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim' for CMake config files
+[3.039s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/scott-pena/GitHub/RBE550-Quadruped/src/robot_sim' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/scott-pena/GitHub/RBE550-Quadruped/build/robot_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_sim build --build-base /home/scott-pena/GitHub/RBE550-Quadruped/build/robot_sim/build install --record /home/scott-pena/GitHub/RBE550-Quadruped/build/robot_sim/install.log --single-version-externally-managed install_data
+[3.039s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/lib'
+[3.039s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/bin'
+[3.039s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/lib/pkgconfig/robot_sim.pc'
+[3.039s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/lib/python3.12/site-packages'
+[3.040s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_sim', 'pythonpath')
+[3.040s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/share/robot_sim/hook/pythonpath.ps1'
+[3.040s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/share/robot_sim/hook/pythonpath.dsv'
+[3.040s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/share/robot_sim/hook/pythonpath.sh'
+[3.041s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/bin'
+[3.041s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_sim)
+[3.041s] INFO:colcon.colcon_core.shell:Creating package script '/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/share/robot_sim/package.ps1'
+[3.041s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/share/robot_sim/package.dsv'
+[3.042s] INFO:colcon.colcon_core.shell:Creating package script '/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/share/robot_sim/package.sh'
+[3.042s] INFO:colcon.colcon_core.shell:Creating package script '/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/share/robot_sim/package.bash'
+[3.042s] INFO:colcon.colcon_core.shell:Creating package script '/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/share/robot_sim/package.zsh'
+[3.043s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/share/colcon-core/packages/robot_sim)
+[3.052s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/scott-pena/GitHub/RBE550-Quadruped/src/leg_controls': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/scott-pena/GitHub/RBE550-Quadruped/build/leg_controls/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/sensors/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/leg_controls build --build-base /home/scott-pena/GitHub/RBE550-Quadruped/build/leg_controls/build install --record /home/scott-pena/GitHub/RBE550-Quadruped/build/leg_controls/install.log --single-version-externally-managed install_data
+[3.054s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/scott-pena/GitHub/RBE550-Quadruped/src/sensors': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/scott-pena/GitHub/RBE550-Quadruped/build/sensors/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/scott-pena/GitHub/RBE550-Quadruped/install/sensors/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/sensors/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/sensors build --build-base /home/scott-pena/GitHub/RBE550-Quadruped/build/sensors/build install --record /home/scott-pena/GitHub/RBE550-Quadruped/build/sensors/install.log --single-version-externally-managed install_data
+[3.808s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls' for CMake module files
+[3.808s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/scott-pena/GitHub/RBE550-Quadruped/src/leg_controls' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/scott-pena/GitHub/RBE550-Quadruped/build/leg_controls/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/sensors/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/leg_controls build --build-base /home/scott-pena/GitHub/RBE550-Quadruped/build/leg_controls/build install --record /home/scott-pena/GitHub/RBE550-Quadruped/build/leg_controls/install.log --single-version-externally-managed install_data
+[3.809s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls' for CMake config files
+[3.809s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib'
+[3.809s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/bin'
+[3.809s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/pkgconfig/leg_controls.pc'
+[3.810s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages'
+[3.810s] Level 1:colcon.colcon_core.shell:create_environment_hook('leg_controls', 'pythonpath')
+[3.810s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/share/leg_controls/hook/pythonpath.ps1'
+[3.811s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/share/leg_controls/hook/pythonpath.dsv'
+[3.811s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/share/leg_controls/hook/pythonpath.sh'
+[3.811s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/bin'
+[3.811s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(leg_controls)
+[3.812s] INFO:colcon.colcon_core.shell:Creating package script '/home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/share/leg_controls/package.ps1'
+[3.812s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/share/leg_controls/package.dsv'
+[3.813s] INFO:colcon.colcon_core.shell:Creating package script '/home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/share/leg_controls/package.sh'
+[3.813s] INFO:colcon.colcon_core.shell:Creating package script '/home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/share/leg_controls/package.bash'
+[3.813s] INFO:colcon.colcon_core.shell:Creating package script '/home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/share/leg_controls/package.zsh'
+[3.814s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/share/colcon-core/packages/leg_controls)
+[3.820s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/sensors' for CMake module files
+[3.821s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/scott-pena/GitHub/RBE550-Quadruped/src/sensors' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/scott-pena/GitHub/RBE550-Quadruped/build/sensors/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/scott-pena/GitHub/RBE550-Quadruped/install/sensors/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/sensors/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/sensors build --build-base /home/scott-pena/GitHub/RBE550-Quadruped/build/sensors/build install --record /home/scott-pena/GitHub/RBE550-Quadruped/build/sensors/install.log --single-version-externally-managed install_data
+[3.821s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/sensors' for CMake config files
+[3.822s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/sensors/lib'
+[3.822s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/sensors/bin'
+[3.822s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/sensors/lib/pkgconfig/sensors.pc'
+[3.822s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/sensors/lib/python3.12/site-packages'
+[3.822s] Level 1:colcon.colcon_core.shell:create_environment_hook('sensors', 'pythonpath')
+[3.822s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/scott-pena/GitHub/RBE550-Quadruped/install/sensors/share/sensors/hook/pythonpath.ps1'
+[3.822s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/scott-pena/GitHub/RBE550-Quadruped/install/sensors/share/sensors/hook/pythonpath.dsv'
+[3.823s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/scott-pena/GitHub/RBE550-Quadruped/install/sensors/share/sensors/hook/pythonpath.sh'
+[3.823s] Level 1:colcon.colcon_core.environment:checking '/home/scott-pena/GitHub/RBE550-Quadruped/install/sensors/bin'
+[3.823s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sensors)
+[3.823s] INFO:colcon.colcon_core.shell:Creating package script '/home/scott-pena/GitHub/RBE550-Quadruped/install/sensors/share/sensors/package.ps1'
+[3.824s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/scott-pena/GitHub/RBE550-Quadruped/install/sensors/share/sensors/package.dsv'
+[3.824s] INFO:colcon.colcon_core.shell:Creating package script '/home/scott-pena/GitHub/RBE550-Quadruped/install/sensors/share/sensors/package.sh'
+[3.825s] INFO:colcon.colcon_core.shell:Creating package script '/home/scott-pena/GitHub/RBE550-Quadruped/install/sensors/share/sensors/package.bash'
+[3.825s] INFO:colcon.colcon_core.shell:Creating package script '/home/scott-pena/GitHub/RBE550-Quadruped/install/sensors/share/sensors/package.zsh'
+[3.825s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/scott-pena/GitHub/RBE550-Quadruped/install/sensors/share/colcon-core/packages/sensors)
+[3.825s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.826s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.826s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[3.826s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.831s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.832s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.832s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.845s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.845s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/scott-pena/GitHub/RBE550-Quadruped/install/local_setup.ps1'
+[3.846s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/scott-pena/GitHub/RBE550-Quadruped/install/_local_setup_util_ps1.py'
+[3.847s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/scott-pena/GitHub/RBE550-Quadruped/install/setup.ps1'
+[3.848s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/scott-pena/GitHub/RBE550-Quadruped/install/local_setup.sh'
+[3.849s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/scott-pena/GitHub/RBE550-Quadruped/install/_local_setup_util_sh.py'
+[3.849s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/scott-pena/GitHub/RBE550-Quadruped/install/setup.sh'
+[3.850s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/scott-pena/GitHub/RBE550-Quadruped/install/local_setup.bash'
+[3.851s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/scott-pena/GitHub/RBE550-Quadruped/install/setup.bash'
+[3.852s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/scott-pena/GitHub/RBE550-Quadruped/install/local_setup.zsh'
+[3.852s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/scott-pena/GitHub/RBE550-Quadruped/install/setup.zsh'

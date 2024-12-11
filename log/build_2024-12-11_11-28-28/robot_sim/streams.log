@@ -1,0 +1,21 @@
+[1.717s] Invoking command in '/home/scott-pena/GitHub/RBE550-Quadruped/src/robot_sim': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/scott-pena/GitHub/RBE550-Quadruped/build/robot_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_sim build --build-base /home/scott-pena/GitHub/RBE550-Quadruped/build/robot_sim/build install --record /home/scott-pena/GitHub/RBE550-Quadruped/build/robot_sim/install.log --single-version-externally-managed install_data
+[2.017s] running egg_info
+[2.043s] writing ../../build/robot_sim/robot_sim.egg-info/PKG-INFO
+[2.043s] writing dependency_links to ../../build/robot_sim/robot_sim.egg-info/dependency_links.txt
+[2.043s] writing requirements to ../../build/robot_sim/robot_sim.egg-info/requires.txt
+[2.043s] writing top-level names to ../../build/robot_sim/robot_sim.egg-info/top_level.txt
+[2.069s] reading manifest file '../../build/robot_sim/robot_sim.egg-info/SOURCES.txt'
+[2.069s] adding license file 'LICENSE'
+[2.070s] writing manifest file '../../build/robot_sim/robot_sim.egg-info/SOURCES.txt'
+[2.070s] running build
+[2.070s] running install
+[2.075s] running install_data
+[2.075s] copying worlds/rrt_graph.json -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/share/robot_sim/worlds
+[2.076s] copying worlds/RRT_Graph.png -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/share/robot_sim/worlds
+[2.076s] copying worlds/Heightmap.png -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/share/robot_sim/worlds
+[2.076s] running install_egg_info
+[2.130s] removing '/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/lib/python3.12/site-packages/robot_sim-0.0.0-py3.12.egg-info' (and everything under it)
+[2.130s] Copying ../../build/robot_sim/robot_sim.egg-info to /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/lib/python3.12/site-packages/robot_sim-0.0.0-py3.12.egg-info
+[2.131s] running install_scripts
+[2.297s] writing list of installed files to '/home/scott-pena/GitHub/RBE550-Quadruped/build/robot_sim/install.log'
+[2.331s] Invoked command in '/home/scott-pena/GitHub/RBE550-Quadruped/src/robot_sim' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/scott-pena/GitHub/RBE550-Quadruped/build/robot_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_sim build --build-base /home/scott-pena/GitHub/RBE550-Quadruped/build/robot_sim/build install --record /home/scott-pena/GitHub/RBE550-Quadruped/build/robot_sim/install.log --single-version-externally-managed install_data

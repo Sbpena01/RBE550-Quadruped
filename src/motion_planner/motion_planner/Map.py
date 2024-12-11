@@ -30,7 +30,6 @@ class Map(Node):
         self.odom2base.transform.rotation.y = q.y
         self.odom2base.transform.rotation.z = q.z
         self.odom2base.transform.rotation.w = q.w
-        self.get_logger().info(f"{q}")
 
     # Sends transforms of odom, base, and map through broadcasters
     def send_transform(self):

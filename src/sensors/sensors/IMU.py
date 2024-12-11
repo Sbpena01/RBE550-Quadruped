@@ -44,7 +44,6 @@ class IMU(Node):
         return roll, pitch, yaw
 
     def publish(self):
-        self.get_logger().info(f"Publishing: {self.roll}, {self.pitch}, {self.yaw}")
         msg = ImuData()
         msg.roll = self.roll
         msg.pitch = self.pitch
