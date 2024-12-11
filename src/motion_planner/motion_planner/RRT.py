@@ -15,6 +15,7 @@ from tf2_ros.static_transform_broadcaster import StaticTransformBroadcaster
 from geometry_msgs.msg import TransformStamped, PoseStamped, Pose
 from rclpy import time
 
+# Function that generates a grid filled with tetrominos
 def genGrid(rows, cols, tarCov, maxFailCount=1000):
     grid = np.zeros([rows, cols])
     curCov = 0
@@ -38,6 +39,7 @@ def genGrid(rows, cols, tarCov, maxFailCount=1000):
         curCov = np.sum(grid)/np.size(grid)
     return grid
 
+# Function that places a tetromino in the grid
 def placeShape(grid, shape, pos):
     shape = shape[~np.all(shape == 0, axis=1)]
     shape = shape[:,~np.all(shape == 0, axis=0)]
@@ -57,6 +59,7 @@ def placeShape(grid, shape, pos):
         return True, grid
     return False, grid
 
+# Function that generates a heightmap based on the inputted grid
 def genHeightmap(filePath, grid):
     newImage = Image.fromarray(grid)
 
@@ -66,10 +69,13 @@ def genHeightmap(filePath, grid):
     newImage.save(filePath)
 
 
+# Class containing functions needed for A* graph search algorithm
 class AStar:
+    # Heuristic for A* algorithm, returns the distance between points
     def heuristic(a, b):
         return dist(a, b)
 
+    # Function that performs the A* algorithm, returning a path if found
     def find_path(grid, start, goal, max_steps):
         rows, cols = grid.shape
         open_set = []
@@ -106,7 +112,9 @@ class AStar:
                 return None
         return None
 
+# RRT class that contains all functionality for RRT graph building and exploiting along with node functionality
 class RRT(Node):
+    # Initializes RRT with parameters and node with proper name
     def __init__(self, node_name, grid, max_dist, max_depth=1000):
         super().__init__(node_name)
         self.tf_broadcaster = StaticTransformBroadcaster(self)
@@ -133,13 +141,14 @@ class RRT(Node):
 
         self.tf_broadcaster.sendTransform(com)
 
+    # Publishes node information
     def publish_help(self):
         if self.grid_msg is not None:
             self.gridPublisher.publish(self.grid_msg)
         if self.path_msg is not None:
             self.pathPublisher.publish(self.path_msg)
 
-
+    # Returns a random valid sample from the grid to use as a node
     def random_sample(self):
         rows, cols = self.grid.shape
         while True:
@@ -147,10 +156,12 @@ class RRT(Node):
             if self.grid[sample] == 0 and sample not in self.graph:
                 return sample
 
+    # Adds and edge between two points given the path between them
     def add_edge(self, start, goal, path):
         self.graph[start].append((goal, path))
         self.graph[goal].append((start, path[::-1]))
 
+    # Runs the build portion of the RRT algorithm where it constructs the graph
     def build_rrt(self, num_samples):
         nodes = []
         for _ in range(num_samples):
@@ -159,6 +170,7 @@ class RRT(Node):
         for node in nodes:
             self.add_node(node)
 
+    # Adds node to RRT graph and tries to connect to neighboring nodes
     def add_node(self, new_node):
         if new_node not in self.graph:
             self.graph[new_node] = []
@@ -169,16 +181,19 @@ class RRT(Node):
                     if path and len(path) <= self.max_dist:
                         self.add_edge(existing_node, new_node, path)
 
+    # Saves the RRT graph as a JSON file
     def save_graph(self, filename):
         graph_dict = {str(key): [(str(neighbor), path) for neighbor, path in value] for key, value in self.graph.items()}
         with open(filename, 'w') as f:
             json.dump(graph_dict, f, indent=4)
 
+    # Loads the graph into a dictionary
     def load_graph(self, filename):
         with open(filename, 'r') as f:
             graph_dict = json.load(f)
         self.graph = {eval(key): [(eval(neighbor), path) for neighbor, path in value] for key, value in graph_dict.items()}
 
+    # Given two points, returns the path between if found
     def find_path(self, start, goal):
         update_graph = start not in self.graph or goal not in self.graph
         self.add_node(start)
@@ -199,6 +214,7 @@ class RRT(Node):
                     queue.append((neighbor, path + segment))
         return None
     
+    # Helper function to generate a path message from a path
     def gen_path_msg(self, path):
         msg = Path()
         pathList = [PoseStamped()] * len(path)
@@ -215,6 +231,7 @@ class RRT(Node):
         # self.get_logger().info(f"{pathList}")
         return msg
     
+    # Helper function to generate a grid message from a grid
     def gen_grid_msg(self, grid):
         msg = OccupancyGrid()
         msg.info.height = len(grid)
@@ -229,6 +246,7 @@ class RRT(Node):
         msg.header.stamp = time.Time().to_msg()
         return msg
 
+    # Function to plot and display the RRT graph
     def plot_graph(self, display=True, filepath=None):
         plt.figure(figsize=(10, 10))
         plt.imshow(self.grid, cmap='gray_r')
@@ -258,6 +276,7 @@ class RRT(Node):
         plt.show()
         
 
+# Main function that starts the nodes and provides needed variables and parameters
 def main(args=None):
     filePathHM = "src/robot_sim/worlds/Heightmap.png"
     filePathRRT = "src/robot_sim/worlds/rrt_graph.json"
