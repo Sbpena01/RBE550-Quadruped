@@ -90,7 +90,7 @@ class AStar:
                     current = came_from[current]
                 return path[::-1]
 
-            for dx, dy in list(product([-1,0,1],[-1,0,1])):
+            for dx, dy in [[1,0],[-1,0],[0,1],[0,-1]]:
                 neighbor = (current[0] + dx, current[1] + dy)
                 if 0 <= neighbor[0] < rows and 0 <= neighbor[1] < cols and grid[neighbor] == 0:
                     tentative_g_score = g_score[current] + dist(current, neighbor)
@@ -204,8 +204,8 @@ class RRT(Node):
         pathList = [PoseStamped()] * len(path)
         for index, q in enumerate(path):
             ps = PoseStamped()
-            ps.pose.position.y = (q[0]*1.0 - 15)
-            ps.pose.position.x = (q[1]*1.0 - 15)
+            ps.pose.position.x = q[0]*1.0 - 15
+            ps.pose.position.y = q[1]*1.0 - 15
             ps.header.frame_id = 'rrt_center'
             ps.header.stamp = time.Time().to_msg()
             pathList[index] = ps
@@ -271,10 +271,12 @@ def main(args=None):
     showFig = True
 
     start_Q = (15, 15)
-    goal_Q = (16,24)
+    goal_Q = (16,25)
     seed(1234)
     grid = genGrid(rows, cols, tarCov)
-    genHeightmap(filePathHM, grid)
+    gridFlip = np.rot90(np.flip(grid,axis=0),2)
+    # gridFlip = np.flip(grid,axis=None)
+    genHeightmap(filePathHM, gridFlip)
 
     rclpy.init(args=args)
 
@@ -290,7 +292,7 @@ def main(args=None):
 
     node.plot_graph(showFig, filePathPlt)
 
-    node.grid_msg = node.gen_grid_msg(grid)
+    node.grid_msg = node.gen_grid_msg(gridFlip)
     
     try:
         rclpy.spin(node)

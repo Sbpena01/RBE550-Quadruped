@@ -1,0 +1,25 @@
+[2.870s] Invoking command in '/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/src/motion_planner': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/motion_planner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/motion_planner/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/motion_planner build --build-base /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/motion_planner/build install --record /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/motion_planner/install.log --single-version-externally-managed install_data
+[3.341s] running egg_info
+[3.374s] writing ../../build/motion_planner/motion_planner.egg-info/PKG-INFO
+[3.374s] writing dependency_links to ../../build/motion_planner/motion_planner.egg-info/dependency_links.txt
+[3.374s] writing entry points to ../../build/motion_planner/motion_planner.egg-info/entry_points.txt
+[3.375s] writing requirements to ../../build/motion_planner/motion_planner.egg-info/requires.txt
+[3.375s] writing top-level names to ../../build/motion_planner/motion_planner.egg-info/top_level.txt
+[3.441s] reading manifest file '../../build/motion_planner/motion_planner.egg-info/SOURCES.txt'
+[3.441s] adding license file 'LICENSE'
+[3.442s] writing manifest file '../../build/motion_planner/motion_planner.egg-info/SOURCES.txt'
+[3.442s] running build
+[3.442s] running build_py
+[3.443s] copying motion_planner/RRT.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/motion_planner/build/lib/motion_planner
+[3.443s] running install
+[3.454s] running install_lib
+[3.486s] copying /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/motion_planner/build/lib/motion_planner/RRT.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/motion_planner/lib/python3.12/site-packages/motion_planner
+[3.487s] byte-compiling /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/motion_planner/lib/python3.12/site-packages/motion_planner/RRT.py to RRT.cpython-312.pyc
+[3.493s] running install_data
+[3.493s] running install_egg_info
+[3.528s] removing '/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/motion_planner/lib/python3.12/site-packages/motion_planner-0.0.0-py3.12.egg-info' (and everything under it)
+[3.529s] Copying ../../build/motion_planner/motion_planner.egg-info to /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/motion_planner/lib/python3.12/site-packages/motion_planner-0.0.0-py3.12.egg-info
+[3.530s] running install_scripts
+[3.750s] Installing map script to /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/motion_planner/lib/motion_planner
+[3.750s] Installing rrt script to /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/motion_planner/lib/motion_planner
+[3.751s] writing list of installed files to '/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/motion_planner/install.log'

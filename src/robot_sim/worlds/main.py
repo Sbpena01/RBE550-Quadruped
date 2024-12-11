@@ -5,15 +5,15 @@ filePathHM = "Heightmap.png"
 filePathRRT = "rrt_graph.json"
 filePathPlt = "RRT_Graph.png"
 
-rows = 50
-cols = 50
+rows = 100
+cols = 100
 tarCov = 0.1
-maxDist = 20
+maxDist = 15
 numSamples = 100
 showFig = True
 
 start_Q = (0, 0)
-goal_Q = (99,99)
+goal_Q = (49,49)
 
 grid = genGrid(rows, cols, tarCov)
 genHeightmap(filePathHM, grid)

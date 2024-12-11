@@ -1,0 +1,170 @@
+[0.086s] Invoking command in '/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/custom_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/sensors:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_sim:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/quadruped:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/motion_planner:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/center_of_mass:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/custom_interface -- -j32 -l32
+[1.439s] [  2%] Built target custom_interface__rosidl_generator_type_description
+[1.440s] [  2%] Built target ament_cmake_python_copy_custom_interface
+[1.440s] [  4%] Built target custom_interface__cpp
+[1.440s] [ 22%] Built target custom_interface__rosidl_generator_c
+[1.441s] [ 31%] Built target custom_interface__rosidl_typesupport_c
+[1.441s] [ 40%] Built target custom_interface__rosidl_typesupport_cpp
+[1.441s] [ 50%] Built target custom_interface__rosidl_typesupport_introspection_c
+[1.441s] [ 59%] Built target custom_interface__rosidl_typesupport_introspection_cpp
+[1.441s] [ 68%] Built target custom_interface__rosidl_typesupport_fastrtps_c
+[1.441s] [ 77%] Built target custom_interface__rosidl_typesupport_fastrtps_cpp
+[1.441s] [ 77%] Built target custom_interface
+[1.441s] [ 79%] Built target custom_interface__py
+[1.441s] [ 86%] Built target custom_interface__rosidl_generator_py
+[1.441s] [ 90%] Built target custom_interface_s__rosidl_typesupport_fastrtps_c
+[1.442s] [100%] Built target custom_interface_s__rosidl_typesupport_c
+[1.442s] [100%] Built target custom_interface_s__rosidl_typesupport_introspection_c
+[1.442s] running egg_info
+[1.442s] writing custom_interface.egg-info/PKG-INFO
+[1.442s] writing dependency_links to custom_interface.egg-info/dependency_links.txt
+[1.442s] writing top-level names to custom_interface.egg-info/top_level.txt
+[1.442s] reading manifest file 'custom_interface.egg-info/SOURCES.txt'
+[1.442s] writing manifest file 'custom_interface.egg-info/SOURCES.txt'
+[1.442s] [100%] Built target ament_cmake_python_build_custom_interface_egg
+[1.444s] Invoked command in '/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/custom_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/sensors:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_sim:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/quadruped:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/motion_planner:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/center_of_mass:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/custom_interface -- -j32 -l32
+[1.755s] Invoking command in '/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/custom_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/sensors:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_sim:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/quadruped:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/motion_planner:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/center_of_mass:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/custom_interface
+[1.768s] -- Install configuration: ""
+[1.769s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/ament_index/resource_index/rosidl_interfaces/custom_interface
+[1.769s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/msg/ImuData.json
+[1.769s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/msg/LegState.json
+[1.769s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface
+[1.769s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg
+[1.770s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/leg_state.h
+[1.770s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/imu_data.h
+[1.770s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/rosidl_generator_c__visibility_control.h
+[1.770s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail
+[1.770s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/imu_data__struct.h
+[1.771s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/imu_data__functions.c
+[1.771s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/imu_data__type_support.c
+[1.771s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/leg_state__description.c
+[1.772s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/leg_state__struct.h
+[1.772s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/leg_state__functions.c
+[1.772s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/leg_state__type_support.c
+[1.772s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/leg_state__type_support.h
+[1.772s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/leg_state__functions.h
+[1.773s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/imu_data__type_support.h
+[1.773s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/imu_data__functions.h
+[1.773s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/imu_data__description.c
+[1.773s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/environment/library_path.sh
+[1.773s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/environment/library_path.dsv
+[1.773s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/lib/libcustom_interface__rosidl_generator_c.so
+[1.774s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface
+[1.774s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg
+[1.774s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.774s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail
+[1.774s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/imu_data__rosidl_typesupport_fastrtps_c.h
+[1.774s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/leg_state__rosidl_typesupport_fastrtps_c.h
+[1.775s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_fastrtps_c.so
+[1.775s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface
+[1.775s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg
+[1.775s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.775s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail
+[1.775s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/imu_data__type_support.c
+[1.775s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/leg_state__type_support.c
+[1.776s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/imu_data__rosidl_typesupport_introspection_c.h
+[1.776s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/leg_state__rosidl_typesupport_introspection_c.h
+[1.776s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_introspection_c.so
+[1.776s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_c.so
+[1.776s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface
+[1.776s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg
+[1.777s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/imu_data.hpp
+[1.777s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/rosidl_generator_cpp__visibility_control.hpp
+[1.777s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/leg_state.hpp
+[1.777s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail
+[1.777s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/leg_state__builder.hpp
+[1.777s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/imu_data__struct.hpp
+[1.777s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/imu_data__builder.hpp
+[1.777s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/leg_state__traits.hpp
+[1.777s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/leg_state__struct.hpp
+[1.777s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/leg_state__type_support.hpp
+[1.777s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/imu_data__type_support.hpp
+[1.778s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/imu_data__traits.hpp
+[1.778s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface
+[1.778s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg
+[1.778s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.778s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail
+[1.778s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/dds_fastrtps
+[1.778s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/leg_state__rosidl_typesupport_fastrtps_cpp.hpp
+[1.778s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/imu_data__rosidl_typesupport_fastrtps_cpp.hpp
+[1.778s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_fastrtps_cpp.so
+[1.778s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface
+[1.778s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg
+[1.778s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail
+[1.779s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/imu_data__type_support.cpp
+[1.779s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/leg_state__rosidl_typesupport_introspection_cpp.hpp
+[1.779s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/leg_state__type_support.cpp
+[1.779s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/include/custom_interface/custom_interface/msg/detail/imu_data__rosidl_typesupport_introspection_cpp.hpp
+[1.779s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_introspection_cpp.so
+[1.779s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_cpp.so
+[1.779s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/environment/pythonpath.sh
+[1.779s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/environment/pythonpath.dsv
+[1.779s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface-0.0.0-py3.12.egg-info
+[1.779s] -- Installing: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface-0.0.0-py3.12.egg-info/SOURCES.txt
+[1.779s] -- Installing: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface-0.0.0-py3.12.egg-info/dependency_links.txt
+[1.779s] -- Installing: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface-0.0.0-py3.12.egg-info/top_level.txt
+[1.780s] -- Installing: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface-0.0.0-py3.12.egg-info/PKG-INFO
+[1.780s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface
+[1.780s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface/custom_interface_s__rosidl_typesupport_introspection_c.so
+[1.780s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface/custom_interface_s__rosidl_typesupport_fastrtps_c.so
+[1.780s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface/__init__.py
+[1.780s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface/_custom_interface_s.ep.rosidl_typesupport_fastrtps_c.c
+[1.780s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface/_custom_interface_s.ep.rosidl_typesupport_introspection_c.c
+[1.780s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface/_custom_interface_s.ep.rosidl_typesupport_c.c
+[1.780s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface/custom_interface_s__rosidl_typesupport_c.so
+[1.780s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface/msg
+[1.780s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface/msg/_leg_state_s.c
+[1.780s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface/msg/__init__.py
+[1.781s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface/msg/_imu_data_s.c
+[1.781s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface/msg/_leg_state.py
+[1.781s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface/msg/_imu_data.py
+[1.845s] Listing '/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface'...
+[1.845s] Listing '/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface/msg'...
+[1.855s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface/custom_interface_s__rosidl_typesupport_fastrtps_c.so
+[1.856s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface/custom_interface_s__rosidl_typesupport_introspection_c.so
+[1.856s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages/custom_interface/custom_interface_s__rosidl_typesupport_c.so
+[1.857s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/lib/libcustom_interface__rosidl_generator_py.so
+[1.857s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/msg/ImuData.idl
+[1.857s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/msg/LegState.idl
+[1.857s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/msg/ImuData.msg
+[1.858s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/msg/LegState.msg
+[1.858s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/ament_index/resource_index/package_run_dependencies/custom_interface
+[1.858s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/ament_index/resource_index/parent_prefix_path/custom_interface
+[1.858s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/environment/ament_prefix_path.sh
+[1.858s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/environment/ament_prefix_path.dsv
+[1.858s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/environment/path.sh
+[1.858s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/environment/path.dsv
+[1.858s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/local_setup.bash
+[1.858s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/local_setup.sh
+[1.859s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/local_setup.zsh
+[1.859s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/local_setup.dsv
+[1.859s] -- Installing: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/package.dsv
+[1.859s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/ament_index/resource_index/packages/custom_interface
+[1.859s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/export_custom_interface__rosidl_generator_cExport.cmake
+[1.859s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/export_custom_interface__rosidl_generator_cExport-noconfig.cmake
+[1.859s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/export_custom_interface__rosidl_typesupport_fastrtps_cExport.cmake
+[1.859s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/export_custom_interface__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[1.860s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_typesupport_introspection_cExport.cmake
+[1.860s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.860s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_typesupport_cExport.cmake
+[1.860s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_typesupport_cExport-noconfig.cmake
+[1.860s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/export_custom_interface__rosidl_generator_cppExport.cmake
+[1.860s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/export_custom_interface__rosidl_typesupport_fastrtps_cppExport.cmake
+[1.860s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/export_custom_interface__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[1.860s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_typesupport_introspection_cppExport.cmake
+[1.860s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.861s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_typesupport_cppExport.cmake
+[1.861s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_typesupport_cppExport-noconfig.cmake
+[1.861s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/export_custom_interface__rosidl_generator_pyExport.cmake
+[1.861s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/export_custom_interface__rosidl_generator_pyExport-noconfig.cmake
+[1.861s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/rosidl_cmake-extras.cmake
+[1.861s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.861s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.861s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/ament_cmake_export_libraries-extras.cmake
+[1.861s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/ament_cmake_export_targets-extras.cmake
+[1.862s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.862s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.862s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/custom_interfaceConfig.cmake
+[1.862s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/cmake/custom_interfaceConfig-version.cmake
+[1.862s] -- Up-to-date: /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/share/custom_interface/package.xml
+[1.865s] Invoked command in '/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/custom_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/sensors:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_sim:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/quadruped:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/motion_planner:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/center_of_mass:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/custom_interface
