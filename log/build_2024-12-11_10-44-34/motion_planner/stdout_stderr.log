@@ -1,0 +1,37 @@
+running egg_info
+creating ../../build/motion_planner/motion_planner.egg-info
+writing ../../build/motion_planner/motion_planner.egg-info/PKG-INFO
+writing dependency_links to ../../build/motion_planner/motion_planner.egg-info/dependency_links.txt
+writing entry points to ../../build/motion_planner/motion_planner.egg-info/entry_points.txt
+writing requirements to ../../build/motion_planner/motion_planner.egg-info/requires.txt
+writing top-level names to ../../build/motion_planner/motion_planner.egg-info/top_level.txt
+writing manifest file '../../build/motion_planner/motion_planner.egg-info/SOURCES.txt'
+reading manifest file '../../build/motion_planner/motion_planner.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/motion_planner/motion_planner.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/scott-pena/GitHub/RBE550-Quadruped/build/motion_planner/build
+creating /home/scott-pena/GitHub/RBE550-Quadruped/build/motion_planner/build/lib
+creating /home/scott-pena/GitHub/RBE550-Quadruped/build/motion_planner/build/lib/motion_planner
+copying motion_planner/RRT.py -> /home/scott-pena/GitHub/RBE550-Quadruped/build/motion_planner/build/lib/motion_planner
+copying motion_planner/Map.py -> /home/scott-pena/GitHub/RBE550-Quadruped/build/motion_planner/build/lib/motion_planner
+copying motion_planner/__init__.py -> /home/scott-pena/GitHub/RBE550-Quadruped/build/motion_planner/build/lib/motion_planner
+running install
+running install_lib
+copying /home/scott-pena/GitHub/RBE550-Quadruped/build/motion_planner/build/lib/motion_planner/RRT.py -> /home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/lib/python3.12/site-packages/motion_planner
+copying /home/scott-pena/GitHub/RBE550-Quadruped/build/motion_planner/build/lib/motion_planner/Map.py -> /home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/lib/python3.12/site-packages/motion_planner
+copying /home/scott-pena/GitHub/RBE550-Quadruped/build/motion_planner/build/lib/motion_planner/__init__.py -> /home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/lib/python3.12/site-packages/motion_planner
+byte-compiling /home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/lib/python3.12/site-packages/motion_planner/RRT.py to RRT.cpython-312.pyc
+byte-compiling /home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/lib/python3.12/site-packages/motion_planner/Map.py to Map.cpython-312.pyc
+byte-compiling /home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/lib/python3.12/site-packages/motion_planner/__init__.py to __init__.cpython-312.pyc
+running install_data
+copying resource/motion_planner -> /home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/share/ament_index/resource_index/packages
+copying package.xml -> /home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/share/motion_planner
+running install_egg_info
+removing '/home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/lib/python3.12/site-packages/motion_planner-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../../build/motion_planner/motion_planner.egg-info to /home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/lib/python3.12/site-packages/motion_planner-0.0.0-py3.12.egg-info
+running install_scripts
+Installing map script to /home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/lib/motion_planner
+Installing rrt script to /home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/lib/motion_planner
+writing list of installed files to '/home/scott-pena/GitHub/RBE550-Quadruped/build/motion_planner/install.log'

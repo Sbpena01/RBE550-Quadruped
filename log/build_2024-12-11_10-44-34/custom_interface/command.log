@@ -1,0 +1,1 @@
+Invoking command in '/home/scott-pena/GitHub/RBE550-Quadruped/build/custom_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/scott-pena/GitHub/RBE550-Quadruped/src/custom_interface -DCMAKE_INSTALL_PREFIX=/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface

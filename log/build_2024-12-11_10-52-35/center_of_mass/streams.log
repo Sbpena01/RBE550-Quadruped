@@ -1,0 +1,22 @@
+[6.917s] Invoking command in '/home/scott-pena/GitHub/RBE550-Quadruped/src/center_of_mass': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/scott-pena/GitHub/RBE550-Quadruped/build/center_of_mass/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/center_of_mass build --build-base /home/scott-pena/GitHub/RBE550-Quadruped/build/center_of_mass/build install --record /home/scott-pena/GitHub/RBE550-Quadruped/build/center_of_mass/install.log --single-version-externally-managed install_data
+[7.184s] running egg_info
+[7.207s] writing ../../build/center_of_mass/center_of_mass.egg-info/PKG-INFO
+[7.234s] writing dependency_links to ../../build/center_of_mass/center_of_mass.egg-info/dependency_links.txt
+[7.416s] writing entry points to ../../build/center_of_mass/center_of_mass.egg-info/entry_points.txt
+[7.444s] writing requirements to ../../build/center_of_mass/center_of_mass.egg-info/requires.txt
+[7.466s] writing top-level names to ../../build/center_of_mass/center_of_mass.egg-info/top_level.txt
+[7.535s] reading manifest file '../../build/center_of_mass/center_of_mass.egg-info/SOURCES.txt'
+[7.535s] adding license file 'LICENSE'
+[7.536s] writing manifest file '../../build/center_of_mass/center_of_mass.egg-info/SOURCES.txt'
+[7.653s] running build
+[7.653s] running build_py
+[7.653s] running install
+[7.657s] running install_lib
+[7.682s] running install_data
+[7.682s] running install_egg_info
+[7.708s] removing '/home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/lib/python3.12/site-packages/center_of_mass-0.0.0-py3.12.egg-info' (and everything under it)
+[7.709s] Copying ../../build/center_of_mass/center_of_mass.egg-info to /home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/lib/python3.12/site-packages/center_of_mass-0.0.0-py3.12.egg-info
+[7.710s] running install_scripts
+[7.858s] Installing CoM script to /home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/lib/center_of_mass
+[7.968s] writing list of installed files to '/home/scott-pena/GitHub/RBE550-Quadruped/build/center_of_mass/install.log'
+[9.348s] Invoked command in '/home/scott-pena/GitHub/RBE550-Quadruped/src/center_of_mass' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/scott-pena/GitHub/RBE550-Quadruped/build/center_of_mass/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/center_of_mass build --build-base /home/scott-pena/GitHub/RBE550-Quadruped/build/center_of_mass/build install --record /home/scott-pena/GitHub/RBE550-Quadruped/build/center_of_mass/install.log --single-version-externally-managed install_data

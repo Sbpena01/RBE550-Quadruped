@@ -1,0 +1,499 @@
+[0.000000] (-) TimerEvent: {}
+[0.000553] (center_of_mass) JobQueued: {'identifier': 'center_of_mass', 'dependencies': OrderedDict()}
+[0.000606] (custom_interface) JobQueued: {'identifier': 'custom_interface', 'dependencies': OrderedDict()}
+[0.000633] (motion_planner) JobQueued: {'identifier': 'motion_planner', 'dependencies': OrderedDict()}
+[0.000643] (quadruped) JobQueued: {'identifier': 'quadruped', 'dependencies': OrderedDict()}
+[0.000653] (robot_description) JobQueued: {'identifier': 'robot_description', 'dependencies': OrderedDict()}
+[0.000663] (robot_sim) JobQueued: {'identifier': 'robot_sim', 'dependencies': OrderedDict()}
+[0.000672] (leg_controls) JobQueued: {'identifier': 'leg_controls', 'dependencies': OrderedDict({'custom_interface': '/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface'})}
+[0.000687] (sensors) JobQueued: {'identifier': 'sensors', 'dependencies': OrderedDict({'custom_interface': '/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface'})}
+[0.000698] (custom_interface) JobStarted: {'identifier': 'custom_interface'}
+[0.090669] (center_of_mass) JobStarted: {'identifier': 'center_of_mass'}
+[0.099739] (-) TimerEvent: {}
+[0.130570] (motion_planner) JobStarted: {'identifier': 'motion_planner'}
+[0.200031] (-) TimerEvent: {}
+[0.237963] (quadruped) JobStarted: {'identifier': 'quadruped'}
+[0.258273] (robot_description) JobStarted: {'identifier': 'robot_description'}
+[0.280252] (robot_sim) JobStarted: {'identifier': 'robot_sim'}
+[0.300120] (-) TimerEvent: {}
+[0.333965] (custom_interface) JobProgress: {'identifier': 'custom_interface', 'progress': 'cmake'}
+[0.334139] (custom_interface) Command: {'cmd': ['/usr/bin/cmake', '/home/scott-pena/GitHub/RBE550-Quadruped/src/custom_interface', '-DCMAKE_INSTALL_PREFIX=/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface'], 'cwd': '/home/scott-pena/GitHub/RBE550-Quadruped/build/custom_interface', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'scott-pena', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/scott-pena', 'OLDPWD': '/home/scott-pena', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2275', 'SYSTEMD_EXEC_PID': '2809', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3969', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'scott-pena', 'JOURNAL_STREAM': '8:8508', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'scott-pena', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/scott-pena/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/scott-pena-B450M-DS3H-WIFI:@/tmp/.ICE-unix/2667,unix/scott-pena-B450M-DS3H-WIFI:/tmp/.ICE-unix/2667', 'INVOCATION_ID': 'e09a8bd3101f4e3cb5f6017d78f5a001', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:74868795-dd44-4d67-ba54-0f85914cdea9', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/scott-pena/GitHub/RBE550-Quadruped/build/custom_interface', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.400199] (-) TimerEvent: {}
+[0.500466] (-) TimerEvent: {}
+[0.600656] (-) TimerEvent: {}
+[0.700819] (-) TimerEvent: {}
+[0.800995] (-) TimerEvent: {}
+[0.901157] (-) TimerEvent: {}
+[1.001304] (-) TimerEvent: {}
+[1.101466] (-) TimerEvent: {}
+[1.201632] (-) TimerEvent: {}
+[1.301817] (-) TimerEvent: {}
+[1.401974] (-) TimerEvent: {}
+[1.502156] (-) TimerEvent: {}
+[1.602304] (-) TimerEvent: {}
+[1.702451] (-) TimerEvent: {}
+[1.802618] (-) TimerEvent: {}
+[1.902843] (-) TimerEvent: {}
+[2.002992] (-) TimerEvent: {}
+[2.103128] (-) TimerEvent: {}
+[2.203305] (-) TimerEvent: {}
+[2.303486] (-) TimerEvent: {}
+[2.403670] (-) TimerEvent: {}
+[2.503876] (-) TimerEvent: {}
+[2.604048] (-) TimerEvent: {}
+[2.704235] (-) TimerEvent: {}
+[2.804404] (-) TimerEvent: {}
+[2.904610] (-) TimerEvent: {}
+[3.004803] (-) TimerEvent: {}
+[3.105016] (-) TimerEvent: {}
+[3.205201] (-) TimerEvent: {}
+[3.305376] (-) TimerEvent: {}
+[3.405557] (-) TimerEvent: {}
+[3.505747] (-) TimerEvent: {}
+[3.605932] (-) TimerEvent: {}
+[3.706352] (-) TimerEvent: {}
+[3.806509] (-) TimerEvent: {}
+[3.906689] (-) TimerEvent: {}
+[4.008794] (-) TimerEvent: {}
+[4.109096] (-) TimerEvent: {}
+[4.209345] (-) TimerEvent: {}
+[4.309525] (-) TimerEvent: {}
+[4.409706] (-) TimerEvent: {}
+[4.509904] (-) TimerEvent: {}
+[4.610118] (-) TimerEvent: {}
+[4.710384] (-) TimerEvent: {}
+[4.810643] (-) TimerEvent: {}
+[4.910944] (-) TimerEvent: {}
+[5.011220] (-) TimerEvent: {}
+[5.111567] (-) TimerEvent: {}
+[5.211939] (-) TimerEvent: {}
+[5.312165] (-) TimerEvent: {}
+[5.326676] (custom_interface) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.2.0\n'}
+[5.412261] (-) TimerEvent: {}
+[5.512488] (-) TimerEvent: {}
+[5.612714] (-) TimerEvent: {}
+[5.712956] (-) TimerEvent: {}
+[5.813183] (-) TimerEvent: {}
+[5.913411] (-) TimerEvent: {}
+[6.013636] (-) TimerEvent: {}
+[6.113878] (-) TimerEvent: {}
+[6.214105] (-) TimerEvent: {}
+[6.314692] (-) TimerEvent: {}
+[6.415059] (-) TimerEvent: {}
+[6.515355] (-) TimerEvent: {}
+[6.615609] (-) TimerEvent: {}
+[6.715920] (-) TimerEvent: {}
+[6.816149] (-) TimerEvent: {}
+[6.916378] (-) TimerEvent: {}
+[7.016686] (-) TimerEvent: {}
+[7.117241] (-) TimerEvent: {}
+[7.217527] (-) TimerEvent: {}
+[7.317782] (-) TimerEvent: {}
+[7.418075] (-) TimerEvent: {}
+[7.518300] (-) TimerEvent: {}
+[7.618526] (-) TimerEvent: {}
+[7.718752] (-) TimerEvent: {}
+[7.818977] (-) TimerEvent: {}
+[7.837949] (custom_interface) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.2.0\n'}
+[7.919060] (-) TimerEvent: {}
+[8.019241] (-) TimerEvent: {}
+[8.114629] (custom_interface) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[8.119334] (-) TimerEvent: {}
+[8.219537] (-) TimerEvent: {}
+[8.320374] (-) TimerEvent: {}
+[8.420838] (-) TimerEvent: {}
+[8.521524] (-) TimerEvent: {}
+[8.621927] (-) TimerEvent: {}
+[8.722244] (-) TimerEvent: {}
+[8.822902] (-) TimerEvent: {}
+[8.923232] (-) TimerEvent: {}
+[9.023519] (-) TimerEvent: {}
+[9.124265] (-) TimerEvent: {}
+[9.224909] (-) TimerEvent: {}
+[9.325590] (-) TimerEvent: {}
+[9.426440] (-) TimerEvent: {}
+[9.526773] (-) TimerEvent: {}
+[9.627187] (-) TimerEvent: {}
+[9.727860] (-) TimerEvent: {}
+[9.828529] (-) TimerEvent: {}
+[9.929246] (-) TimerEvent: {}
+[10.029591] (-) TimerEvent: {}
+[10.129872] (-) TimerEvent: {}
+[10.230147] (-) TimerEvent: {}
+[10.330756] (-) TimerEvent: {}
+[10.431200] (-) TimerEvent: {}
+[10.531852] (-) TimerEvent: {}
+[10.632321] (-) TimerEvent: {}
+[10.636258] (custom_interface) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[10.649634] (custom_interface) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[10.650464] (custom_interface) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[10.678157] (custom_interface) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[10.690856] (custom_interface) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[10.732400] (-) TimerEvent: {}
+[10.832759] (-) TimerEvent: {}
+[10.933254] (-) TimerEvent: {}
+[11.033936] (-) TimerEvent: {}
+[11.098986] (custom_interface) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[11.109454] (custom_interface) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[11.109792] (custom_interface) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[11.110316] (custom_interface) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[11.134009] (-) TimerEvent: {}
+[11.234560] (-) TimerEvent: {}
+[11.334934] (-) TimerEvent: {}
+[11.435347] (-) TimerEvent: {}
+[11.535830] (-) TimerEvent: {}
+[11.636051] (-) TimerEvent: {}
+[11.672625] (custom_interface) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[11.736146] (-) TimerEvent: {}
+[11.836357] (-) TimerEvent: {}
+[11.936550] (-) TimerEvent: {}
+[11.939405] (custom_interface) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[12.036615] (-) TimerEvent: {}
+[12.136779] (-) TimerEvent: {}
+[12.193359] (custom_interface) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[12.236864] (-) TimerEvent: {}
+[12.337051] (-) TimerEvent: {}
+[12.418776] (custom_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[12.437128] (-) TimerEvent: {}
+[12.537276] (-) TimerEvent: {}
+[12.637436] (-) TimerEvent: {}
+[12.704518] (custom_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[12.737536] (-) TimerEvent: {}
+[12.837761] (-) TimerEvent: {}
+[12.921855] (custom_interface) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.4 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[12.925696] (robot_sim) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/robot_sim', 'build', '--build-base', '/home/scott-pena/GitHub/RBE550-Quadruped/build/robot_sim/build', 'install', '--record', '/home/scott-pena/GitHub/RBE550-Quadruped/build/robot_sim/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/scott-pena/GitHub/RBE550-Quadruped/src/robot_sim', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'scott-pena', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/scott-pena', 'OLDPWD': '/home/scott-pena', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2275', 'SYSTEMD_EXEC_PID': '2809', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3969', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'scott-pena', 'JOURNAL_STREAM': '8:8508', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'scott-pena', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/scott-pena/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/scott-pena-B450M-DS3H-WIFI:@/tmp/.ICE-unix/2667,unix/scott-pena-B450M-DS3H-WIFI:/tmp/.ICE-unix/2667', 'INVOCATION_ID': 'e09a8bd3101f4e3cb5f6017d78f5a001', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:74868795-dd44-4d67-ba54-0f85914cdea9', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/scott-pena/GitHub/RBE550-Quadruped/build/robot_sim', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/scott-pena/GitHub/RBE550-Quadruped/build/robot_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[12.932607] (robot_description) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/robot_description', 'build', '--build-base', '/home/scott-pena/GitHub/RBE550-Quadruped/build/robot_description/build', 'install', '--record', '/home/scott-pena/GitHub/RBE550-Quadruped/build/robot_description/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/scott-pena/GitHub/RBE550-Quadruped/src/robot_description', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'scott-pena', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/scott-pena', 'OLDPWD': '/home/scott-pena', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2275', 'SYSTEMD_EXEC_PID': '2809', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3969', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'scott-pena', 'JOURNAL_STREAM': '8:8508', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'scott-pena', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/scott-pena/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/scott-pena-B450M-DS3H-WIFI:@/tmp/.ICE-unix/2667,unix/scott-pena-B450M-DS3H-WIFI:/tmp/.ICE-unix/2667', 'INVOCATION_ID': 'e09a8bd3101f4e3cb5f6017d78f5a001', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:74868795-dd44-4d67-ba54-0f85914cdea9', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/scott-pena/GitHub/RBE550-Quadruped/build/robot_description', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/scott-pena/GitHub/RBE550-Quadruped/build/robot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[12.934428] (motion_planner) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/motion_planner', 'build', '--build-base', '/home/scott-pena/GitHub/RBE550-Quadruped/build/motion_planner/build', 'install', '--record', '/home/scott-pena/GitHub/RBE550-Quadruped/build/motion_planner/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/scott-pena/GitHub/RBE550-Quadruped/src/motion_planner', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'scott-pena', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/scott-pena', 'OLDPWD': '/home/scott-pena', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2275', 'SYSTEMD_EXEC_PID': '2809', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3969', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'scott-pena', 'JOURNAL_STREAM': '8:8508', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'scott-pena', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/scott-pena/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/scott-pena-B450M-DS3H-WIFI:@/tmp/.ICE-unix/2667,unix/scott-pena-B450M-DS3H-WIFI:/tmp/.ICE-unix/2667', 'INVOCATION_ID': 'e09a8bd3101f4e3cb5f6017d78f5a001', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:74868795-dd44-4d67-ba54-0f85914cdea9', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/scott-pena/GitHub/RBE550-Quadruped/build/motion_planner', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/scott-pena/GitHub/RBE550-Quadruped/build/motion_planner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[12.937845] (-) TimerEvent: {}
+[12.938578] (center_of_mass) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/center_of_mass', 'build', '--build-base', '/home/scott-pena/GitHub/RBE550-Quadruped/build/center_of_mass/build', 'install', '--record', '/home/scott-pena/GitHub/RBE550-Quadruped/build/center_of_mass/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/scott-pena/GitHub/RBE550-Quadruped/src/center_of_mass', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'scott-pena', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/scott-pena', 'OLDPWD': '/home/scott-pena', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2275', 'SYSTEMD_EXEC_PID': '2809', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3969', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'scott-pena', 'JOURNAL_STREAM': '8:8508', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'scott-pena', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/scott-pena/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/scott-pena-B450M-DS3H-WIFI:@/tmp/.ICE-unix/2667,unix/scott-pena-B450M-DS3H-WIFI:/tmp/.ICE-unix/2667', 'INVOCATION_ID': 'e09a8bd3101f4e3cb5f6017d78f5a001', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:74868795-dd44-4d67-ba54-0f85914cdea9', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/scott-pena/GitHub/RBE550-Quadruped/build/center_of_mass', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/scott-pena/GitHub/RBE550-Quadruped/build/center_of_mass/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[12.945084] (quadruped) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/quadruped', 'build', '--build-base', '/home/scott-pena/GitHub/RBE550-Quadruped/build/quadruped/build', 'install', '--record', '/home/scott-pena/GitHub/RBE550-Quadruped/build/quadruped/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/scott-pena/GitHub/RBE550-Quadruped/src/quadruped', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'scott-pena', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/scott-pena', 'OLDPWD': '/home/scott-pena', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2275', 'SYSTEMD_EXEC_PID': '2809', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3969', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'scott-pena', 'JOURNAL_STREAM': '8:8508', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'scott-pena', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/scott-pena/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/scott-pena-B450M-DS3H-WIFI:@/tmp/.ICE-unix/2667,unix/scott-pena-B450M-DS3H-WIFI:/tmp/.ICE-unix/2667', 'INVOCATION_ID': 'e09a8bd3101f4e3cb5f6017d78f5a001', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:74868795-dd44-4d67-ba54-0f85914cdea9', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/scott-pena/GitHub/RBE550-Quadruped/build/quadruped', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/scott-pena/GitHub/RBE550-Quadruped/build/quadruped/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[12.977952] (custom_interface) StdoutLine: {'line': b'-- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)\n'}
+[13.037925] (-) TimerEvent: {}
+[13.138126] (-) TimerEvent: {}
+[13.187323] (robot_sim) StdoutLine: {'line': b'running egg_info\n'}
+[13.187619] (robot_sim) StdoutLine: {'line': b'creating ../../build/robot_sim/robot_sim.egg-info\n'}
+[13.189301] (motion_planner) StdoutLine: {'line': b'running egg_info\n'}
+[13.189507] (motion_planner) StdoutLine: {'line': b'creating ../../build/motion_planner/motion_planner.egg-info\n'}
+[13.191186] (robot_description) StdoutLine: {'line': b'running egg_info\n'}
+[13.191387] (robot_description) StdoutLine: {'line': b'creating ../../build/robot_description/robot_description.egg-info\n'}
+[13.200502] (center_of_mass) StdoutLine: {'line': b'running egg_info\n'}
+[13.200752] (center_of_mass) StdoutLine: {'line': b'creating ../../build/center_of_mass/center_of_mass.egg-info\n'}
+[13.201651] (quadruped) StdoutLine: {'line': b'running egg_info\n'}
+[13.201894] (quadruped) StdoutLine: {'line': b'creating ../../build/quadruped/quadruped.egg-info\n'}
+[13.210114] (robot_sim) StdoutLine: {'line': b'writing ../../build/robot_sim/robot_sim.egg-info/PKG-INFO\n'}
+[13.210288] (robot_sim) StdoutLine: {'line': b'writing dependency_links to ../../build/robot_sim/robot_sim.egg-info/dependency_links.txt\n'}
+[13.210389] (robot_sim) StdoutLine: {'line': b'writing requirements to ../../build/robot_sim/robot_sim.egg-info/requires.txt\n'}
+[13.210465] (robot_sim) StdoutLine: {'line': b'writing top-level names to ../../build/robot_sim/robot_sim.egg-info/top_level.txt\n'}
+[13.210533] (robot_sim) StdoutLine: {'line': b"writing manifest file '../../build/robot_sim/robot_sim.egg-info/SOURCES.txt'\n"}
+[13.211598] (motion_planner) StdoutLine: {'line': b'writing ../../build/motion_planner/motion_planner.egg-info/PKG-INFO\n'}
+[13.211769] (motion_planner) StdoutLine: {'line': b'writing dependency_links to ../../build/motion_planner/motion_planner.egg-info/dependency_links.txt\n'}
+[13.211883] (motion_planner) StdoutLine: {'line': b'writing entry points to ../../build/motion_planner/motion_planner.egg-info/entry_points.txt\n'}
+[13.211963] (motion_planner) StdoutLine: {'line': b'writing requirements to ../../build/motion_planner/motion_planner.egg-info/requires.txt\n'}
+[13.212035] (motion_planner) StdoutLine: {'line': b'writing top-level names to ../../build/motion_planner/motion_planner.egg-info/top_level.txt\n'}
+[13.212108] (motion_planner) StdoutLine: {'line': b"writing manifest file '../../build/motion_planner/motion_planner.egg-info/SOURCES.txt'\n"}
+[13.213888] (robot_description) StdoutLine: {'line': b'writing ../../build/robot_description/robot_description.egg-info/PKG-INFO\n'}
+[13.214038] (robot_description) StdoutLine: {'line': b'writing dependency_links to ../../build/robot_description/robot_description.egg-info/dependency_links.txt\n'}
+[13.214154] (robot_description) StdoutLine: {'line': b'writing requirements to ../../build/robot_description/robot_description.egg-info/requires.txt\n'}
+[13.214224] (robot_description) StdoutLine: {'line': b'writing top-level names to ../../build/robot_description/robot_description.egg-info/top_level.txt\n'}
+[13.214290] (robot_description) StdoutLine: {'line': b"writing manifest file '../../build/robot_description/robot_description.egg-info/SOURCES.txt'\n"}
+[13.223301] (center_of_mass) StdoutLine: {'line': b'writing ../../build/center_of_mass/center_of_mass.egg-info/PKG-INFO\n'}
+[13.223474] (center_of_mass) StdoutLine: {'line': b'writing dependency_links to ../../build/center_of_mass/center_of_mass.egg-info/dependency_links.txt\n'}
+[13.223587] (center_of_mass) StdoutLine: {'line': b'writing entry points to ../../build/center_of_mass/center_of_mass.egg-info/entry_points.txt\n'}
+[13.223674] (center_of_mass) StdoutLine: {'line': b'writing requirements to ../../build/center_of_mass/center_of_mass.egg-info/requires.txt\n'}
+[13.223752] (center_of_mass) StdoutLine: {'line': b'writing top-level names to ../../build/center_of_mass/center_of_mass.egg-info/top_level.txt\n'}
+[13.223829] (center_of_mass) StdoutLine: {'line': b"writing manifest file '../../build/center_of_mass/center_of_mass.egg-info/SOURCES.txt'\n"}
+[13.224487] (quadruped) StdoutLine: {'line': b'writing ../../build/quadruped/quadruped.egg-info/PKG-INFO\n'}
+[13.224665] (quadruped) StdoutLine: {'line': b'writing dependency_links to ../../build/quadruped/quadruped.egg-info/dependency_links.txt\n'}
+[13.224783] (quadruped) StdoutLine: {'line': b'writing entry points to ../../build/quadruped/quadruped.egg-info/entry_points.txt\n'}
+[13.224864] (quadruped) StdoutLine: {'line': b'writing requirements to ../../build/quadruped/quadruped.egg-info/requires.txt\n'}
+[13.224932] (quadruped) StdoutLine: {'line': b'writing top-level names to ../../build/quadruped/quadruped.egg-info/top_level.txt\n'}
+[13.225005] (quadruped) StdoutLine: {'line': b"writing manifest file '../../build/quadruped/quadruped.egg-info/SOURCES.txt'\n"}
+[13.233448] (robot_sim) StdoutLine: {'line': b"reading manifest file '../../build/robot_sim/robot_sim.egg-info/SOURCES.txt'\n"}
+[13.233567] (robot_sim) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[13.233928] (robot_sim) StdoutLine: {'line': b"writing manifest file '../../build/robot_sim/robot_sim.egg-info/SOURCES.txt'\n"}
+[13.234032] (robot_sim) StdoutLine: {'line': b'running build\n'}
+[13.234108] (robot_sim) StdoutLine: {'line': b'running install\n'}
+[13.238186] (-) TimerEvent: {}
+[13.238305] (robot_sim) StdoutLine: {'line': b'running install_data\n'}
+[13.238396] (robot_sim) StdoutLine: {'line': b'creating /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/share/ament_index\n'}
+[13.238475] (robot_sim) StdoutLine: {'line': b'creating /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/share/ament_index/resource_index\n'}
+[13.238531] (robot_sim) StdoutLine: {'line': b'creating /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/share/ament_index/resource_index/packages\n'}
+[13.238602] (robot_sim) StdoutLine: {'line': b'copying resource/robot_sim -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/share/ament_index/resource_index/packages\n'}
+[13.238674] (robot_sim) StdoutLine: {'line': b'copying package.xml -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/share/robot_sim\n'}
+[13.251243] (robot_sim) StdoutLine: {'line': b'copying launch/robot_spawn_launch.py -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/share/robot_sim/launch\n'}
+[13.256581] (robot_sim) StderrLine: {'line': b"error: can't copy 'launch/__pycache__': doesn't exist or not a regular file\n"}
+[13.257324] (motion_planner) StdoutLine: {'line': b"reading manifest file '../../build/motion_planner/motion_planner.egg-info/SOURCES.txt'\n"}
+[13.257436] (motion_planner) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[13.257789] (motion_planner) StdoutLine: {'line': b"writing manifest file '../../build/motion_planner/motion_planner.egg-info/SOURCES.txt'\n"}
+[13.257881] (motion_planner) StdoutLine: {'line': b'running build\n'}
+[13.257956] (motion_planner) StdoutLine: {'line': b'running build_py\n'}
+[13.258029] (motion_planner) StdoutLine: {'line': b'creating /home/scott-pena/GitHub/RBE550-Quadruped/build/motion_planner/build\n'}
+[13.258104] (motion_planner) StdoutLine: {'line': b'creating /home/scott-pena/GitHub/RBE550-Quadruped/build/motion_planner/build/lib\n'}
+[13.258166] (motion_planner) StdoutLine: {'line': b'creating /home/scott-pena/GitHub/RBE550-Quadruped/build/motion_planner/build/lib/motion_planner\n'}
+[13.258236] (motion_planner) StdoutLine: {'line': b'copying motion_planner/RRT.py -> /home/scott-pena/GitHub/RBE550-Quadruped/build/motion_planner/build/lib/motion_planner\n'}
+[13.261288] (robot_description) StdoutLine: {'line': b"reading manifest file '../../build/robot_description/robot_description.egg-info/SOURCES.txt'\n"}
+[13.261375] (robot_description) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[13.262095] (robot_description) StdoutLine: {'line': b"writing manifest file '../../build/robot_description/robot_description.egg-info/SOURCES.txt'\n"}
+[13.262196] (robot_description) StdoutLine: {'line': b'running build\n'}
+[13.262254] (robot_description) StdoutLine: {'line': b'running build_py\n'}
+[13.262334] (robot_description) StdoutLine: {'line': b'creating /home/scott-pena/GitHub/RBE550-Quadruped/build/robot_description/build\n'}
+[13.262394] (robot_description) StdoutLine: {'line': b'creating /home/scott-pena/GitHub/RBE550-Quadruped/build/robot_description/build/lib\n'}
+[13.262472] (robot_description) StdoutLine: {'line': b'creating /home/scott-pena/GitHub/RBE550-Quadruped/build/robot_description/build/lib/robot_description\n'}
+[13.262528] (robot_description) StdoutLine: {'line': b'copying robot_description/__init__.py -> /home/scott-pena/GitHub/RBE550-Quadruped/build/robot_description/build/lib/robot_description\n'}
+[13.262601] (robot_description) StdoutLine: {'line': b'running install\n'}
+[13.265467] (motion_planner) StdoutLine: {'line': b'copying motion_planner/Map.py -> /home/scott-pena/GitHub/RBE550-Quadruped/build/motion_planner/build/lib/motion_planner\n'}
+[13.266877] (robot_description) StdoutLine: {'line': b'running install_lib\n'}
+[13.269415] (robot_sim) CommandEnded: {'returncode': 1}
+[13.269658] (robot_sim) JobEnded: {'identifier': 'robot_sim', 'rc': 1}
+[13.270607] (center_of_mass) StdoutLine: {'line': b"reading manifest file '../../build/center_of_mass/center_of_mass.egg-info/SOURCES.txt'\n"}
+[13.270761] (center_of_mass) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[13.270861] (quadruped) StdoutLine: {'line': b"reading manifest file '../../build/quadruped/quadruped.egg-info/SOURCES.txt'\n"}
+[13.270961] (quadruped) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[13.271107] (center_of_mass) StdoutLine: {'line': b"writing manifest file '../../build/center_of_mass/center_of_mass.egg-info/SOURCES.txt'\n"}
+[13.271202] (center_of_mass) StdoutLine: {'line': b'running build\n'}
+[13.271274] (center_of_mass) StdoutLine: {'line': b'running build_py\n'}
+[13.271354] (center_of_mass) StdoutLine: {'line': b'creating /home/scott-pena/GitHub/RBE550-Quadruped/build/center_of_mass/build\n'}
+[13.271403] (quadruped) StdoutLine: {'line': b"writing manifest file '../../build/quadruped/quadruped.egg-info/SOURCES.txt'\n"}
+[13.271451] (quadruped) StdoutLine: {'line': b'running build\n'}
+[13.271496] (quadruped) StdoutLine: {'line': b'running build_py\n'}
+[13.271564] (quadruped) StdoutLine: {'line': b'creating /home/scott-pena/GitHub/RBE550-Quadruped/build/quadruped/build\n'}
+[13.271614] (quadruped) StdoutLine: {'line': b'creating /home/scott-pena/GitHub/RBE550-Quadruped/build/quadruped/build/lib\n'}
+[13.271660] (quadruped) StdoutLine: {'line': b'creating /home/scott-pena/GitHub/RBE550-Quadruped/build/quadruped/build/lib/quadruped\n'}
+[13.271728] (quadruped) StdoutLine: {'line': b'copying quadruped/Quadruped.py -> /home/scott-pena/GitHub/RBE550-Quadruped/build/quadruped/build/lib/quadruped\n'}
+[13.271807] (center_of_mass) StdoutLine: {'line': b'creating /home/scott-pena/GitHub/RBE550-Quadruped/build/center_of_mass/build/lib\n'}
+[13.271857] (center_of_mass) StdoutLine: {'line': b'creating /home/scott-pena/GitHub/RBE550-Quadruped/build/center_of_mass/build/lib/center_of_mass\n'}
+[13.271899] (center_of_mass) StdoutLine: {'line': b'copying center_of_mass/__init__.py -> /home/scott-pena/GitHub/RBE550-Quadruped/build/center_of_mass/build/lib/center_of_mass\n'}
+[13.271950] (center_of_mass) StdoutLine: {'line': b'copying center_of_mass/CenterOfMass.py -> /home/scott-pena/GitHub/RBE550-Quadruped/build/center_of_mass/build/lib/center_of_mass\n'}
+[13.287545] (motion_planner) StdoutLine: {'line': b'copying motion_planner/__init__.py -> /home/scott-pena/GitHub/RBE550-Quadruped/build/motion_planner/build/lib/motion_planner\n'}
+[13.287706] (motion_planner) StdoutLine: {'line': b'running install\n'}
+[13.292087] (motion_planner) StdoutLine: {'line': b'running install_lib\n'}
+[13.300554] (quadruped) StdoutLine: {'line': b'copying quadruped/__init__.py -> /home/scott-pena/GitHub/RBE550-Quadruped/build/quadruped/build/lib/quadruped\n'}
+[13.300710] (quadruped) StdoutLine: {'line': b'running install\n'}
+[13.302494] (center_of_mass) StdoutLine: {'line': b'running install\n'}
+[13.305085] (quadruped) StdoutLine: {'line': b'running install_lib\n'}
+[13.306669] (robot_description) StdoutLine: {'line': b'copying /home/scott-pena/GitHub/RBE550-Quadruped/build/robot_description/build/lib/robot_description/__init__.py -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/lib/python3.12/site-packages/robot_description\n'}
+[13.307008] (center_of_mass) StdoutLine: {'line': b'running install_lib\n'}
+[13.317752] (robot_description) StdoutLine: {'line': b'running install_data\n'}
+[13.317853] (robot_description) StdoutLine: {'line': b'creating /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/ament_index\n'}
+[13.317953] (robot_description) StdoutLine: {'line': b'creating /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/ament_index/resource_index\n'}
+[13.318014] (robot_description) StdoutLine: {'line': b'creating /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/ament_index/resource_index/packages\n'}
+[13.318098] (robot_description) StdoutLine: {'line': b'copying resource/robot_description -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/ament_index/resource_index/packages\n'}
+[13.318183] (robot_description) StdoutLine: {'line': b'copying package.xml -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description\n'}
+[13.318258] (robot_description) StdoutLine: {'line': b'creating /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/config\n'}
+[13.318338] (robot_description) StdoutLine: {'line': b'copying config/robot_config.rviz -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/config\n'}
+[13.325193] (motion_planner) StdoutLine: {'line': b'copying /home/scott-pena/GitHub/RBE550-Quadruped/build/motion_planner/build/lib/motion_planner/RRT.py -> /home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/lib/python3.12/site-packages/motion_planner\n'}
+[13.329978] (robot_description) StdoutLine: {'line': b'copying config/robot_sim.yaml -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/config\n'}
+[13.336211] (quadruped) StdoutLine: {'line': b'copying /home/scott-pena/GitHub/RBE550-Quadruped/build/quadruped/build/lib/quadruped/Quadruped.py -> /home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/lib/python3.12/site-packages/quadruped\n'}
+[13.337544] (center_of_mass) StdoutLine: {'line': b'copying /home/scott-pena/GitHub/RBE550-Quadruped/build/center_of_mass/build/lib/center_of_mass/CenterOfMass.py -> /home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/lib/python3.12/site-packages/center_of_mass\n'}
+[13.338249] (-) TimerEvent: {}
+[13.347010] (robot_description) StdoutLine: {'line': b'creating /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[13.347143] (robot_description) StdoutLine: {'line': b'copying meshes/spotmicroai.blend -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[13.347864] (quadruped) StdoutLine: {'line': b'byte-compiling /home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/lib/python3.12/site-packages/quadruped/Quadruped.py to Quadruped.cpython-312.pyc\n'}
+[13.348250] (center_of_mass) StdoutLine: {'line': b'byte-compiling /home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/lib/python3.12/site-packages/center_of_mass/CenterOfMass.py to CenterOfMass.cpython-312.pyc\n'}
+[13.349093] (center_of_mass) StdoutLine: {'line': b'running install_data\n'}
+[13.349173] (center_of_mass) StdoutLine: {'line': b'creating /home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/share/ament_index\n'}
+[13.349240] (center_of_mass) StdoutLine: {'line': b'creating /home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/share/ament_index/resource_index\n'}
+[13.349316] (center_of_mass) StdoutLine: {'line': b'creating /home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/share/ament_index/resource_index/packages\n'}
+[13.349393] (center_of_mass) StdoutLine: {'line': b'copying resource/center_of_mass -> /home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/share/ament_index/resource_index/packages\n'}
+[13.349468] (center_of_mass) StdoutLine: {'line': b'copying package.xml -> /home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/share/center_of_mass\n'}
+[13.349542] (center_of_mass) StdoutLine: {'line': b'running install_egg_info\n'}
+[13.349975] (quadruped) StdoutLine: {'line': b'running install_data\n'}
+[13.350070] (quadruped) StdoutLine: {'line': b'creating /home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/share/ament_index\n'}
+[13.350133] (quadruped) StdoutLine: {'line': b'creating /home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/share/ament_index/resource_index\n'}
+[13.350212] (quadruped) StdoutLine: {'line': b'creating /home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/share/ament_index/resource_index/packages\n'}
+[13.350269] (quadruped) StdoutLine: {'line': b'copying resource/quadruped -> /home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/share/ament_index/resource_index/packages\n'}
+[13.350341] (quadruped) StdoutLine: {'line': b'copying package.xml -> /home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/share/quadruped\n'}
+[13.350415] (quadruped) StdoutLine: {'line': b'running install_egg_info\n'}
+[13.360339] (motion_planner) StdoutLine: {'line': b'copying /home/scott-pena/GitHub/RBE550-Quadruped/build/motion_planner/build/lib/motion_planner/Map.py -> /home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/lib/python3.12/site-packages/motion_planner\n'}
+[13.360500] (motion_planner) StdoutLine: {'line': b'copying /home/scott-pena/GitHub/RBE550-Quadruped/build/motion_planner/build/lib/motion_planner/__init__.py -> /home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/lib/python3.12/site-packages/motion_planner\n'}
+[13.368534] (motion_planner) StdoutLine: {'line': b'byte-compiling /home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/lib/python3.12/site-packages/motion_planner/RRT.py to RRT.cpython-312.pyc\n'}
+[13.371152] (motion_planner) StdoutLine: {'line': b'byte-compiling /home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/lib/python3.12/site-packages/motion_planner/Map.py to Map.cpython-312.pyc\n'}
+[13.371701] (motion_planner) StdoutLine: {'line': b'byte-compiling /home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/lib/python3.12/site-packages/motion_planner/__init__.py to __init__.cpython-312.pyc\n'}
+[13.371875] (motion_planner) StdoutLine: {'line': b'running install_data\n'}
+[13.372528] (center_of_mass) StdoutLine: {'line': b"removing '/home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/lib/python3.12/site-packages/center_of_mass-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[13.372787] (center_of_mass) StdoutLine: {'line': b'Copying ../../build/center_of_mass/center_of_mass.egg-info to /home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/lib/python3.12/site-packages/center_of_mass-0.0.0-py3.12.egg-info\n'}
+[13.373445] (center_of_mass) StdoutLine: {'line': b'running install_scripts\n'}
+[13.373523] (quadruped) StdoutLine: {'line': b"removing '/home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/lib/python3.12/site-packages/quadruped-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[13.373773] (quadruped) StdoutLine: {'line': b'Copying ../../build/quadruped/quadruped.egg-info to /home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/lib/python3.12/site-packages/quadruped-0.0.0-py3.12.egg-info\n'}
+[13.374427] (quadruped) StdoutLine: {'line': b'running install_scripts\n'}
+[13.438310] (-) TimerEvent: {}
+[13.479600] (motion_planner) StdoutLine: {'line': b'copying resource/motion_planner -> /home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/share/ament_index/resource_index/packages\n'}
+[13.479758] (motion_planner) StdoutLine: {'line': b'copying package.xml -> /home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/share/motion_planner\n'}
+[13.479896] (motion_planner) StdoutLine: {'line': b'running install_egg_info\n'}
+[13.509746] (motion_planner) StdoutLine: {'line': b"removing '/home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/lib/python3.12/site-packages/motion_planner-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[13.510080] (motion_planner) StdoutLine: {'line': b'Copying ../../build/motion_planner/motion_planner.egg-info to /home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/lib/python3.12/site-packages/motion_planner-0.0.0-py3.12.egg-info\n'}
+[13.510922] (motion_planner) StdoutLine: {'line': b'running install_scripts\n'}
+[13.511607] (center_of_mass) StdoutLine: {'line': b'Installing CoM script to /home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/lib/center_of_mass\n'}
+[13.512594] (quadruped) StdoutLine: {'line': b'Installing quadruped script to /home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/lib/quadruped\n'}
+[13.528280] (center_of_mass) StdoutLine: {'line': b"writing list of installed files to '/home/scott-pena/GitHub/RBE550-Quadruped/build/center_of_mass/install.log'\n"}
+[13.535966] (quadruped) StdoutLine: {'line': b"writing list of installed files to '/home/scott-pena/GitHub/RBE550-Quadruped/build/quadruped/install.log'\n"}
+[13.538390] (-) TimerEvent: {}
+[13.548457] (center_of_mass) JobEnded: {'identifier': 'center_of_mass', 'rc': 'SIGINT'}
+[13.557737] (quadruped) JobEnded: {'identifier': 'quadruped', 'rc': 'SIGINT'}
+[13.638471] (-) TimerEvent: {}
+[13.651740] (custom_interface) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[13.652072] (motion_planner) StdoutLine: {'line': b'Installing map script to /home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/lib/motion_planner\n'}
+[13.657502] (motion_planner) StdoutLine: {'line': b'Installing rrt script to /home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/lib/motion_planner\n'}
+[13.657815] (motion_planner) StdoutLine: {'line': b"writing list of installed files to '/home/scott-pena/GitHub/RBE550-Quadruped/build/motion_planner/install.log'\n"}
+[13.676555] (motion_planner) JobEnded: {'identifier': 'motion_planner', 'rc': 'SIGINT'}
+[13.738544] (-) TimerEvent: {}
+[13.838676] (-) TimerEvent: {}
+[13.938849] (-) TimerEvent: {}
+[14.039018] (-) TimerEvent: {}
+[14.139178] (-) TimerEvent: {}
+[14.239344] (-) TimerEvent: {}
+[14.248135] (custom_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[14.339427] (-) TimerEvent: {}
+[14.439591] (-) TimerEvent: {}
+[14.539745] (-) TimerEvent: {}
+[14.639920] (-) TimerEvent: {}
+[14.667002] (robot_description) StdoutLine: {'line': b'copying meshes/lshoulder.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[14.703188] (robot_description) StdoutLine: {'line': b'copying meshes/F_cover_orig.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[14.729134] (robot_description) StdoutLine: {'line': b'copying meshes/R_side_plate.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[14.740007] (-) TimerEvent: {}
+[14.744584] (robot_description) StdoutLine: {'line': b'copying meshes/README.txt -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[14.762941] (robot_description) StdoutLine: {'line': b'copying meshes/rfoot copy.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[14.786393] (robot_description) StdoutLine: {'line': b'copying meshes/L_arm_cover.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[14.811262] (robot_description) StdoutLine: {'line': b'copying meshes/plate.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[14.828897] (robot_description) StdoutLine: {'line': b'copying meshes/top.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[14.840094] (-) TimerEvent: {}
+[14.849125] (robot_description) StdoutLine: {'line': b'copying meshes/jetsonPlate.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[14.869879] (robot_description) StdoutLine: {'line': b'copying meshes/lshoulder copy.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[14.889878] (robot_description) StdoutLine: {'line': b'copying meshes/R_arm_joint.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[14.915564] (robot_description) StdoutLine: {'line': b'copying meshes/mainbody copy.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[14.917042] (custom_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[14.940181] (-) TimerEvent: {}
+[14.957409] (custom_interface) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[14.959784] (robot_description) StdoutLine: {'line': b'copying meshes/jetson_sidepart copy.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[14.960415] (robot_description) StdoutLine: {'line': b'copying meshes/jetsonPlate copy.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[14.999132] (robot_description) StdoutLine: {'line': b'copying meshes/larm copy.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[15.018270] (robot_description) StdoutLine: {'line': b'copying meshes/batteryholder2.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[15.037999] (robot_description) StdoutLine: {'line': b'copying meshes/SpotMicroAI_JetsonParts.FCStd1 -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[15.040259] (-) TimerEvent: {}
+[15.040770] (robot_description) StdoutLine: {'line': b'copying meshes/SpotMicroAI_JetsonParts.FCStd -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[15.057703] (custom_interface) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[15.068214] (robot_description) StdoutLine: {'line': b'copying meshes/L_ultra_sonic.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[15.092852] (robot_description) StdoutLine: {'line': b'copying meshes/frontpart.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[15.119805] (robot_description) StdoutLine: {'line': b'copying meshes/mainbody copy.dae -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[15.140336] (-) TimerEvent: {}
+[15.149000] (robot_description) StdoutLine: {'line': b'copying meshes/front copy.dae -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[15.182369] (robot_description) StdoutLine: {'line': b'copying meshes/larm_cover copy.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[15.201604] (robot_description) StdoutLine: {'line': b'copying meshes/spotmicroai copy.blend -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[15.240395] (-) TimerEvent: {}
+[15.340579] (-) TimerEvent: {}
+[15.440821] (-) TimerEvent: {}
+[15.540972] (-) TimerEvent: {}
+[15.641131] (-) TimerEvent: {}
+[15.741290] (-) TimerEvent: {}
+[15.841437] (-) TimerEvent: {}
+[15.941589] (-) TimerEvent: {}
+[16.041728] (-) TimerEvent: {}
+[16.141885] (-) TimerEvent: {}
+[16.242048] (-) TimerEvent: {}
+[16.342237] (-) TimerEvent: {}
+[16.376347] (robot_description) StdoutLine: {'line': b'copying meshes/rear2.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[16.378018] (robot_description) StdoutLine: {'line': b'copying meshes/R_arm_cover.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[16.442345] (-) TimerEvent: {}
+[16.516148] (robot_description) StdoutLine: {'line': b'copying meshes/rarm copy.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[16.542441] (-) TimerEvent: {}
+[16.613369] (robot_description) StdoutLine: {'line': b'copying meshes/batteryholder.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[16.642520] (-) TimerEvent: {}
+[16.675664] (robot_description) StdoutLine: {'line': b'copying meshes/R_ultra_sonic.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[16.677587] (robot_description) StdoutLine: {'line': b'copying meshes/rshoulder copy.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[16.742597] (-) TimerEvent: {}
+[16.770509] (robot_description) StdoutLine: {'line': b'copying meshes/foot.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[16.840840] (robot_description) StdoutLine: {'line': b'copying meshes/SpotMicroAI_Top.FCStd -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[16.842664] (-) TimerEvent: {}
+[16.920758] (robot_description) StdoutLine: {'line': b'copying meshes/F_shoulder.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[16.942744] (-) TimerEvent: {}
+[16.945976] (robot_description) StdoutLine: {'line': b'copying meshes/mainbody.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[17.022196] (robot_description) StdoutLine: {'line': b'copying meshes/lfoot.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[17.042813] (-) TimerEvent: {}
+[17.053578] (robot_description) StdoutLine: {'line': b'copying meshes/rearmain copy.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[17.092486] (robot_description) StdoutLine: {'line': b'copying meshes/rear.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[17.111842] (robot_description) StdoutLine: {'line': b'copying meshes/L_arm.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[17.133812] (robot_description) StdoutLine: {'line': b'copying meshes/rfoot.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[17.135221] (custom_interface) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[17.142880] (-) TimerEvent: {}
+[17.157855] (robot_description) StdoutLine: {'line': b'copying meshes/larm.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[17.160355] (robot_description) StdoutLine: {'line': b'copying meshes/R_shoulder.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[17.161576] (robot_description) StdoutLine: {'line': b'copying meshes/front.dae -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[17.229808] (robot_description) StdoutLine: {'line': b'copying meshes/rarm.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[17.231925] (robot_description) StdoutLine: {'line': b'copying meshes/SpotMicroAI_Bottom.FCStd1 -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[17.232798] (robot_description) StdoutLine: {'line': b'copying meshes/SpotMicroAI_Top.FCStd1 -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[17.242953] (-) TimerEvent: {}
+[17.263618] (robot_description) StdoutLine: {'line': b'copying meshes/LICENSE.txt -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[17.284860] (robot_description) StdoutLine: {'line': b'copying meshes/screwguard.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[17.296732] (custom_interface) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[17.308233] (robot_description) StdoutLine: {'line': b'copying meshes/testmount.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[17.330907] (robot_description) StdoutLine: {'line': b'copying meshes/frontpart copy.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[17.343021] (-) TimerEvent: {}
+[17.406452] (robot_description) StdoutLine: {'line': b'copying meshes/bottom.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[17.443087] (-) TimerEvent: {}
+[17.466464] (robot_description) StdoutLine: {'line': b'copying meshes/L_side_plate.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[17.541979] (robot_description) StdoutLine: {'line': b'copying meshes/R_arm.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[17.543174] (-) TimerEvent: {}
+[17.544007] (robot_description) StdoutLine: {'line': b'copying meshes/mainbody.dae -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[17.594345] (robot_description) StdoutLine: {'line': b'copying meshes/R_cover.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[17.643246] (-) TimerEvent: {}
+[17.681411] (robot_description) StdoutLine: {'line': b'copying meshes/rarm_cover copy.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[17.738951] (robot_description) StdoutLine: {'line': b'copying meshes/L_wrist.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[17.743347] (-) TimerEvent: {}
+[17.824945] (robot_description) StdoutLine: {'line': b'copying meshes/B_cover.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[17.843431] (-) TimerEvent: {}
+[17.848200] (custom_interface) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[17.850829] (custom_interface) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[17.855204] (custom_interface) StdoutLine: {'line': b'-- Configuring done (16.8s)\n'}
+[17.897534] (robot_description) StdoutLine: {'line': b'copying meshes/ledholder.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[17.927544] (robot_description) StdoutLine: {'line': b'copying meshes/L_arm_joint.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[17.943517] (-) TimerEvent: {}
+[18.042737] (robot_description) StdoutLine: {'line': b'copying meshes/F_cover.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[18.043583] (-) TimerEvent: {}
+[18.065743] (custom_interface) StdoutLine: {'line': b'-- Generating done (0.2s)\n'}
+[18.067910] (custom_interface) StdoutLine: {'line': b'-- Build files have been written to: /home/scott-pena/GitHub/RBE550-Quadruped/build/custom_interface\n'}
+[18.076207] (custom_interface) JobEnded: {'identifier': 'custom_interface', 'rc': 'SIGINT'}
+[18.117978] (robot_description) StdoutLine: {'line': b'copying meshes/backpart.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[18.143337] (robot_description) StdoutLine: {'line': b'copying meshes/rarm_cover.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[18.143652] (-) TimerEvent: {}
+[18.144939] (robot_description) StdoutLine: {'line': b'copying meshes/back copy.dae -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[18.174504] (robot_description) StdoutLine: {'line': b'copying meshes/larm_cover.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[18.196689] (robot_description) StdoutLine: {'line': b'copying meshes/non-mega_B_cover.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[18.216982] (robot_description) StdoutLine: {'line': b'copying meshes/back.dae -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[18.243729] (-) TimerEvent: {}
+[18.282686] (robot_description) StdoutLine: {'line': b'copying meshes/rearmain.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[18.284804] (robot_description) StdoutLine: {'line': b'copying meshes/R_wrist.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[18.299344] (robot_description) StdoutLine: {'line': b'copying meshes/non-mega_L_side_plate.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[18.319106] (robot_description) StdoutLine: {'line': b'copying meshes/lfoot copy.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[18.320867] (robot_description) StdoutLine: {'line': b'copying meshes/SpotMicroAI_Bottom.FCStd -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[18.343783] (-) TimerEvent: {}
+[18.347590] (robot_description) StdoutLine: {'line': b'copying meshes/SpotMicroAI_AdditionalParts.FCStd -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[18.385042] (robot_description) StdoutLine: {'line': b'copying meshes/non-mega_T_cover.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[18.385669] (robot_description) StdoutLine: {'line': b'copying meshes/label.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[18.391937] (robot_description) StdoutLine: {'line': b'copying meshes/rshoulder.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[18.416013] (robot_description) StdoutLine: {'line': b'copying meshes/jetson_sidepart.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[18.416848] (robot_description) StdoutLine: {'line': b'copying meshes/rplidar_main.STL -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[18.443849] (-) TimerEvent: {}
+[18.452170] (robot_description) StdoutLine: {'line': b'copying meshes/SpotMicroAI_Rear.FCStd -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[18.475694] (robot_description) StdoutLine: {'line': b'copying meshes/T_cover.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes\n'}
+[18.491115] (robot_description) StdoutLine: {'line': b'creating /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/gazebo\n'}
+[18.491245] (robot_description) StdoutLine: {'line': b'copying gazebo/materials.xacro -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/gazebo\n'}
+[18.501501] (robot_description) StdoutLine: {'line': b'copying gazebo/robot.gazebo.xacro -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/gazebo\n'}
+[18.510478] (robot_description) StdoutLine: {'line': b'creating /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/robots\n'}
+[18.510759] (robot_description) StdoutLine: {'line': b'copying robots/spotmicro.urdf -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/robots\n'}
+[18.514773] (robot_description) StdoutLine: {'line': b'copying robots/spotmicro_generated.urdf -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/robots\n'}
+[18.527042] (robot_description) StdoutLine: {'line': b'copying robots/spotmicro_copy.xacro -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/robots\n'}
+[18.532708] (robot_description) StdoutLine: {'line': b'copying robots/spotmicro.xacro -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/robots\n'}
+[18.533183] (robot_description) StdoutLine: {'line': b'copying robots/spotmicro_copy_copy.xacro -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/robots\n'}
+[18.533623] (robot_description) StdoutLine: {'line': b'creating /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/ros2_control\n'}
+[18.533800] (robot_description) StdoutLine: {'line': b'copying ros2_control/robot.ros2_control.xacro -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/ros2_control\n'}
+[18.534150] (robot_description) StdoutLine: {'line': b'running install_egg_info\n'}
+[18.543951] (-) TimerEvent: {}
+[18.582789] (robot_description) StdoutLine: {'line': b'Copying ../../build/robot_description/robot_description.egg-info to /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/lib/python3.12/site-packages/robot_description-0.0.0-py3.12.egg-info\n'}
+[18.583761] (robot_description) StdoutLine: {'line': b'running install_scripts\n'}
+[18.644012] (-) TimerEvent: {}
+[18.723942] (robot_description) StdoutLine: {'line': b"writing list of installed files to '/home/scott-pena/GitHub/RBE550-Quadruped/build/robot_description/install.log'\n"}
+[18.739007] (robot_description) JobEnded: {'identifier': 'robot_description', 'rc': 'SIGINT'}
+[18.744081] (-) TimerEvent: {}
+[18.749324] (leg_controls) JobSkipped: {'identifier': 'leg_controls'}
+[18.749410] (sensors) JobSkipped: {'identifier': 'sensors'}
+[18.749430] (-) EventReactorShutdown: {}

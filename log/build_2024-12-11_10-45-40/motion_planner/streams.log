@@ -1,0 +1,22 @@
+[1.528s] Invoking command in '/home/scott-pena/GitHub/RBE550-Quadruped/src/motion_planner': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/scott-pena/GitHub/RBE550-Quadruped/build/motion_planner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/motion_planner build --build-base /home/scott-pena/GitHub/RBE550-Quadruped/build/motion_planner/build install --record /home/scott-pena/GitHub/RBE550-Quadruped/build/motion_planner/install.log --single-version-externally-managed install_data
+[1.818s] running egg_info
+[1.849s] writing ../../build/motion_planner/motion_planner.egg-info/PKG-INFO
+[1.849s] writing dependency_links to ../../build/motion_planner/motion_planner.egg-info/dependency_links.txt
+[1.849s] writing entry points to ../../build/motion_planner/motion_planner.egg-info/entry_points.txt
+[1.849s] writing requirements to ../../build/motion_planner/motion_planner.egg-info/requires.txt
+[1.849s] writing top-level names to ../../build/motion_planner/motion_planner.egg-info/top_level.txt
+[1.901s] reading manifest file '../../build/motion_planner/motion_planner.egg-info/SOURCES.txt'
+[1.901s] adding license file 'LICENSE'
+[1.902s] writing manifest file '../../build/motion_planner/motion_planner.egg-info/SOURCES.txt'
+[1.902s] running build
+[1.902s] running build_py
+[1.902s] running install
+[1.907s] running install_lib
+[1.931s] running install_data
+[1.931s] running install_egg_info
+[1.955s] removing '/home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/lib/python3.12/site-packages/motion_planner-0.0.0-py3.12.egg-info' (and everything under it)
+[1.956s] Copying ../../build/motion_planner/motion_planner.egg-info to /home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/lib/python3.12/site-packages/motion_planner-0.0.0-py3.12.egg-info
+[1.956s] running install_scripts
+[2.104s] Installing map script to /home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/lib/motion_planner
+[2.105s] Installing rrt script to /home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/lib/motion_planner
+[2.105s] writing list of installed files to '/home/scott-pena/GitHub/RBE550-Quadruped/build/motion_planner/install.log'

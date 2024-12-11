@@ -1,0 +1,35 @@
+[12.849s] Invoking command in '/home/scott-pena/GitHub/RBE550-Quadruped/src/center_of_mass': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/scott-pena/GitHub/RBE550-Quadruped/build/center_of_mass/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/center_of_mass build --build-base /home/scott-pena/GitHub/RBE550-Quadruped/build/center_of_mass/build install --record /home/scott-pena/GitHub/RBE550-Quadruped/build/center_of_mass/install.log --single-version-externally-managed install_data
+[13.110s] running egg_info
+[13.110s] creating ../../build/center_of_mass/center_of_mass.egg-info
+[13.133s] writing ../../build/center_of_mass/center_of_mass.egg-info/PKG-INFO
+[13.133s] writing dependency_links to ../../build/center_of_mass/center_of_mass.egg-info/dependency_links.txt
+[13.133s] writing entry points to ../../build/center_of_mass/center_of_mass.egg-info/entry_points.txt
+[13.133s] writing requirements to ../../build/center_of_mass/center_of_mass.egg-info/requires.txt
+[13.133s] writing top-level names to ../../build/center_of_mass/center_of_mass.egg-info/top_level.txt
+[13.133s] writing manifest file '../../build/center_of_mass/center_of_mass.egg-info/SOURCES.txt'
+[13.180s] reading manifest file '../../build/center_of_mass/center_of_mass.egg-info/SOURCES.txt'
+[13.180s] adding license file 'LICENSE'
+[13.180s] writing manifest file '../../build/center_of_mass/center_of_mass.egg-info/SOURCES.txt'
+[13.181s] running build
+[13.181s] running build_py
+[13.181s] creating /home/scott-pena/GitHub/RBE550-Quadruped/build/center_of_mass/build
+[13.181s] creating /home/scott-pena/GitHub/RBE550-Quadruped/build/center_of_mass/build/lib
+[13.181s] creating /home/scott-pena/GitHub/RBE550-Quadruped/build/center_of_mass/build/lib/center_of_mass
+[13.181s] copying center_of_mass/__init__.py -> /home/scott-pena/GitHub/RBE550-Quadruped/build/center_of_mass/build/lib/center_of_mass
+[13.181s] copying center_of_mass/CenterOfMass.py -> /home/scott-pena/GitHub/RBE550-Quadruped/build/center_of_mass/build/lib/center_of_mass
+[13.212s] running install
+[13.216s] running install_lib
+[13.247s] copying /home/scott-pena/GitHub/RBE550-Quadruped/build/center_of_mass/build/lib/center_of_mass/CenterOfMass.py -> /home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/lib/python3.12/site-packages/center_of_mass
+[13.258s] byte-compiling /home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/lib/python3.12/site-packages/center_of_mass/CenterOfMass.py to CenterOfMass.cpython-312.pyc
+[13.258s] running install_data
+[13.259s] creating /home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/share/ament_index
+[13.259s] creating /home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/share/ament_index/resource_index
+[13.259s] creating /home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/share/ament_index/resource_index/packages
+[13.259s] copying resource/center_of_mass -> /home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/share/ament_index/resource_index/packages
+[13.259s] copying package.xml -> /home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/share/center_of_mass
+[13.259s] running install_egg_info
+[13.282s] removing '/home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/lib/python3.12/site-packages/center_of_mass-0.0.0-py3.12.egg-info' (and everything under it)
+[13.282s] Copying ../../build/center_of_mass/center_of_mass.egg-info to /home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/lib/python3.12/site-packages/center_of_mass-0.0.0-py3.12.egg-info
+[13.283s] running install_scripts
+[13.421s] Installing CoM script to /home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/lib/center_of_mass
+[13.438s] writing list of installed files to '/home/scott-pena/GitHub/RBE550-Quadruped/build/center_of_mass/install.log'

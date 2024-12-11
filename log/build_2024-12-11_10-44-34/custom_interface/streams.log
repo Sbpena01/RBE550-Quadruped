@@ -1,0 +1,32 @@
+[0.334s] Invoking command in '/home/scott-pena/GitHub/RBE550-Quadruped/build/custom_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/scott-pena/GitHub/RBE550-Quadruped/src/custom_interface -DCMAKE_INSTALL_PREFIX=/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface
+[5.326s] -- The C compiler identification is GNU 13.2.0
+[7.837s] -- The CXX compiler identification is GNU 13.2.0
+[8.114s] -- Detecting C compiler ABI info
+[10.636s] -- Detecting C compiler ABI info - done
+[10.649s] -- Check for working C compiler: /usr/bin/cc - skipped
+[10.650s] -- Detecting C compile features
+[10.678s] -- Detecting C compile features - done
+[10.690s] -- Detecting CXX compiler ABI info
+[11.098s] -- Detecting CXX compiler ABI info - done
+[11.109s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[11.109s] -- Detecting CXX compile features
+[11.110s] -- Detecting CXX compile features - done
+[11.672s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[11.939s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[12.193s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[12.418s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[12.704s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[12.921s] -- Found rosidl_adapter: 4.6.4 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[12.977s] -- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[13.651s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[14.248s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[14.916s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[14.957s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[15.057s] -- Found PythonExtra: /usr/bin/python3  
+[17.135s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[17.296s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[17.848s] -- Added test 'lint_cmake' to check CMake code style
+[17.850s] -- Added test 'xmllint' to check XML markup files
+[17.855s] -- Configuring done (16.8s)
+[18.065s] -- Generating done (0.2s)
+[18.067s] -- Build files have been written to: /home/scott-pena/GitHub/RBE550-Quadruped/build/custom_interface
