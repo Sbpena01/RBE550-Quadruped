@@ -10,7 +10,7 @@ from rclpy.node import Node
 import numpy as np
 from random import randrange
 from PIL import Image
-from nav_msgs.msg import Path
+from nav_msgs.msg import Path, OccupancyGrid
 from tf2_ros.static_transform_broadcaster import StaticTransformBroadcaster
 from geometry_msgs.msg import TransformStamped, PoseStamped
 from rclpy import time
@@ -110,7 +110,8 @@ class RRT(Node):
     def __init__(self, node_name, grid, max_dist, max_depth=1000):
         super().__init__(node_name)
         self.tf_broadcaster = StaticTransformBroadcaster(self)
-        self.publisher = self.create_publisher(Path, '/get_RRT_data', 1)
+        self.pathPublisher = self.create_publisher(Path, '/get_RRT_data', 1)
+        self.gridPublisher = self.create_publisher(OccupancyGrid, '/get_grid_data', 1)
         self.grid = grid
         self.graph = {}
         self.max_dist = max_dist
@@ -202,6 +203,13 @@ class RRT(Node):
         msg.header.frame_id = 'rrt_center'
         msg.header.stamp = time.Time().to_msg()
         return msg
+    
+    def gen_grid_msg(self, grid):
+        msg = OccupancyGrid()
+        msg.info.height = len(grid)
+        msg.info.width = len(grid[0])
+        msg.data = np.reshape(grid, [len(grid)*len(grid[0])]).astype(int)
+        return msg
 
     def plot_graph(self, display=True, filepath=None):
         plt.figure(figsize=(10, 10))
@@ -237,15 +245,15 @@ def main(args=None):
     filePathRRT = "src/robot_sim/worlds/rrt_graph.json"
     filePathPlt = "src/robot_sim/worlds/RRT_Graph.png"
 
-    rows = 64
-    cols = 64
+    rows = 32
+    cols = 32
     tarCov = 0.1
-    maxDist = 20
-    numSamples = 100
+    maxDist = 10
+    numSamples = 50
     showFig = True
 
     start_Q = (0, 0)
-    goal_Q = (63,63)
+    goal_Q = (31,31)
 
     grid = genGrid(rows, cols, tarCov)
     genHeightmap(filePathHM, grid)
@@ -260,10 +268,13 @@ def main(args=None):
 
     path = node.find_path(start_Q, goal_Q)
 
-    msg = node.gen_path_msg(path)
+    pathMsg = node.gen_path_msg(path)
 
     node.plot_graph(showFig, filePathPlt)
-    node.publisher.publish(msg)
+    node.pathPublisher.publish(pathMsg)
+
+    gridMsg = node.gen_grid_msg(grid)
+    node.gridPublisher.publish(gridMsg)
     
     try:
         rclpy.spin(node)

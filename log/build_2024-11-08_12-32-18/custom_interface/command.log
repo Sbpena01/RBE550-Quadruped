@@ -1,2 +1,0 @@
-Invoking command in '/home/scott-pena/GitHub/RBE550-Quadruped/build/custom_interface': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/scott-pena/GitHub/RBE550-Quadruped/build/custom_interface -- -j24 -l24
-Invoked command in '/home/scott-pena/GitHub/RBE550-Quadruped/build/custom_interface' returned '2': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/scott-pena/GitHub/RBE550-Quadruped/build/custom_interface -- -j24 -l24

@@ -137,6 +137,13 @@ def generate_launch_description():
         output='screen'
     )
 
+    pose_bridge = Node(
+        package='ros_gz_bridge',
+        executable='parameter_bridge',
+        arguments=['/world/default/pose/info@geometry_msgs/msg/PoseArray@gz.msgs.Pose_V'],  # ros_topic@ros2_msg_type@gazebo_msg_type
+        output='screen'
+    )
+
     # Define node to start rviz2
     rviz_config_file = os.path.join(robot_description_path, 'config', 'robot_config.rviz')
 
@@ -171,6 +178,7 @@ def generate_launch_description():
         node_robot_state_publisher,
         gz_spawn_entity,
         bridge,
+        pose_bridge,
         # controller_manager,
         rviz,
     ])

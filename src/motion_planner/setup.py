@@ -21,6 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             'rrt = motion_planner.RRT:main',
+            'map = motion_planner.Map:main',
         ],
     },
 )

@@ -1,5 +1,0 @@
-  File "/home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls/RearRightLeg.py", line 10
-    self.pose_subscriber = self.create_subscription(Pose, '/rear_right_ee_pose', self.moveTo. 10)
-                                                                                              ^^
-SyntaxError: invalid syntax
-
