@@ -1,0 +1,25 @@
+running egg_info
+writing ../../build/center_of_mass/center_of_mass.egg-info/PKG-INFO
+writing dependency_links to ../../build/center_of_mass/center_of_mass.egg-info/dependency_links.txt
+writing entry points to ../../build/center_of_mass/center_of_mass.egg-info/entry_points.txt
+writing requirements to ../../build/center_of_mass/center_of_mass.egg-info/requires.txt
+writing top-level names to ../../build/center_of_mass/center_of_mass.egg-info/top_level.txt
+reading manifest file '../../build/center_of_mass/center_of_mass.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/center_of_mass/center_of_mass.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+creating /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/center_of_mass/share/ament_index
+creating /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/center_of_mass/share/ament_index/resource_index
+creating /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/center_of_mass/share/ament_index/resource_index/packages
+copying resource/center_of_mass -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/center_of_mass/share/ament_index/resource_index/packages
+copying package.xml -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/center_of_mass/share/center_of_mass
+running install_egg_info
+removing '/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/center_of_mass/lib/python3.12/site-packages/center_of_mass-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../../build/center_of_mass/center_of_mass.egg-info to /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/center_of_mass/lib/python3.12/site-packages/center_of_mass-0.0.0-py3.12.egg-info
+running install_scripts
+Installing CoM script to /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/center_of_mass/lib/center_of_mass
+writing list of installed files to '/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/center_of_mass/install.log'

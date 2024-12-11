@@ -1,0 +1,14 @@
+[0.900s] Invoking command in '/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/src/robot_sim': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/robot_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_sim/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_sim build --build-base /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/robot_sim/build install --record /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/robot_sim/install.log --single-version-externally-managed install_data
+[1.044s] running egg_info
+[1.055s] writing ../../build/robot_sim/robot_sim.egg-info/PKG-INFO
+[1.055s] writing dependency_links to ../../build/robot_sim/robot_sim.egg-info/dependency_links.txt
+[1.055s] writing requirements to ../../build/robot_sim/robot_sim.egg-info/requires.txt
+[1.055s] writing top-level names to ../../build/robot_sim/robot_sim.egg-info/top_level.txt
+[1.065s] reading manifest file '../../build/robot_sim/robot_sim.egg-info/SOURCES.txt'
+[1.065s] adding license file 'LICENSE'
+[1.065s] writing manifest file '../../build/robot_sim/robot_sim.egg-info/SOURCES.txt'
+[1.065s] running build
+[1.065s] running install
+[1.069s] running install_data
+[1.069s] error: can't copy 'launch/__pycache__': doesn't exist or not a regular file
+[1.079s] Invoked command in '/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/src/robot_sim' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/robot_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_sim/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_sim build --build-base /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/robot_sim/build install --record /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/robot_sim/install.log --single-version-externally-managed install_data

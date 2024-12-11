@@ -14,11 +14,15 @@ worlds/Grass_Albedo.png
 worlds/Grass_Normal.png
 worlds/Heightmap.png
 worlds/ORIGINAL_Heightmap.png
+worlds/RRT.py
+worlds/RRT_Graph.png
 worlds/Rock_Albedo.png
 worlds/Rock_Normal.png
 worlds/Sand_Albedo.png
 worlds/Sand_Normal.png
 worlds/gen_array.py
-worlds/gen_heightmap.py
+worlds/grid_world_publisher.cpp
+worlds/main.py
 worlds/model.sdf
 worlds/robot_world.sdf
+worlds/rrt_graph.json

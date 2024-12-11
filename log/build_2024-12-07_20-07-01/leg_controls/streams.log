@@ -1,0 +1,73 @@
+[1.567s] Invoking command in '/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/src/leg_controls': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/leg_controls/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/sensors/lib/python3.12/site-packages:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_sim/lib/python3.12/site-packages:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/lib/python3.12/site-packages:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/quadruped/lib/python3.12/site-packages:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/center_of_mass/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/leg_controls build --build-base /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/leg_controls/build install --record /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/leg_controls/install.log --single-version-externally-managed install_data
+[1.939s] running egg_info
+[1.939s] creating ../../build/leg_controls/leg_controls.egg-info
+[1.961s] writing ../../build/leg_controls/leg_controls.egg-info/PKG-INFO
+[1.961s] writing dependency_links to ../../build/leg_controls/leg_controls.egg-info/dependency_links.txt
+[1.962s] writing entry points to ../../build/leg_controls/leg_controls.egg-info/entry_points.txt
+[1.962s] writing requirements to ../../build/leg_controls/leg_controls.egg-info/requires.txt
+[1.962s] writing top-level names to ../../build/leg_controls/leg_controls.egg-info/top_level.txt
+[1.962s] writing manifest file '../../build/leg_controls/leg_controls.egg-info/SOURCES.txt'
+[2.009s] reading manifest file '../../build/leg_controls/leg_controls.egg-info/SOURCES.txt'
+[2.009s] adding license file 'LICENSE'
+[2.010s] writing manifest file '../../build/leg_controls/leg_controls.egg-info/SOURCES.txt'
+[2.010s] running build
+[2.010s] running build_py
+[2.011s] copying leg_controls/__init__.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/leg_controls/build/lib/leg_controls
+[2.011s] copying leg_controls/test_movement.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/leg_controls/build/lib/leg_controls
+[2.011s] copying leg_controls/Leg.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/leg_controls/build/lib/leg_controls
+[2.011s] copying leg_controls/RearLeftLeg.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/leg_controls/build/lib/leg_controls
+[2.011s] copying leg_controls/FrontLeftLeg.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/leg_controls/build/lib/leg_controls
+[2.011s] copying leg_controls/GaitGenerator.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/leg_controls/build/lib/leg_controls
+[2.012s] copying leg_controls/FrontRightLeg.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/leg_controls/build/lib/leg_controls
+[2.012s] copying leg_controls/RearRightLeg.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/leg_controls/build/lib/leg_controls
+[2.012s] copying leg_controls/test_IK_TF_Comparison.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/leg_controls/build/lib/leg_controls
+[2.013s] running install
+[2.021s] running install_lib
+[2.044s] copying /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/leg_controls/build/lib/leg_controls/__init__.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls
+[2.045s] copying /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/leg_controls/build/lib/leg_controls/test_movement.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls
+[2.045s] copying /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/leg_controls/build/lib/leg_controls/Leg.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls
+[2.045s] copying /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/leg_controls/build/lib/leg_controls/RearLeftLeg.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls
+[2.045s] copying /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/leg_controls/build/lib/leg_controls/FrontLeftLeg.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls
+[2.045s] copying /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/leg_controls/build/lib/leg_controls/GaitGenerator.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls
+[2.045s] copying /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/leg_controls/build/lib/leg_controls/FrontRightLeg.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls
+[2.045s] copying /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/leg_controls/build/lib/leg_controls/RearRightLeg.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls
+[2.046s] copying /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/leg_controls/build/lib/leg_controls/test_IK_TF_Comparison.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls
+[2.046s] byte-compiling /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls/__init__.py to __init__.cpython-312.pyc
+[2.046s] byte-compiling /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls/test_movement.py to test_movement.cpython-312.pyc
+[2.046s] byte-compiling /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls/Leg.py to Leg.cpython-312.pyc
+[2.049s] byte-compiling /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls/RearLeftLeg.py to RearLeftLeg.cpython-312.pyc
+[2.049s] byte-compiling /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls/FrontLeftLeg.py to FrontLeftLeg.cpython-312.pyc
+[2.050s] byte-compiling /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls/GaitGenerator.py to GaitGenerator.cpython-312.pyc
+[2.051s] byte-compiling /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls/FrontRightLeg.py to FrontRightLeg.cpython-312.pyc
+[2.051s] byte-compiling /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls/RearRightLeg.py to RearRightLeg.cpython-312.pyc
+[2.052s] byte-compiling /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls/test_IK_TF_Comparison.py to test_IK_TF_Comparison.cpython-312.pyc
+[2.053s] running install_data
+[2.053s] creating /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/share/ament_index
+[2.053s] creating /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/share/ament_index/resource_index
+[2.053s] creating /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/share/ament_index/resource_index/packages
+[2.053s] copying resource/leg_controls -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/share/ament_index/resource_index/packages
+[2.053s] copying package.xml -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/share/leg_controls
+[2.053s] copying leg_controls/__init__.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[2.053s] copying leg_controls/test_movement.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[2.054s] copying leg_controls/Leg.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[2.054s] copying leg_controls/RearLeftLeg.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[2.054s] copying leg_controls/FrontLeftLeg.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[2.054s] copying leg_controls/GaitGenerator.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[2.054s] copying leg_controls/FrontRightLeg.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[2.054s] copying leg_controls/RearRightLeg.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[2.054s] copying leg_controls/test_IK_TF_Comparison.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[2.054s] creating /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/share/leg_controls/launch
+[2.054s] copying launch/leg_control_launch.py -> /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/share/leg_controls/launch
+[2.054s] running install_egg_info
+[2.079s] Copying ../../build/leg_controls/leg_controls.egg-info to /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages/leg_controls-0.0.0-py3.12.egg-info
+[2.079s] running install_scripts
+[2.241s] Installing FrontLeftLeg script to /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[2.241s] Installing FrontRightLeg script to /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[2.241s] Installing RearLeftLeg script to /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[2.241s] Installing RearRightLeg script to /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[2.241s] Installing gait script to /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[2.241s] Installing leg_init script to /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[2.241s] Installing test_ik script to /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[2.241s] Installing test_movement script to /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/leg_controls
+[2.242s] writing list of installed files to '/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/leg_controls/install.log'
+[2.275s] Invoked command in '/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/src/leg_controls' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/leg_controls/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/sensors/lib/python3.12/site-packages:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_sim/lib/python3.12/site-packages:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/lib/python3.12/site-packages:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/quadruped/lib/python3.12/site-packages:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/center_of_mass/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/leg_controls build --build-base /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/leg_controls/build install --record /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/leg_controls/install.log --single-version-externally-managed install_data
