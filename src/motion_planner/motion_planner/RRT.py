@@ -1,6 +1,6 @@
 from math import dist
 import heapq
-from random import randint
+from random import randint, seed
 import json
 import matplotlib.pyplot as plt
 from matplotlib.patches import Patch
@@ -12,7 +12,7 @@ from random import randrange
 from PIL import Image
 from nav_msgs.msg import Path, OccupancyGrid
 from tf2_ros.static_transform_broadcaster import StaticTransformBroadcaster
-from geometry_msgs.msg import TransformStamped, PoseStamped
+from geometry_msgs.msg import TransformStamped, PoseStamped, Pose
 from rclpy import time
 
 def genGrid(rows, cols, tarCov, maxFailCount=1000):
@@ -118,7 +118,7 @@ class RRT(Node):
         self.max_depth = max_depth
         com = TransformStamped()
         com.header.stamp = self.get_clock().now().to_msg()
-        com.header.frame_id = 'base_link'
+        com.header.frame_id = 'map'
         com.child_frame_id = 'rrt_center'
         com.transform.translation.x = 0.0
         com.transform.translation.y = 0.0
@@ -127,8 +127,18 @@ class RRT(Node):
         com.transform.rotation.y = 0.0
         com.transform.rotation.z = 0.0
         com.transform.rotation.w = 1.0
+        self.grid_msg = None
+        self.path_msg = None
+        self.timer = self.create_timer(0.1, self.publish_help)
 
         self.tf_broadcaster.sendTransform(com)
+
+    def publish_help(self):
+        if self.grid_msg is not None:
+            self.gridPublisher.publish(self.grid_msg)
+        if self.path_msg is not None:
+            self.pathPublisher.publish(self.path_msg)
+
 
     def random_sample(self):
         rows, cols = self.grid.shape
@@ -194,21 +204,29 @@ class RRT(Node):
         pathList = [PoseStamped()] * len(path)
         for index, q in enumerate(path):
             ps = PoseStamped()
-            ps.pose.position.x = q[0]*1.0
-            ps.pose.position.y = q[1]*1.0
+            ps.pose.position.y = (q[0]*1.0 - 15)
+            ps.pose.position.x = (q[1]*1.0 - 15)
             ps.header.frame_id = 'rrt_center'
             ps.header.stamp = time.Time().to_msg()
             pathList[index] = ps
         msg.poses = pathList
         msg.header.frame_id = 'rrt_center'
         msg.header.stamp = time.Time().to_msg()
+        # self.get_logger().info(f"{pathList}")
         return msg
     
     def gen_grid_msg(self, grid):
         msg = OccupancyGrid()
         msg.info.height = len(grid)
         msg.info.width = len(grid[0])
-        msg.data = np.reshape(grid, [len(grid)*len(grid[0])]).astype(int)
+        msg.info.resolution = 1.0
+        ogn = Pose()
+        ogn.position.x = -16.0
+        ogn.position.y = -16.0
+        msg.info.origin = ogn
+        msg.data = np.reshape(grid*100, [len(grid)*len(grid[0])]).astype(int)
+        msg.header.frame_id = 'rrt_center'
+        msg.header.stamp = time.Time().to_msg()
         return msg
 
     def plot_graph(self, display=True, filepath=None):
@@ -252,9 +270,9 @@ def main(args=None):
     numSamples = 50
     showFig = True
 
-    start_Q = (0, 0)
-    goal_Q = (31,31)
-
+    start_Q = (15, 15)
+    goal_Q = (16,24)
+    seed(1234)
     grid = genGrid(rows, cols, tarCov)
     genHeightmap(filePathHM, grid)
 
@@ -268,13 +286,11 @@ def main(args=None):
 
     path = node.find_path(start_Q, goal_Q)
 
-    pathMsg = node.gen_path_msg(path)
+    node.path_msg = node.gen_path_msg(path)
 
     node.plot_graph(showFig, filePathPlt)
-    node.pathPublisher.publish(pathMsg)
 
-    gridMsg = node.gen_grid_msg(grid)
-    node.gridPublisher.publish(gridMsg)
+    node.grid_msg = node.gen_grid_msg(grid)
     
     try:
         rclpy.spin(node)

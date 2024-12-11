@@ -1,31 +1,59 @@
 import rclpy
 from rclpy.node import Node
-from geometry_msgs.msg import PoseArray, TransformStamped, Pose
+from geometry_msgs.msg import PoseArray, TransformStamped, Pose, Quaternion
+from custom_interface.msg import ImuData
 from rclpy import time
 from tf2_ros.static_transform_broadcaster import StaticTransformBroadcaster
+import numpy as np
 
 
 class Map(Node):
     def __init__(self, node_name):
         super().__init__(node_name)
         self.gazebo_subscriber = self.create_subscription(PoseArray, '/world/default/pose/info', self.callback, 10)
+        self.imu_subscriber = self.create_subscription(ImuData, '/get_imu_data', self.updateImu, 10)
         self.tf_broadcaster = StaticTransformBroadcaster(self)
+        self.odom2base = TransformStamped()
+        self.odom2base.header.frame_id = 'base_link'
+        self.odom2base.child_frame_id = 'odom'
+        self.map2odom = TransformStamped()
+        self.map2odom.header.frame_id = 'odom'
+        self.map2odom.child_frame_id = 'map'
+        self.timer = self.create_timer(0.1, self.send_transform)
+
+    def updateImu(self, msg: ImuData):
+        q = self.eulerToQuaternion(msg.roll, msg.pitch, msg.yaw)
+        self.odom2base.transform.rotation.x = q.x
+        self.odom2base.transform.rotation.y = q.y
+        self.odom2base.transform.rotation.z = q.z
+        self.odom2base.transform.rotation.w = q.w
+        self.get_logger().info(f"{q}")
+
+    def send_transform(self):
+        self.tf_broadcaster.sendTransform(self.odom2base)
+        self.tf_broadcaster.sendTransform(self.map2odom)
 
     def callback(self, msg):
         robot_pose : Pose = msg.poses[1]
-        odom = TransformStamped()
-        odom.transform.translation.x = robot_pose.position.x
-        odom.transform.translation.y = robot_pose.position.y
-        odom.transform.translation.z = robot_pose.position.z
-        odom.transform.rotation.x = robot_pose.orientation.x
-        odom.transform.rotation.y = robot_pose.orientation.y
-        odom.transform.rotation.z = robot_pose.orientation.z
-        odom.transform.rotation.w = robot_pose.orientation.w
-        odom.header.frame_id = 'base_link'
-        odom.child_frame_id = 'odom'
-        odom.header.stamp = time.Time().to_msg()
-        self.tf_broadcaster.sendTransform(odom)
-        self.get_logger().info(f"{robot_pose}")
+        self.map2odom.transform.translation.x = -robot_pose.position.x
+        self.map2odom.transform.translation.y = -robot_pose.position.y
+        self.map2odom.transform.translation.z = -robot_pose.position.z
+        self.map2odom.header.stamp = time.Time().to_msg()
+
+    def eulerToQuaternion(self, roll, pitch, yaw):
+        cy = np.cos(yaw * 0.5)
+        sy = np.sin(yaw * 0.5)
+        cp = np.cos(pitch * 0.5)
+        sp = np.sin(pitch * 0.5)
+        cr = np.cos(roll * 0.5)
+        sr = np.sin(roll * 0.5)
+
+        q = Quaternion()
+        q.w = cr * cp * cy + sr * sp * sy
+        q.x = sr * cp * cy - cr * sp * sy
+        q.y = cr * sp * cy + sr * cp * sy
+        q.z = cr * cp * sy - sr * sp * cy
+        return q
 
 def main():
     rclpy.init()

@@ -1,0 +1,22 @@
+[4.169s] Invoking command in '/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/src/quadruped': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/quadruped/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/quadruped/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/quadruped build --build-base /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/quadruped/build install --record /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/quadruped/install.log --single-version-externally-managed install_data
+[4.855s] running egg_info
+[4.908s] writing ../../build/quadruped/quadruped.egg-info/PKG-INFO
+[4.909s] writing dependency_links to ../../build/quadruped/quadruped.egg-info/dependency_links.txt
+[4.909s] writing entry points to ../../build/quadruped/quadruped.egg-info/entry_points.txt
+[4.909s] writing requirements to ../../build/quadruped/quadruped.egg-info/requires.txt
+[4.909s] writing top-level names to ../../build/quadruped/quadruped.egg-info/top_level.txt
+[4.999s] reading manifest file '../../build/quadruped/quadruped.egg-info/SOURCES.txt'
+[5.000s] adding license file 'LICENSE'
+[5.001s] writing manifest file '../../build/quadruped/quadruped.egg-info/SOURCES.txt'
+[5.001s] running build
+[5.002s] running build_py
+[5.002s] running install
+[5.017s] running install_lib
+[5.069s] running install_data
+[5.069s] running install_egg_info
+[5.113s] removing '/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/quadruped/lib/python3.12/site-packages/quadruped-0.0.0-py3.12.egg-info' (and everything under it)
+[5.114s] Copying ../../build/quadruped/quadruped.egg-info to /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/quadruped/lib/python3.12/site-packages/quadruped-0.0.0-py3.12.egg-info
+[5.116s] running install_scripts
+[5.459s] Installing quadruped script to /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/quadruped/lib/quadruped
+[5.460s] writing list of installed files to '/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/quadruped/install.log'
+[5.514s] Invoked command in '/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/src/quadruped' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/quadruped/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/quadruped/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/quadruped build --build-base /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/quadruped/build install --record /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/quadruped/install.log --single-version-externally-managed install_data

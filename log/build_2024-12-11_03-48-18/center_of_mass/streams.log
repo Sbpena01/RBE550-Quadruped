@@ -1,0 +1,22 @@
+[4.124s] Invoking command in '/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/src/center_of_mass': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/center_of_mass/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/center_of_mass/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/center_of_mass build --build-base /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/center_of_mass/build install --record /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/center_of_mass/install.log --single-version-externally-managed install_data
+[4.865s] running egg_info
+[4.901s] writing ../../build/center_of_mass/center_of_mass.egg-info/PKG-INFO
+[4.903s] writing dependency_links to ../../build/center_of_mass/center_of_mass.egg-info/dependency_links.txt
+[4.903s] writing entry points to ../../build/center_of_mass/center_of_mass.egg-info/entry_points.txt
+[4.903s] writing requirements to ../../build/center_of_mass/center_of_mass.egg-info/requires.txt
+[4.904s] writing top-level names to ../../build/center_of_mass/center_of_mass.egg-info/top_level.txt
+[4.993s] reading manifest file '../../build/center_of_mass/center_of_mass.egg-info/SOURCES.txt'
+[4.993s] adding license file 'LICENSE'
+[4.994s] writing manifest file '../../build/center_of_mass/center_of_mass.egg-info/SOURCES.txt'
+[4.995s] running build
+[4.995s] running build_py
+[4.995s] running install
+[5.009s] running install_lib
+[5.054s] running install_data
+[5.055s] running install_egg_info
+[5.103s] removing '/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/center_of_mass/lib/python3.12/site-packages/center_of_mass-0.0.0-py3.12.egg-info' (and everything under it)
+[5.103s] Copying ../../build/center_of_mass/center_of_mass.egg-info to /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/center_of_mass/lib/python3.12/site-packages/center_of_mass-0.0.0-py3.12.egg-info
+[5.105s] running install_scripts
+[5.411s] Installing CoM script to /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/center_of_mass/lib/center_of_mass
+[5.412s] writing list of installed files to '/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/center_of_mass/install.log'
+[5.470s] Invoked command in '/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/src/center_of_mass' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/center_of_mass/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/center_of_mass/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/center_of_mass build --build-base /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/center_of_mass/build install --record /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/center_of_mass/install.log --single-version-externally-managed install_data

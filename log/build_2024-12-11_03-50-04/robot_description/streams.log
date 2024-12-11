@@ -1,0 +1,20 @@
+[4.096s] Invoking command in '/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/src/robot_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/robot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_description build --build-base /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/robot_description/build install --record /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/robot_description/install.log --single-version-externally-managed install_data
+[4.831s] running egg_info
+[4.873s] writing ../../build/robot_description/robot_description.egg-info/PKG-INFO
+[4.874s] writing dependency_links to ../../build/robot_description/robot_description.egg-info/dependency_links.txt
+[4.874s] writing requirements to ../../build/robot_description/robot_description.egg-info/requires.txt
+[4.875s] writing top-level names to ../../build/robot_description/robot_description.egg-info/top_level.txt
+[4.955s] reading manifest file '../../build/robot_description/robot_description.egg-info/SOURCES.txt'
+[4.955s] adding license file 'LICENSE'
+[4.959s] writing manifest file '../../build/robot_description/robot_description.egg-info/SOURCES.txt'
+[4.959s] running build
+[4.959s] running build_py
+[4.959s] running install
+[4.971s] running install_lib
+[5.013s] running install_data
+[5.016s] running install_egg_info
+[5.057s] removing '/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/lib/python3.12/site-packages/robot_description-0.0.0-py3.12.egg-info' (and everything under it)
+[5.057s] Copying ../../build/robot_description/robot_description.egg-info to /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/lib/python3.12/site-packages/robot_description-0.0.0-py3.12.egg-info
+[5.058s] running install_scripts
+[5.433s] writing list of installed files to '/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/robot_description/install.log'
+[5.501s] Invoked command in '/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/src/robot_description' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/robot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jarothenberg/Documents/GitHub/RBE550-Quadruped/install/robot_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_description build --build-base /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/robot_description/build install --record /home/jarothenberg/Documents/GitHub/RBE550-Quadruped/build/robot_description/install.log --single-version-externally-managed install_data
