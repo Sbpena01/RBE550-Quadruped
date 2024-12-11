@@ -40,7 +40,10 @@ class Leg(Node):
 
         self.is_left = is_left  # Used in inverse kinematics
         self.is_swing = False  # Is the leg swinging or in its stance state (touching the ground)
+        self.turn_left = False
+        self.turn_right = False
         self.current_pose = None
+        self.home_pose = None
         self.initCurrentPose()
 
     def initCurrentPose(self):
@@ -55,13 +58,16 @@ class Leg(Node):
         self.current_pose = Pose()
 
     def moveThroughTrajectory(self, state:LegState, visualize=True):
-        # if not state.is_swing:
-        #     self.current_pose = state.pose
-        #     self.move()
-        #     return
-        # elif state.is_swing:
         self.is_swing = state.is_swing
-        traj = self.generateTrajectory(state.pose)
+        self.turn_left = state.turn_left
+        self.turn_right = state.turn_right
+        go_to_pose = state.pose
+        if state.pose.position.x == 0.0:
+            go_to_pose = self.home_pose
+        traj = self.generateTrajectory(go_to_pose)
+        if traj is None:
+            self.is_swing = False  # Trajectory is over
+            return
         path: list[PoseStamped] = []
         for col in traj.T:
             traj_pose = PoseStamped()
@@ -80,8 +86,12 @@ class Leg(Node):
         for node in path:
             self.current_pose = node.pose
             self.move()
+            if self.name == 'rear_left':
+                self.get_logger().info(f"{node.pose.position}")
             t.sleep(0.01)
         self.is_swing = False  # Trajectory is over
+        self.turn_left = False
+        self.turn_right = False
 
     def move(self):
         self.shoulder, self.leg, self.foot = self.IK(self.current_pose)
@@ -146,14 +156,13 @@ class Leg(Node):
         alpha = np.arctan2(-x, D)
         beta = np.arcsin((self.l3*np.sin(leg_prime))/G)
         leg = alpha + beta
-        # if self.is_left:
-        #     return (-shoulder, leg, foot)
-        # else:
         return (shoulder, leg, foot)
 
-    def generateTrajectory(self, pose: Pose, height: float = 0.02):
+    def generateTrajectory(self, pose: Pose, height: float = 0.02, turn_radius=0.02):
         start = np.array([self.current_pose.position.x, self.current_pose.position.y, self.current_pose.position.z])
         end = np.array([pose.position.x, pose.position.y, pose.position.z])
+        if np.array_equal(start, end):
+            return
         idx = 0
         time = 4
         length = int(10 * time)
@@ -164,6 +173,21 @@ class Leg(Node):
             B = np.zeros((3, length))
             for step in steps:
                 B[:, idx] = (1-step)**3*start + 3*(1-step)**2*step*P1 + 3*(1-step)*step**2*P2 + step**3*end
+                idx += 1
+        elif self.turn_left:
+            match self.name:
+                case 'front_left':
+                    P1 = np.array([end[0], start[1], start[2]])
+                case 'front_right':
+                    P1 = np.array([start[0], end[1], start[2]])
+                case 'rear_left':
+                    P1 = np.array([start[0], end[1], start[2]])
+                case 'rear_right':
+                    P1 = np.array([end[0], start[1], start[2]])
+            steps = np.linspace(0, 1, length)
+            B = np.zeros((3, length))
+            for step in steps:
+                B[:, idx] = (1-step)**2*start + 2*(1-step)*step*P1 + step**2*end
                 idx += 1
         else:
             steps = np.linspace(0, 1, length)
@@ -182,6 +206,4 @@ class Leg(Node):
                 time.Time())
             return transform
         except TransformException as ex:
-            # self.get_logger().info(
-            #     f'Could not transform {target} to {source}: {ex}')
             return TransformStamped()

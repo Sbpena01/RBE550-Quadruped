@@ -16,6 +16,7 @@ class FrontRightLeg(Leg):
         fr_state.pose.position.x = -0.0844 - 0.01
         fr_state.pose.position.y = 0.088
         fr_state.pose.position.z = -0.15
+        self.home_pose = fr_state.pose
         self.current_pose = fr_state.pose
         self.move()
 

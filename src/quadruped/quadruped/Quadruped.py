@@ -9,7 +9,9 @@ from tf2_ros import TransformException
 from tf2_ros.buffer import Buffer
 from tf2_ros.transform_listener import TransformListener
 from geometry_msgs.msg import TransformStamped, Pose, PolygonStamped, Point32
+from std_msgs.msg import String
 from ros_gz_interfaces.msg import Contact
+import yaml
 
 class Quadruped(Node):
     def __init__(self):
@@ -28,37 +30,88 @@ class Quadruped(Node):
         self.fr_sub = self.create_subscription(LegState, '/front_right_leg_state', self.updateStates, 10)
         self.rl_sub = self.create_subscription(LegState, '/rear_left_leg_state', self.updateStates, 10)
         self.rr_sub = self.create_subscription(LegState, '/rear_right_leg_state', self.updateStates, 10)
+
+        self.command_sub = self.create_subscription(String, '/quadruped_command', self.changeState, 10)
+
         self.legs: dict = None
         self.is_initiated = False
         self.init_states()
-        self.leg_timer = self.create_timer(0.75, self.step_leg)
+        self.leg_timer = self.create_timer(0.75, self.move)
         self.leg_count = 0
+        self.state = 'stop'
 
-        # Prefered poses to step to:
-        self.fl_step = Pose()
-        self.fl_step.position.x = -0.0844 - 0.05
-        self.fl_step.position.y = -0.088
-        self.fl_step.position.z = -0.15
-
-        self.fr_step = Pose()
-        self.fr_step.position.x = -0.0844 - 0.05
-        self.fr_step.position.y = 0.088
-        self.fr_step.position.z = -0.15
-
-        self.rl_step = Pose()
-        self.rl_step.position.x = 0.1016 - 0.05
-        self.rl_step.position.y = -0.088
-        self.rl_step.position.z = -0.15
-
-        self.rr_step = Pose()
-        self.rr_step.position.x = 0.1016 - 0.05
-        self.rr_step.position.y = 0.088
-        self.rr_step.position.z = -0.15
+        # Prefered poses to step to (WALKING):
+        self.walking_poses = self.loadPosesFromYaml('walking_poses')
+        self.turn_left_poses = self.loadPosesFromYaml('left_turn_poses')
+        self.turn_right_poses = self.loadPosesFromYaml('right_turn_poses')
 
         self.imu_subscriber = self.create_subscription(ImuData, '/get_imu_data', self.updateOffsets, 1)
         self.imu_data = None
         self.x_offset = 0.0
         self.y_offset = 0.0
+
+    def loadPosesFromYaml(self, req: str):
+        filepath = "src/quadruped/quadruped/poses.yaml"
+        with open(filepath, 'r') as file:
+            data = yaml.safe_load(file)
+        poses = {}
+        for pose_data in data[req]:
+            pose = Pose()
+            pose.position.x = pose_data['position']['x']
+            pose.position.y = pose_data['position']['y']
+            pose.position.z = pose_data['position']['z']
+            poses[pose_data['name']] = pose
+        return poses
+
+    def changeState(self, msg: String):
+        self.leg_count = 0
+        self.state = msg.data
+
+    def move(self):
+        match self.state:
+            case 'walk':
+                self.step_leg()
+            case 'stop':
+                self.stop()
+            case 'turn_left':
+                self.turn('left')
+            case 'turn_right':
+                self.turn('right')
+    
+    def turn(self, direction: str):
+        self.leg_count = self.leg_count % 5
+        poses_dict = self.turn_left_poses if direction == 'left' else self.turn_right_poses
+        match self.leg_count:
+            case 0:
+                self.swingLegTo('rear_left', poses_dict['rear_left_start'])
+            case 3:
+                self.swingLegTo('front_left', poses_dict['front_left_start'])
+            case 2:
+                self.swingLegTo('rear_right', poses_dict['rear_right_start'])
+            case 1:
+                self.swingLegTo('front_right', poses_dict['front_right_start'])
+            case 4:
+                self.turnLegTo('rear_left', poses_dict['rear_left_end'], 'left')
+                self.turnLegTo('front_left', poses_dict['front_left_end'], 'left')
+                self.turnLegTo('rear_right', poses_dict['rear_right_end'], 'left')
+                self.turnLegTo('front_right', poses_dict['front_right_end'], 'left')
+        self.leg_count += 1
+
+    def stop(self):
+        self.leg_count = self.leg_count % 4
+        match self.leg_count:
+            case 0:
+                self.swingLegTo('rear_left', Pose())
+                self.leg_count += 1
+            case 1:
+                self.swingLegTo('front_left', Pose())
+                self.leg_count += 1
+            case 2:
+                self.swingLegTo('rear_right', Pose())
+                self.leg_count += 1
+            case 3:
+                self.swingLegTo('front_right', Pose())
+                self.leg_count += 1
 
     def step_leg(self):
         if not self.is_initiated:
@@ -66,19 +119,19 @@ class Quadruped(Node):
         self.leg_count = self.leg_count % 6
         match self.leg_count:
             case 0:
-                self.swingLegTo('rear_left', self.rl_step)
+                self.swingLegTo('rear_left', self.walking_poses['rear_left'])
                 self.leg_count += 1
             case 1:
-                self.swingLegTo('front_left', self.fl_step)
+                self.swingLegTo('front_left', self.walking_poses['front_left'])
                 self.leg_count += 1
             case 2:
                 self.moveAllLegsBack(0.035)
                 self.leg_count += 1
             case 3:
-                self.swingLegTo('rear_right', self.rr_step)
+                self.swingLegTo('rear_right', self.walking_poses['rear_right'])
                 self.leg_count += 1
             case 4:
-                self.swingLegTo('front_right', self.fr_step)
+                self.swingLegTo('front_right', self.walking_poses['front_right'])
                 self.leg_count += 1
             case 5:
                 self.moveAllLegsBack(0.035)
@@ -87,25 +140,25 @@ class Quadruped(Node):
     def init_states(self):
         fl_state = LegState()
         fl_state.is_swing = False
-        fl_state.pose.position.x = -0.0844 - 0.01
+        fl_state.pose.position.x = -0.0844
         fl_state.pose.position.y = -0.088
         fl_state.pose.position.z = -0.15
 
         fr_state = LegState()
         fr_state.is_swing = False
-        fr_state.pose.position.x = -0.0844 - 0.01
+        fr_state.pose.position.x = -0.0844
         fr_state.pose.position.y = 0.088
         fr_state.pose.position.z = -0.15
 
         rl_state = LegState()
         rl_state.is_swing = False
-        rl_state.pose.position.x = 0.1016 + 0.01
+        rl_state.pose.position.x = 0.1016
         rl_state.pose.position.y = -0.088
         rl_state.pose.position.z = -0.15
 
         rr_state = LegState()
         rr_state.is_swing = False
-        rr_state.pose.position.x = 0.1016 + 0.01
+        rr_state.pose.position.x = 0.1016
         rr_state.pose.position.y = 0.088
         rr_state.pose.position.z = -0.15
 
@@ -137,9 +190,23 @@ class Quadruped(Node):
             state.pose = pose
             self.legs[leg][1].publish(state)
 
+    def turnLegTo(self, leg:str, pose:Pose, direction:str):
+        state = LegState()
+        state.is_swing = False
+        if direction == 'left':
+            state.turn_left = True
+            state.turn_right = False
+        if direction == 'right':
+            state.turn_left = False
+            state.turn_right = True
+        state.pose = pose
+        self.legs[leg][1].publish(state)
+
     def swingLegTo(self, leg:str, pose:Pose):
         state = LegState()
         state.is_swing = True
+        state.turn_left = False
+        state.turn_right = False
         state.pose = pose
         self.legs[leg][1].publish(state)
 
@@ -154,7 +221,6 @@ class Quadruped(Node):
     def updateStates(self, msg:LegState):
         leg = msg.name
         self.legs[leg][0] = msg
-        self.get_logger().info(f"Leg: {leg} Z: {self.legs[leg][0].pose.position.z}")
 
     def getContactLegs(self):
         contact_legs = []
@@ -206,9 +272,9 @@ class Quadruped(Node):
         contact_legs = self.getContactLegs()
         sp_x, sp_y = self.calculateSupportPolygon(contact_legs)
         support_polygon_center = self.findCenter(sp_x, sp_y)
-        com_transform = self.getTransform('center_of_mass')
-        x_error = support_polygon_center[0] - com_transform.transform.translation.x
-        y_error = support_polygon_center[1] - com_transform.transform.translation.y
+        # com_transform = self.getTransform('center_of_mass')
+        # x_error = support_polygon_center[0] - com_transform.transform.translation.x
+        # y_error = support_polygon_center[1] - com_transform.transform.translation.y
         # self.get_logger().info(f"X_error: {x_error}. Y_error: {y_error}.")
         # for leg in contact_legs:
         #     current_pose: Pose = self.legs[leg][0].pose

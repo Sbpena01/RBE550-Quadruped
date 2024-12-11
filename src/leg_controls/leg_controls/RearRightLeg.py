@@ -18,6 +18,7 @@ class RearRightLeg(Leg):
         rr_state.pose.position.x = 0.1016 + 0.01
         rr_state.pose.position.y = 0.088
         rr_state.pose.position.z = -0.15
+        self.home_pose = rr_state.pose
         self.current_pose = rr_state.pose
         self.move()
 
