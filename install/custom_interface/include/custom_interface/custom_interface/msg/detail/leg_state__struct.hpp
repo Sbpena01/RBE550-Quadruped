@@ -46,21 +46,37 @@ struct LegState_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
+      this->name = "";
+      this->turn_left = false;
+      this->turn_right = false;
       this->is_swing = false;
     }
   }
 
   explicit LegState_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : pose(_alloc, _init)
+  : name(_alloc),
+    pose(_alloc, _init)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
+      this->name = "";
+      this->turn_left = false;
+      this->turn_right = false;
       this->is_swing = false;
     }
   }
 
   // field types and members
+  using _name_type =
+    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
+  _name_type name;
+  using _turn_left_type =
+    bool;
+  _turn_left_type turn_left;
+  using _turn_right_type =
+    bool;
+  _turn_right_type turn_right;
   using _is_swing_type =
     bool;
   _is_swing_type is_swing;
@@ -69,6 +85,24 @@ struct LegState_
   _pose_type pose;
 
   // setters for named parameter idiom
+  Type & set__name(
+    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
+  {
+    this->name = _arg;
+    return *this;
+  }
+  Type & set__turn_left(
+    const bool & _arg)
+  {
+    this->turn_left = _arg;
+    return *this;
+  }
+  Type & set__turn_right(
+    const bool & _arg)
+  {
+    this->turn_right = _arg;
+    return *this;
+  }
   Type & set__is_swing(
     const bool & _arg)
   {
@@ -124,6 +158,15 @@ struct LegState_
   // comparison operators
   bool operator==(const LegState_ & other) const
   {
+    if (this->name != other.name) {
+      return false;
+    }
+    if (this->turn_left != other.turn_left) {
+      return false;
+    }
+    if (this->turn_right != other.turn_right) {
+      return false;
+    }
     if (this->is_swing != other.is_swing) {
       return false;
     }

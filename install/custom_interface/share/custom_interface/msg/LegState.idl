@@ -7,6 +7,12 @@
 module custom_interface {
   module msg {
     struct LegState {
+      string name;
+
+      boolean turn_left;
+
+      boolean turn_right;
+
       boolean is_swing;
 
       geometry_msgs::msg::Pose pose;

@@ -12,6 +12,8 @@
 
 
 // Include directives for member types
+// Member `name`
+#include "rosidl_runtime_c/string_functions.h"
 // Member `pose`
 #include "geometry_msgs/msg/detail/pose__functions.h"
 
@@ -21,6 +23,13 @@ custom_interface__msg__LegState__init(custom_interface__msg__LegState * msg)
   if (!msg) {
     return false;
   }
+  // name
+  if (!rosidl_runtime_c__String__init(&msg->name)) {
+    custom_interface__msg__LegState__fini(msg);
+    return false;
+  }
+  // turn_left
+  // turn_right
   // is_swing
   // pose
   if (!geometry_msgs__msg__Pose__init(&msg->pose)) {
@@ -36,6 +45,10 @@ custom_interface__msg__LegState__fini(custom_interface__msg__LegState * msg)
   if (!msg) {
     return;
   }
+  // name
+  rosidl_runtime_c__String__fini(&msg->name);
+  // turn_left
+  // turn_right
   // is_swing
   // pose
   geometry_msgs__msg__Pose__fini(&msg->pose);
@@ -45,6 +58,20 @@ bool
 custom_interface__msg__LegState__are_equal(const custom_interface__msg__LegState * lhs, const custom_interface__msg__LegState * rhs)
 {
   if (!lhs || !rhs) {
+    return false;
+  }
+  // name
+  if (!rosidl_runtime_c__String__are_equal(
+      &(lhs->name), &(rhs->name)))
+  {
+    return false;
+  }
+  // turn_left
+  if (lhs->turn_left != rhs->turn_left) {
+    return false;
+  }
+  // turn_right
+  if (lhs->turn_right != rhs->turn_right) {
     return false;
   }
   // is_swing
@@ -68,6 +95,16 @@ custom_interface__msg__LegState__copy(
   if (!input || !output) {
     return false;
   }
+  // name
+  if (!rosidl_runtime_c__String__copy(
+      &(input->name), &(output->name)))
+  {
+    return false;
+  }
+  // turn_left
+  output->turn_left = input->turn_left;
+  // turn_right
+  output->turn_right = input->turn_right;
   // is_swing
   output->is_swing = input->is_swing;
   // pose

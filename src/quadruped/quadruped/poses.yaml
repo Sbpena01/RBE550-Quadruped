@@ -1,0 +1,140 @@
+## This is a list of poses for the leg to travel to.
+initial_poses:
+  - name: "front_left"
+    position:
+      x: -0.0894
+      y: -0.088
+      z: -0.15
+
+  - name: "front_right"
+    position:
+      x: -0.0844
+      y: 0.088
+      z: -0.15
+  
+  - name: "rear_left"
+    position:
+      x: 0.1016
+      y: -0.088
+      z: -0.15
+
+  - name: "rear_right"
+    position:
+      x: 0.1016
+      y: 0.088
+      z: -0.15
+
+walking_poses:
+  - name: "front_left"
+    position:
+      x: -0.1394
+      y: -0.088
+      z: -0.15
+
+  - name: "front_right"
+    position:
+      x: -0.1344
+      y: 0.088
+      z: -0.15
+  
+  - name: "rear_left"
+    position:
+      x: 0.0516
+      y: -0.088
+      z: -0.15
+
+  - name: "rear_right"
+    position:
+      x: 0.0516
+      y: 0.088
+      z: -0.15
+    
+left_turn_poses:
+  - name: "front_left_start"
+    position:
+      x: -0.0894
+      y: -0.068  # - 0.02 
+      z: -0.16
+  - name: "front_left_end"
+    position:
+      x: -0.1094  # - 0.02
+      y: -0.088  
+      z: -0.15
+
+  - name: "front_right_start"
+    position:
+      x: -0.1044 # -0.02
+      y: 0.088
+      z: -0.15
+  - name: "front_right_end"
+    position:
+      x: -0.0844 
+      y: 0.108  # +0.02
+      z: -0.15
+  
+  - name: "rear_left_start"
+    position:
+      x: 0.1216  # +0.02
+      y: -0.088
+      z: -0.15
+  - name: "rear_left_end"
+    position:
+      x: 0.1016
+      y: -0.068  # -0.02
+      z: -0.16
+
+  - name: "rear_right_start"
+    position:
+      x: 0.1016
+      y: 0.108  # +0.02
+      z: -0.15
+  - name: "rear_right_end"
+    position:
+      x: 0.1216  # 0.02
+      y: 0.088
+      z: -0.15
+
+right_turn_poses:
+  - name: "front_left_end"
+    position:
+      x: -0.0894
+      y: -0.068  # - 0.02 
+      z: -0.16
+  - name: "front_left_start"
+    position:
+      x: -0.1094  # - 0.02
+      y: -0.088  
+      z: -0.15
+
+  - name: "front_right_end"
+    position:
+      x: -0.1044 # -0.02
+      y: 0.088
+      z: -0.15
+  - name: "front_right_start"
+    position:
+      x: -0.0844 
+      y: 0.108  # +0.02
+      z: -0.15
+  
+  - name: "rear_left_end"
+    position:
+      x: 0.1216  # +0.02
+      y: -0.088
+      z: -0.15
+  - name: "rear_left_start"
+    position:
+      x: 0.1016
+      y: -0.068  # -0.02
+      z: -0.16
+
+  - name: "rear_right_end"
+    position:
+      x: 0.1016
+      y: 0.108  # +0.02
+      z: -0.15
+  - name: "rear_right_start"
+    position:
+      x: 0.1216  # 0.02
+      y: 0.088
+      z: -0.15

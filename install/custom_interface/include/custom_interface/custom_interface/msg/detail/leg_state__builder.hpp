@@ -43,13 +43,61 @@ private:
 class Init_LegState_is_swing
 {
 public:
-  Init_LegState_is_swing()
-  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  explicit Init_LegState_is_swing(::custom_interface::msg::LegState & msg)
+  : msg_(msg)
   {}
   Init_LegState_pose is_swing(::custom_interface::msg::LegState::_is_swing_type arg)
   {
     msg_.is_swing = std::move(arg);
     return Init_LegState_pose(msg_);
+  }
+
+private:
+  ::custom_interface::msg::LegState msg_;
+};
+
+class Init_LegState_turn_right
+{
+public:
+  explicit Init_LegState_turn_right(::custom_interface::msg::LegState & msg)
+  : msg_(msg)
+  {}
+  Init_LegState_is_swing turn_right(::custom_interface::msg::LegState::_turn_right_type arg)
+  {
+    msg_.turn_right = std::move(arg);
+    return Init_LegState_is_swing(msg_);
+  }
+
+private:
+  ::custom_interface::msg::LegState msg_;
+};
+
+class Init_LegState_turn_left
+{
+public:
+  explicit Init_LegState_turn_left(::custom_interface::msg::LegState & msg)
+  : msg_(msg)
+  {}
+  Init_LegState_turn_right turn_left(::custom_interface::msg::LegState::_turn_left_type arg)
+  {
+    msg_.turn_left = std::move(arg);
+    return Init_LegState_turn_right(msg_);
+  }
+
+private:
+  ::custom_interface::msg::LegState msg_;
+};
+
+class Init_LegState_name
+{
+public:
+  Init_LegState_name()
+  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  {}
+  Init_LegState_turn_left name(::custom_interface::msg::LegState::_name_type arg)
+  {
+    msg_.name = std::move(arg);
+    return Init_LegState_turn_left(msg_);
   }
 
 private:
@@ -67,7 +115,7 @@ template<>
 inline
 auto build<::custom_interface::msg::LegState>()
 {
-  return custom_interface::msg::builder::Init_LegState_is_swing();
+  return custom_interface::msg::builder::Init_LegState_name();
 }
 
 }  // namespace custom_interface

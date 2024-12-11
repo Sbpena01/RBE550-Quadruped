@@ -32,6 +32,27 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
+  // member: name
+  {
+    out << "name: ";
+    rosidl_generator_traits::value_to_yaml(msg.name, out);
+    out << ", ";
+  }
+
+  // member: turn_left
+  {
+    out << "turn_left: ";
+    rosidl_generator_traits::value_to_yaml(msg.turn_left, out);
+    out << ", ";
+  }
+
+  // member: turn_right
+  {
+    out << "turn_right: ";
+    rosidl_generator_traits::value_to_yaml(msg.turn_right, out);
+    out << ", ";
+  }
+
   // member: is_swing
   {
     out << "is_swing: ";
@@ -51,6 +72,36 @@ inline void to_block_style_yaml(
   const LegState & msg,
   std::ostream & out, size_t indentation = 0)
 {
+  // member: name
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "name: ";
+    rosidl_generator_traits::value_to_yaml(msg.name, out);
+    out << "\n";
+  }
+
+  // member: turn_left
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "turn_left: ";
+    rosidl_generator_traits::value_to_yaml(msg.turn_left, out);
+    out << "\n";
+  }
+
+  // member: turn_right
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "turn_right: ";
+    rosidl_generator_traits::value_to_yaml(msg.turn_right, out);
+    out << "\n";
+  }
+
   // member: is_swing
   {
     if (indentation > 0) {
@@ -117,11 +168,11 @@ inline const char * name<custom_interface::msg::LegState>()
 
 template<>
 struct has_fixed_size<custom_interface::msg::LegState>
-  : std::integral_constant<bool, has_fixed_size<geometry_msgs::msg::Pose>::value> {};
+  : std::integral_constant<bool, false> {};
 
 template<>
 struct has_bounded_size<custom_interface::msg::LegState>
-  : std::integral_constant<bool, has_bounded_size<geometry_msgs::msg::Pose>::value> {};
+  : std::integral_constant<bool, false> {};
 
 template<>
 struct is_message<custom_interface::msg::LegState>

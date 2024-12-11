@@ -1,0 +1,40 @@
+running egg_info
+creating ../../build/robot_sim/robot_sim.egg-info
+writing ../../build/robot_sim/robot_sim.egg-info/PKG-INFO
+writing dependency_links to ../../build/robot_sim/robot_sim.egg-info/dependency_links.txt
+writing requirements to ../../build/robot_sim/robot_sim.egg-info/requires.txt
+writing top-level names to ../../build/robot_sim/robot_sim.egg-info/top_level.txt
+writing manifest file '../../build/robot_sim/robot_sim.egg-info/SOURCES.txt'
+reading manifest file '../../build/robot_sim/robot_sim.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/robot_sim/robot_sim.egg-info/SOURCES.txt'
+running build
+running install
+running install_data
+creating /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/share/ament_index
+creating /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/share/ament_index/resource_index
+creating /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/share/ament_index/resource_index/packages
+copying resource/robot_sim -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/share/ament_index/resource_index/packages
+copying package.xml -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/share/robot_sim
+creating /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/share/robot_sim/launch
+copying launch/robot_spawn_launch.py -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/share/robot_sim/launch
+creating /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/share/robot_sim/worlds
+copying worlds/rrt_graph.json -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/share/robot_sim/worlds
+copying worlds/RRT_Graph.png -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/share/robot_sim/worlds
+copying worlds/RRT.py -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/share/robot_sim/worlds
+copying worlds/Sand_Albedo.png -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/share/robot_sim/worlds
+copying worlds/Sand_Normal.png -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/share/robot_sim/worlds
+copying worlds/ORIGINAL_Heightmap.png -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/share/robot_sim/worlds
+copying worlds/Heightmap.png -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/share/robot_sim/worlds
+copying worlds/Rock_Albedo.png -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/share/robot_sim/worlds
+copying worlds/Grass_Albedo.png -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/share/robot_sim/worlds
+copying worlds/main.py -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/share/robot_sim/worlds
+copying worlds/Grass_Normal.png -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/share/robot_sim/worlds
+copying worlds/Rock_Normal.png -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/share/robot_sim/worlds
+copying worlds/robot_world.sdf -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/share/robot_sim/worlds
+copying worlds/model.sdf -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/share/robot_sim/worlds
+copying worlds/gen_array.py -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/share/robot_sim/worlds
+running install_egg_info
+Copying ../../build/robot_sim/robot_sim.egg-info to /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/lib/python3.12/site-packages/robot_sim-0.0.0-py3.12.egg-info
+running install_scripts
+writing list of installed files to '/home/scott-pena/GitHub/RBE550-Quadruped/build/robot_sim/install.log'

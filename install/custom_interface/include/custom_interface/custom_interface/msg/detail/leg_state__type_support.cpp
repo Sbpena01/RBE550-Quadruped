@@ -38,7 +38,61 @@ void LegState_fini_function(void * message_memory)
   typed_message->~LegState();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember LegState_message_member_array[2] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember LegState_message_member_array[5] = {
+  {
+    "name",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_STRING,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(custom_interface::msg::LegState, name),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "turn_left",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_BOOLEAN,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(custom_interface::msg::LegState, turn_left),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "turn_right",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_BOOLEAN,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(custom_interface::msg::LegState, turn_right),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
   {
     "is_swing",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_BOOLEAN,  // type
@@ -80,7 +134,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember LegState_mess
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers LegState_message_members = {
   "custom_interface::msg",  // message namespace
   "LegState",  // message name
-  2,  // number of fields
+  5,  // number of fields
   sizeof(custom_interface::msg::LegState),
   false,  // has_any_key_member_
   LegState_message_member_array,  // message members

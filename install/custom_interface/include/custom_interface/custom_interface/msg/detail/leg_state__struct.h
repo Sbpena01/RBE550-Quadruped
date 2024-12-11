@@ -20,12 +20,17 @@ extern "C"
 // Constants defined in the message
 
 // Include directives for member types
+// Member 'name'
+#include "rosidl_runtime_c/string.h"
 // Member 'pose'
 #include "geometry_msgs/msg/detail/pose__struct.h"
 
 /// Struct defined in msg/LegState in the package custom_interface.
 typedef struct custom_interface__msg__LegState
 {
+  rosidl_runtime_c__String name;
+  bool turn_left;
+  bool turn_right;
   bool is_swing;
   geometry_msgs__msg__Pose pose;
 } custom_interface__msg__LegState;

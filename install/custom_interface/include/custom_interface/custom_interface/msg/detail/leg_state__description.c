@@ -11,10 +11,10 @@ custom_interface__msg__LegState__get_type_hash(
 {
   (void)type_support;
   static rosidl_type_hash_t hash = {1, {
-      0x5b, 0xf6, 0x48, 0x51, 0xb3, 0x50, 0x60, 0xd5,
-      0x3b, 0x8e, 0x90, 0x0e, 0xb5, 0x63, 0x26, 0xc3,
-      0x1e, 0x73, 0xa1, 0x4f, 0x0b, 0x2d, 0x48, 0xd6,
-      0x04, 0x5c, 0xdd, 0x4a, 0x0b, 0xeb, 0x5f, 0xc8,
+      0x8f, 0x87, 0x28, 0xe7, 0x50, 0x04, 0x65, 0xbd,
+      0x4c, 0x6a, 0x61, 0x09, 0xf8, 0x21, 0x0d, 0x84,
+      0x58, 0xe2, 0x34, 0x7b, 0xb4, 0x41, 0x5a, 0xce,
+      0x04, 0x3e, 0xd8, 0xf0, 0x52, 0x1e, 0x7d, 0x61,
     }};
   return &hash;
 }
@@ -55,10 +55,43 @@ static char geometry_msgs__msg__Pose__TYPE_NAME[] = "geometry_msgs/msg/Pose";
 static char geometry_msgs__msg__Quaternion__TYPE_NAME[] = "geometry_msgs/msg/Quaternion";
 
 // Define type names, field names, and default values
+static char custom_interface__msg__LegState__FIELD_NAME__name[] = "name";
+static char custom_interface__msg__LegState__FIELD_NAME__turn_left[] = "turn_left";
+static char custom_interface__msg__LegState__FIELD_NAME__turn_right[] = "turn_right";
 static char custom_interface__msg__LegState__FIELD_NAME__is_swing[] = "is_swing";
 static char custom_interface__msg__LegState__FIELD_NAME__pose[] = "pose";
 
 static rosidl_runtime_c__type_description__Field custom_interface__msg__LegState__FIELDS[] = {
+  {
+    {custom_interface__msg__LegState__FIELD_NAME__name, 4, 4},
+    {
+      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_STRING,
+      0,
+      0,
+      {NULL, 0, 0},
+    },
+    {NULL, 0, 0},
+  },
+  {
+    {custom_interface__msg__LegState__FIELD_NAME__turn_left, 9, 9},
+    {
+      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_BOOLEAN,
+      0,
+      0,
+      {NULL, 0, 0},
+    },
+    {NULL, 0, 0},
+  },
+  {
+    {custom_interface__msg__LegState__FIELD_NAME__turn_right, 10, 10},
+    {
+      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_BOOLEAN,
+      0,
+      0,
+      {NULL, 0, 0},
+    },
+    {NULL, 0, 0},
+  },
   {
     {custom_interface__msg__LegState__FIELD_NAME__is_swing, 8, 8},
     {
@@ -105,7 +138,7 @@ custom_interface__msg__LegState__get_type_description(
   static const rosidl_runtime_c__type_description__TypeDescription description = {
     {
       {custom_interface__msg__LegState__TYPE_NAME, 29, 29},
-      {custom_interface__msg__LegState__FIELDS, 2, 2},
+      {custom_interface__msg__LegState__FIELDS, 5, 5},
     },
     {custom_interface__msg__LegState__REFERENCED_TYPE_DESCRIPTIONS, 3, 3},
   };
@@ -122,6 +155,9 @@ custom_interface__msg__LegState__get_type_description(
 }
 
 static char toplevel_type_raw_source[] =
+  "string name\n"
+  "bool turn_left\n"
+  "bool turn_right\n"
   "bool is_swing\n"
   "geometry_msgs/Pose pose";
 
@@ -137,7 +173,7 @@ custom_interface__msg__LegState__get_individual_type_description_source(
   static const rosidl_runtime_c__type_description__TypeSource source = {
     {custom_interface__msg__LegState__TYPE_NAME, 29, 29},
     {msg_encoding, 3, 3},
-    {toplevel_type_raw_source, 37, 37},
+    {toplevel_type_raw_source, 80, 80},
   };
   return &source;
 }

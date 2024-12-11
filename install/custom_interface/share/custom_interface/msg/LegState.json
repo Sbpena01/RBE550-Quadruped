@@ -4,6 +4,36 @@
       "type_name": "custom_interface/msg/LegState",
       "fields": [
         {
+          "name": "name",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "turn_left",
+          "type": {
+            "type_id": 15,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "turn_right",
+          "type": {
+            "type_id": 15,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
           "name": "is_swing",
           "type": {
             "type_id": 15,
@@ -136,7 +166,7 @@
   "type_hashes": [
     {
       "type_name": "custom_interface/msg/LegState",
-      "hash_string": "RIHS01_5bf64851b35060d53b8e900eb56326c31e73a14f0b2d48d6045cdd4a0beb5fc8"
+      "hash_string": "RIHS01_8f8728e7500465bd4c6a6109f8210d8458e2347bb4415ace043ed8f0521e7d61"
     },
     {
       "type_name": "geometry_msgs/msg/Point",

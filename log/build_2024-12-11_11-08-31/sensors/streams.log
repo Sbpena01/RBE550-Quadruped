@@ -1,0 +1,25 @@
+[1.057s] Invoking command in '/home/scott-pena/GitHub/RBE550-Quadruped/src/sensors': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/scott-pena/GitHub/RBE550-Quadruped/build/sensors/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/scott-pena/GitHub/RBE550-Quadruped/install/sensors/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/sensors/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/sensors build --build-base /home/scott-pena/GitHub/RBE550-Quadruped/build/sensors/build install --record /home/scott-pena/GitHub/RBE550-Quadruped/build/sensors/install.log --single-version-externally-managed install_data
+[1.331s] running egg_info
+[1.355s] writing ../../build/sensors/sensors.egg-info/PKG-INFO
+[1.355s] writing dependency_links to ../../build/sensors/sensors.egg-info/dependency_links.txt
+[1.355s] writing entry points to ../../build/sensors/sensors.egg-info/entry_points.txt
+[1.355s] writing requirements to ../../build/sensors/sensors.egg-info/requires.txt
+[1.355s] writing top-level names to ../../build/sensors/sensors.egg-info/top_level.txt
+[1.403s] reading manifest file '../../build/sensors/sensors.egg-info/SOURCES.txt'
+[1.403s] adding license file 'LICENSE'
+[1.403s] writing manifest file '../../build/sensors/sensors.egg-info/SOURCES.txt'
+[1.403s] running build
+[1.403s] running build_py
+[1.403s] copying sensors/IMU.py -> /home/scott-pena/GitHub/RBE550-Quadruped/build/sensors/build/lib/sensors
+[1.404s] running install
+[1.408s] running install_lib
+[1.434s] copying /home/scott-pena/GitHub/RBE550-Quadruped/build/sensors/build/lib/sensors/IMU.py -> /home/scott-pena/GitHub/RBE550-Quadruped/install/sensors/lib/python3.12/site-packages/sensors
+[1.435s] byte-compiling /home/scott-pena/GitHub/RBE550-Quadruped/install/sensors/lib/python3.12/site-packages/sensors/IMU.py to IMU.cpython-312.pyc
+[1.435s] running install_data
+[1.435s] running install_egg_info
+[1.460s] removing '/home/scott-pena/GitHub/RBE550-Quadruped/install/sensors/lib/python3.12/site-packages/sensors-0.0.0-py3.12.egg-info' (and everything under it)
+[1.461s] Copying ../../build/sensors/sensors.egg-info to /home/scott-pena/GitHub/RBE550-Quadruped/install/sensors/lib/python3.12/site-packages/sensors-0.0.0-py3.12.egg-info
+[1.461s] running install_scripts
+[1.617s] Installing imu script to /home/scott-pena/GitHub/RBE550-Quadruped/install/sensors/lib/sensors
+[1.617s] writing list of installed files to '/home/scott-pena/GitHub/RBE550-Quadruped/build/sensors/install.log'
+[1.637s] Invoked command in '/home/scott-pena/GitHub/RBE550-Quadruped/src/sensors' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/scott-pena/GitHub/RBE550-Quadruped/build/sensors/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/scott-pena/GitHub/RBE550-Quadruped/install/sensors/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/custom_interface/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/sensors/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_sim/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/motion_planner/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/leg_controls/lib/python3.12/site-packages:/home/scott-pena/GitHub/RBE550-Quadruped/install/center_of_mass/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/sensors build --build-base /home/scott-pena/GitHub/RBE550-Quadruped/build/sensors/build install --record /home/scott-pena/GitHub/RBE550-Quadruped/build/sensors/install.log --single-version-externally-managed install_data

@@ -1,0 +1,128 @@
+[1.377s] Invoking command in '/home/scott-pena/GitHub/RBE550-Quadruped/src/robot_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/scott-pena/GitHub/RBE550-Quadruped/build/robot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_description build --build-base /home/scott-pena/GitHub/RBE550-Quadruped/build/robot_description/build install --record /home/scott-pena/GitHub/RBE550-Quadruped/build/robot_description/install.log --single-version-externally-managed install_data
+[1.661s] running egg_info
+[1.661s] creating ../../build/robot_description/robot_description.egg-info
+[1.686s] writing ../../build/robot_description/robot_description.egg-info/PKG-INFO
+[1.686s] writing dependency_links to ../../build/robot_description/robot_description.egg-info/dependency_links.txt
+[1.686s] writing requirements to ../../build/robot_description/robot_description.egg-info/requires.txt
+[1.686s] writing top-level names to ../../build/robot_description/robot_description.egg-info/top_level.txt
+[1.686s] writing manifest file '../../build/robot_description/robot_description.egg-info/SOURCES.txt'
+[1.740s] reading manifest file '../../build/robot_description/robot_description.egg-info/SOURCES.txt'
+[1.740s] adding license file 'LICENSE'
+[1.741s] writing manifest file '../../build/robot_description/robot_description.egg-info/SOURCES.txt'
+[1.741s] running build
+[1.741s] running build_py
+[1.741s] creating /home/scott-pena/GitHub/RBE550-Quadruped/build/robot_description/build
+[1.741s] creating /home/scott-pena/GitHub/RBE550-Quadruped/build/robot_description/build/lib
+[1.741s] creating /home/scott-pena/GitHub/RBE550-Quadruped/build/robot_description/build/lib/robot_description
+[1.742s] copying robot_description/__init__.py -> /home/scott-pena/GitHub/RBE550-Quadruped/build/robot_description/build/lib/robot_description
+[1.742s] running install
+[1.747s] running install_lib
+[1.771s] creating /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/lib/python3.12/site-packages/robot_description
+[1.771s] copying /home/scott-pena/GitHub/RBE550-Quadruped/build/robot_description/build/lib/robot_description/__init__.py -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/lib/python3.12/site-packages/robot_description
+[1.772s] byte-compiling /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/lib/python3.12/site-packages/robot_description/__init__.py to __init__.cpython-312.pyc
+[1.773s] running install_data
+[1.773s] creating /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/ament_index
+[1.773s] creating /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/ament_index/resource_index
+[1.773s] creating /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/ament_index/resource_index/packages
+[1.773s] copying resource/robot_description -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/ament_index/resource_index/packages
+[1.774s] copying package.xml -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description
+[1.774s] creating /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/config
+[1.774s] copying config/robot_config.rviz -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/config
+[1.774s] copying config/robot_sim.yaml -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/config
+[1.774s] creating /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.774s] copying meshes/spotmicroai.blend -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.787s] copying meshes/lshoulder.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.788s] copying meshes/F_cover_orig.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.789s] copying meshes/R_side_plate.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.789s] copying meshes/README.txt -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.789s] copying meshes/rfoot copy.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.789s] copying meshes/L_arm_cover.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.790s] copying meshes/plate.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.790s] copying meshes/top.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.790s] copying meshes/jetsonPlate.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.791s] copying meshes/lshoulder copy.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.791s] copying meshes/R_arm_joint.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.792s] copying meshes/mainbody copy.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.793s] copying meshes/jetson_sidepart copy.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.793s] copying meshes/jetsonPlate copy.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.793s] copying meshes/larm copy.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.794s] copying meshes/batteryholder2.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.794s] copying meshes/SpotMicroAI_JetsonParts.FCStd1 -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.795s] copying meshes/SpotMicroAI_JetsonParts.FCStd -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.795s] copying meshes/L_ultra_sonic.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.796s] copying meshes/frontpart.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.797s] copying meshes/mainbody copy.dae -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.797s] copying meshes/front copy.dae -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.799s] copying meshes/larm_cover copy.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.799s] copying meshes/spotmicroai copy.blend -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.813s] copying meshes/rear2.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.813s] copying meshes/R_arm_cover.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.813s] copying meshes/rarm copy.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.814s] copying meshes/batteryholder.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.814s] copying meshes/R_ultra_sonic.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.814s] copying meshes/rshoulder copy.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.815s] copying meshes/foot.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.816s] copying meshes/SpotMicroAI_Top.FCStd -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.816s] copying meshes/F_shoulder.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.816s] copying meshes/mainbody.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.817s] copying meshes/lfoot.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.818s] copying meshes/rearmain copy.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.818s] copying meshes/rear.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.818s] copying meshes/L_arm.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.819s] copying meshes/rfoot.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.819s] copying meshes/larm.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.820s] copying meshes/R_shoulder.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.820s] copying meshes/front.dae -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.821s] copying meshes/rarm.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.822s] copying meshes/SpotMicroAI_Bottom.FCStd1 -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.822s] copying meshes/SpotMicroAI_Top.FCStd1 -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.822s] copying meshes/LICENSE.txt -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.823s] copying meshes/screwguard.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.823s] copying meshes/testmount.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.823s] copying meshes/frontpart copy.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.824s] copying meshes/bottom.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.824s] copying meshes/L_side_plate.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.824s] copying meshes/R_arm.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.824s] copying meshes/mainbody.dae -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.825s] copying meshes/R_cover.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.825s] copying meshes/rarm_cover copy.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.826s] copying meshes/L_wrist.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.826s] copying meshes/B_cover.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.826s] copying meshes/ledholder.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.826s] copying meshes/L_arm_joint.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.827s] copying meshes/F_cover.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.828s] copying meshes/backpart.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.828s] copying meshes/rarm_cover.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.828s] copying meshes/back copy.dae -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.829s] copying meshes/larm_cover.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.830s] copying meshes/non-mega_B_cover.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.830s] copying meshes/back.dae -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.830s] copying meshes/rearmain.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.831s] copying meshes/R_wrist.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.831s] copying meshes/non-mega_L_side_plate.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.831s] copying meshes/lfoot copy.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.832s] copying meshes/SpotMicroAI_Bottom.FCStd -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.832s] copying meshes/SpotMicroAI_AdditionalParts.FCStd -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.833s] copying meshes/non-mega_T_cover.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.834s] copying meshes/label.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.834s] copying meshes/rshoulder.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.834s] copying meshes/jetson_sidepart.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.834s] copying meshes/rplidar_main.STL -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.835s] copying meshes/SpotMicroAI_Rear.FCStd -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.836s] copying meshes/T_cover.stl -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/meshes
+[1.836s] creating /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/gazebo
+[1.836s] copying gazebo/materials.xacro -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/gazebo
+[1.836s] copying gazebo/robot.gazebo.xacro -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/gazebo
+[1.836s] creating /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/robots
+[1.836s] copying robots/spotmicro.urdf -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/robots
+[1.837s] copying robots/spotmicro_generated.urdf -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/robots
+[1.837s] copying robots/spotmicro_copy.xacro -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/robots
+[1.837s] copying robots/spotmicro.xacro -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/robots
+[1.837s] copying robots/spotmicro_copy_copy.xacro -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/robots
+[1.837s] creating /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/ros2_control
+[1.837s] copying ros2_control/robot.ros2_control.xacro -> /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/share/robot_description/ros2_control
+[1.837s] running install_egg_info
+[1.864s] Copying ../../build/robot_description/robot_description.egg-info to /home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/lib/python3.12/site-packages/robot_description-0.0.0-py3.12.egg-info
+[1.865s] running install_scripts
+[2.019s] writing list of installed files to '/home/scott-pena/GitHub/RBE550-Quadruped/build/robot_description/install.log'
+[2.039s] Invoked command in '/home/scott-pena/GitHub/RBE550-Quadruped/src/robot_description' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/scott-pena/GitHub/RBE550-Quadruped/build/robot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/scott-pena/GitHub/RBE550-Quadruped/install/robot_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_description build --build-base /home/scott-pena/GitHub/RBE550-Quadruped/build/robot_description/build install --record /home/scott-pena/GitHub/RBE550-Quadruped/build/robot_description/install.log --single-version-externally-managed install_data

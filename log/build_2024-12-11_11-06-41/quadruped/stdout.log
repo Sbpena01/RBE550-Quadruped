@@ -1,0 +1,28 @@
+running egg_info
+writing ../../build/quadruped/quadruped.egg-info/PKG-INFO
+writing dependency_links to ../../build/quadruped/quadruped.egg-info/dependency_links.txt
+writing entry points to ../../build/quadruped/quadruped.egg-info/entry_points.txt
+writing requirements to ../../build/quadruped/quadruped.egg-info/requires.txt
+writing top-level names to ../../build/quadruped/quadruped.egg-info/top_level.txt
+reading manifest file '../../build/quadruped/quadruped.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/quadruped/quadruped.egg-info/SOURCES.txt'
+running build
+running build_py
+copying quadruped/Quadruped.py -> /home/scott-pena/GitHub/RBE550-Quadruped/build/quadruped/build/lib/quadruped
+copying quadruped/__init__.py -> /home/scott-pena/GitHub/RBE550-Quadruped/build/quadruped/build/lib/quadruped
+running install
+running install_lib
+copying /home/scott-pena/GitHub/RBE550-Quadruped/build/quadruped/build/lib/quadruped/Quadruped.py -> /home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/lib/python3.12/site-packages/quadruped
+copying /home/scott-pena/GitHub/RBE550-Quadruped/build/quadruped/build/lib/quadruped/__init__.py -> /home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/lib/python3.12/site-packages/quadruped
+byte-compiling /home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/lib/python3.12/site-packages/quadruped/Quadruped.py to Quadruped.cpython-312.pyc
+byte-compiling /home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/lib/python3.12/site-packages/quadruped/__init__.py to __init__.cpython-312.pyc
+running install_data
+copying resource/quadruped -> /home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/share/ament_index/resource_index/packages
+copying package.xml -> /home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/share/quadruped
+running install_egg_info
+removing '/home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/lib/python3.12/site-packages/quadruped-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../../build/quadruped/quadruped.egg-info to /home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/lib/python3.12/site-packages/quadruped-0.0.0-py3.12.egg-info
+running install_scripts
+Installing quadruped script to /home/scott-pena/GitHub/RBE550-Quadruped/install/quadruped/lib/quadruped
+writing list of installed files to '/home/scott-pena/GitHub/RBE550-Quadruped/build/quadruped/install.log'
